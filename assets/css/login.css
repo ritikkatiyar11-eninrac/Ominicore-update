@@ -1,0 +1,87 @@
+.login-wrapper {
+  height: 100vh;
+  background: linear-gradient(45deg, var(--primary-600), var(--extra-800));
+}
+
+.login-wrapper .login-area {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-wrapper .login-area .login-form {
+  min-width: 500px;
+  background: #fdf8fa;
+  min-height: 200px;
+  flex: 1;
+}
+
+.login-wrapper .login-area .login-form .login-text {
+  margin-bottom: 10px;
+}
+
+.login-wrapper .login-area .login-form .login-body {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-wrapper .login-area .login-form .login-body .login-inputs {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-inputs i {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: white;
+  border-radius: 7px 0 0 7px;
+  text-align: center;
+  line-height: 40px;
+  color: var(--bs-gray-600);
+  font-size: 20px;
+  border-right: 1px solid var(--bs-gray-400);
+}
+
+.login-wrapper
+  .login-area
+  .login-form
+  .login-body
+  .login-inputs
+  .login-inputs-fields {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 5px 10px 5px 45px;
+  font-size: 14px;
+  color: var(--bs-gray-600);
+  height: 40px;
+  box-shadow: 0 0 0px 1px var(--bs-gray-400);
+}
+
+.company-info {
+  flex: 2;
+  min-width: 0;
+}
+
+.company-info img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: left;
+}
+
+.form-footer button {
+  border: none;
+  background: var(--primary-600);
+  color: white;
+}
+.form-footer a {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  font-size: 14px;
+  padding: 10px;
+}

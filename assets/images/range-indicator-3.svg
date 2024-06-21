@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 402.95 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #122c5e;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Nunito;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #0db8ff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="26.56" y1="311.24" x2="26.56" y2="642.35" gradientTransform="translate(-277.32 -18.56) rotate(90) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0db8ff"/>
+      <stop offset=".5" stop-color="#2139e5"/>
+      <stop offset="1" stop-color="#122c5e"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-3" x="33.92" y="6.75" width="331.11" height="2.5"/>
+  </g>
+  <text class="cls-2" transform="translate(.13 12.28)"><tspan x="0" y="0">LOW</tspan></text>
+  <text class="cls-1" transform="translate(371.09 12.28)"><tspan x="0" y="0">HIGH</tspan></text>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.5 8.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #122c5e;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: FranklinGothic-Demi, 'Franklin Gothic Demi';
+        font-size: 8px;
+        font-weight: 300;
+      }
+
+      .cls-5 {
+        fill: #0db8ff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6.78" y1="313.05" x2="6.78" y2="656.11" gradientTransform="translate(-293.32 -2.56) rotate(90) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0db8ff"/>
+      <stop offset=".5" stop-color="#2139e5"/>
+      <stop offset="1" stop-color="#122c5e"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-1" x="19.72" y="3.22" width="343.06" height="2"/>
+  </g>
+  <text class="cls-5" transform="translate(1.03 6.89)"><tspan class="cls-3" x="0" y="0">L</tspan><tspan class="cls-2" x="3.95" y="0">O</tspan><tspan x="8.95" y="0">W</tspan></text>
+  <text class="cls-4" transform="translate(364.59 6.89)"><tspan x="0" y="0">HIGH</tspan></text>
+</svg>
