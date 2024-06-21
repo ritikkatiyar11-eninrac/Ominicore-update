@@ -174,189 +174,189 @@ require(APPPATH . 'views/filter.php');
 
     <!-- input selection section -->
     <div class="row" style="gap: 20px 0;">
-    <div class="col-8 d-flex flex-column" style="gap: 20px;">
-      <div class="card first-card block-card">
-        <div class="card-header border-bottom">
-          <h2 class="text-primary-800">Input Selection Pane</h2>
-          <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
-        </div>
-        <div class="card-body position-relative">
-          <div class="d-flex flex-column gap-2">
-            <div class="input-selection-pane">
-              <div class="input-selection-pane-content " style="gap: 20px 0;">
-                <div class="d-flex  flex-column align-items-center justify-content-center">
-                  <span class="fs-14">Injection State</span>
-                  <div class="injection-level d-flex gap-1">
-                    <div class=" form-check">
-                      <input type="radio" name="flexRadioDefault1" class="form-check-input" name="" id="" />
-                      <label for="" class="form-check-label fs-14">STU</label>
+        <div class="col-8 d-flex flex-column" style="gap: 20px;">
+            <div class="card first-card block-card">
+                <div class="card-header border-bottom">
+                    <h2 class="text-primary-800">Input Selection Pane</h2>
+                    <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
+                </div>
+                <div class="card-body position-relative">
+                    <div class="d-flex flex-column gap-2">
+                        <div class="input-selection-pane">
+                            <div class="input-selection-pane-content " style="gap: 20px 0;">
+                                <div class="d-flex  flex-column align-items-center justify-content-center">
+                                    <span class="fs-14">Injection State</span>
+                                    <div class="injection-level d-flex gap-1">
+                                        <div class=" form-check">
+                                            <input type="radio" name="flexRadioDefault1" class="form-check-input" name="" id="" />
+                                            <label for="" class="form-check-label fs-14">STU</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label for="" class="form-check-label fs-14">CTU</label>
+                                            <input type="radio" name="flexRadioDefault1" class="form-check-input" name="" id="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <span class="fs-14">Drawal Level</span>
+                                    <div class="injection-level d-flex gap-1">
+                                        <div class=" form-check">
+                                            <input type="radio" name="flexRadioDefault2" class="form-check-input" name="" id="" />
+                                            <label for="" class="form-check-label fs-14">STU</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label for="" class="form-check-label fs-14">CTU</label>
+                                            <input type="radio" name="flexRadioDefault2" class="form-check-input" name="" id="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group  d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Load Factor</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600  w-75 text-center back-input-class " placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group   d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Solar CUF</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group   d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Ex-Bus tariff</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                                </div>
+
+                                <div class="form-group  d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Solar</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group  d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">QA Connectivity</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group  d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Wind Power Capacity</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group  d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Wind CUF</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+
+                                <div class="form-group col d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Connected Power..</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                                </div>
+
+
+                                <div class="form-group col d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Power Factor</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+
+                                <div class="form-group col d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14">Energy Banked</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                                <div class="form-group col d-flex flex-column align-items-center">
+                                    <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
+                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-check">
-                      <label for="" class="form-check-label fs-14">CTU</label>
-                      <input type="radio" name="flexRadioDefault1" class="form-check-input" name="" id="" />
+
+                    <div class="observatory-container d-none">
+                        <div class="observatory-overlay"></div>
+                        <div class="content p-2 d-flex align-items-center position-relative h-100">
+                            <div class="bg-darklight-100 p-3 text-darklight-700">
+                                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                                    quis similique deserunt odit vitae eligendi aspernatur dicta
+                                    nostrum veniam molestias itaque totam possimus nemo accusamus
+                                    debitis voluptates in reprehenderit quam?
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                  <span class="fs-14">Drawal Level</span>
-                  <div class="injection-level d-flex gap-1">
-                    <div class=" form-check">
-                      <input type="radio" name="flexRadioDefault2" class="form-check-input" name="" id="" />
-                      <label for="" class="form-check-label fs-14">STU</label>
-                    </div>
-                    <div class="form-check">
-                      <label for="" class="form-check-label fs-14">CTU</label>
-                      <input type="radio" name="flexRadioDefault2" class="form-check-input" name="" id="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group  d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Load Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600  w-75 text-center back-input-class " placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group   d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Solar CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group   d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Ex-Bus tariff</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
-                </div>
-
-                <div class="form-group  d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Solar</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group  d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">QA Connectivity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group  d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Wind Power Capacity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group  d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Wind CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-
-                <div class="form-group col d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Connected Power..</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
-                </div>
-
-
-                <div class="form-group col d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Power Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-
-                <div class="form-group col d-flex flex-column align-items-center">
-                  <label for="" class="fs-14">Energy Banked</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-                <div class="form-group col d-flex flex-column align-items-center">
-                  <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
-                </div>
-
-              </div>
             </div>
-          </div>
 
-          <div class="observatory-container d-none">
-            <div class="observatory-overlay"></div>
-            <div class="content p-2 d-flex align-items-center position-relative h-100">
-              <div class="bg-darklight-100 p-3 text-darklight-700">
-                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
-                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                  quis similique deserunt odit vitae eligendi aspernatur dicta
-                  nostrum veniam molestias itaque totam possimus nemo accusamus
-                  debitis voluptates in reprehenderit quam?
-                </p>
-              </div>
+            <div class="card h-30 block-card">
+                <div class="card-header border-bottom">
+                    <h2 class="text-primary-800">Working Input Signals</h2>
+                    <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
+
+                </div>
+                <div class="card-body position-relative">
+                    <div class="working-input-signal d-flex flex-column align-items-center gap-2">
+                        <div class=" row gap-3">
+                            <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
+                                <span>STU</span>
+
+                            </div>
+                            <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>STU</span>
+                            </div>
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+                            <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-4 justify-content-center align-items-center mt-1">
+                            <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
+                                <div class="bg bg-success selected-state-box" style="width: 10px; height:10px;"></div>
+                                <p class="mb-0">Applicabale for the selected state</p>
+                            </div>
+                            <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
+                                <div class="bg bg-danger selected-state-box" style="width: 10px; height:10px;"></div>
+                                <p class="mb-0">Not-applicabale for the selected state</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="observatory-container d-none">
+                        <div class="observatory-overlay"></div>
+                        <div class="content p-2 d-flex align-items-center position-relative h-100">
+                            <div class="bg-darklight-100 p-3 text-darklight-700">
+                                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                                    quis similique deserunt odit vitae eligendi aspernatur dicta
+                                    nostrum veniam molestias itaque totam possimus nemo accusamus
+                                    debitis voluptates in reprehenderit quam?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="card h-30 block-card">
-        <div class="card-header border-bottom">
-          <h2 class="text-primary-800">Working Input Signals</h2>
-          <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
 
         </div>
-        <div class="card-body position-relative">
-          <div class="working-input-signal d-flex flex-column align-items-center gap-2">
-            <div class=" row gap-3">
-              <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
-                <span>STU</span>
-                
-              </div>
-              <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>STU</span>
-              </div>
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-            </div>
-            <div class="d-flex gap-4 justify-content-center align-items-center mt-1">
-              <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
-                <div class="bg bg-success selected-state-box" style="width: 10px; height:10px;"></div>
-                <p class="mb-0">Applicabale for the selected state</p>
-              </div>
-              <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
-                <div class="bg bg-danger selected-state-box" style="width: 10px; height:10px;"></div>
-                <p class="mb-0">Not-applicabale for the selected state</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="observatory-container d-none">
-            <div class="observatory-overlay"></div>
-            <div class="content p-2 d-flex align-items-center position-relative h-100">
-              <div class="bg-darklight-100 p-3 text-darklight-700">
-                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
-                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                  quis similique deserunt odit vitae eligendi aspernatur dicta
-                  nostrum veniam molestias itaque totam possimus nemo accusamus
-                  debitis voluptates in reprehenderit quam?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
         <div class="col-4">
             <div class="card h-100 block-card by-overview-container">
                 <div class="card-header border-bottom">
@@ -490,7 +490,6 @@ require(APPPATH . 'views/filter.php');
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -638,129 +637,399 @@ require(APPPATH . 'views/filter.php');
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
                 <div class="card-body">
-                    <div class="row w-100 m-auto d-flex align-items-center text-center justify-content-between gap-1">
-                        <div class="col border-right bg-primary-200 text-white py-1">tab 1</div>
-                        <div class="col  border-right py-1">tab 2</div>
-                        <div class="col  border-right">tab 3</div>
-                        <div class="col border-right  py-1">tab 4</div>
-                        <div class="col  border-right py-1">tab 5</div>
+                    <ul class="nav nav-pills mb-3 list-style-none d-flex align-items-center text-center justify-content-between" id="pills-tab" role="tablist">
+                        <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
+                            <div id="pill-tab-1" data-bs-toggle="pill" data-bs-target="#pills-tab-1" role="tab" aria-selected="false" aria-controls="tab-1-pill" class="col nav-link border-right active py-1">tab 1</div>
+                        </li>
+                        <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
+                            <div id="pill-tab-2" data-bs-toggle="pill" data-bs-target="#pills-tab-2" role="tab" aria-selected="false" aria-controls="tab-2-pill" class="col nav-link  border-right py-1">tab 2</div>
+                        </li>
+                        <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
+                            <div id="pill-tab-3" data-bs-toggle="pill" data-bs-target="#pills-tab-3" role="tab" aria-selected="false" aria-controls="tab-3-pill" class="col nav-link  border-right">tab 3</div>
+                        </li>
+                        <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
+                            <div id="pill-tab-4" data-bs-toggle="pill" data-bs-target="#pills-tab-4" role="tab" aria-selected="false" aria-controls="tab-4-pill" class="col nav-link border-right  py-1">tab 4</div>
+                        </li>
+                        <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
+                            <div id="pill-tab-5" data-bs-toggle="pill" data-bs-target="#pills-tab-5" role="tab" aria-selected="false" aria-controls="tab-5-pill" class="col nav-link border-right py-1">tab 5</div>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane tab-1 fade show active" id="pills-tab-1" role="tabpanel" aria-labelledby="pill-tab-1">
+                            <div class="mt-2  border border-gray p-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>WHEELING CHARGES AND LOSSES</h5>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-4">
+                                        <ul class="list-unstyled">
+                                            <li class="fs-14">Per Unit Wheeling Charges ...</li>
+                                            <li class="fs-14">Per Unit Wheeling Charges RE</li>
+                                            <li class="fs-14">Wheeling Losses In Kind</li>
+                                            <li class="fs-14">Wheeling Losses</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-8 chart-container">
 
-                    </div>
-                    <div class="mt-2 border border-gray p-1">
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>WHEELING CHARGES AND LOSSES</h5>
+                                        <div class="border d-flex flex-column" style="height: 100%;">
+                                            <div class="border w-100" style="height: 20px;"></div>
+                                            <div class="border w-100" style="height: 20px;"></div>
+                                            <div class="border w-100" style="height: 20px;"></div>
+                                            <div class="border w-100" style="height: 20px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-1 justify-content-start" style="border: 3px solid var(--primary-700);">
+                                <table class="table table-sm">
+                                    <thead class=" table-primary">
+                                        <th scope="col" style="font-size: 10px;">Drawal state</th>
+                                        <th scope="col" style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
+                                        <th scope="col" style="font-size: 10px;">
+                                            Grid Tariff <br> <span>(₹/kWh)</span>
+                                        </th>
+                                        <th scope="col" style="font-size: 10px;">
+                                            Potential Savings
+                                            <small style="font-size: 10px;">(₹/kWh)(%)</small>
+                                        </th>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table bg-darklight-400 table-sm">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th style="font-size: 10px;">Drawal state</th>
+                                            <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
+                                            <th style="font-size: 10px;">
+                                                Grid Tariff <br> <span>(₹/kWh)</span>
+                                            </th>
+                                            <th style="font-size: 10px;">
+                                                Potential Savings
+                                                <small>(₹/kWh)(%)</small>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table bg-darklight-400 table-sm">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th style="font-size: 10px;">Drawal state</th>
+                                            <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300"><span>(Captive/group</span> <br><span> Captive ₹/kWh)</span></small></th>
+                                            <th style="font-size: 10px;">
+                                                Grid Tariff <br> <span>(₹/kWh)</span>
+                                            </th>
+                                            <th style="font-size: 10px;">
+                                                Potential Savings
+                                                <small>(₹/kWh)(%)</small>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px; word-wrap: normal;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="row mt-2">
-                            <div class="col-4">
-                                <ul class="list-unstyled">
-                                    <li class="fs-14">Per Unit Wheeling Charges ...</li>
-                                    <li class="fs-14">Per Unit Wheeling Charges RE</li>
-                                    <li class="fs-14">Wheeling Losses In Kind</li>
-                                    <li class="fs-14">Wheeling Losses</li>
-                                </ul>
+                        <div class="tab-pane tab-2 fade" id="pills-tab-2" aria-labelledby="pill-tab-2" role="tabpanel">
+                            <div class="row d-flex gap-1 flex-column">
+                                <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
+                                    <div class="text-darklight-400">
+                                        <h2 class="fs-14">Cross Subsidy Surcharge
+                                            Renewable Energy</h2>
+                                    </div>
+                                    <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
+                                                <div class="">xx%</div>
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center"> xx%</span>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
+                                    <div class="text-darklight-400">
+                                        <h2 class="fs-14">Cross Subsidy Surcharge
+                                            Renewable Energy</h2>
+                                    </div>
+                                    <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500" style="width: 70px; height:70px;">
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center"> xx%</span>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-8 chart-container">
 
-                                <div class="border d-flex flex-column" style="height: 100%;">
-                                    <div class="border w-100" style="height: 20px;"></div>
-                                    <div class="border w-100" style="height: 20px;"></div>
-                                    <div class="border w-100" style="height: 20px;"></div>
-                                    <div class="border w-100" style="height: 20px;"></div>
+                        </div>
+                        <div class="tab-pane tab-3 fade" id="pills-tab-3" aria-labelledby="pill-tab-3" role="tabpanel">
+                            <h1>Hello</h1>
+                        </div>
+                        <div class="tab-pane tab-4 fade" id="pills-tab-4" aria-labelledby="pill-tab-4" role="tabpanel">
+                            <div class="w-100 d-flex gap-2">
+                                <div class="w-50 d-flex flex-column justify-content-center align-items-center gap-2 border">
+                                    <div class="w-100 d-flex align-items-center">
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">Solar <br> (icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="border px-4 rounded">xx</span>
+                                        </div>
+                                        <span>+</span>
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">Wind <br>(icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="border px-4 rounded">xx</span>
+                                        </div>
+                                    </div>
+                                    <div class="fs-14">Monthly STU (RE) = XX</div>
+                                </div>
+                                <div class="w-50 border p-1">
+                                    <div class="row gap-2">
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                        <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                        <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 10px;" class="lh-1 p-1 mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+                                </div>
+                            </div>
+                            <div class="row w-100 mt-2 d-flex justify-content-between align-items-center py-2 border border-gray gap-2">
+                                <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <span class="fs-14">Electricity Duty</span>
+                                    <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
+                                    <span class="border px-3 rounded">%</span>
+                                </div>
+                                <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <span class="fs-14">ED Conventional</span>
+                                    <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
+                                    <span class="border px-3 rounded">xx</span>
+                                </div>
+                                <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <span class="fs-14">ED RE Wind Solar</span>
+                                    <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
+                                    <span class="border px-3 rounded">xx</span>
+                                </div>
+                                <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                    <span class="fs-14">Per uint ED RE</span>
+                                    <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
+                                    <span class="border px-3 rounded">xx</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex gap-1 justify-content-start" style="border: 3px solid var(--primary-700);">
-                        <table class="table table-sm">
-                            <thead class=" table-primary">
-                                <th scope="col" style="font-size: 10px;">Drawal state</th>
-                                <th scope="col" style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
-                                <th scope="col" style="font-size: 10px;">
-                                    Grid Tariff <br> <span>(₹/kWh)</span>
-                                </th>
-                                <th scope="col" style="font-size: 10px;">
-                                    Potential Savings
-                                    <small style="font-size: 10px;">(₹/kWh)(%)</small>
-                                </th>
+                        <div class="tab-pane tab-5 fade" id="pills-tab-5" aria-labelledby="pill-tab-5" role="tabpanel">
+                            <div class="w-100 d-flex gap-2">
 
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="font-size: 10px;">Uttar Pradesh</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px;">0.73 (10.74%)</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;">Gujarat</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px;">0.73 (10.74%)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table bg-darklight-400 table-sm">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th style="font-size: 10px;">Drawal state</th>
-                                    <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
-                                    <th style="font-size: 10px;">
-                                        Grid Tariff <br> <span>(₹/kWh)</span>
-                                    </th>
-                                    <th style="font-size: 10px;">
-                                        Potential Savings
-                                        <small>(₹/kWh)(%)</small>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="font-size: 10px;">Uttar Pradesh</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px;">0.73 (10.74%)</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;">Gujarat</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px;">0.73 (10.74%)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table bg-darklight-400 table-sm">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th style="font-size: 10px;">Drawal state</th>
-                                    <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300"><span>(Captive/group</span> <br><span> Captive ₹/kWh)</span></small></th>
-                                    <th style="font-size: 10px;">
-                                        Grid Tariff <br> <span>(₹/kWh)</span>
-                                    </th>
-                                    <th style="font-size: 10px;">
-                                        Potential Savings
-                                        <small>(₹/kWh)(%)</small>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="font-size: 10px;">Uttar Pradesh</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px;">0.73 (10.74%)</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;">Gujarat</td>
-                                    <td style="font-size: 10px;">6.27</td>
-                                    <td style="font-size: 10px;">6.80</td>
-                                    <td style="font-size: 10px; word-wrap: normal;">0.73 (10.74%)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                <div class="w-50 border">
+                                    <div class="row gap-2">
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                        <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                        <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">R/KWh</span>
+                                            <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
+                                            <span class="border px-3 rounded">xx</span>
+                                        </div>
+                                    </div>
+                                    <p style="font-size: 10px;" class="lh-1 p-1 mt-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+                                </div>
+                                <div class="w-50 d-flex flex-column justify-content-center align-items-center gap-2 border">
+                                    <div class="w-100 d-flex align-items-center">
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">Solar <br> (icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="border px-4 rounded">xx</span>
+                                        </div>
+                                        <span>+</span>
+                                        <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
+                                            <span class="fs-14">Wind <br>(icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="border px-4 rounded">xx</span>
+                                        </div>
+                                    </div>
+                                    <div class="fs-14">Monthly STU (RE) = XX</div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-1 justify-content-start" style="border: 3px solid var(--primary-700);">
+                                <table class="table table-sm">
+                                    <thead class=" table-primary">
+                                        <th scope="col" style="font-size: 10px;">Drawal state</th>
+                                        <th scope="col" style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
+                                        <th scope="col" style="font-size: 10px;">
+                                            Grid Tariff <br> <span>(₹/kWh)</span>
+                                        </th>
+                                        <th scope="col" style="font-size: 10px;">
+                                            Potential Savings
+                                            <small style="font-size: 10px;">(₹/kWh)(%)</small>
+                                        </th>
 
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table bg-darklight-400 table-sm">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th style="font-size: 10px;">Drawal state</th>
+                                            <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300">(Captive/group Captive ₹/kWh)</small></th>
+                                            <th style="font-size: 10px;">
+                                                Grid Tariff <br> <span>(₹/kWh)</span>
+                                            </th>
+                                            <th style="font-size: 10px;">
+                                                Potential Savings
+                                                <small>(₹/kWh)(%)</small>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table bg-darklight-400 table-sm">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th style="font-size: 10px;">Drawal state</th>
+                                            <th style="font-size: 10px;">QA Tariff <br> <small class="text-primary-300"><span>(Captive/group</span> <br><span> Captive ₹/kWh)</span></small></th>
+                                            <th style="font-size: 10px;">
+                                                Grid Tariff <br> <span>(₹/kWh)</span>
+                                            </th>
+                                            <th style="font-size: 10px;">
+                                                Potential Savings
+                                                <small>(₹/kWh)(%)</small>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="font-size: 10px;">Uttar Pradesh</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px;">0.73 (10.74%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 10px;">Gujarat</td>
+                                            <td style="font-size: 10px;">6.27</td>
+                                            <td style="font-size: 10px;">6.80</td>
+                                            <td style="font-size: 10px; word-wrap: normal;">0.73 (10.74%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="border border-primary p-2 position-absulate">
+                                <h4>Parallel OA Charges (POC) ( Only applicable When Madhya pradesh or tamil Nadu is selected )</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -814,6 +1083,62 @@ require(APPPATH . 'views/filter.php');
         </div>
     </div>
 </div>
+
+<!-- 
+<div class="row d-flex flex-column">
+                                <div class="col border border-gray  p-1 d-flex w-100">
+                                    <div class="text-darklight-400">
+                                        <h2 class="fs-14">Cross Subsidy Surcharge
+                                            Renewable Energy</h2>
+                                    </div>
+                                    <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500" style="width: 70px; height:70px;">
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center"> xx%</span>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col border border-gray d-flex justify-content-center align-items-center w-100">
+                                    
+                                <div class="text-darklight-400">
+                                        <h2 class="fs-14">Cross Subsidy Surcharge
+                                            Renewable Energy</h2>
+                                    </div>
+                                <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500" style="width: 70px; height:70px;">
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center"> xx%</span>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+-->
 
 <!-- Graph Section -->
 
