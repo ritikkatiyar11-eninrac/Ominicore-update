@@ -828,7 +828,60 @@ require(APPPATH . 'views/filter.php');
 
                         </div>
                         <div class="tab-pane tab-3 fade" id="pills-tab-3" aria-labelledby="pill-tab-3" role="tabpanel">
-                            <h1>Hello</h1>
+                        <div class="row d-flex gap-1 flex-column">
+                                <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
+                                    <div class="text-darklight-400">
+                                        <h2 class="fs-14">Additional Surcharge
+                                        Renewable Energy</h2>
+                                    </div>
+                                    <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
+                                                <div class="">xx%</div>
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center"> xx%</span>
+                                            </div>
+                                            <div class="px-3 border rounded">xx</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
+                                    <div class="text-darklight-400">
+                                        <h2 class="fs-14">Additional Surcharge
+                                        Conventional Energy</h2>
+                                    </div>
+                                    <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Solar <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-evenly align-items-center" style="width: 70px; height:70px;">
+                                                <div class="">Value</div>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            +
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 align-items-center">
+                                            <span>Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center" style="width: 70px; height:70px;">
+                                                <div class=""> Unit</div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="tab-pane tab-4 fade" id="pills-tab-4" aria-labelledby="pill-tab-4" role="tabpanel">
                             <div class="w-100 d-flex gap-2">
