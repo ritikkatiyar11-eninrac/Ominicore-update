@@ -31,13 +31,13 @@ require(APPPATH . 'views/filter.php');
 
     <!-- input selection section -->
     <div class="row" style="gap: 20px 0;">
-    <div class="col-8 d-flex flex-column" style="gap: 20px;">
-      <div class="card first-card block-card">
-        <div class="card-header border-bottom">
-          <h2 class="text-primary-800">Input Selection Pane</h2>
-          <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
-        </div>
-        <div class="card-body position-relative">
+        <div class="col-8 d-flex flex-column" style="gap: 20px;">
+            <div class="card first-card block-card">
+                <div class="card-header border-bottom">
+                    <h2 class="text-primary-800">Input Selection Pane</h2>
+                    <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
+                </div>
+                <div class="card-body position-relative">
                     <div class="d-flex flex-column gap-2">
                         <div class="input-selection-pane">
                             <div class="input-selection-pane-content " style="gap: 20px 0;">
@@ -145,74 +145,74 @@ require(APPPATH . 'views/filter.php');
                         </div>
                     </div>
                 </div>
-      </div>
+            </div>
 
-      <div class="card h-30 block-card">
-        <div class="card-header border-bottom">
-          <h2 class="text-primary-800">Working Input Signals</h2>
-          <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
+            <div class="card h-30 block-card">
+                <div class="card-header border-bottom">
+                    <h2 class="text-primary-800">Working Input Signals</h2>
+                    <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
+
+                </div>
+                <div class="card-body position-relative">
+                    <div class="working-input-signal d-flex flex-column align-items-center gap-2">
+                        <div class=" row gap-3">
+                            <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
+                                <span>STU</span>
+
+                            </div>
+                            <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>STU</span>
+                            </div>
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+                            <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                            <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
+                                <span>CTU</span>
+                            </div>
+
+                        </div>
+                        <div class="d-flex gap-4 justify-content-center align-items-center mt-1">
+                            <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
+                                <div class="bg bg-success selected-state-box" style="width: 10px; height:10px;"></div>
+                                <p class="mb-0">Applicabale for the selected state</p>
+                            </div>
+                            <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
+                                <div class="bg bg-danger selected-state-box" style="width: 10px; height:10px;"></div>
+                                <p class="mb-0">Not-applicabale for the selected state</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="observatory-container d-none">
+                        <div class="observatory-overlay"></div>
+                        <div class="content p-2 d-flex align-items-center position-relative h-100">
+                            <div class="bg-darklight-100 p-3 text-darklight-700">
+                                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                                    quis similique deserunt odit vitae eligendi aspernatur dicta
+                                    nostrum veniam molestias itaque totam possimus nemo accusamus
+                                    debitis voluptates in reprehenderit quam?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-        <div class="card-body position-relative">
-          <div class="working-input-signal d-flex flex-column align-items-center gap-2">
-            <div class=" row gap-3">
-              <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
-                <span>STU</span>
-                
-              </div>
-              <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>STU</span>
-              </div>
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-            </div>
-            <div class="d-flex gap-4 justify-content-center align-items-center mt-1">
-              <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
-                <div class="bg bg-success selected-state-box" style="width: 10px; height:10px;"></div>
-                <p class="mb-0">Applicabale for the selected state</p>
-              </div>
-              <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
-                <div class="bg bg-danger selected-state-box" style="width: 10px; height:10px;"></div>
-                <p class="mb-0">Not-applicabale for the selected state</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="observatory-container d-none">
-            <div class="observatory-overlay"></div>
-            <div class="content p-2 d-flex align-items-center position-relative h-100">
-              <div class="bg-darklight-100 p-3 text-darklight-700">
-                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
-                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                  quis similique deserunt odit vitae eligendi aspernatur dicta
-                  nostrum veniam molestias itaque totam possimus nemo accusamus
-                  debitis voluptates in reprehenderit quam?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
         <div class="col-4">
             <div class="card h-100 block-card by-overview-container">
                 <div class="card-header border-bottom">
@@ -491,8 +491,25 @@ require(APPPATH . 'views/filter.php');
                     <h2 class="text-primary-800">Energy flow & loss Mapping</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
-                <div class="card-body">
-                    <!-- map energy loss -->
+                <div class="card-body position-relative">
+                    <div class="d-flex flex-column" style="gap: 20px 0px;">
+                        <div id="energy-flow" class="p-2 border border-secondary"></div>
+                        <div id="loss-mapping" class="p-2 border border-secondary"></div>
+                    </div>
+
+                    <div class="observatory-container d-none">
+                        <div class="observatory-overlay"></div>
+                        <div class="content p-2 d-flex align-items-center position-relative h-100">
+                            <div class="bg-darklight-100 p-3 text-darklight-700">
+                                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                                    quis similique deserunt odit vitae eligendi aspernatur dicta
+                                    nostrum veniam molestias itaque totam possimus nemo accusamus
+                                    debitis voluptates in reprehenderit quam?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -505,12 +522,12 @@ require(APPPATH . 'views/filter.php');
                     <h2 class="text-primary-800">Energy Injected, Transmitted & Banked Quantum</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
-                <div class="card-body d-flex">
-                    <div class="d-flex flex-column flex-grow-1">
-                        <div class="">Energy Injected</div>
-                        <div class="">Energy injected in CTU networ</div>
+                <div class="card-body row d-flex">
+                    <div class="d-flex col-7 flex-column flex-grow-1" style="gap: 20px 0;">
+                        <div class="p-2 border border-secondary" id="energy-injected">Energy Injected</div>
+                        <div class="p-2 border border-secondary" id="energy-injected-in-ctu">Energy injected in CTU network</div>
                     </div>
-                    <div class="">Energy Banked</div>
+                    <div class="col-5 border border-secondary p-2" id="energy-banked">Energy Banked</div>
                 </div>
             </div>
         </div>
@@ -564,22 +581,239 @@ require(APPPATH . 'views/filter.php');
     </div>
 
     <div class="row d-flex justify-content-end" style="gap: 20px 0; margin-top:20px;">
-        <div class="col-6">
+        <div class="col-7">
             <div class="card block-card">
                 <div class="card-header border-bottom">
                     <h2 class="text-primary-800">Assets</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
                 <div class="card-body">
-                    graph here
+                    <div class="" id="energy-assest-graph"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Graph Section -->
-
 <?php require($this->config->item('views') . '/footer.php'); ?>
+<!-- Graph Section -->
+<script>
+    var options1 = {
+        series: [{
+            data: [400, 430, 448]
+        }],
+        chart: {
+            type: 'bar',
+            height: 160
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        xaxis: {
+            categories: ["Solar", "Wind", "Total"],
+        },
+        title: {
+            text: 'Energy at Generation End',
+            align: 'center',
+            floating: true
+        },
+    };
+
+    var options2 = {
+        series: [{
+            data: [400, 430, 448]
+        }],
+        chart: {
+            type: 'bar',
+            height: 160
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+                dataLabels: {
+                    position: 'bottom'
+                },
+            }
+        },
+        dataLabels: {
+            enabled: false,
+
+        },
+        xaxis: {
+            categories: ["Energy Delivered", "Consumer End", "Total Energy Loss"],
+        },
+        title: {
+            text: 'Energy at Consumer End',
+            align: 'center',
+            floating: true
+        },
+    };
+
+    var options3 = {
+        series: [{
+            data: [400, 430, 448]
+        }],
+        chart: {
+            type: 'bar',
+            height: 150
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+                dataLabels: {
+                    position: 'bottom'
+                },
+            }
+        },
+        dataLabels: {
+            enabled: false,
+
+        },
+        xaxis: {
+            categories: ["Solar", "Wind", "Total"],
+        },
+        title: {
+            text: 'Energy Injected',
+            align: 'center',
+            floating: true
+        },
+    };
+
+    var options4 = {
+        series: [{
+            data: [400, 430, 448]
+        }],
+        chart: {
+            type: 'bar',
+            height: 150
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+                dataLabels: {
+                    position: 'bottom'
+                },
+            }
+        },
+        dataLabels: {
+            enabled: false,
+
+        },
+        xaxis: {
+            categories: ["Solar", "Wind", "Total CTU "],
+        },
+        title: {
+            text: 'Energy injected in CTU network',
+            align: 'center',
+            floating: true
+        },
+    };
+
+    var options5 = {
+        series: [{
+            data: [400, 430, 448]
+        }],
+        chart: {
+            type: 'bar',
+            height: 300
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                borderRadiusApplication: 'end',
+                horizontal: false,
+                columnWidth: '25%',
+                dataLabels: {
+                    position: 'bottom'
+                },
+            }
+        },
+        colors:['#33b2df', '#546E7A', '#d4526e'],
+        dataLabels: {
+            enabled: false,
+           
+
+        },
+        xaxis: {
+            categories: ["Solar Banked", "Wind Banked", "Total Banked "],
+        },
+        title: {
+            text: 'Energy Banked',
+            align: 'right',
+            floating: true
+        },
+    };
+
+    var options6 = {
+        series: [{
+            name: 'MW',
+            data: [705.23, 532.34, 173.75]
+        }],
+        chart: {
+            type: 'bar',
+            height: 250
+        },
+        plotOptions: {
+            bar: {
+               horizontal:true,
+               barHeight:'50%',
+               dataLabels:{
+                position:"top"
+               }
+            }
+        },
+        dataLabels: {
+            enabled: false,
+        },
+        xaxis: {
+            categories: ["Injection state", "Drawal State", "Solar/Wind/Hybrid  "],
+        },
+       
+        title: {
+            text: 'Maharashtra → Uttar Pradesh',
+            align: 'center',
+            margin: 10,
+            offsetY: 0,
+            style: {
+                fontSize: '20px',
+                color: '#333'
+            }
+        }
+
+    };
+
+    var chart1 = new ApexCharts(document.getElementById("energy-flow"), options1);
+    chart1.render();
+
+    var chart2 = new ApexCharts(document.getElementById("loss-mapping"), options2);
+    chart2.render();
+
+    var chart3 = new ApexCharts(document.getElementById("energy-injected"), options3);
+    chart3.render();
+
+    var chart4 = new ApexCharts(document.getElementById("energy-injected-in-ctu"), options4);
+    chart4.render();
+
+    var chart5 = new ApexCharts(document.getElementById("energy-banked"), options5);
+    chart5.render();
+
+    var chart6 = new ApexCharts(document.getElementById("energy-assest-graph"), options6);
+    chart6.render();
+</script>
+
+
 
 <script src="<?= base_url() ?>assets/dependence/script.js"></script>

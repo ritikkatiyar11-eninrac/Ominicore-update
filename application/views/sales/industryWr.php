@@ -17,6 +17,10 @@ require(APPPATH . 'views/filter.php');
     grid-template-columns: repeat(5, 1fr);
   }
 
+  ::placeholder{
+    text-align: center;
+  }
+
   .back-input-class {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     font-weight: 600;
