@@ -7,6 +7,9 @@ class OpenAccess extends Default_Controler
     {
         $this->load->view('home');
     }
+    public function overview(){
+        $this->load->view("overview/overview");
+    }
 
     public function commercialNr()
     {

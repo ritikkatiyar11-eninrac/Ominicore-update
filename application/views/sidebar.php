@@ -2,7 +2,7 @@
     <ul class="sidebar-area-container m-0 p-0 list-style-none w-100 pb-5 position-absolute">
         <li class="coltitle py-2"><small>MARKET SIZING</small></li>
         <li class="">
-            <a class="list-menu" href="<?= base_url() ?>market-sizing/overview">
+            <a class="list-menu" href="<?= base_url() ?>overview/overview">
                 <i class="menu-ico icon-enin icon-attractive-index fs-25"></i>
                 <span class="m-title">Overview</span>
             </a>

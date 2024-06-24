@@ -53,6 +53,9 @@ $route['default_controller'] = 'OpenAccess';
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
 
+// overview
+$route['overview/overview'] = 'OpenAccess/overview';
+
 // sales
 $route['sales/commercialNr'] = 'OpenAccess/commercialNr';
 $route['sales/commercialWr'] = 'OpenAccess/commercialWr';
