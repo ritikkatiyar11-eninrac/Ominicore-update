@@ -780,10 +780,10 @@ require(APPPATH . 'views/filter.php');
                                     </div>
                                     <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Solar <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
-                                                <div class="">xx%</div>
-                                                <div class=""></div>
+                                            <span class="lh-1">Solar <br> (icon)</span>
+                                            <div class="rounded-circle overflow-hidden fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">
+                                                <span class="h-100 bg bg-primary-800  w-50 d-flex justify-content-center align-items-center">xx%</span>
+                                                <span class="h-100 bg bg-darklight-300  w-50 d-flex justify-content-center align-items-center"></span>
                                             </div>
                                             <div class="px-3 border rounded">xx</div>
                                         </div>
@@ -791,9 +791,10 @@ require(APPPATH . 'views/filter.php');
                                             +
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Wind <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
-                                                <span class="text-center"> xx%</span>
+                                            <span class="lh-1">Wind <br> (icon)</span>
+                                            <div class="rounded-circle overflow-hidden fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">
+                                                <span class="h-100 bg bg-darklight-300  w-50 d-flex justify-content-center align-items-center"></span>
+                                                <span class="h-100 bg bg-primary-300  w-50 d-flex justify-content-center align-items-center">xx%</span>
                                             </div>
                                             <div class="px-3 border rounded">xx</div>
                                         </div>
@@ -802,25 +803,25 @@ require(APPPATH . 'views/filter.php');
                                 <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
                                     <div class="text-darklight-400">
                                         <h2 class="fs-14">Cross Subsidy Surcharge
-                                            Renewable Energy</h2>
+                                            Conventional Energy</h2>
                                     </div>
                                     <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
                                         <div class="d-flex flex-column gap-1 align-items-center">
                                             <span>Solar <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-primary-500" style="width: 70px; height:70px;">
-                                                <div class=""></div>
+                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
+                                                <div class=" text-white">Value</div>
                                             </div>
-                                            <div class="px-3 border rounded">xx</div>
+
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
                                             +
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
                                             <span>Wind <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
-                                                <span class="text-center"> xx%</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-items-center text-center" style="width: 70px; height:70px;">
+                                                <span class="text-center text-white">unit</span>
                                             </div>
-                                            <div class="px-3 border rounded">xx</div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -828,18 +829,18 @@ require(APPPATH . 'views/filter.php');
 
                         </div>
                         <div class="tab-pane tab-3 fade" id="pills-tab-3" aria-labelledby="pill-tab-3" role="tabpanel">
-                        <div class="row d-flex gap-1 flex-column">
+                            <div class="row d-flex gap-1 flex-column">
                                 <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
                                     <div class="text-darklight-400">
                                         <h2 class="fs-14">Additional Surcharge
-                                        Renewable Energy</h2>
+                                            Renewable Energy</h2>
                                     </div>
                                     <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Solar <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-primary-500 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
-                                                <div class="">xx%</div>
-                                                <div class=""></div>
+                                            <span class="lh-1">Solar <br> (icon)</span>
+                                            <div class="rounded-circle overflow-hidden fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">
+                                                <span class="h-100 bg bg-primary-600  w-50 d-flex justify-content-center align-items-center">xx%</span>
+                                                <span class="h-100 bg bg-darklight-300  w-50 d-flex justify-content-center align-items-center"></span>
                                             </div>
                                             <div class="px-3 border rounded">xx</div>
                                         </div>
@@ -847,9 +848,10 @@ require(APPPATH . 'views/filter.php');
                                             +
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Wind <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center text-center" style="width: 70px; height:70px;">
-                                                <span class="text-center"> xx%</span>
+                                            <span class="lh-1">Wind <br> (icon)</span>
+                                            <div class="rounded-circle overflow-hidden fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">
+                                                <span class="h-100 bg bg-darklight-300  w-50 d-flex justify-content-center align-items-center"></span>
+                                                <span class="h-100 bg bg-primary-300  w-50 d-flex justify-content-center align-items-center">xx%</span>
                                             </div>
                                             <div class="px-3 border rounded">xx</div>
                                         </div>
@@ -858,25 +860,24 @@ require(APPPATH . 'views/filter.php');
                                 <div class="col border border-gray justify-content-center align-items-center  p-1 d-flex w-100">
                                     <div class="text-darklight-400">
                                         <h2 class="fs-14">Additional Surcharge
-                                        Conventional Energy</h2>
+                                            Conventional Energy</h2>
                                     </div>
                                     <div class="d-flex gap-1 justify-content-evenly align-items-center  w-50">
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Solar <br> (icon)</span>
+                                            <span class="lh-1">Solar <br> (icon)</span>
                                             <div class="rounded-circle bg bg-primary-500 d-flex justify-content-evenly align-items-center" style="width: 70px; height:70px;">
-                                                <div class="">Value</div>
+                                                <div class="text-white">Value</div>
                                             </div>
-                                           
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
                                             +
                                         </div>
                                         <div class="d-flex flex-column gap-1 align-items-center">
-                                            <span>Wind <br> (icon)</span>
-                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-item-center" style="width: 70px; height:70px;">
-                                                <div class=""> Unit</div>
+                                            <span class="lh-1">Wind <br> (icon)</span>
+                                            <div class="rounded-circle bg bg-darklight-400 d-flex justify-content-center align-items-center" style="width: 70px; height:70px;">
+                                                <div class="text-white">Unit</div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -888,14 +889,14 @@ require(APPPATH . 'views/filter.php');
                                 <div class="w-50 d-flex flex-column justify-content-center align-items-center gap-2 border">
                                     <div class="w-100 d-flex align-items-center">
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">Solar <br> (icon)</span>
-                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="lh-1">Solar <br> (icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX%</div>
                                             <span class="border px-4 rounded">xx</span>
                                         </div>
                                         <span>+</span>
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">Wind <br>(icon)</span>
-                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 70px; height:70px">XX</div>
+                                            <span class="lh-1">Wind <br>(icon)</span>
+                                            <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-400" style="width: 70px; height:70px">XX%</div>
                                             <span class="border px-4 rounded">xx</span>
                                         </div>
                                     </div>
@@ -906,7 +907,7 @@ require(APPPATH . 'views/filter.php');
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
                                             <span class="fs-14">R/KWh</span>
                                             <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
-                                            <span class="border px-3 rounded">xx</span>
+                                            <span class="border px-3 rounded">%</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
                                             <span class="fs-14">R/KWh</span>
@@ -947,7 +948,7 @@ require(APPPATH . 'views/filter.php');
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane tab-5 fade" id="pills-tab-5" aria-labelledby="pill-tab-5" role="tabpanel">
+                        <div class="tab-pane tab-5 fade position-relative" id="pills-tab-5" aria-labelledby="pill-tab-5" role="tabpanel">
                             <div class="w-100 d-flex gap-2">
 
                                 <div class="w-50 border">
@@ -1078,8 +1079,16 @@ require(APPPATH . 'views/filter.php');
                                 </table>
                             </div>
 
-                            <div class="border border-primary p-2 position-absulate">
-                                <h4>Parallel OA Charges (POC) ( Only applicable When Madhya pradesh or tamil Nadu is selected )</h4>
+
+                            <div class="observatory-container d-none">
+                                <div class="observatory-overlay"></div>
+                                <div class="content p-2 d-flex align-items-center position-relative h-100">
+                                    <div class="bg-darklight-100 p-3 text-darklight-700">
+                                        <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                                        <p class="fw-light fs-14 text-primary-800">Parallel OA Charges (POC) ( Only applicable When Madhya pradesh or tamil Nadu is selected )
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

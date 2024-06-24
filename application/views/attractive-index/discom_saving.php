@@ -175,7 +175,7 @@ require(APPPATH . 'views/filter.php');
   <div class="row" style="gap: 20px 0;">
   <div class="col-8 d-flex flex-column" style="gap: 20px;">
       <div class="card first-card block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Input Selection Pane</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -291,7 +291,7 @@ require(APPPATH . 'views/filter.php');
       </div>
 
       <div class="card h-30 block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Working Input Signals</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
 
@@ -358,7 +358,7 @@ require(APPPATH . 'views/filter.php');
     </div>
     <div class="col-4">
       <div class="card h-100 block-card by-overview-container">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="map-card-title text-primary-800">**</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -528,11 +528,11 @@ require(APPPATH . 'views/filter.php');
     </div>
     <div class="col-md-7">
       <div class="card block-card h-100">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="map-card-title text-primary-800">Energy Flow & Loss Mapping</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
-        <div class="card-body">
+        <div class="card-body p-2">
           <div class="d-flex gap-2 justify-content-start" style="border: 3px solid var(--primary-700);">
             <table class="table table-sm mb-1">
               <thead class=" table-primary">
@@ -550,6 +550,30 @@ require(APPPATH . 'views/filter.php');
               <tbody>
                 <tr>
                   <td style="font-size: 12px;">Uttar Pradesh</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;" class="text-danger">0.73(10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Gujarat</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;">0.73 (10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Rajasthan</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;" class="text-danger">0.73(10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Chhattisgarh</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;">0.73 (10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Gujarat</td>
                   <td style="font-size: 12px;">6.27</td>
                   <td style="font-size: 12px;">6.80</td>
                   <td style="font-size: 12px;">0.73 (10.74%)</td>
@@ -577,6 +601,30 @@ require(APPPATH . 'views/filter.php');
                   <td style="font-size: 12px;">6.80</td>
                   <td style="font-size: 12px;">0.73 (10.74%)</td>
                 </tr>
+                <tr>
+                  <td style="font-size: 12px;">TamilNadu</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;">0.73 (10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Rajasthan</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;" class="text-danger">-0.73(10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Chhattisgarh</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;">0.73 (10.74%)</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 12px;">Gujarat</td>
+                  <td style="font-size: 12px;">6.27</td>
+                  <td style="font-size: 12px;">6.80</td>
+                  <td style="font-size: 12px;" class="text-danger">0.73 (10.74%)</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -589,7 +637,7 @@ require(APPPATH . 'views/filter.php');
   <div class="row" style="gap: 20px 0; margin-top: 20px;">
     <div class="col-md-12">
       <div class="card block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Final Attractive Index Correlation Matrix</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -600,7 +648,7 @@ require(APPPATH . 'views/filter.php');
                 * Notes
               </strong>
             </div>
-            <div class="d-flex w-50 justify-content-end">
+            <div class="d-flex w-75 justify-content-end">
               <small style="font-size: 10px;">Legend 0 to 10 <br>
                 Color Shades
               </small>
