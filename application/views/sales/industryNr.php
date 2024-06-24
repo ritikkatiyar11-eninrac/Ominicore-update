@@ -25,16 +25,15 @@ require(APPPATH . 'views/filter.php');
   .first-card {
     height: 308px;
   }
-
 </style>
 
 <div class="container-fluid">
 
-<!-- input selection section -->
+  <!-- input selection section -->
   <div class="row" style="gap: 20px 0;">
-  <div class="col-8 d-flex flex-column" style="gap: 20px;">
+    <div class="col-8 d-flex flex-column" style="gap: 20px;">
       <div class="card first-card block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Input Selection Pane</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -72,60 +71,60 @@ require(APPPATH . 'views/filter.php');
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Load Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600  w-75 text-center back-input-class " placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill   w-75 text-center back-input-class " placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group   d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Solar CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group   d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Ex-Bus tariff</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Solar</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">QA Connectivity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Wind Power Capacity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Wind CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Connected Power..</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Power Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Energy Banked</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
               </div>
@@ -150,7 +149,7 @@ require(APPPATH . 'views/filter.php');
       </div>
 
       <div class="card h-30 block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Working Input Signals</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
 
@@ -160,7 +159,7 @@ require(APPPATH . 'views/filter.php');
             <div class=" row gap-3">
               <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
                 <span>STU</span>
-                
+
               </div>
               <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>STU</span>
@@ -217,7 +216,7 @@ require(APPPATH . 'views/filter.php');
     </div>
     <div class="col-4">
       <div class="card h-100 block-card by-overview-container">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="map-card-title text-primary-800">NR - Controllers Sales - By Value Calendar Year 2023</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -357,7 +356,7 @@ require(APPPATH . 'views/filter.php');
   <div class="row" style="gap: 20px 0; margin-top:20px;">
     <div class="col">
       <div class="card block-card">
-       
+
         <div class="card-body">
           <table class="table table-bordered">
             <thead>
@@ -425,7 +424,7 @@ require(APPPATH . 'views/filter.php');
     <div class="col-8">
       <!-- graph html section -->
       <div class="card block-card h-100">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Existing OA Potential for Industry Consumers</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -437,7 +436,7 @@ require(APPPATH . 'views/filter.php');
     <!-- map section -->
     <div class="col-4">
       <div class="card h-100 block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Existing OA Potential for Industry Consumers</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -570,7 +569,7 @@ require(APPPATH . 'views/filter.php');
       </div>
     </div>
   </div>
-<!-- carusol section -->
+  <!-- carusol section -->
   <div class="row" style="gap: 20px 0; margin-top:20px;">
     <div class="col-md-12">
       <div class="card h-100 card h-100 block-card">

@@ -72,60 +72,60 @@ require(APPPATH . 'views/filter.php');
 
                                 <div class="form-group  d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Load Factor</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600  w-75 text-center back-input-class " placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill   w-75 text-center back-input-class " placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group   d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Solar CUF</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group   d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Ex-Bus tariff</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                                 </div>
 
                                 <div class="form-group  d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Solar</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group  d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">QA Connectivity</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group  d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Wind Power Capacity</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group  d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Wind CUF</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
 
                                 <div class="form-group col d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Connected Power..</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                                 </div>
 
 
                                 <div class="form-group col d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Power Factor</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
 
                                 <div class="form-group col d-flex flex-column align-items-center">
                                     <label for="" class="fs-14">Energy Banked</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                                 <div class="form-group col d-flex flex-column align-items-center">
                                     <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
-                                    <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                                    <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                                 </div>
 
                             </div>

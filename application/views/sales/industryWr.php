@@ -25,23 +25,22 @@ require(APPPATH . 'views/filter.php');
   .first-card {
     height: 308px;
   }
-
 </style>
 
 <div class="container-fluid">
 
-<!-- input selection section -->
+  <!-- input selection section -->
   <div class="row" style="gap: 20px 0;">
     <div class="col-8 d-flex flex-column" style="gap: 20px;">
       <div class="card first-card block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Input Selection Pane</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
-        <div class="card-body">
+        <div class="card-body position-relative">
           <div class="d-flex flex-column gap-2">
             <div class="input-selection-pane">
-              <div class="input-selection-pane-content" style="gap: 20px 0;">
+              <div class="input-selection-pane-content " style="gap: 20px 0;">
                 <div class="d-flex  flex-column align-items-center justify-content-center">
                   <span class="fs-14">Injection State</span>
                   <div class="injection-level d-flex gap-1">
@@ -72,62 +71,76 @@ require(APPPATH . 'views/filter.php');
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Load Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600  w-75 text-center back-input-class " placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill   w-75 text-center back-input-class " placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group   d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Solar CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group   d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Ex-Bus tariff</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Solar</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">QA Connectivity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Wind Power Capacity</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group  d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Wind CUF</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Connected Power..</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="XXXX" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="XXXX" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Power Factor</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Energy Banked</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
-                  <input type="text" class="form-control form-control-sm rounded-pill text-primary-600 w-75 text-center back-input-class" placeholder="Enter-value" />
+                  <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
+              </div>
+            </div>
+          </div>
+
+          <div class="observatory-container d-none">
+            <div class="observatory-overlay"></div>
+            <div class="content p-2 d-flex align-items-center position-relative h-100">
+              <div class="bg-darklight-100 p-3 text-darklight-700">
+                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                  quis similique deserunt odit vitae eligendi aspernatur dicta
+                  nostrum veniam molestias itaque totam possimus nemo accusamus
+                  debitis voluptates in reprehenderit quam?
+                </p>
               </div>
             </div>
           </div>
@@ -136,49 +149,63 @@ require(APPPATH . 'views/filter.php');
       </div>
 
       <div class="card h-30 block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Working Input Signals</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
 
         </div>
-        <div class="card-body">
-          <div class="working-input-signal">
-            <div class="row gap-1">
-              <div class="d-flex col bg bg-success text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+        <div class="card-body position-relative">
+          <div class="working-input-signal d-flex flex-column align-items-center gap-2">
+            <div class=" row gap-3">
+              <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
                 <span>STU</span>
                 
               </div>
-              <div class="d-flex bg col bg-success text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+              <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>STU</span>
               </div>
-              <div class="d-flex col bg bg-success text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
-              <div class="d-flex col bg bg-danger text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
-                <span>CTU</span>
-              </div>
-
-              <div class="d-flex col bg bg-success text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
 
-              <div class="d-flex col bg bg-danger text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
 
-              <div class="d-flex col bg bg-success text-white py-1 px-2 rounded-pill justify-content-center align-items-center">
+              <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
+                <span>CTU</span>
+              </div>
+
+              <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
 
             </div>
-            <div class="d-flex gap-2 justify-content-center align-items-center mt-1">
+            <div class="d-flex gap-4 justify-content-center align-items-center mt-1">
               <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
                 <div class="bg bg-success selected-state-box" style="width: 10px; height:10px;"></div>
-                <p>Applicabale for the selected state</p>
+                <p class="mb-0">Applicabale for the selected state</p>
               </div>
               <div class="fs-14 d-flex gap-1 line-height-100 justify-content-center align-items-baseline">
                 <div class="bg bg-danger selected-state-box" style="width: 10px; height:10px;"></div>
-                <p>Not-applicabale for the selected state</p>
+                <p class="mb-0">Not-applicabale for the selected state</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="observatory-container d-none">
+            <div class="observatory-overlay"></div>
+            <div class="content p-2 d-flex align-items-center position-relative h-100">
+              <div class="bg-darklight-100 p-3 text-darklight-700">
+                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                  quis similique deserunt odit vitae eligendi aspernatur dicta
+                  nostrum veniam molestias itaque totam possimus nemo accusamus
+                  debitis voluptates in reprehenderit quam?
+                </p>
               </div>
             </div>
           </div>
@@ -189,7 +216,7 @@ require(APPPATH . 'views/filter.php');
     </div>
     <div class="col-4">
       <div class="card h-100 block-card by-overview-container">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="map-card-title text-primary-800">WR - Controllers Sales - By Value Calendar Year 2023</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -329,7 +356,7 @@ require(APPPATH . 'views/filter.php');
   <div class="row" style="gap: 20px 0; margin-top:20px;">
     <div class="col">
       <div class="card block-card">
-       
+
         <div class="card-body">
           <table class="table table-bordered">
             <thead>
@@ -397,19 +424,32 @@ require(APPPATH . 'views/filter.php');
     <div class="col-8">
       <!-- graph html section -->
       <div class="card block-card h-100">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Existing OA Potential for Industry Consumers</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
-        <div class="card-body">
+        <div class="card-body position-relative">
           <div id="chart"></div>
+          <div class="observatory-container d-none">
+            <div class="observatory-overlay"></div>
+            <div class="content p-2 d-flex align-items-center position-relative h-100">
+              <div class="bg-darklight-100 p-3 text-darklight-700">
+                <div class="fw-bold fs-18 text-primary-800 mb-2">Observatory</div>
+                <p class="fw-light fs-14 text-primary-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                  quis similique deserunt odit vitae eligendi aspernatur dicta
+                  nostrum veniam molestias itaque totam possimus nemo accusamus
+                  debitis voluptates in reprehenderit quam?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- map section -->
     <div class="col-4">
       <div class="card h-100 block-card">
-        <div class="card-header border-bottom">
+        <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Existing OA Potential for Industry Consumers</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
         </div>
@@ -542,7 +582,7 @@ require(APPPATH . 'views/filter.php');
       </div>
     </div>
   </div>
-<!-- carusol section -->
+  <!-- carusol section -->
   <div class="row" style="gap: 20px 0; margin-top:20px;">
     <div class="col-md-12">
       <div class="card h-100 card h-100 block-card">
