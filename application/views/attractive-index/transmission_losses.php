@@ -513,17 +513,17 @@ require(APPPATH . 'views/filter.php');
                                 <div class="w-50 border p-1">
                                     <div class="row gap-2">
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                            <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                            <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                            <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>

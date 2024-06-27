@@ -639,19 +639,19 @@ require(APPPATH . 'views/filter.php');
                 <div class="card-body">
                     <ul class="nav nav-pills mb-3 list-style-none d-flex align-items-center text-center justify-content-between" id="pills-tab" role="tablist">
                         <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
-                            <div id="pill-tab-1" data-bs-toggle="pill" data-bs-target="#pills-tab-1" role="tab" aria-selected="false" aria-controls="tab-1-pill" class="col nav-link border-right active py-1">tab 1</div>
+                            <div id="pill-tab-1" data-bs-toggle="pill" data-bs-target="#pills-tab-1" role="tab" aria-selected="false" aria-controls="pills-tab-1" class="col nav-link border-right active py-1">tab 1</div>
                         </li>
                         <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
-                            <div id="pill-tab-2" data-bs-toggle="pill" data-bs-target="#pills-tab-2" role="tab" aria-selected="false" aria-controls="tab-2-pill" class="col nav-link  border-right py-1">tab 2</div>
+                            <div id="pill-tab-2" data-bs-toggle="pill" data-bs-target="#pills-tab-2" role="tab" aria-selected="false" aria-controls="pills-tab-2" class="col nav-link  border-right py-1">tab 2</div>
                         </li>
                         <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
-                            <div id="pill-tab-3" data-bs-toggle="pill" data-bs-target="#pills-tab-3" role="tab" aria-selected="false" aria-controls="tab-3-pill" class="col nav-link  border-right">tab 3</div>
+                            <div id="pill-tab-3" data-bs-toggle="pill" data-bs-target="#pills-tab-3" role="tab" aria-selected="false" aria-controls="pills-tab-3" class="col nav-link  border-right">tab 3</div>
                         </li>
                         <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
-                            <div id="pill-tab-4" data-bs-toggle="pill" data-bs-target="#pills-tab-4" role="tab" aria-selected="false" aria-controls="tab-4-pill" class="col nav-link border-right  py-1">tab 4</div>
+                            <div id="pill-tab-4" data-bs-toggle="pill" data-bs-target="#pills-tab-4" role="tab" aria-selected="false" aria-controls="pills-tab-4" class="col nav-link border-right">tab 4</div>
                         </li>
                         <li class="nav-item" style="width: 20%; cursor: pointer;" role="presentation">
-                            <div id="pill-tab-5" data-bs-toggle="pill" data-bs-target="#pills-tab-5" role="tab" aria-selected="false" aria-controls="tab-5-pill" class="col nav-link border-right py-1">tab 5</div>
+                            <div id="pill-tab-5" data-bs-toggle="pill" data-bs-target="#pills-tab-5" role="tab" aria-selected="false" aria-controls="pills-tab-5" class="col nav-link border-right py-1">tab 5</div>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -882,7 +882,6 @@ require(APPPATH . 'views/filter.php');
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane tab-4 fade" id="pills-tab-4" aria-labelledby="pill-tab-4" role="tabpanel">
                             <div class="w-100 d-flex gap-2">
@@ -905,17 +904,17 @@ require(APPPATH . 'views/filter.php');
                                 <div class="w-50 border p-1">
                                     <div class="row gap-2">
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">%</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
@@ -925,7 +924,7 @@ require(APPPATH . 'views/filter.php');
                                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
                                 </div>
                             </div>
-                            <div class="row w-100 mt-2 d-flex justify-content-between align-items-center py-2 border border-gray gap-2">
+                            <div class="w-100 mt-2 d-flex justify-content-between align-items-center py-2 border border-gray gap-2">
                                 <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
                                     <span class="fs-14">Electricity Duty</span>
                                     <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
@@ -950,21 +949,20 @@ require(APPPATH . 'views/filter.php');
                         </div>
                         <div class="tab-pane tab-5 fade position-relative" id="pills-tab-5" aria-labelledby="pill-tab-5" role="tabpanel">
                             <div class="w-100 d-flex gap-2">
-
                                 <div class="w-50 border">
                                     <div class="row gap-2">
                                         <div class="col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle fs-14 text-center d-flex justify-content-center align-items-center text-white bg-primary-600" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 p-2 bg-primary-500" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>
                                         <div class=" col d-flex flex-column justify-content-center align-items-center gap-1">
-                                            <span class="fs-14">R/KWh</span>
+                                             <span class="fs-14">&#8377;/KWh</span>
                                             <div class="rounded-circle text-center d-flex justify-content-center align-items-center text-white fs-14 bg-primary-400" style="width: 50px; height:50px">XX</div>
                                             <span class="border px-3 rounded">xx</span>
                                         </div>

@@ -120,7 +120,6 @@ require(APPPATH . 'views/filter.php');
                   <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
 
-
                 <div class="form-group col d-flex flex-column align-items-center">
                   <label for="" class="fs-14">Energy Banked</label>
                   <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
@@ -130,11 +129,9 @@ require(APPPATH . 'views/filter.php');
                   <label for="" class="fs-14 text-nowrap">Reduction in Connected</label>
                   <input type="text" class="form-control form-control-sm rounded-pill  w-75 text-center back-input-class" placeholder="Enter-value" />
                 </div>
-
               </div>
             </div>
           </div>
-
           <div class="observatory-container d-none">
             <div class="observatory-overlay"></div>
             <div class="content p-2 d-flex align-items-center position-relative h-100">
@@ -149,21 +146,17 @@ require(APPPATH . 'views/filter.php');
             </div>
           </div>
         </div>
-
       </div>
-
       <div class="card h-30 block-card">
         <div class="card-header border-bottom border-secondary">
           <h2 class="text-primary-800">Working Input Signals</h2>
           <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
-
         </div>
         <div class="card-body position-relative">
           <div class="working-input-signal d-flex flex-column align-items-center gap-2">
             <div class=" row gap-3">
               <div class="d-flex col  bg bg-success text-white py-1 px-3 rounded-pill justify-content-center align-items-center">
-                <span>STU</span>
-                
+                <span>STU</span> 
               </div>
               <div class="d-flex col bg py-1 px-3 bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>STU</span>
@@ -174,7 +167,6 @@ require(APPPATH . 'views/filter.php');
               <div class="d-flex col py-1 px-3 bg bg-danger text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
-
               <div class="d-flex col py-1 px-3 bg bg-success text-white  rounded-pill justify-content-center align-items-center">
                 <span>CTU</span>
               </div>
@@ -214,9 +206,7 @@ require(APPPATH . 'views/filter.php');
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
     <div class="col-4">
       <div class="card h-100 block-card by-overview-container">
@@ -351,7 +341,6 @@ require(APPPATH . 'views/filter.php');
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -637,6 +626,7 @@ require(APPPATH . 'views/filter.php');
 <!-- Graph Section -->
 
 <?php require($this->config->item('views') . '/footer.php'); ?>
+
 <script>
   var options = {
     series: [{
@@ -666,4 +656,5 @@ require(APPPATH . 'views/filter.php');
   var chart = new ApexCharts(document.querySelector("#chart"), options);
   chart.render();
 </script>
+
 <script src="<?= base_url() ?>assets/dependence/script.js"></script>
