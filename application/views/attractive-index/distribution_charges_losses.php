@@ -176,7 +176,7 @@ require(APPPATH . 'views/filter.php');
     <div class="row" style="gap: 20px 0;">
         <div class="col-8 d-flex flex-column" style="gap: 20px;">
             <div class="card first-card block-card">
-                <div class="card-header border-bottom">
+                <div class="card-header border-bottom border-secondary">
                     <h2 class="text-primary-800">Input Selection Pane</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
@@ -292,7 +292,7 @@ require(APPPATH . 'views/filter.php');
             </div>
 
             <div class="card h-30 block-card">
-                <div class="card-header border-bottom">
+                <div class="card-header border-bottom border-secondary">
                     <h2 class="text-primary-800">Working Input Signals</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
 
@@ -359,7 +359,7 @@ require(APPPATH . 'views/filter.php');
         </div>
         <div class="col-4">
             <div class="card h-100 block-card by-overview-container">
-                <div class="card-header border-bottom">
+                <div class="card-header border-bottom border-secondary">
                     <h2 class="map-card-title text-primary-800">**</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
@@ -498,7 +498,7 @@ require(APPPATH . 'views/filter.php');
     <div class="row" style="margin-top: 20px;">
         <div class="col-md-5">
             <div class="card block-card h-100">
-                <div class="card-header border-bottom border-secondary">
+                <div class="card-header border-bottom border-secondary border-secondary">
                     <h2 class="map-card-title text-primary-800">Distribution Charges Analysis Mapping</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
@@ -632,7 +632,7 @@ require(APPPATH . 'views/filter.php');
         </div>
         <div class="col-md-7">
             <div class="card block-card h-100">
-                <div class="card-header border-bottom">
+                <div class="card-header border-bottom border-secondary">
                     <h2 class="map-card-title text-primary-800">Distribution Charges Analysis</h2>
                     <i class="icofont-plus observatory-btn" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Observatory" data-bs-original-title="Observatory"></i>
                 </div>
