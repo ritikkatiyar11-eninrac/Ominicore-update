@@ -57,4 +57,5 @@ class Default_Controler extends CI_Controller
             return 0;
         }
     }
+
 }

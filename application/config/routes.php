@@ -49,30 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'OpenAccess';
+$route['default_controller'] = 'Omnicore';
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
-
-// overview
-$route['overview/overview'] = 'OpenAccess/overview';
-
-// sales
-$route['sales/commercialNr'] = 'OpenAccess/commercialNr';
-$route['sales/commercialWr'] = 'OpenAccess/commercialWr';
-$route['sales/commercialSr'] = 'OpenAccess/commercialSr';
-$route['sales/commercialEr'] = 'OpenAccess/commercialEr';
-$route['sales/industryNr'] = "OpenAccess/industryNr";
-$route['sales/industrySr'] = "OpenAccess/industrySr";
-$route['sales/industryWr'] = "OpenAccess/industryWr";
-$route['sales/industryEr'] = "OpenAccess/industryEr";
-$route['sales/industryAllindia'] = "OpenAccess/industryAllindia";
-
-// cluster Analysis
-$route["cluster-analysis"] = "OpenAccess/clusterAnalysis";
-
-// attractive Index
-$route["attractive-index/energy_loss_estimation"] = "OpenAccess/energy_loss_estimation";
-$route['attractive-index/discom_saving'] = "OpenAccess/discom_saving";
-$route['attractive-index/transmission_losses'] = "OpenAccess/transmission_losses";
-$route['attractive-index/distribution_charges_losses'] = "OpenAccess/distribution_charges_losses";
 
