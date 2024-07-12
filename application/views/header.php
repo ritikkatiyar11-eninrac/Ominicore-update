@@ -15,17 +15,22 @@
         <header>
             <div class="container">
                 <div class="d-flex justify-content-between">
-                <div class="logo">
-                    <img src="" alt="logo">
-                </div>
-                <ul></ul>
-                <div class="d-flex">
-                    <div class="subscriptions py-2 px-3 border cursor-pointer">subscriptions</div>
-                    <div class="NewsLetter py-2 px-3 border cursor-pointer">NewsLetter</div>
-                </div>
+                    <div class="logo">
+                        <img src="" alt="logo">
+                    </div>
+                    <ul></ul>
+                    <ul class="d-flex">
+                        <li class="subscriptions py-2 px-3 border cursor-pointer">
+                            <a href="" target="_blank" rel="noopener noreferrer" style="border-width:1px;border-style:solid;padding:13px 37px;">subscriptions</a>
+                        </li>
+                        <li class="NewsLetter py-2 px-3 border cursor-pointer">
+                            <a href="" target="_blank" rel="noopener noreferrer" style="border-width:1px;border-style:solid;padding:13px 37px;">NewsLetter</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
     </div>
 </body>
+
 </html>
