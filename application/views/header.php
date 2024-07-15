@@ -115,6 +115,15 @@
                                         <button class="fs-14 bn-subfilter border-0 " data-slug="centralothers" data-parent="1" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
                                     </li>
                                 </ul>
+                                <!-- second data group state -->
+                                <ul class="d-flex flex-wrap list-style-none" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                        <button class="fs-14 bn-subfilter border-0" data-slug="state" data-parent="2" data-title="cerc" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">CERC</button>
+                                    </li>
+                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                        <button class="fs-14 bn-subfilter border-0 " data-slug="state" data-parent="2" data-title="mop" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOP</button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
