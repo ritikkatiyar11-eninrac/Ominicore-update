@@ -7,6 +7,11 @@
     <title>header</title>
     <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
+    <style>
+        /* div[data-category] {
+            display: none;
+        } */
+    </style>
 </head>
 
 <body>
@@ -89,147 +94,165 @@
                         </div>
                         <div class="bn-subfilter-tabs-inner">
                             <div class="bn-subfilter-tabs">
-                                <ul class="d-flex flex-wrap list-style-none" data-category="central" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="central-cerc" data-parent="1" data-title="cerc" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">CERC</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="central-mop" data-parent="1" data-title="mop" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOP</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="central-mnre" data-parent="1" data-title="mnre" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MNRE</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="central-mof" data-parent="1" data-title="mof" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOF</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="central-moc" data-parent="1" data-title="moc" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOC</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="central-aptel" data-parent="1" data-title="aptel" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">APTEL</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="central-supremecourt" data-parent="1" data-title="supreme court" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Supreme Court</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="central-others" data-parent="1" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="central">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="central-cerc" data-parent="1" data-title="cerc" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">CERC</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="central-mop" data-parent="1" data-title="mop" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOP</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="central-mnre" data-parent="1" data-title="mnre" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MNRE</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="central-mof" data-parent="1" data-title="mof" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOF</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="central-moc" data-parent="1" data-title="moc" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">MOC</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="central-aptel" data-parent="1" data-title="aptel" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">APTEL</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="central-supremecourt" data-parent="1" data-title="supreme court" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Supreme Court</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="central-others" data-parent="1" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- second data group state -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="state" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="state-gujrat" data-parent="2" data-title="Gujrat" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Gujrat</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="state-maharashtra" data-parent="2" data-title="maharashtra" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Maharashtra</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="state-rajasthan" data-parent="2" data-title="rajsthan" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Rajsthan</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="state-panjab" data-parent="2" data-title="panjab" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Panjab</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="state-others" data-parent="2" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="state">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="state-gujrat" data-parent="2" data-title="Gujrat" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Gujrat</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="state-maharashtra" data-parent="2" data-title="maharashtra" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Maharashtra</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="state-rajasthan" data-parent="2" data-title="rajsthan" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Rajsthan</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="state-panjab" data-parent="2" data-title="panjab" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Panjab</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="state-others" data-parent="2" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- third data group generation -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="generation" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="generation-thermal" data-parent="3" data-title="thermal" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Thermal</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="generation-solar" data-parent="3" data-title="solar" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Solar</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="generation-wind" data-parent="3" data-title="wind" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Wind</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="generation-biomass" data-parent="3" data-title="biomass" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Biomass</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="generation-shb" data-parent="3" data-title="shb" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">SHB</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="generation-bess" data-parent="3" data-title="bess" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">BESS</button>
-                                    </li>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="generation">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="generation-thermal" data-parent="3" data-title="thermal" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Thermal</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="generation-solar" data-parent="3" data-title="solar" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Solar</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="generation-wind" data-parent="3" data-title="wind" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Wind</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="generation-biomass" data-parent="3" data-title="biomass" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Biomass</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="generation-shb" data-parent="3" data-title="shb" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">SHB</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="generation-bess" data-parent="3" data-title="bess" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">BESS</button>
+                                        </li>
 
-                                </ul>
+                                    </ul>
+                                </div>
                                 <!-- fourth data group Distribution -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="distribution" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="distribution-tariff" data-parent="4" data-title="tariff" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Tariff</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="distribution-c&iconsumers" data-parent="4" data-title="c&i consumers" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">C&I Consumers</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="distribution">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="distribution-tariff" data-parent="4" data-title="tariff" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Tariff</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="distribution-c&iconsumers" data-parent="4" data-title="c&i consumers" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">C&I Consumers</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- fifth data group transmission -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="transmission" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="transmission-connectivity" data-parent="5" data-title="connectivity" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Connectivity</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-charges" data-parent="5" data-title="charges" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Charges</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-ists" data-parent="5" data-title="ists" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">ISTS</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="transmission-nwautomation" data-parent="5" data-title="nwautomation" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">N/W Automation</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-govtannouncements" data-parent="5" data-title="govtannouncements" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Govt Announcements</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="transmission">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="transmission-connectivity" data-parent="5" data-title="connectivity" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Connectivity</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-charges" data-parent="5" data-title="charges" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Charges</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-ists" data-parent="5" data-title="ists" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">ISTS</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="transmission-nwautomation" data-parent="5" data-title="nwautomation" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">N/W Automation</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="transmission-govtannouncements" data-parent="5" data-title="govtannouncements" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Govt Announcements</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- sixth data group Bid updates -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="bidupdates" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="bidupdates-bidinviteseci&psu" data-parent="6" data-title="bidinviteseci&psu" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Bid invites ( SECI & PSU )</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="bidupdates-banking" data-parent="6" data-title="banking" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Banking</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="bidupdates-others" data-parent="6" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="bidupdates">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="bidupdates-bidinviteseci&psu" data-parent="6" data-title="bidinviteseci&psu" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Bid invites ( SECI & PSU )</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="bidupdates-banking" data-parent="6" data-title="banking" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Banking</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="bidupdates-others" data-parent="6" data-title="others" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Others</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- 8th data group openaccess -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="openaccess" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="openaccess-solar" data-parent="8" data-title="solar" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Solar</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="openaccess-wind" data-parent="8" data-title="wind" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Wind</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="openaccess-hybrid" data-parent="8" data-title="hybrid" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Hybrid</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="openaccess">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="openaccess-solar" data-parent="8" data-title="solar" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Solar</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="openaccess-wind" data-parent="8" data-title="wind" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Wind</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="openaccess-hybrid" data-parent="8" data-title="hybrid" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Hybrid</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- 9th data group new energies -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="newenergies" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="newenergies-bess" data-parent="9" data-title="bess" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">BESS</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="newenergies-hydrogen" data-parent="9" data-title="hydrogen" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Hydrogen</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="newenergies-psph" data-parent="9" data-title="psph" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">PSPH</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="newenergies">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="newenergies-bess" data-parent="9" data-title="bess" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">BESS</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="newenergies-hydrogen" data-parent="9" data-title="hydrogen" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Hydrogen</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="newenergies-psph" data-parent="9" data-title="psph" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">PSPH</button>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <!-- 10th data group solar rooftop -->
-                                <ul class="d-flex flex-wrap list-style-none" data-category="solarrooftop" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0" data-slug="solarrooftop-regulations" data-parent="9" data-title="regulations" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Regulations</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="solarrooftop-policies" data-parent="9" data-title="policies" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Policies</button>
-                                    </li>
-                                    <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
-                                        <button class="fs-14 bn-subfilter border-0 " data-slug="solarrooftop-fit'starrif" data-parent="9" data-title="fit'stariff" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Fit's Tariff</button>
-                                    </li>
-                                </ul>
+                                <div class="bn-subfilter-tabs-wrapper" data-category="solarrooftop">
+                                    <ul class="d-flex flex-wrap list-style-none"  style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0" data-slug="solarrooftop-regulations" data-parent="9" data-title="regulations" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Regulations</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="solarrooftop-policies" data-parent="9" data-title="policies" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Policies</button>
+                                        </li>
+                                        <li class="bn-subfilter-item" style="transform:scale(1); opacity:1;">
+                                            <button class="fs-14 bn-subfilter border-0 " data-slug="solarrooftop-fit'starrif" data-parent="9" data-title="fit'stariff" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Fit's Tariff</button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,12 +264,12 @@
     <script>
         const buttons = document.querySelectorAll("[data-slug]")
         const categories = document.querySelectorAll("[data-category]")
-       
+
         buttons.forEach(item => {
             item.addEventListener("click", function(event) {
                 let btn = item.getAttribute("data-slug")
-                let dataCategory = 
-               console.log(btn.split("-")[0])
+                let dataCategory =
+                    console.log(btn.split("-")[0])
             })
 
         })
