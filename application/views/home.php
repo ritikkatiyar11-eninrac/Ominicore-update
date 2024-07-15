@@ -16,4 +16,3 @@ require(APPPATH . 'views/header.php');
 
 <?php require($this->config->item('views') . '/footer.php'); ?>
 
-<script src="<?= base_url() ?>assets/dependence/script.js"></script>
