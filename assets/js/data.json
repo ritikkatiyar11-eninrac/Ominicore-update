@@ -1,138 +1,141 @@
 [
-    {
-        "central": [
-            {
-                "cerc": [
-                    {
-                        "orders": [],
-                        "petitions": [],
-                        "consultation_on_draft_regulations": [],
-                        "regulations": [],
-                        "policies": [],
-                        "eninrac_comments_on_draft_regulations": [],
-                        "public_hearnings": [],
-                        "ammendments": []
-                    }
-                ],
-                "mop": [
-                    {
-                        "regulations": [],
-                        "policies": [],
-                        "announcements": []
-                    }
-                ],
-                "mnre": [
-                    {
-                        "regulations": [],
-                        "policies": [],
-                        "announcements": []
-                    }
-                ],
-                "mof": [
-                    {
-                        "announcements": []
-                    }
-                ],
-                "moc": [
-                    {
-                        "announcements": []
-                    }
-                ],
-                "aptel": [
-                    {
-                        "landmark_judgements": [],
-                        "interim_orders": [],
-                        "final_orders": []
-                    }
-                ],
-                "supreme_court": [
-                    {
-                        "judgements": [],
-                        "interim_orders": [],
-                        "final_orders": []
-                    }
-                ],
-                "others": []
-            }
+  {
+    "central": [
+      {
+        "cerc": [
+          {
+            "orders": [],
+            "petitions": [],
+            "consultation_on_draft_regulations": [],
+            "regulations": [],
+            "policies": [],
+            "eninrac_comments_on_draft_regulations": [],
+            "public_hearnings": [],
+            "ammendments": []
+          }
         ],
-        "state": [
-            
+        "mop": [
+          {
+            "regulations": [],
+            "policies": [],
+            "announcements": []
+          }
         ],
-        "generation": [
-            {
-                "thermal": [],
-                "solar": [],
-                "wind": [],
-                "shb": [],
-                "biomass": [],
-                "eninrac_comments_on_draft_regulations": [],
-                "bess": [],
-                "srts": []
-            }
+        "mnre": [
+          {
+            "regulations": [],
+            "policies": [],
+            "announcements": []
+          }
         ],
-        "distribution": [
-            {
-                "tariffs": [],
-                "c&i_consumers": []
-            }
+        "mof": [
+          {
+            "announcements": []
+          }
         ],
-        "transmission": [
-            {
-                "connectivity": [],
-                "stu": [],
-                "ctu": [],
-                "charges": [],
-                "govt_announcements": [],
-                "ists": [],
-                "nw": []
-            }
+        "moc": [
+          {
+            "announcements": []
+          }
         ],
-        "bid_updates": [
-            {
-                "bid_invites": [],
-                "ctu": [],
-                "charges": [],
-                "govt_announcements": [],
-                "ists": [],
-                "nw": []
-            }
+        "aptel": [
+          {
+            "landmark_judgements": [],
+            "interim_orders": [],
+            "final_orders": []
+          }
         ],
-        "infographics": [],
-        "openAccess": [
-            {
-                "solar": [
-                    {
-                        "charges": [],
-                        "duties": []
-                    }
-                ],
-                "wind": [
-                    {
-                        "charges": [],
-                        "duties": []
-                    }
-                ],
-                "hybrid": [
-                    {
-                        "charges": [],
-                        "duties": []
-                    }
-                ]
-            }
+        "supreme_court": [
+          {
+            "judgements": [],
+            "interim_orders": [],
+            "final_orders": []
+          }
         ],
-        "new_energies": [
-            {
-                "bess": [],
-                "hydrogen": [],
-                "psph": []
-            }
+        "others": []
+      }
+    ],
+    "state": [
+      {
+        "top_state": [],
+        "others": []
+      }
+    ],
+    "generation": [
+      {
+        "thermal": [],
+        "solar": [],
+        "wind": [],
+        "shb": [],
+        "biomass": [],
+        "eninrac_comments_on_draft_regulations": [],
+        "bess": [],
+        "srts": []
+      }
+    ],
+    "distribution": [
+      {
+        "tariffs": [],
+        "c&i_consumers": []
+      }
+    ],
+    "transmission": [
+      {
+        "connectivity": [],
+        "stu": [],
+        "ctu": [],
+        "charges": [],
+        "govt_announcements": [],
+        "ists": [],
+        "nw": []
+      }
+    ],
+    "bid_updates": [
+      {
+        "bid_invites": [{ "psu": null, "seci": null ,"state":null,}],
+        "ctu": [],
+        "charges": [],
+        "govt_announcements": [],
+        "ists": [],
+        "": []
+      }
+    ],
+    "infographics": [],
+    "openAccess": [
+      {
+        "solar": [
+          {
+            "charges": [],
+            "duties": []
+          }
         ],
-        "solar_rooftop": [
-            {
-                "regulations": [],
-                "policies": [],
-                "fit-tariffs": []
-            }
+        "wind": [
+          {
+            "charges": [],
+            "duties": []
+          }
+        ],
+        "hybrid": [
+          {
+            "charges": [],
+            "duties": []
+          }
         ]
-    }
+      }
+    ],
+    "new_energies": [
+      {
+        "bess": [],
+        "hydrogen": [],
+        "psph": []
+      }
+    ],
+    "solar_rooftop": [
+      {
+        "regulations": [],
+        "policies": [],
+        "fit-tariffs": []
+      }
+    ]
+  }
 ]
