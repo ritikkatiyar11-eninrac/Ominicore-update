@@ -16,15 +16,18 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="logo">
-                        <img src="" alt="logo">
+                        <a href="">
+
+                            <img src="" id="logo-img" alt="logo">
+                        </a>
                     </div>
                     <ul></ul>
-                    <ul class="d-flex">
-                        <li class="subscriptions py-2 px-3 border cursor-pointer">
-                            <a href="" target="_blank" rel="noopener noreferrer" style="border-width:1px;border-style:solid;padding:13px 37px;">subscriptions</a>
+                    <ul class="d-flex list-style-none">
+                        <li class="subscriptions py-2 px-3 border cursor-pointer" style="border-width:1px;border-style:solid;padding:13px 37px;">
+                            <a href="" target="_blank" rel="noopener noreferrer">subscriptions</a>
                         </li>
-                        <li class="NewsLetter py-2 px-3 border cursor-pointer">
-                            <a href="" target="_blank" rel="noopener noreferrer" style="border-width:1px;border-style:solid;padding:13px 37px;">NewsLetter</a>
+                        <li class="NewsLetter py-2 px-3 border cursor-pointer" style="border-width:1px;border-style:solid;padding:13px 37px;">
+                            <a href="" target="_blank" rel="noopener noreferrer" >NewsLetter</a>
                         </li>
                     </ul>
                 </div>
