@@ -1,16 +1,138 @@
 [
     {
-        "central":[
+        "central": [
+            {
+                "cerc": [
+                    {
+                        "orders": [],
+                        "petitions": [],
+                        "consultation_on_draft_regulations": [],
+                        "regulations": [],
+                        "policies": [],
+                        "eninrac_comments_on_draft_regulations": [],
+                        "public_hearnings": [],
+                        "ammendments": []
+                    }
+                ],
+                "mop": [
+                    {
+                        "regulations": [],
+                        "policies": [],
+                        "announcements": []
+                    }
+                ],
+                "mnre": [
+                    {
+                        "regulations": [],
+                        "policies": [],
+                        "announcements": []
+                    }
+                ],
+                "mof": [
+                    {
+                        "announcements": []
+                    }
+                ],
+                "moc": [
+                    {
+                        "announcements": []
+                    }
+                ],
+                "aptel": [
+                    {
+                        "landmark_judgements": [],
+                        "interim_orders": [],
+                        "final_orders": []
+                    }
+                ],
+                "supreme_court": [
+                    {
+                        "judgements": [],
+                        "interim_orders": [],
+                        "final_orders": []
+                    }
+                ],
+                "others": []
+            }
+        ],
+        "state": [
             
         ],
-        "state":[],
-        "generation":[],
-        "distribution":[],
-        "transmission":[],
-        "bid_updates":[],
-        "infographics":[],
-        "openAccess":[],
-        "new_energies":[],
-        "solar_rooftop":[]
+        "generation": [
+            {
+                "thermal": [],
+                "solar": [],
+                "wind": [],
+                "shb": [],
+                "biomass": [],
+                "eninrac_comments_on_draft_regulations": [],
+                "bess": [],
+                "srts": []
+            }
+        ],
+        "distribution": [
+            {
+                "tariffs": [],
+                "c&i_consumers": []
+            }
+        ],
+        "transmission": [
+            {
+                "connectivity": [],
+                "stu": [],
+                "ctu": [],
+                "charges": [],
+                "govt_announcements": [],
+                "ists": [],
+                "nw": []
+            }
+        ],
+        "bid_updates": [
+            {
+                "bid_invites": [],
+                "ctu": [],
+                "charges": [],
+                "govt_announcements": [],
+                "ists": [],
+                "nw": []
+            }
+        ],
+        "infographics": [],
+        "openAccess": [
+            {
+                "solar": [
+                    {
+                        "charges": [],
+                        "duties": []
+                    }
+                ],
+                "wind": [
+                    {
+                        "charges": [],
+                        "duties": []
+                    }
+                ],
+                "hybrid": [
+                    {
+                        "charges": [],
+                        "duties": []
+                    }
+                ]
+            }
+        ],
+        "new_energies": [
+            {
+                "bess": [],
+                "hydrogen": [],
+                "psph": []
+            }
+        ],
+        "solar_rooftop": [
+            {
+                "regulations": [],
+                "policies": [],
+                "fit-tariffs": []
+            }
+        ]
     }
 ]
