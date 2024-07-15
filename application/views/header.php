@@ -14,11 +14,10 @@
 
         <header>
             <div class="container">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between" style="padding: 20px 0 0;">
                     <div class="logo">
                         <a href="">
-
-                            <img src="" id="logo-img" alt="logo">
+                            <img src="<?= base_url() ?>assets/images/logo_dark.png" style="max-width: 200px;" id="logo-img" alt="logo">
                         </a>
                     </div>
                     <ul></ul>
@@ -30,6 +29,12 @@
                             <a href="" target="_blank" rel="noopener noreferrer">NewsLetter</a>
                         </li>
                     </ul>
+                </div>
+                <div class="bn-filter-tabs-mobile"></div>
+                <div class="bn-controls-wrapper">
+                    <div class="bn-filter-tab-wrapper" style="margin-bottom: 15px; padding:15px 0 0;">
+
+                    </div>
                 </div>
             </div>
         </header>
