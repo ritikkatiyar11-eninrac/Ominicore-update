@@ -92,7 +92,7 @@
     ],
     "bid_updates": [
       {
-        "bid_invites": [{ "psu": null, "seci": null ,"state":null,}],
+        "bid_invites": [{ "psu": null, "seci": null, "state": null }],
         "ctu": [],
         "charges": [],
         "govt_announcements": [],

@@ -7,6 +7,10 @@
     <title>header</title>
     <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -241,12 +245,12 @@
     <script>
         const buttons = document.querySelectorAll("[data-slug]")
         const categories = document.querySelectorAll("[data-category]")
-       
+
         buttons.forEach(item => {
             item.addEventListener("click", function(event) {
                 let btn = item.getAttribute("data-slug")
-                let dataCategory = 
-               console.log(btn.split("-")[0])
+                let dataCategory =
+                    console.log(btn.split("-")[0])
             })
 
         })
