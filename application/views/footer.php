@@ -6,7 +6,7 @@
                 <a href="">
                     <img src="<?= base_url() ?>assets/images/logo_white.png" style="max-width: 200px;" alt="LOGO" class="footer-header">
                 </a>
-                <div class="d-flex flex gap-4 social-icons align-self-end  ">
+                <div class="d-flex flex gap-4 social-icons align-self-end ">
                     <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
                         <i class="icofont-linkedin"></i>
                     </a>
