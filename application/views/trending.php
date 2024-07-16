@@ -92,30 +92,44 @@ img {
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-column border-bottom " style="padding-bottom: 0.75rem;">
+                <div class="flex flex-column border-bottom " style="padding-bottom: 0.75rem; font-weight:600;">
                     <a href="">
-                        <img src="<?= base_url() ?>assets/images/news-image.jpg" style="aspect-ratio: 4/3;" alt="">
+                        <img src="<?= base_url() ?>assets/images/blog-1.webp" style="aspect-ratio: 4/3;" alt="">
                     </a>
                     <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="">
-                            <span>Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
+                        <a href="" style="line-height: 94%; letter-spacing: -.64px;">
+                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
                         </a>
                         <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
-                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
+                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex flex-column border-bottom " style="padding-bottom: 0.75rem;">
                     <a href="">
-                        <img src="<?= base_url() ?>assets/images/news-image.jpg" style="aspect-ratio: 4/3;" alt="">
+                        <img src="<?= base_url() ?>assets/images/blog-2.jpg" style="aspect-ratio: 4/3;" alt="">
                     </a>
                     <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="">
-                            <span>Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
+                        <a href=""  style="line-height: 94%; letter-spacing: -.64px;font-weight:600;">
+                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
                         </a>
                         <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
-                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
+                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-column border-bottom " style="padding-bottom: 0.75rem;">
+                    <a href="">
+                        <img src="<?= base_url() ?>assets/images/blog-3.jpg" style="aspect-ratio: 4/3;" alt="">
+                    </a>
+                    <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
+                        <a href=""  style="line-height: 94%; letter-spacing: -.64px; font-weight:600;">
+                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
+                        </a>
+                        <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
+                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
                         </div>
                     </div>
                 </div>
