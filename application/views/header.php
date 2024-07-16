@@ -12,7 +12,8 @@
             transform: scale(1);
             opacity: 1;
         }
-        .showTransition{
+
+        .showTransition {
             transform: translateY(10px);
             opacity: 0;
         }
@@ -404,25 +405,42 @@
 
 
     <script>
-        const buttons = document.querySelectorAll("[data-category]")
-        buttons.forEach(button => {
-            button.addEventListener("click", function() {
-                const category = this.dataset.category;
-                // console.log(category)
-                const subCategory = document.querySelectorAll(".sub-categories")
-                // console.log(subCategory)
-                subCategory.forEach(sub => {
-                    let s = sub.getAttribute("id")
+        const parents = document.querySelectorAll("[data-category]")
+let grand;
+        parents.forEach(parent => {
+            parent.addEventListener("click", function() {
+                const parentSlug = this.dataset.category;
+                // console.log(parentSlug)
+                const childs = document.querySelectorAll(".sub-categories")
+                childs.forEach(child => {
+                    let childId = child.getAttribute("id")
+                    if (childId == parentSlug) {
+                        child.style.display = "block";
+                        const grandChilds = document.querySelectorAll("[data-item]")
+                        // console.log(grandChilds)
+                        grandChilds.forEach(grandChild => {
+                            grandChild.addEventListener("click", function() {
+                                const grandChildSlug = this.dataset.item;
+                                // console.log("slug",grandChildSlug)
+                                const grandChildItems = document.querySelectorAll(".bn-subfilter-subcategory-tabs-wrapper")
+                                grandChildItems.forEach(grandChildItem => {
 
-                    if (s == category) {
-                        sub.style.display = "block"
-                        console.log(sub.childNodes[1].childNodes[1].classList.toggle("toggleClass"))
-                        //    .nodeValue.classList.add("toggleClass")
+                                    const grandChildId = grandChildItem.getAttribute("id")
+                                    if (grandChildId == grandChildSlug && grandChildId.split("-")[0] == parentSlug) {
+                                      grandChildItem.style.display = "block";
+                                    } else {
+                                       
+                                        grandChildItem.style.display = "none";
+                                        
+                                    }
+                                })
+                            })
+                        })
                     } else {
-                        sub.style.display = "none"
+                        child.style.display = "none";
+                        
                     }
                 })
-                // console.log(category, subCategory)
             })
         })
     </script>
