@@ -97,7 +97,7 @@ img {
                         <img src="<?= base_url() ?>assets/images/blog-1.webp" style="aspect-ratio: 4/3;" alt="">
                     </a>
                     <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="" style="line-height: 94%; letter-spacing: -.64px;">
+                        <a href=""  class="text-dark" style="line-height: 94%; letter-spacing: -.64px;">
                             <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
                         </a>
                         <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
@@ -111,8 +111,8 @@ img {
                         <img src="<?= base_url() ?>assets/images/blog-2.jpg" style="aspect-ratio: 4/3;" alt="">
                     </a>
                     <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href=""  style="line-height: 94%; letter-spacing: -.64px;font-weight:600;">
-                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
+                        <a href=""  class="text-dark"  style="line-height: 94%; letter-spacing: -.64px;font-weight:600;">
+                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Candace Parker Coaches Kobe Bryant's 7-Year-Old Daughter Bianka In Adorable Photo</span>
                         </a>
                         <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
                             <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
@@ -125,8 +125,8 @@ img {
                         <img src="<?= base_url() ?>assets/images/blog-3.jpg" style="aspect-ratio: 4/3;" alt="">
                     </a>
                     <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href=""  style="line-height: 94%; letter-spacing: -.64px; font-weight:600;">
-                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
+                        <a href="" class="text-dark"  style="line-height: 94%; letter-spacing: -.64px; font-weight:600;">
+                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Man Discovers Bush Family's Ancestors Enslaved His Ancestors</span>
                         </a>
                         <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
                             <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
