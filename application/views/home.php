@@ -10,6 +10,7 @@ require(APPPATH . 'views/header.php');
 
 ?>
 <?php require($this->config->item('views') . '/trending.php'); ?>
+<?php require($this->config->item('views') . '/remaining.php'); ?>
 
 
 

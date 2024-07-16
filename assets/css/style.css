@@ -206,15 +206,30 @@ a {
 	border-bottom: 1px solid yellow;
 	border-right: 1px solid yellow;
 	background-color: var(--darklight-700);
-	min-width: 80%;
+	min-width: 70%;
 	
 	/* padding: 150px; */
 }
 .email-block{
 	min-width: 100% !important;
 }
-hr{
+.footer  hr{
 	margin-top: 3.5rem !important;
     margin-bottom: 1.5rem !important;
 }
 /*============= Footer Ends ======== */
+
+/*============= remaining ui ======== */
+.news-block{
+	padding: 0 2.5rem !important;
+	
+	
+}
+.news-block a{
+	color: #000000;
+	font-weight:bold !important;
+}
+.news-block+.news-block{
+	margin-top: 20px;
+}
+
