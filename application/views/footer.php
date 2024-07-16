@@ -1,10 +1,10 @@
-<footer class="footer text-center text-white     ">
-    <div class="container-xxl bg-darklight-700 p-4">
+<footer class="footer text-center text-white bg-darklight-700">
+    <div class="container-xxl  p-4">
 
         <div class="row p-4">
             <div class="col-3 d-flex ">
                 <a href="">
-                    <img src="" alt="LOGO" class="footer-header">
+                    <img src="<?= base_url() ?>assets/images/logo_white.png" style="max-width: 200px;" alt="LOGO" class="footer-header">
                 </a>
                 <div class="d-flex flex gap-4 social-icons align-self-end  ">
                     <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
@@ -22,18 +22,21 @@
             <div class="col-4">
                 <div class="row  ">
                     <div class="col">
-                        <a href="">
-                            <img src="" alt="cloumn-2" class="footer-header">
-                        </a>
-                        <ul class="text-uppercase">
-                            <li><a href="">Home and texture</a></li>
-                            <li><a href="">Home and texture</a></li>
-                            <li><a href="">Home and texture</a></li>
-                            <li><a href="">Home and texture</a></li>
-                            <li><a href="">Home and texture</a></li>
-                            <li><a href="">Home and texture</a></li>
+                        <div class="d-flex flex-column">
+                            <a href="">
+                                <img src="" style="max-width: 200px;" alt="cloumn-2" class="footer-header">
+                            </a>
+                            <ul class="text-uppercase">
+                                <li><a href="">Home and texture</a></li>
+                                <li><a href="">Home and texture</a></li>
+                                <li><a href="">Home and texture</a></li>
+                                <li><a href="">Home and texture</a></li>
+                                <li><a href="">Home and texture</a></li>
+                                <li><a href="">Home and texture</a></li>
 
-                        </ul>
+                            </ul>
+                        </div>
+
 
                     </div>
                     <div class="col">
