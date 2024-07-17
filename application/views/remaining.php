@@ -1,6 +1,6 @@
 <section>
     <div class="category container-xxl" style="text-align: justify;">
-        <div class="category-header">
+        <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
             <div class=" ">
                 <a href="" class="category-link d-flex flex"><span>READ ALL</span></p>
@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="row  py-2">
+        <div class="row ">
             <div class="leftmost col-5">
                 <div class="news">
                     <div class="titile-image">
