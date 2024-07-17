@@ -1,12 +1,15 @@
-<footer class="footer text-center text-white bg-darklight-700">
-    <div class="container-xxl  p-4">
+
+
+<footer class="footer text-center text-white bg-darklight-700 overflow-hidden">
+    <div class="container-xxl  p-sm-4">
 
         <div class="row p-4">
-            <div class="col-3 d-flex ">
-                <a href="">
+            <div class="col-lg-4 col-md">
+               <div class="d-flex footer-column-1 flex flex-lg-column justify-content-lg-between justify-content-md-between justify-content-sm-between h-100  align-items-lg-start ">
+               <a href="">
                     <img src="<?= base_url() ?>assets/images/logo_white.png" style="max-width: 200px;" alt="LOGO" class="footer-header">
                 </a>
-                <div class="d-flex flex gap-4 social-icons align-self-end ">
+                <div class="d-flex float-right justify-content-center align-items-center gap-4 social-icons ">
                     <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
                         <i class="icofont-linkedin"></i>
                     </a>
@@ -17,16 +20,17 @@
                         <i class="icofont-brand-nexus"></i>
                     </a>
                 </div>
+               </div>
             </div>
             <!-- block 2 -->
-            <div class="col-4">
-                <div class="row  ">
+            <div class="col-lg-4 col-md">
+                <div class="row">
                     <div class="col">
                         <div class="d-flex flex-column">
                             <a href="">
-                                <img src="" style="max-width: 200px;" alt="cloumn-2" class="footer-header">
+                                Eninrac
                             </a>
-                            <ul class="text-uppercase">
+                            <ul class="text-capitalize">
                                 <li><a href="">Home and texture</a></li>
                                 <li><a href="">Home and texture</a></li>
                                 <li><a href="">Home and texture</a></li>
@@ -36,44 +40,42 @@
 
                             </ul>
                         </div>
-
-
                     </div>
                     <div class="col">
                         <a href="" class="footer-header">
-                            <img src="" alt="column-3" class="footer-header">
+                            EXPLORE
                         </a>
-                        <ul class="text-uppercase">
+                        <ul class="text-capitalize">
                             <li>item-text</li>
                             <li>item-text</li>
                             <li>item-text</li>
                             <li>item-text</li>
                             <li>item-text</li>
                             <li>item-text</li>
-
                         </ul>
                     </div>
                 </div>
-
-
             </div>
 
-            <div class="col-4 d-flex">
-                <a href="">
-                    <img src="" alt="column-4" class="footer-header">
-                </a>
+            <div class="col-lg-4 col-md">
+                <div class="d-flex flex-column justify-content-between w-100 h-100 align-items-start">
+                    <a href="">
+                        SUBSCRIBE
+                    </a>
 
-                <div class="email-block align-self-end">
+                    <div class="email-block align-self-end">
 
-                    <div class="d-flex">
-                        <input type="email" name="" id="" placeholder="Enter e-mail address">
+                        <div class="d-flex">
+                            <input type="email" name="" id="" placeholder="Enter e-mail address">
 
-                        <button class="btn btn-warning" style="border-radius: 0px;">
+                            <button class="btn btn-warning" style="border-radius: 0px;">
 
-                            SEND
-                        </button>
+                                SEND
+                            </button>
+                        </div>
                     </div>
                 </div>
+
 
             </div>
 

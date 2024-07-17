@@ -1,5 +1,4 @@
 <section>
-    
     <div class="category container-xxl" style="text-align: justify;">
         <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
