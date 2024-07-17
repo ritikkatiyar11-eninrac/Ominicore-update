@@ -44,7 +44,7 @@
             <div class="bn-controls-wrapper">
                 <div class="bn-filter-tab-wrapper" style="margin-bottom: 15px; padding:15px 0 0;">
                     <div class="bn-filter-tabs-inner parent-category">
-                        <ul class="list-style-none d-flex justify-content-between" style="padding-left: 0; margin-bottom:0;">
+                        <ul class="list-style-none d-flex justify-content-between flex-wrap" style="padding-left: 0; margin-bottom:0;">
                             <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="central">
                                 <button class="bn-filter w-100  active bn-filter-top fs-14 border-0 fw-bold" data-slug="central" data-parent="false" data-group="1" data-title="Central" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
                                     Central
