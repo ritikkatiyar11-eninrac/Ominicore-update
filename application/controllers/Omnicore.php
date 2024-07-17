@@ -14,5 +14,9 @@ class Omnicore extends Default_Controler
     public function login(){
         $this->load->view('login');
     }
+
+    public function notfound(){
+        $this->load->view('notfound');
+    }
    
 }
