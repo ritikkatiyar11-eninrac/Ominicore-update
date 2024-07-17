@@ -10,5 +10,9 @@ class Omnicore extends Default_Controler
     public function category(){
         $this->load->view('category');
     }
+
+    public function login(){
+        $this->load->view('login');
+    }
    
 }

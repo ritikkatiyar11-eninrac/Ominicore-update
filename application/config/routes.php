@@ -53,3 +53,4 @@ $route['default_controller'] = 'Omnicore';
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
 $route['category'] = 'Omnicore/category';
+$route['login'] = 'Omnicore/login';
