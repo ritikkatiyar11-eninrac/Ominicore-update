@@ -59,19 +59,7 @@
             margin-bottom: .5rem;
         }
 
-        .category-card-item img {
-            -webkit-transition: all .4s ease-in-out;
-            -moz-transition: all .4s ease-in-out;
-            -o-transition: all .4s ease-in-out;
-            -ms-transition: all .4s ease-in-out;
-        }
-
-        .category-card-item img:hover {
-            -webkit-transform: scale(1.6);
-            -moz-transform: scale(1.6);
-            -o-transform: scale(1.6);
-            transform: scale(1.6);
-        }
+       
     </style>
 </head>
 

@@ -12,7 +12,7 @@
         <div class="row ">
             <div class="leftmost col-5">
                 <div class="news">
-                    <div class="titile-image">
+                    <div class="titile-image  overflow-hidden">
                         <img src="https://cdn.sanity.io/images/cxgd3urn/production/3dfadeb93e7dca981f6f0b836b9ef6bc54c5eef9-1518x1138.jpg?rect=0,0,1517,1138&w=640&h=480&fit=crop&auto=format" alt="" width="472" height="354">
                     </div>
                     <div class="keywords">
@@ -40,7 +40,7 @@
                     <!-- section 2/2 -->
                     <!-- news-1 -->
                     <div class="news">
-                        <div class="titile-image">
+                        <div class="titile-image overflow-hidden">
                             <img src="https://cdn.sanity.io/images/cxgd3urn/production/47356dd45cd683fa9ce99965720915791b63ea55-1931x1448.jpg?w=640&h=480&fit=crop&auto=format" alt="" width="208" height="154">
                         </div>
                         <div class="keywords">
@@ -63,7 +63,7 @@
                     </div>
                     <!-- news-2 -->
                     <div class="news">
-                        <div class="titile-image">
+                        <div class="titile-image overflow-hidden">
                             <img src="https://cdn.sanity.io/images/cxgd3urn/production/47356dd45cd683fa9ce99965720915791b63ea55-1931x1448.jpg?w=640&h=480&fit=crop&auto=format" alt="" width="208" height="154">
                         </div>
                         <div class="keywords">
@@ -89,7 +89,7 @@
                     <!-- section 2/2 -->
                     <!-- news-1 -->
                     <div class="news">
-                        <div class="titile-image">
+                        <div class="titile-image overflow-hidden">
                             <img src="https://cdn.sanity.io/images/cxgd3urn/production/47356dd45cd683fa9ce99965720915791b63ea55-1931x1448.jpg?w=640&h=480&fit=crop&auto=format" alt="" width="208" height="154">
                         </div>
                         <div class="keywords">
@@ -112,7 +112,7 @@
                     </div>
                     <!-- news-2 -->
                     <div class="news">
-                        <div class="titile-image">
+                        <div class="titile-image overflow-hidden">
                             <img src="https://cdn.sanity.io/images/cxgd3urn/production/47356dd45cd683fa9ce99965720915791b63ea55-1931x1448.jpg?w=640&h=480&fit=crop&auto=format" alt="" width="208" height="154">
                         </div>
                         <div class="keywords">
