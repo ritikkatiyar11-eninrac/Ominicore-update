@@ -8,7 +8,7 @@
     }
 
 
-    .description {
+    .trending-description {
         font-size: 12px;
         font-style: normal;
         letter-spacing: -.48px;

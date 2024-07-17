@@ -169,7 +169,6 @@ a {
 
 
 /*============= Footer ======== */
-
 .footer .ending{
 	font-size: 12px;
 	opacity: .5;
@@ -211,7 +210,7 @@ a {
 	
 	/* padding: 150px; */
 }
-.email-block{
+.footer .email-block{
 	min-width: 100% !important;
 }
 .footer  hr{
@@ -220,7 +219,23 @@ a {
 }
 /*============= Footer Ends ======== */
 
-/*============= remaining ui ======== */
+/*============= categories======== */
+
+.categgory{
+	padding: 1rem 1rem !important;
+}
+
+.category-link{
+	align-items: center;
+}
+.category-link span{
+	font-size: .75rem;
+	font-weight: 600;
+
+}
+.category-link i{
+		font-size: 24px;
+}
 .news-block{
 	padding: 0 2.5rem !important;
 	
@@ -233,4 +248,5 @@ a {
 .news-block+.news-block{
 	margin-top: 20px;
 }
+
 

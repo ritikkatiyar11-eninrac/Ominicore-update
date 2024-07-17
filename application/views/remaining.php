@@ -1,7 +1,15 @@
 <section>
-    <hr>
+
     <div class="category container-xxl" style="text-align: justify;">
-        <h1>Opinion</h1>
+        <div class="category-header">
+            <h1>Opinion</h1>
+            <div class=" ">
+                <a href="" class="category-link d-flex flex"><span>READ ALL</span></p>
+                    <i class="icofont-long-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
         <div class="row  py-2">
             <div class="leftmost col-5">
                 <div class="news">
@@ -174,30 +182,30 @@
 
                 </div>
                 <div class="news-block">
-                    
+
                     <div class="timestamp">
                         <span>16 July 2024</span>
                     </div>
                     <div class="news-link">
                         <a href="">
                             Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
-            
+
                         </a>
                     </div>
-                    
+
                 </div>
                 <div class="news-block">
-                    
+
                     <div class="timestamp">
                         <span>16 July 2024</span>
                     </div>
                     <div class="news-link">
                         <a href="">
                             Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
-            
+
                         </a>
                     </div>
-                    
+
                 </div>
 
 

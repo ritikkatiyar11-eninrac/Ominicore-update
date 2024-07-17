@@ -23,7 +23,7 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container-xxl">
             <div class="d-flex justify-content-between" style="padding: 20px 0 0;">
                 <div class="logo">
                     <a href="">
