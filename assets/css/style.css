@@ -319,3 +319,29 @@ input:focus {
 .news-block + .news-block {
   margin-top: 20px;
 }
+
+/*============= Login======== */
+.login-header {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.form-section input {
+  width: 500px;
+}
+.form-head h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.form-head p {
+  font-size: 16px;
+  font-weight: 400;
+}
