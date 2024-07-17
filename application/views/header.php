@@ -42,6 +42,9 @@
             </div>
             <div class="bn-filter-tabs-mobile"></div>
             <div class="bn-controls-wrapper">
+                <div class="container-xl">
+
+                
                 <div class="bn-filter-tab-wrapper" style="margin-bottom: 15px; padding:15px 0 0;">
                     <div class="bn-filter-tabs-inner parent-category">
                         <ul class="list-style-none d-flex justify-content-between flex-wrap" style="padding-left: 0; margin-bottom:0;">
@@ -398,6 +401,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

@@ -107,7 +107,7 @@ img {
 </style>
 
 <section class="section trending-section" style="padding-top: 2rem;">
-    <div class="container-xxl">
+    <div class="container-xl">
         <div class="trending-container">
             <div class=" trending-container-right">
                 <div class="border-top border-dark pt-2 trending-news-right" >
