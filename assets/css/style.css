@@ -221,14 +221,20 @@ a {
 
 /*============= categories======== */
 
-.categgory{
-	padding: 1rem 1rem !important;
+.category{
+	padding: 1rem 3rem !important;
+}
+.category-header{
+	padding-top: 1rem;
+	padding-bottom: 2rem;
 }
 
 .category-link{
 	align-items: center;
+	margin-left: 3px;
 }
 .category-link span{
+	padding: 1rem 0;
 	font-size: .75rem;
 	font-weight: 600;
 
@@ -236,8 +242,20 @@ a {
 .category-link i{
 		font-size: 24px;
 }
+
+.leftmost{
+	
+	width: 28rem;
+}
+.middle{
+width: 27rem;
+}
+.rightmost{
+	padding-left: 1rem;
+	width: 16rem;
+}
 .news-block{
-	padding: 0 2.5rem !important;
+	
 	
 	
 }
