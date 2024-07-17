@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+<?php require($this->config->item('views') . '/header.php'); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
+
 </head>
 
 <body>
 
-    <section>
-        <div class="login-header">
-            <a href="">
-                <img src="<?= base_url() ?>assets/images/logo_dark.png" style="max-width: 200px;" alt="LOGO" class="footer-header">
-            </a>
-        </div>
-    </section>
+    
 
     <section class="form-section">
         <div class="form-head text-center">
