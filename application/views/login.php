@@ -52,3 +52,5 @@
 </body>
 
 </html>
+
+<?php require($this->config->item('views') . '/footer.php'); ?>
