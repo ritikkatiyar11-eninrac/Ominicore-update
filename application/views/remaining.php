@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class=" d-flex">
+        <div class="d-flex">
             <div class="leftmost col-5">
                 <div class="news">
                     <div class="titile-image">
