@@ -7,5 +7,8 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('home');
     }
+    public function category(){
+        $this->load->view('category');
+    }
    
 }
