@@ -1,5 +1,5 @@
 <section>
-    <div class="category container-xxl" style="text-align: justify;">
+    <div class="category container-xxl" >
         <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
             <div class=" ">
@@ -19,7 +19,7 @@
                         <a href="">Technology</a>
                     </div>
                     <div class="titile-text">
-                        Where is the big museum blockbuster on AI?
+                        where is the big museum blockbuster on AI?
                     </div>
                     <div class="description">
                         Even the science-themed PST Art exhibitions, opening in Los Angeles in September, avoid the tech revolutions of our day
