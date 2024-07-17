@@ -1,6 +1,6 @@
-<section class="category-section">
-    <div class="category container-xl" >
-        <div class="category-header">
+<section>
+    <div class="category container-xxl" >
+        <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
             <div class=" ">
                 <a href="" class="category-link d-flex flex"><span>READ ALL</span></p>
@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="d-flex">
+        <div class="row ">
             <div class="leftmost col-5">
                 <div class="news">
                     <div class="titile-image">
@@ -21,7 +21,7 @@
                     <div class="titile-text">
                         where is the big museum blockbuster on AI?
                     </div>
-                    <div class="description " style="text-align: justify;">
+                    <div class="description">
                         Even the science-themed PST Art exhibitions, opening in Los Angeles in September, avoid the tech revolutions of our day
                     </div>
                     <div class="timestap 
@@ -36,8 +36,6 @@
                 </div>
 
             </div>
-
-          
             <div class="middle col-4 ">
                 <div class="d-flex gap-3">
                     <!-- section 2/2 -->
@@ -141,6 +139,7 @@
             </div>
 
             <div class="rightmost col-3">
+
                 <div class="news-block">
 
                     <div class="timestamp">
@@ -154,6 +153,61 @@
                     </div>
 
                 </div>
+
+                <div class="news-block">
+
+                    <div class="timestamp">
+                        <span>16 July 2024</span>
+                    </div>
+                    <div class="news-link">
+                        <a href="">
+                            Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="news-block">
+
+                    <div class="timestamp">
+                        <span>16 July 2024</span>
+                    </div>
+                    <div class="news-link">
+                        <a href="">
+                            Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="news-block">
+
+                    <div class="timestamp">
+                        <span>16 July 2024</span>
+                    </div>
+                    <div class="news-link">
+                        <a href="">
+                            Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="news-block">
+
+                    <div class="timestamp">
+                        <span>16 July 2024</span>
+                    </div>
+                    <div class="news-link">
+                        <a href="">
+                            Lorem ipsum, dolor sit ametddd jhgconsectetur adipisicing elit. A numquam modi labore et debitis.
+
+                        </a>
+                    </div>
+
+                </div>
+
+
             </div>
 
         </div>
