@@ -1,5 +1,5 @@
 <section>
-    <div class="category container-xxl" >
+    <div class="category container-xxl">
         <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
             <div class=" ">
@@ -24,8 +24,7 @@
                     <div class="description">
                         Even the science-themed PST Art exhibitions, opening in Los Angeles in September, avoid the tech revolutions of our day
                     </div>
-                    <div class="timestap 
-                    ">
+                    <div class="timestamp">
                         <span class="author">
                             jhon
                         </span>
@@ -54,7 +53,7 @@
                         <div class="description">
                             "In England, we still like to talk about the 'dissolution' of the monasteries as if it was a gentle process. Really, it was an annihilation," says Bendor Grosvenor
                         </div>
-                        <div class="timestap ">
+                        <div class="timestamp ">
 
                             <span class="author">
                                 Bendor Grosvenor
@@ -77,7 +76,7 @@
                         <div class="description">
                             "In England, we still like to talk about the 'dissolution' of the monasteries as if it was a gentle process. Really, it was an annihilation," says Bendor Grosvenor
                         </div>
-                        <div class="timestap ">
+                        <div class="timestamp ">
 
                             <span class="author">
                                 Bendor Grosvenor
@@ -103,7 +102,7 @@
                         <div class="description">
                             "In England, we still like to talk about the 'dissolution' of the monasteries as if it was a gentle process. Really, it was an annihilation," says Bendor Grosvenor
                         </div>
-                        <div class="timestap ">
+                        <div class="timestamp ">
 
                             <span class="author">
                                 Bendor Grosvenor
@@ -126,7 +125,7 @@
                         <div class="description">
                             "In England, we still like to talk about the 'dissolution' of the monasteries as if it was a gentle process. Really, it was an annihilation," says Bendor Grosvenor
                         </div>
-                        <div class="timestap ">
+                        <div class="timestamp ">
 
                             <span class="author">
                                 Bendor Grosvenor
