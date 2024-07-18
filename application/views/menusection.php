@@ -1,4 +1,15 @@
-<div class="container-xxl">
+<style>
+        .toggleClass {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .showTransition {
+            transform: translateY(10px);
+            opacity: 0;
+        }
+    </style>
+<div class="container-xl">
     <div class="bn-filter-tabs-mobile"></div>
     <div class="bn-controls-wrapper">
         <div class="container-xl">
