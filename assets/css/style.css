@@ -238,9 +238,9 @@ input:focus {
   transform: scale(1.3);
 }
 
-.category {
+/* .category {
   padding: 1rem 3rem !important;
-}
+} */
 
 .category .news .description {
   font-size: 0.875rem;
