@@ -7,6 +7,10 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
+
+    .right-img-content img{
+        height:468px;
+    }
     @media screen and (max-width:1024px){
         .trending-container{
             grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -25,6 +29,11 @@
 
     .right-img-content{
         margin-top: 2.75rem;
+        
+    }
+
+    .right-img-content img{
+        height: 220px;
     }
 
     .trending-container-left h2{
@@ -86,9 +95,6 @@
         margin-bottom: 88px;
     }
 
-    
-
-
     .trending-container-left ul li>div .news-image {
         flex: 0 0 105px;
         aspect-ratio: 1/1;
@@ -101,7 +107,6 @@ img {
     max-width: 100%;
         width: 100%;
         object-fit: cover;
-       
         object-position: center top;
     }
 </style>
@@ -119,7 +124,7 @@ img {
                     </div>
                     <div class="-mx-4 mx-0 right-img-content">
                         <a href="">
-                            <img style="height:468px;" src="<?= base_url() ?>assets/images/main-background-img.jpg" alt="">
+                            <img  src="<?= base_url() ?>assets/images/main-background-img.jpg" alt="">
                         </a>
                     </div>
                 </div>

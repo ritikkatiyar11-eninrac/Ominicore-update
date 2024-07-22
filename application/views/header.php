@@ -7,30 +7,20 @@
     <title>header</title>
     <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
-    <style>
-        .toggleClass {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        .showTransition {
-            transform: translateY(10px);
-            opacity: 0;
-        }
-    </style>
+   
 </head>
 
 <body>
 
-    <header>
-        <div class="container-xxl">
-            <div class="d-flex justify-content-between" style="padding: 20px 0 0;">
+    <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px);">
+        <div class="container-xl">
+            <div class="d-flex justify-content-between align-items-center" style="padding: 20px 0 0;">
                 <div class="logo">
                     <a href="">
                         <img src="<?= base_url() ?>assets/images/logo_dark.png" style="max-width: 200px;" id="logo-img" alt="logo">
                     </a>
                 </div>
-                <ul style="margin-bottom: 0;"></ul>
+                <ul style="margin-bottom: 0; padding-left:0;" class="d-flex flex-wrap gap-1 list-style-none" ></ul>
                 <ul class="d-flex list-style-none" style="margin-bottom: 0;">
                     <li class="subscriptions text-center d-flex justify-content-center align-items-center py-2 px-3 border cursor-pointer" style="padding:13px 37px;background-color: black;">
                         <a href="" class="text-white" style="line-height:20px" target="_blank" rel="noopener noreferrer">Subscriptions</a>

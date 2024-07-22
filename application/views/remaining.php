@@ -1,5 +1,5 @@
-<section>
-    <div class="category container-xxl">
+<section class="section remaining-section-content">
+    <div class="category container-xl">
         <div class="category-header d-flex flex-column">
             <h1>Opinion</h1>
             <div class=" ">
@@ -213,5 +213,5 @@
 
 
     </div>
-    <hr>
+    <!-- <hr> -->
 </section>

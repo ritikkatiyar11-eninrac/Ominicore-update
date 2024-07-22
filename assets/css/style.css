@@ -238,9 +238,9 @@ input:focus {
   transform: scale(1.3);
 }
 
-.category {
+/* .category {
   padding: 1rem 3rem !important;
-}
+} */
 
 .category .news .description {
   font-size: 0.875rem;
@@ -326,6 +326,7 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
 }
+
 .form-section {
   display: flex;
   flex-direction: column;
@@ -333,16 +334,36 @@ input:focus {
   align-items: center;
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   margin-top: .5rem;
+=======
+  padding-bottom: 20px; /* Add padding to the bottom */
+>>>>>>> 8741caff6182b613f15fb4181b744adf160688de
 }
+
 .form-section input {
-  width: 500px;
+  width: 100%; /* Make input fields responsive */
+  max-width: 500px; /* Maximum width for larger screens */
 }
+
 .form-head h1 {
   font-size: 18px;
   font-weight: 800;
 }
+
 .form-head p {
   font-size: 16px;
   font-weight: 400;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .form-section {
+    padding: 20px; /* Add padding to the form section */
+    height: auto; /* Allow the height to adjust */
+  }
+
+  .form-section input {
+    width: 100%; /* Full width for input fields */
+  }
 }
