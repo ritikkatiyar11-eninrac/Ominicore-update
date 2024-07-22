@@ -23,7 +23,7 @@
         <div class="mb-2">
             <label for="last-name" class=" ">Last Name</label>
             <input data-testid="last-name-input" id="last-name" name="lname" type="text" required class="form-control ">
-            <div class="d-flex flex py-1 align-items-start gap-2 justify-content-start">
+            <div class="d-flex flex py-3 align-items-start gap-2 justify-content-start" style="line-height: 100%;">
                 <input type="checkbox" name="" id="" style="width: auto;">
                 <label for="">
 

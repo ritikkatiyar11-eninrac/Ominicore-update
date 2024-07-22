@@ -341,6 +341,10 @@ input:focus {
 .form-section input {
   width: 100%; 
 }
+.form-section label{
+  font-weight: 600;
+  font-size: 12px;
+}
 .form-section form{
   max-width: 400px;
 }
