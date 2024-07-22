@@ -17,7 +17,7 @@
 
     
 
-    <section class="form-section">
+    <section class="form-section"  style="    ">
         <div class="form-head text-center">
             <h1 style="">Sign in to your account</h1>
             <div class="d-flex flex gap-2">

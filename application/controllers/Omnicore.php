@@ -19,4 +19,7 @@ class Omnicore extends Default_Controler
         $this->load->view('notfound');
     }
    
+    public function newsletter_signup(){
+        $this->load->view('newsletter_signup');
+    }
 }

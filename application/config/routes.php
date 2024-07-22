@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['category'] = 'Omnicore/category';
 $route['login'] = 'Omnicore/login';
 $route['notfound'] = 'Omnicore/notfound';
+$route['newsletter_signup'] = 'Omnicore/newsletter_signup';
