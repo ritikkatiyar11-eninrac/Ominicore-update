@@ -61,3 +61,4 @@ $route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
 $route['privacy_policy'] = 'Omnicore/privacy_policy';
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
+$route['infographicpage'] = 'Omnicore/infographicpage';
