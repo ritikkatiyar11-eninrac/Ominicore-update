@@ -158,7 +158,10 @@
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="infographics">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="infographics" data-parent="false" data-group="7" data-title="Infographics" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                Infographics
+                                <a class="text-black" href="<?=base_url()  ?>/infographicpage">
+
+                                    Infographics
+                                </a>
                             </button>
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="openaccess">
