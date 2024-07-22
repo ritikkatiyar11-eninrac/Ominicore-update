@@ -22,4 +22,7 @@ class Omnicore extends Default_Controler
     public function newsletter_signup(){
         $this->load->view('newsletter_signup');
     }
+    public function subscribe(){
+        $this->load->view('subscribe');
+    }
 }
