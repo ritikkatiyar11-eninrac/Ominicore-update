@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px);">
+    <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
         <div class="container-xl">
             <div class="d-flex justify-content-between align-items-center" style="padding: 20px 0 0;">
                 <div class="logo">

@@ -56,4 +56,9 @@ $route['category'] = 'Omnicore/category';
 $route['login'] = 'Omnicore/login';
 $route['notfound'] = 'Omnicore/notfound';
 $route['newsletter_signup'] = 'Omnicore/newsletter_signup';
+<<<<<<< HEAD
 $route['subscribe'] = 'Omnicore/subscribe';
+=======
+$route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
+$route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
+>>>>>>> fe574f72f414ba11836d1a601f5933f238537bb1
