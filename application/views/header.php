@@ -2,9 +2,9 @@
     <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
         <div class="container-xl">
             <div class="d-flex justify-content-between align-items-center" style="padding: 20px 0 0;">
-                <div class="logo">
-                    <a href="">
-                        <img src="<?= base_url() ?>assets/images/logo_dark.png" style="max-width: 200px;" id="logo-img" alt="logo">
+                <div class="logo" style="max-width: 200px;" >
+                    <a href="<?= base_url() ?>">
+                        <img class="w-100" src="<?= base_url() ?>assets/images/logo_dark.png"  id="logo-img" alt="logo">
                     </a>
                 </div>
                 <ul style="margin-bottom: 0; padding-left:0;" class="d-flex flex-wrap gap-1 list-style-none" ></ul>
