@@ -1,131 +1,134 @@
 <style>
-        .toggleClass {
-            transform: scale(1);
-            opacity: 1;
-        }
+    .toggleClass {
+        transform: scale(1);
+        opacity: 1;
+    }
 
-        .showTransition {
-            transform: translateY(10px);
-            opacity: 0;
-        }
-        @media (min-width: 941px) {
-    body[data-view=page] .bn-controls-wrapper,body[data-view=single] .bn-controls-wrapper {
-        display:none;
-        height: 0;
+    .showTransition {
+        transform: translateY(10px);
         opacity: 0;
-        overflow: hidden;
-        pointer-events: none;
-        visibility: hidden
     }
-}
+
+    @media (min-width: 941px) {
+
+        body[data-view=page] .bn-controls-wrapper,
+        body[data-view=single] .bn-controls-wrapper {
+            display: none;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            pointer-events: none;
+            visibility: hidden
+        }
+    }
 
 
-.bn-filter-tab-wrapper {
-    display: block;
-    padding: 10px 20px 0
-}
-
-@media (min-width: 501px) {
     .bn-filter-tab-wrapper {
-        padding:20px 20px 0
+        display: block;
+        padding: 10px 20px 0
     }
-}
 
-@media (min-width: 941px) {
-    .bn-filter-tab-wrapper {
-        display:block;
-        margin-bottom: 15px;
-        padding: 15px 0 0;
-        position: static
+    @media (min-width: 501px) {
+        .bn-filter-tab-wrapper {
+            padding: 20px 20px 0
+        }
     }
-}
 
-@media (min-width: 1201px) {
-    .bn-filter-tab-wrapper .bn-filter-tabs ul {
-        display:flex;
-        justify-content: space-between
+    @media (min-width: 941px) {
+        .bn-filter-tab-wrapper {
+            display: block;
+            margin-bottom: 15px;
+            padding: 15px 0 0;
+            position: static
+        }
     }
-}
 
-.bn-filter-tab-wrapper .bn-filter-item {
-    display: inline-block;
-    margin-right: 5px
-}
+    @media (min-width: 1201px) {
+        .bn-filter-tab-wrapper .bn-filter-tabs ul {
+            display: flex;
+            justify-content: space-between
+        }
+    }
 
-@media (min-width: 1201px) {
     .bn-filter-tab-wrapper .bn-filter-item {
-        display:block;
-        flex-grow: 1;
-        justify-content: center;
-        text-align: center
+        display: inline-block;
+        margin-right: 5px
     }
-}
 
-.bn-filter-tab-wrapper .bn-filter-item:last-child {
-    margin-right: 0
-}
+    @media (min-width: 1201px) {
+        .bn-filter-tab-wrapper .bn-filter-item {
+            display: block;
+            flex-grow: 1;
+            justify-content: center;
+            text-align: center
+        }
+    }
 
-.bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-   
-    cursor: pointer;
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    padding: 3px 7px;
-    position: relative;
-    text-transform: capitalize;
-    transition: all .2s ease-out;
-    width: 100%
-}
+    .bn-filter-tab-wrapper .bn-filter-item:last-child {
+        margin-right: 0
+    }
 
-/* .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
+    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding: 3px 7px;
+        position: relative;
+        text-transform: capitalize;
+        transition: all .2s ease-out;
+        width: 100%
+    }
+
+    /* .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
     background: #1e1e21
 } */
 
-.bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
-    content: "\e804";
-    display: none;
-    
-    font-size: 10px;
-    font-weight: 400;
-    margin-left: 5px;
-    transform: translateY(-1px)
-}
+    .bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
+        content: "\e804";
+        display: none;
 
-@media (min-width: 801px) {
-    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-        font-weight:700;
-        line-height: 25px
+        font-size: 10px;
+        font-weight: 400;
+        margin-left: 5px;
+        transform: translateY(-1px)
     }
-}
 
-@media (min-width: 1201px) {
-    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-        padding:8px 12px
+    @media (min-width: 801px) {
+        .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+            font-weight: 700;
+            line-height: 25px
+        }
     }
-}
 
-
-
-@media (min-width: 941px) {
-    .bn-controls-wrapper {
-        background: none;
-        height: auto;
-        padding: 0;
-        position: static;
-        transform: none;
-        width: 100%;
-        z-index: 3;
+    @media (min-width: 1201px) {
+        .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+            padding: 8px 12px
+        }
     }
-}
-    </style>
+
+
+
+    @media (min-width: 941px) {
+        .bn-controls-wrapper {
+            background: none;
+            height: auto;
+            padding: 0;
+            position: static;
+            transform: none;
+            width: 100%;
+            z-index: 3;
+        }
+    }
+</style>
 <div class="container-xl">
     <div class="bn-filter-tabs-mobile"></div>
     <div class="bn-controls-wrapper">
         <div class="container-xl p-0">
             <div class="bn-filter-tab-wrapper" style="margin-bottom: 15px; padding:15px 0 0;">
                 <div class="bn-filter-tabs-inner parent-category">
-                    <ul class="list-style-none d-flex flex-wrap" >
+                    <ul class="list-style-none d-flex flex-wrap">
                         <li class="bn-filter-item bn-filter-top text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="central">
                             <button class="bn-filter w-100  active bn-filter-top fs-14 border-0 fw-bold" data-slug="central" data-parent="false" data-group="1" data-title="Central" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
                                 Central
@@ -158,8 +161,7 @@
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="infographics">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="infographics" data-parent="false" data-group="7" data-title="Infographics" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                <a class="text-black" href="<?=base_url()  ?>/infographicpage">
-
+                                <a class="text-black" href="<?= base_url()  ?>/infographicpage">
                                     Infographics
                                 </a>
                             </button>
@@ -488,42 +490,42 @@
 </div>
 
 <script>
-        const parents = document.querySelectorAll("[data-category]")
-let grand;
-        parents.forEach(parent => {
-            parent.addEventListener("click", function() {
-                const parentSlug = this.dataset.category;
-                // console.log(parentSlug)
-                const childs = document.querySelectorAll(".sub-categories")
-                childs.forEach(child => {
-                    let childId = child.getAttribute("id")
-                    if (childId == parentSlug) {
-                        child.style.display = "block";
-                        const grandChilds = document.querySelectorAll("[data-item]")
-                        // console.log(grandChilds)
-                        grandChilds.forEach(grandChild => {
-                            grandChild.addEventListener("click", function() {
-                                const grandChildSlug = this.dataset.item;
-                                // console.log("slug",grandChildSlug)
-                                const grandChildItems = document.querySelectorAll(".bn-subfilter-subcategory-tabs-wrapper")
-                                grandChildItems.forEach(grandChildItem => {
+    const parents = document.querySelectorAll("[data-category]")
+    let grand;
+    parents.forEach(parent => {
+        parent.addEventListener("click", function() {
+            const parentSlug = this.dataset.category;
+            // console.log(parentSlug)
+            const childs = document.querySelectorAll(".sub-categories")
+            childs.forEach(child => {
+                let childId = child.getAttribute("id")
+                if (childId == parentSlug) {
+                    child.style.display = "block";
+                    const grandChilds = document.querySelectorAll("[data-item]")
+                    // console.log(grandChilds)
+                    grandChilds.forEach(grandChild => {
+                        grandChild.addEventListener("click", function() {
+                            const grandChildSlug = this.dataset.item;
+                            // console.log("slug",grandChildSlug)
+                            const grandChildItems = document.querySelectorAll(".bn-subfilter-subcategory-tabs-wrapper")
+                            grandChildItems.forEach(grandChildItem => {
 
-                                    const grandChildId = grandChildItem.getAttribute("id")
-                                    if (grandChildId == grandChildSlug && grandChildId.split("-")[0] == parentSlug) {
-                                      grandChildItem.style.display = "block";
-                                    } else {
-                                       
-                                        grandChildItem.style.display = "none";
-                                        
-                                    }
-                                })
+                                const grandChildId = grandChildItem.getAttribute("id")
+                                if (grandChildId == grandChildSlug && grandChildId.split("-")[0] == parentSlug) {
+                                    grandChildItem.style.display = "block";
+                                } else {
+
+                                    grandChildItem.style.display = "none";
+
+                                }
                             })
                         })
-                    } else {
-                        child.style.display = "none";
-                        
-                    }
-                })
+                    })
+                } else {
+                    child.style.display = "none";
+
+                }
             })
         })
-    </script>
+    })
+</script>
