@@ -9,6 +9,7 @@
                 </div>
                 <ul style="margin-bottom: 0; padding-left:0;" class="d-flex flex-wrap gap-1 list-style-none" ></ul>
                 <ul class="d-flex list-style-none" style="margin-bottom: 0;">
+                   
                     <li class="subscriptions text-center d-flex justify-content-center align-items-center py-2 px-3 border cursor-pointer" style="padding:13px 37px;background-color: black;">
                         <a href="" class="text-white" style="line-height:20px" target="_blank" rel="noopener noreferrer">Subscriptions</a>
                     </li>

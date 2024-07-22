@@ -8,15 +8,125 @@
             transform: translateY(10px);
             opacity: 0;
         }
+        @media (min-width: 941px) {
+    body[data-view=page] .bn-controls-wrapper,body[data-view=single] .bn-controls-wrapper {
+        display:none;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden
+    }
+}
+
+
+.bn-filter-tab-wrapper {
+    display: block;
+    padding: 10px 20px 0
+}
+
+@media (min-width: 501px) {
+    .bn-filter-tab-wrapper {
+        padding:20px 20px 0
+    }
+}
+
+@media (min-width: 941px) {
+    .bn-filter-tab-wrapper {
+        display:block;
+        margin-bottom: 15px;
+        padding: 15px 0 0;
+        position: static
+    }
+}
+
+@media (min-width: 1201px) {
+    .bn-filter-tab-wrapper .bn-filter-tabs ul {
+        display:flex;
+        justify-content: space-between
+    }
+}
+
+.bn-filter-tab-wrapper .bn-filter-item {
+    display: inline-block;
+    margin-right: 5px
+}
+
+@media (min-width: 1201px) {
+    .bn-filter-tab-wrapper .bn-filter-item {
+        display:block;
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center
+    }
+}
+
+.bn-filter-tab-wrapper .bn-filter-item:last-child {
+    margin-right: 0
+}
+
+.bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+   
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 3px 7px;
+    position: relative;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    width: 100%
+}
+
+/* .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
+    background: #1e1e21
+} */
+
+.bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
+    content: "\e804";
+    display: none;
+    
+    font-size: 10px;
+    font-weight: 400;
+    margin-left: 5px;
+    transform: translateY(-1px)
+}
+
+@media (min-width: 801px) {
+    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+        font-weight:700;
+        line-height: 25px
+    }
+}
+
+@media (min-width: 1201px) {
+    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
+        padding:8px 12px
+    }
+}
+
+
+
+@media (min-width: 941px) {
+    .bn-controls-wrapper {
+        background: none;
+        height: auto;
+        padding: 0;
+        position: static;
+        transform: none;
+        width: 100%;
+        z-index: 3;
+    }
+}
     </style>
 <div class="container-xl">
     <div class="bn-filter-tabs-mobile"></div>
     <div class="bn-controls-wrapper">
-        <div class="container-xl">
+        <div class="container-xl p-0">
             <div class="bn-filter-tab-wrapper" style="margin-bottom: 15px; padding:15px 0 0;">
                 <div class="bn-filter-tabs-inner parent-category">
-                    <ul class="list-style-none d-flex justify-content-between flex-wrap" style="padding-left: 0; margin-bottom:0;">
-                        <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="central">
+                    <ul class="list-style-none d-flex flex-wrap" >
+                        <li class="bn-filter-item bn-filter-top text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="central">
                             <button class="bn-filter w-100  active bn-filter-top fs-14 border-0 fw-bold" data-slug="central" data-parent="false" data-group="1" data-title="Central" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
                                 Central
                             </button>
@@ -43,7 +153,7 @@
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="bidupdates">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="bid updates" data-parent="false" data-group="6" data-title="Bid Updates" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                Bid Updates
+                                BidUpdates
                             </button>
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="infographics">
@@ -53,17 +163,17 @@
                         </li>
                         <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="openaccess">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="openaccess" data-parent="false" data-group="8" data-title="Open Access" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                Open Access
+                                OpenAccess
                             </button>
                         </li>
-                        <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="newenergies">
+                        <li class="bn-filter-item text-center layer-one-category" style="margin-right: 5px;" data-category="newenergies">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="newenergies" data-parent="false" data-group="9" data-title="New Energies" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                New Energies
+                                NewEnergies
                             </button>
                         </li>
-                        <li class="bn-filter-item text-center flex-grow-1 layer-one-category" style="margin-right: 5px;" data-category="solarrooftop">
+                        <li class="bn-filter-item text-center  layer-one-category" style="margin-right: 5px;" data-category="solarrooftop">
                             <button class="bn-filter w-100   bn-filter-top fs-14 border-0 fw-bold" data-slug="solarrooftop" data-parent="false" data-group="10" data-title="Solar Rooftop" style="padding: 8px 12px; margin-bottom:5px; line-height: 25px;">
-                                Solar Rooftop
+                                SolarRooftop
                             </button>
                         </li>
                     </ul>
@@ -260,7 +370,7 @@
                             </ul>
 
                         </div>
-                        <div class="bn-subfilter-subcategory-tabs-wrapper" style="display: none;" id="central-mop">
+                        <div class="bn-subfilter-tabs-wrapper bn-subfilter-subcategory-tabs-wrapper" style="display: none;" id="central-mop">
                             <ul class="d-flex flex-wrap list-style-none" style="margin-bottom: 0; margin-top: 5px; padding-left: 0;">
                                 <li class="bn-subfilter-item">
                                     <button class="fs-14 bn-subfilter border-0 " data-slug="central-mop-regulations" data-parent="1.1" data-title="regulations" data-sub="" style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">Regulations</button>
