@@ -33,4 +33,8 @@ class Omnicore extends Default_Controler
         $this->load->view('detailspage/infodetailspage');
     }
     // newsdetailspage infodetailspage
+
+    public function privacy_policy(){
+        $this->load->view('privacy_policy');
+    }
 }

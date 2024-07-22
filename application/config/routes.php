@@ -59,3 +59,4 @@ $route['newsletter_signup'] = 'Omnicore/newsletter_signup';
 $route['subscribe'] = 'Omnicore/subscribe';
 $route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
+$route['privacy_policy'] = 'Omnicore/privacy_policy';
