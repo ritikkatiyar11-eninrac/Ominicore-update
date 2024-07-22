@@ -136,7 +136,7 @@
                                     <i class="icofont-linkedin"></i><i class="icofont-brand-nexus"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
 
                     </div>
