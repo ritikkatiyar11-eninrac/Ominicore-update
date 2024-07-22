@@ -1,8 +1,5 @@
 <?php require(APPPATH . 'views/header.php') ?>
 <style>
-    body {
-    }
-
     .accord-container {
         max-width: 800px;
         margin: 30px auto;
@@ -23,14 +20,17 @@
         font-size: 1.5rem;
         font-weight: 600;
     }
+
     .accordion-button:focus {
         box-shadow: none !important;
         background-color: white !important;
     }
+
     .accordion-button:not(.collapsed) {
         background-color: white !important;
     }
-    .accordion-button{
+
+    .accordion-button {
         height: 4rem;
     }
 </style>
@@ -43,11 +43,7 @@
                 <p class="py-2 fs-18">Ravi Shekhar</p>
             </div>
             <div class="div">
-
-                <h1 class="">
-
-                    Eninrac Consulting Private Limited
-                </h1>
+                <h1 class="">Eninrac Consulting Private Limited</h1>
             </div>
             <div>
                 <!-- Accordion 1 - Bootstrap Brain Component -->
@@ -76,7 +72,7 @@
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                               <span>Mail us at</span><a href="mailto:connect@eninrac.com "> connect@eninrac.com </a>
+                                                <span>Mail us at</span><a href="mailto:connect@eninrac.com "> connect@eninrac.com </a>
                                             </div>
                                         </div>
                                     </div>
