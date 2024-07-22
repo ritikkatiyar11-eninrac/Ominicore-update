@@ -58,9 +58,6 @@ $route['notfound'] = 'Omnicore/notfound';
 $route['newsletter_signup'] = 'Omnicore/newsletter_signup';
 $route['subscribe'] = 'Omnicore/subscribe';
 $route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
-<<<<<<< HEAD
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
 $route['privacy_policy'] = 'Omnicore/privacy_policy';
-=======
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
->>>>>>> 024017d24b1b123d854b3639572207397b36402b
