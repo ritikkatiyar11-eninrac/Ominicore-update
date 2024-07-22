@@ -1,10 +1,12 @@
 <?php require(APPPATH . 'views/header.php'); ?>
+
+<?php require(APPPATH . 'views/menusection.php'); ?>
 <style>
     
 </style>
 <div class="bn-base">
     <main class="bn-content-area" id="content">
-        <div class="container">
+        <div class="container-xl">
             <div class="bn-grid">
                 <a href="" class="bn-item">
                     <div class="bn-item-inner">

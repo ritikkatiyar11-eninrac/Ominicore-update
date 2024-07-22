@@ -488,8 +488,7 @@ body.bn-working .bn-item,body.bn-working .bn-single {
 
 
 .bn-subfilter {
-  background: #2c2c31;
-  color: #fff;
+
   cursor: pointer;
   display: block;
   font-size: 12px;
@@ -500,7 +499,7 @@ body.bn-working .bn-item,body.bn-working .bn-single {
 }
 
 .bn-subfilter:hover {
-  background: #1e1e21
+ 
 }
 
 .bn-subfilter.bn-subfilter--active {
@@ -514,13 +513,7 @@ body.bn-working .bn-item,body.bn-working .bn-single {
   }
 }
 
-.bn-filter-submit {
-  background: #e7e7e7;
-  color: #2a2a2e;
-  font-weight: 700;
-  margin-top: 10px;
-  width: 100%
-}
+
 
 @media (min-width: 941px) {
   .bn-filter-set-wrapper--search,.bn-filter-set-wrapper--sort,.bn-filter-set-wrapper--sub,.bn-filter-set-wrapper--top,.bn-filter-submit {
@@ -532,14 +525,6 @@ body.bn-working .bn-item,body.bn-working .bn-single {
   display: none
 }
 
-.bn-control-label {
-  color: #999;
-  display: none;
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  text-transform: uppercase
-}
 
 @media (min-height: 601px) {
   .bn-control-label {
@@ -1522,6 +1507,3 @@ html.no-grid .bn-item {
 .bn-item.bn-item-filtered {
   display: none
 }
-
-
-

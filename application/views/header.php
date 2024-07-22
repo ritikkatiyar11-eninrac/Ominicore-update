@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
-    <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
-   
-</head>
-
-<body>
 
     <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
         <div class="container-xl">
@@ -22,6 +9,7 @@
                 </div>
                 <ul style="margin-bottom: 0; padding-left:0;" class="d-flex flex-wrap gap-1 list-style-none" ></ul>
                 <ul class="d-flex list-style-none" style="margin-bottom: 0;">
+                   
                     <li class="subscriptions text-center d-flex justify-content-center align-items-center py-2 px-3 border cursor-pointer" style="padding:13px 37px;background-color: black;">
                         <a href="" class="text-white" style="line-height:20px" target="_blank" rel="noopener noreferrer">Subscriptions</a>
                     </li>
@@ -32,5 +20,4 @@
             </div>
         </div>
     </header>
-</body>
-</html>
+
