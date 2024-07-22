@@ -104,5 +104,4 @@
 
     </div>
 </div>
-<script src="https://unpkg.com/bootstrap@5.2/dist/js/bootstrap.bundle.min.js"></script>
 <?php require(APPPATH . 'views/footer.php') ?>

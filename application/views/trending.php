@@ -7,7 +7,6 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-
     .right-img-content img {
         height: 468px;
     }
