@@ -44,4 +44,7 @@ class Omnicore extends Default_Controler
     public function contact(){
         $this->load->view('contact');
     }
+    public function signup(){
+        $this->load->view('signup');
+    }
 }

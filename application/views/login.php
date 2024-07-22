@@ -17,9 +17,9 @@
 
     
 
-    <section class="form-section"  style="    ">
-        <div class="form-head text-center">
-            <h1 style="">Sign in to your account</h1>
+    <section class="form-section" >
+        <div class="form-head text-center pb-2">
+            <h1 >Sign in to your account</h1>
             <div class="d-flex flex gap-2">
                 <p>Don't have an account?</p>
                 <p>Create your free account</p>
@@ -29,7 +29,7 @@
 
         </div>
         <form action="" method="POST">
-            <input type="hidden" name="_token">
+            <input type="hidden" name="">
             <div class="mb-2">
                 <label for="username" class=" ">Email Address</label>
                 <input data-testid="Email-Address-input" id="username" name="log" type="text" autocomplete="username" placeholder="Email Address" required class="form-control bg-white py-3">

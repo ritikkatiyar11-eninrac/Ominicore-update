@@ -340,7 +340,9 @@ input:focus {
 
 .form-section input {
   width: 100%; 
-  max-width: 500px; 
+}
+.form-section form{
+  max-width: 400px;
 }
 
 .form-head h1 {
