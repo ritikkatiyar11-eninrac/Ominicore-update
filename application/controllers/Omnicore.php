@@ -29,5 +29,8 @@ class Omnicore extends Default_Controler
     public function infodetailspage(){
         $this->load->view('detailspage/infodetailspage');
     }
+    public function infographicpage(){
+        $this->load->view('infographicpage');
+    }
     // newsdetailspage infodetailspage
 }
