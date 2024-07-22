@@ -1,10 +1,17 @@
 <?php require(APPPATH . 'views/header.php') ?>
 <style>
-   
-</style>
-<div class="vant-cust-sec-m-auto width-80">
+    .container {
+        padding: 2rem 2rem;
+        margin: 1rem 1rem;
+    }
 
-    <p>Eninrac Consulting Private Limited, the developer of Omnicore, is committed to protecting your privacy. This Privacy
+    .container h2 {
+        margin: 1rem 0rem;
+    }
+</style>
+<div class="container">
+
+    <p><strong class="fs-28">Eninrac Consulting Private Limited,</strong> the developer of Omnicore, is committed to protecting your privacy. This Privacy
         Policy outlines how we collect, use, disclose, and protect your personal information when you use Omnicore. By accessing
         and using Omnicore, you consent to the terms of this Privacy Policy.</p>
     <h2 class="fs-25">Information We Collect:</h2>

@@ -40,4 +40,8 @@ class Omnicore extends Default_Controler
     public function privacy_policy(){
         $this->load->view('privacy_policy');
     }
+
+    public function contact(){
+        $this->load->view('contact');
+    }
 }
