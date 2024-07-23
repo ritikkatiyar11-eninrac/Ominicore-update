@@ -1,140 +1,23 @@
-<style>
-    .toggleClass {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    .showTransition {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-
-    @media (min-width: 941px) {
-
-        body[data-view=page] .bn-controls-wrapper,
-        body[data-view=single] .bn-controls-wrapper {
-            display: none;
-            height: 0;
-            opacity: 0;
-            overflow: hidden;
-            pointer-events: none;
-            visibility: hidden
-        }
-    }
-
-
-    .bn-filter-tab-wrapper {
-        display: block;
-        padding: 10px 20px 0
-    }
-
-    @media (min-width: 501px) {
-        .bn-filter-tab-wrapper {
-            padding: 20px 20px 0
-        }
-    }
-
-    @media (min-width: 941px) {
-        .bn-filter-tab-wrapper {
-            display: block;
-            margin-bottom: 15px;
-            padding: 15px 0 0;
-            position: static
-        }
-    }
-
-    @media (min-width: 1201px) {
-        .bn-filter-tab-wrapper .bn-filter-tabs ul {
-            display: flex;
-            justify-content: space-between
-        }
-    }
-
-    .bn-filter-tab-wrapper .bn-filter-item {
-        display: inline-block;
-        margin-right: 5px
-    }
-
-    @media (min-width: 1201px) {
-        .bn-filter-tab-wrapper .bn-filter-item {
-            display: block;
-            flex-grow: 1;
-            justify-content: center;
-            text-align: center
-        }
-    }
-
-    .bn-filter-tab-wrapper .bn-filter-item:last-child {
-        margin-right: 0
-    }
-
-    .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-
-        cursor: pointer;
-        display: block;
-        font-size: 14px;
-        margin-bottom: 5px;
-        padding: 3px 7px;
-        position: relative;
-        text-transform: capitalize;
-        transition: all .2s ease-out;
-        width: 100%
-    }
-
-    /* .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
-    background: #1e1e21
-} */
-
-    .bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
-        content: "\e804";
-        display: none;
-
-        font-size: 10px;
-        font-weight: 400;
-        margin-left: 5px;
-        transform: translateY(-1px)
-    }
-
-    @media (min-width: 801px) {
-        .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-            font-weight: 700;
-            line-height: 25px
-        }
-    }
-
-    @media (min-width: 1201px) {
-        .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-            padding: 8px 12px
-        }
-    }
-
-
-
-    @media (min-width: 941px) {
-        .bn-controls-wrapper {
-            background: none;
-            height: auto;
-            padding: 0;
-            position: static;
-            transform: none;
-            width: 100%;
-            z-index: 3;
-        }
-    }
-</style>
+<?php require(APPPATH . 'views/header.php'); ?>
 <div class="container-xl">
     <div class="bn-controls-wrapper">
         <div class="container-xl p-0">
             <div class="bn-filter-tab-wrapper">
                 <div class="bn-filter-tabs-inner">
-                    <ul class="list-style-none d-flex flex-wrap" id="parent-category"></ul>
+                    <div class="bn-filter-tabs">
+                        <ul id="parent-category"></ul>
+                    </div>
                 </div>
                 <div class="bn-subfilter-tabs-inner">
                     <div class="bn-subfilter-tabs">
-                        <ul class="list-style-none d-flex flex-wrap" id="sub-category"></ul>
+                        <ul id="sub-category"></ul>
                     </div>
                 </div>
-
+                <div class="bn-subfilter-tabs-inner">
+                    <div class="bn-subfilter-tabs">
+                        <ul id="grand-category"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -145,31 +28,77 @@
             name: "Central",
             children: [{
                     name: "CERC",
-                    children: ["orders", "petitions", "Consultation on Draft Regulations", "Regulations", "Policies", "Eninrac Comments on Draft Regulations", "Public Hearings", "Ammendments", "MOM"],
+                    children: [{
+                        name: "orders"
+                    }, {
+                        name: "petitions"
+                    }, {
+                        name: "Consultation on Draft Regulations"
+                    }, {
+                        name: "Regulations"
+                    }, {
+                        name: "Policies"
+                    }, {
+                        name: "Eninrac Comments on Draft Regulations"
+                    }, {
+                        name: "Public Hearings"
+                    }, {
+                        name: "Ammendments"
+                    }, {
+                        name: "MOM"
+                    }],
                 },
                 {
                     name: "MOP",
-                    children: ["Regulations", "Policy", "Announcements"],
+                    children: [{
+                        name: "Regulations"
+                    }, {
+                        name: "Policy"
+                    }, {
+                        name: "Announcements"
+                    }],
                 },
                 {
                     name: "MNRE",
-                    children: ["Regulations", "Policy", "Announcements"],
+                    children: [{
+                        name: "Regulations"
+                    }, {
+                        name: "Policy"
+                    }, {
+                        name: "Announcements"
+                    }],
                 },
                 {
                     name: "MOF",
-                    children: ["Announcements"],
+                    children: [{
+                        name: "Announcements"
+                    }],
                 },
                 {
                     name: "MOC",
-                    children: ["Announcements"],
+                    children: [{
+                        name: "Announcements"
+                    }],
                 },
                 {
                     name: "Apellate Tribunal",
-                    children: ["Landmark Judgements", "Interim Orders", "Final Orders"],
+                    children: [{
+                        name: "Landmark Judgements"
+                    }, {
+                        name: "Interim Orders"
+                    }, {
+                        name: "Final Orders"
+                    }],
                 },
                 {
                     name: "Honb'le Supreme Court",
-                    children: ["Landmark Judgements", "Interim Orders", "Final Orders"],
+                    children: [{
+                        name: "Landmark Judgements"
+                    }, {
+                        name: "Interim Orders"
+                    }, {
+                        name: "Final Orders"
+                    }],
                 },
                 {
                     name: "others",
@@ -181,39 +110,57 @@
             name: "State",
             children: [{
                     name: "Gujrat",
-                    children: ["GERC"],
+                    children: [{
+                        name: "GERC"
+                    }],
                 },
                 {
                     name: "maharashtra",
-                    children: ["MERC"],
+                    children: [{
+                        name: "MERC"
+                    }],
                 },
                 {
                     name: "Rajsthan",
-                    children: ["RERC"],
+                    children: [{
+                        name: "RERC"
+                    }],
                 },
                 {
                     name: "Panjab",
-                    children: ["PERC"],
+                    children: [{
+                        name: "PERC"
+                    }],
                 },
                 {
                     name: "Haryana",
-                    children: ["HERC"],
+                    children: [{
+                        name: "HERC"
+                    }],
                 },
                 {
                     name: "Uttarakhand",
-                    children: ["UERC"],
+                    children: [{
+                        name: "UERC"
+                    }],
                 },
                 {
                     name: "Odisa",
-                    children: ["OERC"],
+                    children: [{
+                        name: "OERC"
+                    }],
                 },
                 {
                     name: "Bihar",
-                    children: ["BERC"],
+                    children: [{
+                        name: "BERC"
+                    }],
                 },
                 {
                     name: "Asam",
-                    children: ["AERC"],
+                    children: [{
+                        name: "AERC"
+                    }],
                 },
                 {
                     name: "others",
@@ -421,15 +368,51 @@
             name: "Open Access",
             children: [{
                     name: "Solar",
-                    children: ["Charges", "Duty", "Waivers", "Banking"],
+                    children: [{
+                        name: "Charges",
+                        children: []
+                    }, {
+                        name: "Duty",
+                        children: []
+                    }, {
+                        name: "Waivers",
+                        children: []
+                    }, {
+                        name: "Banking",
+                        children: []
+                    }],
                 },
                 {
                     name: "Wind",
-                    children: ["Charges", "Duty", "Waivers", "Banking"],
+                    children: [{
+                        name: "Charges",
+                        children: []
+                    }, {
+                        name: "Duty",
+                        children: []
+                    }, {
+                        name: "Waivers",
+                        children: []
+                    }, {
+                        name: "Banking",
+                        children: []
+                    }],
                 },
                 {
                     name: "Hybrid",
-                    children: ["Charges", "Duty", "Waivers", "Banking"],
+                    children: [{
+                        name: "Charges",
+                        children: []
+                    }, {
+                        name: "Duty",
+                        children: []
+                    }, {
+                        name: "Waivers",
+                        children: []
+                    }, {
+                        name: "Banking",
+                        children: []
+                    }],
                 },
             ],
         },
@@ -445,10 +428,11 @@
             categoryElement.classList.add("bn-filter-item", "parent");
             categoryElement.innerHTML = `
                 <button class="fs-14
-                bn-filter bn-filter-top bn-filter--active border-0"
-                data-slug=${pCat.name} 
-                data-parent=${idx} data-title=${pCat.name} data-sub=""
-                style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">${pCat.name}</button>`
+                    bn-filter bn-filter-top border-0"
+                    data-slug=${pCat.name} 
+                    data-parent=${idx} data-title=${pCat.name} data-sub=""
+                    style="margin-bottom: 3px; margin-right:3px; padding:5px 8px; transition:all .2s ease-out">${pCat.name}
+                </button>`
             categorytree.appendChild(categoryElement)
 
             // for child
@@ -459,13 +443,71 @@
                 childElement.classList.add("bn-subfilter-item", "child");
                 childElement.setAttribute("style", "transform: scale(1); opacity: 1;")
                 childElement.innerHTML = `
-                <button class="bn-subfilter" data-slug=${ptemp.name.concat(childCat)} data-parent=${pCat.idx} data-title=${childCat.name} data-sub="28">${childCat.name}</button>
+                <button class="bn-subfilter"
+                    data-slug=${ptemp.name.concat(childCat.name)}
+                    data-parent=${pCat.idx} data-title=${childCat.name}
+                    data-sub="28">${childCat.name}
+                </button>
                 `
                 childrenContainer.appendChild(childElement)
+
+                // for grandchildren
+                const grandchildrenContainer = document.getElementById("grand-category")
+                childCat.children.forEach((grandchildCat, grandchildIdx) => {
+                    if (grandchildCat) {
+                        const grandchildElement = document.createElement("li");
+                        grandchildElement.classList.add("bn-subfilter-item", "grandchild");
+                        grandchildElement.setAttribute("style", "transform: scale(1); opacity: 1;");
+
+                        grandchildElement.innerHTML = `
+                            <button 
+                                class="bn-subfilter"
+                                data-slug=${ptemp.name.concat(childCat.name.concat(grandchildCat.name)).trim()}
+                                data-parent=${childIdx} data-title=${grandchildCat.name} 
+                                data-sub="28">${grandchildCat.name}
+                            </button>
+                            `
+                        grandchildrenContainer.appendChild(grandchildElement)
+                    }
+                })
+            })
+        })
+
+        addEventListeners()
+    }
+
+    function addEventListeners() {
+        const parents = document.querySelectorAll(".parent")
+        const childs = document.querySelectorAll(".child")
+        const grandchilds = document.querySelectorAll(".grandchild")
+
+        parents.forEach(parent => {
+            parent.addEventListener("click", function(e) {
+                if (e.target === parent || e.target.tagName === "BUTTON") {
+                    console.log(parent)
+                }
+            })
+        })
+
+        childs.forEach(child => {
+            child.addEventListener("click", function(e) {
+                if (e.target === child || e.target.tagName === "BUTTON") {
+                    console.log(child)
+                }
+            })
+        })
+
+        grandchilds.forEach(grandChild => {
+            grandChild.addEventListener("click", function(e) {
+                if (e.target === grandChild || e.target.tagName === "BUTTON") {
+                    console.log(grandChild)
+                }
             })
         })
 
     }
+
+
 
     createCategoryTree()
 </script>
