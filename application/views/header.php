@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 </head>
 <body>
-    
 
 <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
         <div class="container-xl">
