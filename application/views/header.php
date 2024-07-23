@@ -1,5 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+</head>
+<body>
+    
 
-    <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
+<header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11;">
         <div class="container-xl">
             <div class="d-flex justify-content-between align-items-center" style="padding: 20px 0 0;">
                 <div class="logo" style="max-width: 200px;" >
@@ -20,4 +31,3 @@
             </div>
         </div>
     </header>
-

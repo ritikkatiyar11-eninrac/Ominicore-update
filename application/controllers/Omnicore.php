@@ -47,4 +47,7 @@ class Omnicore extends Default_Controler
     public function signup(){
         $this->load->view('signup');
     }
+    public function demomenusection(){
+        $this->load->view('demomenusection');
+    }
 }
