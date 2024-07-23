@@ -19,8 +19,8 @@ class Omnicore extends Default_Controler
         $this->load->view('notfound');
     }
    
-    public function newsletter_signup(){
-        $this->load->view('newsletter_signup');
+    public function newsletter(){
+        $this->load->view('newsletter');
     }
     public function subscribe(){
         $this->load->view('subscribe');
@@ -46,5 +46,8 @@ class Omnicore extends Default_Controler
     }
     public function signup(){
         $this->load->view('signup');
+    }
+    public function search(){
+        $this->load->view('search');
     }
 }

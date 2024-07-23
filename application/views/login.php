@@ -22,7 +22,7 @@
             <h1 >Sign in to your account</h1>
             <div class="d-flex flex gap-2">
                 <p>Don't have an account?</p>
-                <p>Create your free account</p>
+                <p><u>Create your free account</u></p>
                 
 
             </div>
@@ -32,16 +32,16 @@
             <input type="hidden" name="">
             <div class="mb-2">
                 <label for="username" class=" ">Email Address</label>
-                <input data-testid="Email-Address-input" id="username" name="log" type="text" autocomplete="username" placeholder="Email Address" required class="form-control bg-white py-3">
+                <input data-testid="Email-Address-input" id="username" name="log" type="text" autocomplete="username" placeholder="Email Address" required class="form-control bg-white ">
             </div>
             <div class="mb-2">
                 <label for="password" class=" ">Password</label>
-                <input data-testid="password-input" id="password" name="pwd" type="password" autocomplete="current-password" placeholder="Password" required class="form-control py-3">
+                <input data-testid="password-input" id="password" name="pwd" type="password" autocomplete="current-password" placeholder="Password" required class="form-control ">
             </div>
             <div class="d-flex justify-content-end mt-3 mb-4">
 
                 <div class="text-sm">
-                    <a href="/recover-password" class="text-grey font-medium">Forgot password?</a>
+                    <a href="/recover-password" class="text-grey font-medium"><u>Forgot password?</u></a>
                 </div>
             </div>
             <div>

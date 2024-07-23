@@ -11,10 +11,10 @@
                 <ul class="d-flex list-style-none" style="margin-bottom: 0;">
                    
                     <li class="subscriptions text-center d-flex justify-content-center align-items-center py-2 px-3 border cursor-pointer" style="padding:13px 37px;background-color: black;">
-                        <a href="" class="text-white" style="line-height:20px" target="_blank" rel="noopener noreferrer">Subscriptions</a>
+                        <a href="<?= base_url('subscribe') ?>" class="text-white" style="line-height:20px" target="_blank" rel="noopener noreferrer">Subscriptions</a>
                     </li>
                     <li class="NewsLetter  text-center d-flex justify-content-center align-items-center  py-2 px-3 border cursor-pointer" style="border-width:1px;border-style:solid;padding:13px 37px;">
-                        <a href="" class="text-dark" target="_blank" rel="noopener noreferrer">NewsLetter</a>
+                        <a href="<?= base_url('newsletter') ?>" class="text-dark" target="_blank" rel="noopener noreferrer">NewsLetter</a>
                     </li>
                 </ul>
             </div>

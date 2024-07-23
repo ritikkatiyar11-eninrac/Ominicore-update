@@ -1,8 +1,7 @@
 <?php require(APPPATH . 'views/header.php') ?>
-<section class="form-section">
+<section class="signup-form-section">
     <div class="form-head text-center pb-2">
         <h1>Create your account</h1>
-
 
     </div>
     <form action="" method="POST">
@@ -14,7 +13,7 @@
         <div class="mb-2">
             <label for="password" class=" ">Password</label>
             <input data-testid="password-input" id="password" name="pwd" type="password" autocomplete="current-password" required class="form-control ">
-            <p>Minimum 8 characters. Must contain one number, special character, lowercase letter, and uppercase letter</p>
+            <p class="password-rules">Minimum <span class="colblue">8 characters.</span> Must contain <span class="colblue">one number, special character, lowercase letter</span>, and uppercase letter</p>
         </div>
         <div class="mb-2">
             <label for="first-name" class=" ">First Name</label>
@@ -30,13 +29,19 @@
                     I agree to receive updates and offers from Eninrac. You may opt out anytime.</label>
             </div>
         </div>
-        <div class="mb-2">
-        By creating an account you agree to the Terms of Service and acknowledge the Privacy Policy.
+        <div class="mb-2" style="font-size: 14px;">
+            By creating an account you agree to the Terms of Service and acknowledge the <span><a href="<?= base_url('privacy_policy') ?>">Privacy Policy</a></span>.
 
 
         </div>
         <div>
             <button type="submit" data-testid="login-button" class="btn btn-primary text-white py-2 px-4 rounded-md " style="width: 100%;">Create Account</button>
+        </div>
+        <div class="d-flex flex gap-2 pt-2 justify-content-center">
+            <p>Already have an account?</p>
+            <p><u><a href="<?= base_url('login') ?>">Log in to your account</a></u></p>
+
+
         </div>
     </form>
 </section>

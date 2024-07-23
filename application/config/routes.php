@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['category'] = 'Omnicore/category';
 $route['login'] = 'Omnicore/login';
 $route['notfound'] = 'Omnicore/notfound';
-$route['newsletter_signup'] = 'Omnicore/newsletter_signup';
+$route['newsletter'] = 'Omnicore/newsletter';
 $route['subscribe'] = 'Omnicore/subscribe';
 $route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
@@ -63,5 +63,5 @@ $route['privacy_policy'] = 'Omnicore/privacy_policy';
 $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
 $route['contact'] = 'Omnicore/contact';
 $route['signup'] = 'Omnicore/signup';
-
 $route['infographicpage'] = 'Omnicore/infographicpage';
+$route['search'] = 'Omnicore/search';
