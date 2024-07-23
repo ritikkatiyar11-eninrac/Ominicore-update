@@ -64,4 +64,8 @@ $route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
 $route['contact'] = 'Omnicore/contact';
 $route['signup'] = 'Omnicore/signup';
 $route['infographicpage'] = 'Omnicore/infographicpage';
+<<<<<<< HEAD
 $route['search'] = 'Omnicore/search';
+=======
+$route['demomenusection'] = 'Omnicore/demomenusection';
+>>>>>>> 454fc74a9436d41338450924c382e38d51d6b31c
