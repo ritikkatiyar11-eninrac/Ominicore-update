@@ -46,7 +46,7 @@
         ]
       },
       {
-        "name": "MOP",
+        "name": "MoP",
         "slug": "central-mop",
         "children": [
           {
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "name": "MOF",
+        "name": "MoF",
         "slug": "central-mof",
         "children": [
           {
@@ -91,7 +91,7 @@
         ]
       },
       {
-        "name": "MOC",
+        "name": "MoC",
         "slug": "central-moc",
         "children": [
           {
@@ -102,42 +102,42 @@
       },
       {
         "name": "Apellate Tribunal",
-        "slug": "central-apellate-tribunal",
+        "slug": "central-apellatetribunal",
         "children": [
           {
             "name": "Landmark Judgements",
-            "slug": "central-apellate-tribunal-landmark-judgements"
+            "slug": "central-apellatetribunal-landmarkjudgements"
           },
           {
             "name": "Interim Orders",
-            "slug": "central-apellate-tribunal-interim-orders"
+            "slug": "central-apellatetribunal-interimorders"
           },
           {
             "name": "Final Orders",
-            "slug": "central-apellate-tribunal-final-orders"
+            "slug": "central-apellatetribunal-finalorders"
           }
         ]
       },
       {
         "name": "Honb'le Supreme Court",
-        "slug": "central-supreme-court",
+        "slug": "central-supremecourt",
         "children": [
           {
             "name": "Landmark Judgements",
-            "slug": "central-supreme-court-landmark-judgements"
+            "slug": "central-supremecourt-landmarkjudgements"
           },
           {
             "name": "Interim Orders",
-            "slug": "central-supreme-court-interim-orders"
+            "slug": "central-supremecourt-interimorders"
           },
           {
             "name": "Final Orders",
-            "slug": "central-supreme-court-final-orders"
+            "slug": "central-supremecourt-finalorders"
           }
         ]
       },
       {
-        "name": "others",
+        "name": "Others",
         "slug": "central-others",
         "children": []
       }
@@ -244,7 +244,7 @@
     ]
   },
   {
-    "name": "Power Generation",
+    "name": "Generation",
     "slug": "powergeneration",
     "children": [
       {
@@ -285,7 +285,7 @@
     ]
   },
   {
-    "name": "Power Distribution",
+    "name": "Distribution",
     "slug": "powerdistribution",
     "children": [
       {
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "name": "Power Transmission",
+    "name": "Transmission",
     "slug": "powertansmission",
     "children": [
       {
@@ -365,7 +365,7 @@
     ]
   },
   {
-    "name": "bidupdates",
+    "name": "Bid Updates",
     "slug": "bidupdates",
     "children": [
       {
@@ -407,28 +407,7 @@
     ]
   },
   {
-    "name": "new energies",
-    "slug": "newenergies",
-    "children": [
-      {
-        "name": "BESS",
-        "slug": "newenergies-bess",
-        "children": []
-      },
-      {
-        "name": "Hydrogen",
-        "slug": "newenergies-hydrogen",
-        "children": []
-      },
-      {
-        "name": "PSHP (Pump Storage Hydro Plants)",
-        "slug": "newenergies-pshp",
-        "children": []
-      }
-    ]
-  },
-  {
-    "name": "Infographic",
+    "name": "Infographics",
     "slug": "infographic",
     "children": [
       {
@@ -479,22 +458,44 @@
     ]
   },
   {
-    "name": "solar rooftop",
-    "slug": "solar-rooftop",
+    "name": "New Energies",
+    "slug": "newenergies",
+    "children": [
+      {
+        "name": "BESS",
+        "slug": "newenergies-bess",
+        "children": []
+      },
+      {
+        "name": "Hydrogen",
+        "slug": "newenergies-hydrogen",
+        "children": []
+      },
+      {
+        "name": "PSHP (Pump Storage Hydro Plants)",
+        "slug": "newenergies-pshp",
+        "children": []
+      }
+    ]
+  },
+ 
+  {
+    "name": "Solar Rooftop",
+    "slug": "solarrooftop",
     "children": [
       {
         "name": "Regulations",
-        "slug": "solar-rooftop-regulations",
+        "slug": "solarrooftop-regulations",
         "children": []
       },
       {
         "name": "Policies",
-        "slug": "solar-rooftop-policies",
+        "slug": "solarrooftop-policies",
         "children": []
       },
       {
         "name": "Feed in Tariffs",
-        "slug": "solar-rooftop-feedintariffs",
+        "slug": "solarrooftop-feedintariffs",
         "children": []
       }
     ]

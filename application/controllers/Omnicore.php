@@ -49,7 +49,4 @@ class Omnicore extends Default_Controler
     }
     public function search(){
         $this->load->view('search');}
-    public function demomenusection(){
-        $this->load->view('demomenusection');
-    }
 }

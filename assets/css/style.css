@@ -786,18 +786,17 @@ ul{
   margin-bottom: 3px;
   margin-right: 3px;
   padding: 5px 8px;
-  transition: all .2s ease-out
+  transition: all .4s ease-out
 }
-
-
 
 .bn-subfilter:hover {
- 
+  background: #1e1e21;
+  color:#e7e7e7;
 }
 
-.bn-subfilter.bn-subfilter--active {
-  background: #e7e7e7;
-  color: #111
+.bn-subfilter--active {
+  color: #e7e7e7;
+  background: #111
 }
 
 @media (min-width: 1201px) {
@@ -805,8 +804,6 @@ ul{
       font-size:14px
   }
 }
-
-
 
 @media (min-width: 941px) {
   .bn-filter-set-wrapper--search,.bn-filter-set-wrapper--sort,.bn-filter-set-wrapper--sub,.bn-filter-set-wrapper--top,.bn-filter-submit {
