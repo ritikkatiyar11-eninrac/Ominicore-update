@@ -649,7 +649,6 @@ body.bn-working .bn-item,body.bn-working .bn-single {
 }
 
 .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-
   cursor: pointer;
   display: block;
   font-size: 14px;
@@ -661,9 +660,10 @@ body.bn-working .bn-item,body.bn-working .bn-single {
   width: 100%
 }
 
-/* .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
-background: #1e1e21
-} */
+.bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
+background: var(--darklight-700);
+color: var(--darklight-100);
+}
 
 .bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
   content: "\e804";
@@ -719,13 +719,8 @@ ul{
       margin-top: 5px;
   }
 } */
-/* 
-@media (min-width: 1201px) {
-  .bn-filter-tab-wrapper .bn-subfilter-tabs ul {
-      display: flex !important;;
-      justify-content: space-between;
-  }
-} */
+ 
+
 
 @media (min-width: 941px) {
   .bn-filter-tab-wrapper {
@@ -786,7 +781,8 @@ ul{
   margin-bottom: 3px;
   margin-right: 3px;
   padding: 5px 8px;
-  transition: all .4s ease-out
+  transition: all .2s ease-out;
+
 }
 
 .bn-subfilter:hover {

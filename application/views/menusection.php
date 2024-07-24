@@ -1,4 +1,3 @@
-
 <style>
     .hidden {
         display: none;
@@ -7,6 +6,8 @@
     .active {
         color: red;
     }
+
+   
 </style>
 <div class="container-xl">
     <div class="bn-controls-wrapper">
@@ -584,6 +585,7 @@
         categories.forEach((category, index) => {
             const li = document.createElement("li");
             li.className = "bn-filter-item";
+            
             const btn = document.createElement("button")
             btn.className = "bn-filter bn-filter-top";
             btn.dataset.slug = category.slug;
@@ -607,7 +609,7 @@
         category.children.forEach((sub, subIndex) => {
             const li = document.createElement("li");
             li.className = "bn-subfilter-item";
-            li.style = "transform: scale(1); opacity: 1;"
+            li.style ="transform: scale(1); opacity: 1;"
             const btn = document.createElement("button")
             btn.className = "bn-subfilter child ";
             btn.dataset.slug = sub.slug;
@@ -618,12 +620,10 @@
             btn.addEventListener("click", () => {
                 setActive("sub-category", subIndex);
                 setActive("parent-category", parentIndex);
-                
-                    showGrandCategories(sub, subIndex);
-                console.log(parentIndex, subIndex)
-               
+                showGrandCategories(sub, subIndex);
             });
             li.appendChild(btn)
+
             subCategory.appendChild(li);
         });
         setActive("parent-category", parentIndex);
@@ -636,7 +636,6 @@
             subCategory.children.forEach((grand) => {
                 const li = document.createElement("li");
                 li.className = "bn-subfilter-item";
-
                 li.style = "transform: scale(1); opacity: 1;"
                 const btn = document.createElement("button")
                 btn.className = "bn-subfilter";
@@ -644,10 +643,10 @@
                 btn.dataset.title = grand.name;
                 btn.textContent = grand.name;
                 li.appendChild(btn)
-           
+
                 grandCategory.appendChild(li);
-            
-               
+
+
             });
         }
     }
