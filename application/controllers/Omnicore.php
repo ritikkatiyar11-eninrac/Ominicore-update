@@ -48,5 +48,8 @@ class Omnicore extends Default_Controler
         $this->load->view('signup');
     }
     public function search(){
-        $this->load->view('search');}
+        $this->load->view('search');
+    }
+        public function demolandingpage(){
+            $this->load->view('demolandingpage');}
 }

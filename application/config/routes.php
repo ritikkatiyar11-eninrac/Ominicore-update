@@ -65,4 +65,4 @@ $route['contact'] = 'Omnicore/contact';
 $route['signup'] = 'Omnicore/signup';
 $route['infographicpage'] = 'Omnicore/infographicpage';
 $route['search'] = 'Omnicore/search';
-
+$route['demolandingpage'] = 'Omnicore/demolandingpage';
