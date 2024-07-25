@@ -44,11 +44,11 @@
                     name: "CERC",
                     slug: "central-cerc",
                     children: [{
-                            name: "orders",
+                            name: "Orders",
                             slug: "central-cerc-orders"
                         },
                         {
-                            name: "petitions",
+                            name: "Petitions",
                             slug: "central-cerc-petitions"
                         },
                         {

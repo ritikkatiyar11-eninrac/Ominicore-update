@@ -1,6 +1,8 @@
 <!-- <?php require(APPPATH . 'views/header.php'); ?> -->
-
-<style>
+ <head>
+ <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
+ <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+ <style>
     body {
         padding: 0;
         margin: 0;
@@ -201,77 +203,119 @@
 
     .langing_page-contentwrapper .content-section {
         display: flex;
+        gap: 20px;
         padding-right: 5%;
         padding-bottom: 5%;
         padding-left: 5%;
         align-items: flex-start;
+        max-width: 863px;
     }
 
-    .langing_page-contentwrapper .content-section .content-col {
+    .content-col {
+        width: 64%;
+        overflow: hidden;
         display: grid;
-        grid-template-areas: "trendingfull-card trendingfull-card side-trending"
-            "trendinghalf-1 trendinghalf-2 side-trending"
-            "trendinghalf-3 trendinghalf-4 side-trending"
+        gap: 20px;
+        grid-template-areas:
+         "trendingfull-card trendingfull-card"
+        "trendinghalf-1 trendinghalf-2"
         ;
+    }
+
+    .content-col img {
         width: 100%;
-        width:863px;
+        height: 250px;
+        object-fit: cover;
+        opacity: 0.8;
     }
 
+    .trending-card-content {
+        display: block;
+        padding: 10px 0;
+
+    }
+   
 
 
-    .content-col.card {
-        -webkit-transform: translateZ(0) scale(1.0, 1.0);
-        transform: translateZ(0);
-        display: flex;
-        min-height: 200px;
-        margin-right: 2%;
-        margin-bottom: 30px;
-        margin-left: 2%;
-        padding: 20px;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: stretch;
-        flex: 1;
-        border-radius: 10px;
-        background-color: #ccc8ff;
-        filter: blur(0px);
-        color: #fff;
+    .trending-card-content .card-meta {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        opacity: 0.8;
     }
 
-    .card-placeholder-img-01 {
-        background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8)), url(https://assets.website-files.com/5c394f2a6bc471310401932a/5c3a50a35c550c635c4af28a_photo-1501523460185-2aa5d2a0f981.jpeg);
-        background-position: 0px 0px, 50%;
-        background-size: auto, cover;
-        background-repeat: repeat, no-repeat;
-        height: 280px;
-        width: 100%;
-        color: #fff;
-        flex: 0 auto;
-        padding: 20px;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: flex-start;
-        border-radius: 10px;
+    .side-col .card-meta{
+        opacity: 0.5;
     }
 
-    .card-half {
-        width: 100%;
-        max-width: 46%;
-        flex: 0 auto;
+    .trending-card-content h3{
+        /* color: #fff; */
+        color: #464646;
+        font-weight: 600;
     }
 
-    .placeholder-image-03 {
-        background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6)), url(../assets/images/placeholder-image-03.jpeg);
+    .trending-card-content p{
+        text-align: justify;
+        color: #464646;
     }
 
-    .imghover:hover {
-        transform-style: preserve-3d;
-        transform: translate3d(0px, 0px, 0px) scale3d(1.01, 1.01, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    .trending-card-content p{
+        margin-top: 0;
     }
+
+    .side-col{
+        width: 40%;
+        gap: 20px;
+    }
+
+   .side-col .placeholder-image-04{
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    opacity: 0.8;
+    background-image: url(https://tinyurl.com/52zpfvfm);
+color: white;
+   }
+
+   .side-col .placeholder-image-05{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ccc8ff;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+   }
+
+   .side-col .placeholder-image-05 .thumbnailwrapper{
+    margin-bottom: 15px;
+   }
+
+   .side-col .placeholder-image-04 .tag-breaking{
+    display: flex;
+    flex-direction: row-reverse;
+
+   }
+   .side-col .placeholder-image-04 .tag-breaking span{
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+
+
+
 </style>
+ </head>
 
-<div class="langing_page-top">
+ <body>
+ <div class="langing_page-top">
     <div class="langing_page-top-sidebar position-fixed" style=" z-index:20; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;">
         <div class="menuwrapper d-flex flex-column" style="width:120px;">
             <a href="<?= base_url() ?>" class="menu-logo">
@@ -349,22 +393,54 @@
         </div>
         <div class="content-section">
             <div class="content-col">
-                <a href="" class="card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                    <div class="card-meta">{Jan 12}</div>
-                    <h3 class="trending-card-title" style="font-size:24px;line-height:28px; font-weight:400; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
+                <a href="" class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
+                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                    <div class="trending-card-content">
+                        <div class="card-meta">CERC // Orders</div>
+                        <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
+                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
+                    </div>
                 </a>
-                <a href="" class="card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
-                    <div class="card-meta">{Jan 11}</div>
-                    <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:400; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                 
+                <a href="" class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
+                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                    <div class="trending-card-content">
+                        <div class="card-meta">Jan 11</div>
+                        <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
+                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                    </div>
                 </a>
-                <a href="" class="card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-2;">
-                    <div class="card-meta">{Jan 11}</div>
-                    <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:400; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                <a href="" class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-2;">
+                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                    <div class="trending-card-content">
+                        <div class="card-meta">Jan 11</div>
+                        <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                    </div>
                 </a>
+                
+               
             </div>
-            <div class="content-col side-col">
-
+            <div class=" d-flex flex-column side-col">
+                <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    <div class="tag-breaking"><span>breaking</span></div>
+                    <div class="card-meta">
+                        2h ago
+                    </div>
+                    <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
+                </div>
+                <div class="placeholder-image-05" >
+                    <div class="thumbnailwrapper">
+                    <i class="icofont-bulb-alt"></i>
+                    </div>
+                    <div class="card-meta">
+                        INSIGHTS
+                    </div>
+                    <div class="card-title" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+ </body>
+
+
