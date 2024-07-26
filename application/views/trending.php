@@ -492,7 +492,7 @@
                             <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         </div>
                         <div class="trending-card-content">
-                            <div class="card-meta">Jan 11</div>
+                             <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
                             <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
                         </div>
@@ -502,7 +502,7 @@
                             <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         </div>
                         <div class="trending-card-content">
-                            <div class="card-meta">Jan 11</div>
+                             <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
                         </div>
                     </div>
@@ -540,7 +540,7 @@
                     <div class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
                         <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         <div class="trending-card-content">
-                            <div class="card-meta">CERC // Orders</div>
+                        <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
                             <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
                         </div>
@@ -551,7 +551,7 @@
                             <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         </div>
                         <div class="trending-card-content">
-                            <div class="card-meta">Jan 11</div>
+                        <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
                             <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
                         </div>
@@ -561,7 +561,7 @@
                             <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         </div>
                         <div class="trending-card-content">
-                            <div class="card-meta">Jan 11</div>
+                        <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
                         </div>
                     </div>
