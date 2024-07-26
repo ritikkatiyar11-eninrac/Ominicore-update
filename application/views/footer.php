@@ -95,18 +95,18 @@
                 <hr style="opacity: .1; " class="">
 
                 <div class="d-flex flex justify-content-between fs-12 ending">
-                    <p class="">© 2024 Blavity, Inc. All rights reserved</p>
+                    <p class="">© 2013-2024 Eninrac Consulting Pvt. Ltd. </p>
                     <div class="d-flex flex gap-4">
                         <div class="d-flex flex gap-2">
-                            <p>Privacy Policy</p>
+                            <p><a href="<?= base_url() ?>privacy_policy">Privacy Policy</a></p>
 
-                            <p>Terms of Use</p>
+                            <p><a href="<?= base_url() ?>refund_policy">Refund Policy</a></p>
                         </div>
                         <div class="vl"></div>
                         <div class="d-flex flex gap-2">
-                            <p>Advertise</p>
+                            <p><a href="<?= base_url() ?>cookie_page">Cookie Statement</a></p>
 
-                            <p>Media Passes</p>
+                            <p><a href="<?= base_url() ?>sitemap">Sitemap</a></p>
                         </div>
                     </div>
 

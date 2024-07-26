@@ -1,12 +1,14 @@
 <?php require(APPPATH . 'views/header.php') ?>
 <style>
-    .container {
+       .container {
         padding: 2rem 2rem;
         margin: 1rem 1rem;
+        font-size: 20px !important;
     }
 
     .container h2 {
         margin: 1rem 0rem;
+        font-weight: 500;
     }
 </style>
 <div class="container">

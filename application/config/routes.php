@@ -65,4 +65,9 @@ $route['contact'] = 'Omnicore/contact';
 $route['signup'] = 'Omnicore/signup';
 $route['infographicpage'] = 'Omnicore/infographicpage';
 $route['search'] = 'Omnicore/search';
+$route['refund_policy'] = 'Omnicore/refund_policy';
+$route['cookie_page'] = 'Omnicore/cookie_page';
+$route['sitemap'] = 'Omnicore/sitemap';
+$route['terms_and_condition'] = 'Omnicore/terms_and_condition';
+
 

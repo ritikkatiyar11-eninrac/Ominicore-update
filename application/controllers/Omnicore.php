@@ -49,4 +49,23 @@ class Omnicore extends Default_Controler
     }
     public function search(){
         $this->load->view('search');}
+
+    public function refund_policy(){
+        $this->load->view('refund_policy');
+
+    }
+    public function cookie_page(){
+        $this->load->view('cookie_page');
+        
+    }
+    
+    public function sitemap(){
+        $this->load->view('sitemap');
+        
+    }
+    
+    public function terms_and_condition(){
+        $this->load->view('terms_and_condition');
+        
+    } 
 }
