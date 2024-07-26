@@ -1,4 +1,3 @@
-
 <style>
     body {
         padding: 0;
@@ -359,8 +358,6 @@
         }
     }
 
-
-
     @media(max-width:810px) {
         .content-section {
             display: flex;
@@ -385,8 +382,6 @@
             width: 100%;
         }
     }
-
-
 
     .langing_page-top-sidebar {
         height: 100vh;
@@ -423,25 +418,25 @@
                 <div class="tickerwrapper">
                     <div class="menu-ticker --active">
                         <div class="label">Central</div>
-                        <div class="ticker-up">30</div>
+                        <div class="ticker-up" style="color: #8cd19e;">30</div>
                     </div>
                     <div class="menu-ticker">
                         <div class="label">State</div>
-                        <div class="ticker-up">40</div>
+                        <div class="ticker-up" style="color: #f2555d;">40</div>
                     </div>
                     <div class="menu-ticker">
                         <div class="label">Generation</div>
-                        <div class="ticker-up">50</div>
+                        <div class="ticker-up" style="color: #8cd19e;">50</div>
                     </div>
 
 
                     <div class="menu-ticker">
                         <div class="label">Infographics</div>
-                        <div class="ticker-up">50</div>
+                        <div class="ticker-up" style="color: #f2555d;">50</div>
                     </div>
                     <div class="menu-ticker">
                         <div class="label">Open Access</div>
-                        <div class="ticker-up">50</div>
+                        <div class="ticker-up" style="color:#8cd19e ;">50</div>
                     </div>
                     <a href="" class="menu-link">
                         <i class="icofont-edit"></i>
@@ -479,14 +474,14 @@
 
             <!-- section one -->
             <div class="page-header">
-                <h1 class="page-title">CERC</h1>
+                <h1 class="page-title" style="color: #3243e9;">Top Articles</h1>
             </div>
             <div class="content-section">
                 <div class="content-col">
                     <div class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
                         <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
                         <div class="trending-card-content">
-                            <div class="card-meta">CERC // Orders</div>
+                            <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
                             <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
                             <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
                         </div>
@@ -516,7 +511,7 @@
                 </div>
                 <div class="side-col">
                     <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                        <div class="tag-breaking"><span>breaking</span></div>
+                        <div class="tag-breaking"><span>Breaking</span></div>
                         <div class="card-meta">
                             2h ago
                         </div>
@@ -538,7 +533,7 @@
 
             <!-- section one -->
             <div class="page-header">
-                <h1 class="page-title">Top Articles</h1>
+                <h1 class="page-title" style="color: #3243e9;">CERC</h1>
             </div>
             <div class="content-section">
                 <div class="content-col">
