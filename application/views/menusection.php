@@ -9,9 +9,9 @@
 
    
 </style>
-<div class="container-xl">
+<div class="container-xxl">
     <div class="bn-controls-wrapper">
-        <div class="container-xl p-0">
+        <div class="container-xxl p-0">
             <div class="bn-filter-tab-wrapper">
                 <div class="bn-filter-tabs-inner">
                     <div class="bn-filter-tabs">

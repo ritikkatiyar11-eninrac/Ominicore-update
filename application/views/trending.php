@@ -1,242 +1,599 @@
+
 <style>
-    .trending-container {
-        display: grid;
-        gap: 2rem;
-        align-items: flex-start;
-        grid-template-rows: auto auto;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    body {
+        padding: 0;
+        margin: 0;
     }
 
-    .right-img-content img {
-        height: 468px;
+
+
+    .langing_page-top {
+        letter-spacing: 0.5px;
     }
 
-    @media screen and (max-width:1024px) {
-        .trending-container {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-        }
-
-        .trending-container-left {
-            grid-row-start: none !important;
-        }
-
-        .trending-container-left ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .right-img-content {
-            margin-top: 2.75rem;
-
-        }
-
-        .right-img-content img {
-            height: 220px;
-        }
-
-        .trending-container-left h2 {
-            margin-bottom: 2.5rem;
-        }
-
-        .blog-card-content- {
-            display: none;
-        }
-
+    .feedwrapper {
+        height: 100vh;
     }
 
-    .trending-container-left ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 1rem;
-    }
-
-    .trending-description {
-        font-size: 12px;
-        font-style: normal;
-        letter-spacing: -.48px;
-        font-weight: 500;
-        line-height: 110%;
-        color: #949596;
-
-    }
-
-    .trending-container-right {
-        display: grid;
-        gap: 2rem;
-        grid-column: span 3 / span 3;
-        grid-column-start: auto;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .trending-container-right .trending-news-right {
-        grid-column: span 3 / span 3;
-    }
-
-    .trending-container-left {
-
+    .feed-header {
         display: flex;
-        justify-content: space-between;
+        height: 100px;
+        padding-left: 15%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        background-color: #eee9ff;
+    }
+
+    .menu-logo {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        background-color: #3243e9;
+        text-decoration: none;
+    }
+
+    .menu-logo .logo {
+        /* font-size: px; */
+        letter-spacing: 0.9px;
+        line-height: -2px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .tickerwrapper {
+        display: flex;
         flex-direction: column;
-        grid-row: span 2 / span 2;
-        grid-row-start: 1;
-        padding-top: 0.5rem;
-        border-top-width: 4px;
-        border-color: rgb(18 18 18 black);
+        flex: 1;
     }
 
-    .trending-container-left h2 {
-        font-size: 32px;
-        letter-spacing: -1.92px;
-        font-weight: 600;
-        line-height: 100%;
-        margin-bottom: 88px;
-    }
-
-    .trending-container-left ul li>div .news-image {
-        flex: 0 0 105px;
-        aspect-ratio: 1/1;
-        display: inline-block;
-        text-decoration: inherit;
-
-    }
-
-    img {
+    .tickerwrapper .menu-link {
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 auto;
+        color: #3243e9;
+        background-color: #fff;
         max-width: 100%;
+    }
+
+    .langing_page-top-sidebar .menu-ticker {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        /* background-color: #fff; */
+    }
+
+    .langing_page-top-sidebar .menu-ticker:hover {
+        background-color: #ccc8ff
+    }
+
+    .langing_page-top-sidebar h3 {
+        margin-top: 0px;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .langing_page-top-sidebar .label {
+        margin-bottom: 5px;
+        /* color: #3243e9; */
+        font-weight: 700;
+    }
+
+    .menuwrapper {
+        display: flex;
+        width: 120px;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .feedwrapper .feed-item {
+        display: flex;
+        height: auto;
+        min-height: 90px;
+        padding: 5% 15%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+        border-top: 1px solid #ccc8ff;
+        background-color: #eee9ff;
+        color: #464646;
+    }
+
+    .feedwrapper a:hover {
+        background-color: #ccc8ff;
+    }
+
+
+
+    .feedwrapper a p {
+        line-height: 18px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .feedwrapper .feed-link {
+        display: flex;
+        padding: 5% 15%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 auto;
+        border-top: 1px solid #ccc8ff;
+        background-color: #eee9ff;
+        color: #3243e9;
+    }
+
+
+
+    .top-nav {
+        display: flex;
+        height: 100px;
+        justify-content: flex-end;
+        align-items: stretch;
+        flex: 0 0 auto;
+        background-color: #fff;
+
+    }
+
+    .top-nav a:hover {
+        background-color: rgba(96, 50, 233, 0.08);
+    }
+
+    .top-nav .nav-link {
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        transition: background-color 400ms cubic-bezier(.77, 0, .175, 1);
+        letter-spacing: 0.5px;
+        font-size: 14px;
+    }
+
+    .navwrapper {
+        background-image: linear-gradient(90deg, transparent, #fff), linear-gradient(180deg, transparent, #fff), linear-gradient(180deg, #eee9ff, #eee9ff);
+        display: flex;
+        flex: 0 auto;
+    }
+
+    .page-header {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 3%;
+    }
+
+    .page-header .page-title {
+        margin-left: 1%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    .langing_page-contentwrapper .content-section {
+        display: flex;
+        gap: 20px;
+        padding-right: 3%;
+        padding-bottom: 5%;
+        padding-left: 3%;
+        align-items: flex-start;
+
+    }
+
+    .content-col {
+        width: 64%;
+        overflow: hidden;
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "trendingfull-card trendingfull-card"
+            "trendinghalf-1 trendinghalf-2"
+        ;
+    }
+
+    .content-col img {
         width: 100%;
+        height: 200px;
         object-fit: cover;
-        object-position: center top;
+        opacity: 0.8;
+        background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8)), ;
+    }
+
+    .trending-card-content {
+        display: block;
+        padding: 10px 0;
+
+    }
+
+    .trending-card-content .card-meta {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        opacity: 0.8;
+    }
+
+    .side-col .card-meta {
+        opacity: 0.5;
+    }
+
+    .trending-card-content h3 {
+        /* color: #fff; */
+        color: #464646;
+        font-weight: 600;
+    }
+
+    .trending-card-content p {
+        text-align: justify;
+        color: #464646;
+    }
+
+    .trending-card-content p {
+        margin-top: 0;
+    }
+
+    .side-col {
+        width: 40%;
+        gap: 20px;
+    }
+
+    .side-col .placeholder-image-04 {
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        opacity: 0.8;
+        background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8)), url(https://tinyurl.com/52zpfvfm);
+        color: white;
+    }
+
+    .side-col .placeholder-image-05 {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #eee9ff;
+        min-height: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #2b03a4;
+    }
+
+    .side-col .placeholder-image-05 .card-meta {
+        margin-bottom: 10px;
+    }
+
+    .side-col .placeholder-image-05 .thumbnailwrapper {
+        margin-top: 0;
+        padding: 10px;
+        width: max-content;
+        background-color: #ccc8ff;
+        border-radius: 50%;
+
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .side-col .placeholder-image-05 .thumbnailwrapper i {
+        font-size: 40px;
+    }
+
+    .side-col .placeholder-image-05 .card-title {
+        font-weight: 400;
+    }
+
+    .side-col .placeholder-image-04 .tag-breaking {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .side-col .placeholder-image-04 .tag-breaking span {
+        background-color: red;
+        color: white;
+        padding: 2px 4px;
+        border-radius: 5px;
+    }
+
+    /* .--active{
+            background-color: red;
+            color: white;
+        } */
+
+    .langing_page-top-sidebar {
+        display: none;
+    }
+
+
+
+    .content-section .side-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media(max-width:510px) {
+        .content-col {
+            grid-template-areas:
+                "trendingfull-card trendingfull-card"
+                "trendinghalf-1 trendinghalf-1"
+                "trendinghalf-2 trendinghalf-2"
+            ;
+        }
+    }
+
+    @media (min-width:811px) and (max-width:1023px) {
+        .langing_page-contentwrapper {
+            display: flex;
+            margin: 0 auto;
+            max-width: 90%;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+
+
+
+    @media(max-width:810px) {
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .langing_page-contentwrapper {
+            display: flex;
+            margin: 0 auto;
+            max-width: 90%;
+            flex-direction: column;
+
+        }
+
+        .content-section .content-col {
+            width: 100%;
+        }
+
+        .content-section .side-col {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+
+
+    .langing_page-top-sidebar {
+        height: 100vh;
+        position: sticky;
+        top: 80px;
+    }
+
+    @media (min-width:1024px) {
+        .langing_page-contentwrapper {
+            display: flex;
+            float: right;
+            flex-direction: column;
+            flex: 1;
+            width: calc(100% - 380px);
+        }
+
+        .langing_page-top-sidebar {
+            display: flex;
+            width: 370px;
+
+        }
     }
 </style>
 
-<section class="section trending-section" style="padding-top: 2rem;">
-    <div class="container-xl">
-        <div class="trending-container">
-            <div class=" trending-container-right">
-                <div class="border-top border-dark pt-2 trending-news-right">
-                    <div class="trending-heading" style="height: 120px;">
-                        <div class="d-flex align-items-end" style="column-gap: 7rem;">
-                            <a href="" class="text-dark" style="font-size: 40px; letter-spacing:-1.6px; line-height:100%; font-weight:600; text-transform: uppercase;"><span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">'Cross' Star Aldis Hodge Teases Bringing A 'Sexy,'...</span></a>
-                            <a href="" style="font-size: 16px; font-style:normal; font-weight:600;letter-spacing:-.64px; line-height: 94%;"><span style="white-space: nowrap;">Read full story </span></a>
-                        </div>
-                    </div>
-                    <div class="-mx-4 mx-0 right-img-content">
-                        <a href="">
-                            <img src="<?= base_url() ?>assets/images/main-background-img.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="flex blog-card-content- flex-column border-bottom " style="padding-bottom: 0.75rem; font-weight:600;">
-                    <a href="">
-                        <img src="<?= base_url() ?>assets/images/blog-1.webp" style="aspect-ratio: 4/3;" alt="">
-                    </a>
-                    <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="" class="text-dark" style="line-height: 94%; letter-spacing: -.64px;">
-                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Sanaa Lathan, Algee Smith And Sierra Capri On Delving Into The Stigmas Of Mental Health, Young Motherhood And More In 'Young. Wild. Free.'</span>
-                        </a>
-                        <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
-                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="flex blog-card-content- flex-column border-bottom " style="padding-bottom: 0.75rem;">
-                    <a href="">
-                        <img src="<?= base_url() ?>assets/images/blog-2.jpg" style="aspect-ratio: 4/3;" alt="">
+<body>
+
+    <div class="langing_page-top d-flex">
+        <div class="langing_page-top-sidebar" id="landing_top-sidebar">
+            <div class="menuwrapper" style="width:35%;">
+                <a href="" class="menu-logo">
+                    <div class="logo"><span> Today </span><br /> <span style="line-height: 10px;"> Updates</span></div>
+                </a>
+                <div class="tickerwrapper">
+                    <div class="menu-ticker --active">
+                        <div class="label">Central</div>
+                        <div class="ticker-up">30</div>
+                    </div>
+                    <div class="menu-ticker">
+                        <div class="label">State</div>
+                        <div class="ticker-up">40</div>
+                    </div>
+                    <div class="menu-ticker">
+                        <div class="label">Generation</div>
+                        <div class="ticker-up">50</div>
+                    </div>
+
+
+                    <div class="menu-ticker">
+                        <div class="label">Infographics</div>
+                        <div class="ticker-up">50</div>
+                    </div>
+                    <div class="menu-ticker">
+                        <div class="label">Open Access</div>
+                        <div class="ticker-up">50</div>
+                    </div>
+                    <a href="" class="menu-link">
+                        <i class="icofont-edit"></i>
+                        <div class="">Edit List</div>
                     </a>
-                    <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="" class="text-dark" style="line-height: 94%; letter-spacing: -.64px;font-weight:600;">
-                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Candace Parker Coaches Kobe Bryant's 7-Year-Old Daughter Bianka In Adorable Photo</span>
-                        </a>
-                        <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
-                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
+                </div>
+            </div>
+            <div class="feedwrapper" style="width:65%; ">
+                <div class="feed-header">
+                    <h2>Recent news</h2>
+                </div>
+                <a href="" class="feed-item">
+                    <h3 class="label" style=" color: #3243e9;">3h ago</h3>
+                    <p>SEC Chairman Applauds &#8216;Operation Crypto-Sweep&#8217;</p>
+                </a>
+                <a href="" class="feed-item">
+                    <h3 class="label" style=" color: #3243e9;">5h ago</h3>
+                    <p>Darknet Market Rapture Has Been Down for a Week — Users Grow Leery</p>
+                </a>
+                <a href="" class="feed-item">
+                    <h3 class="label" style=" color: #3243e9;">8h ago</h3>
+                    <p>Indian Government Considering 18% Retroactive Tax on Crypto Trading, Mining</p>
+                </a>
+
+
+                <a href="" class="feed-link">
+                    <div class="">
+                        More Updates
+                    </div>
+                    <i class="icofont-long-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="langing_page-contentwrapper" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;">
+
+            <!-- section one -->
+            <div class="page-header">
+                <h1 class="page-title">CERC</h1>
+            </div>
+            <div class="content-section">
+                <div class="content-col">
+                    <div class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
+                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        <div class="trending-card-content">
+                            <div class="card-meta">CERC // Orders</div>
+                            <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
+                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
                         </div>
                     </div>
-                </div>
 
-                <div class="flex blog-card-content- flex-column border-bottom " style="padding-bottom: 0.75rem;">
-                    <a href="">
-                        <img src="<?= base_url() ?>assets/images/blog-3.jpg" style="aspect-ratio: 4/3;" alt="">
-                    </a>
-                    <div class="d-flex flex-column" style="flex: 1 1 0%; padding-top:1rem;">
-                        <a href="" class="text-dark" style="line-height: 94%; letter-spacing: -.64px; font-weight:600;">
-                            <span style="-webkit-line-clamp:3; display:-webkit-box; overflow:hidden;-webkit-box-orient:vertical;">Man Discovers Bush Family's Ancestors Enslaved His Ancestors</span>
-                        </a>
-                        <div class="d-flex flex-wrap align-items-center mt-1" style="flex: 1 1 0%;">
-                            <p class="" style="font-size: 12px; font-style:normal;letter-spacing: -.48px; font-weight:400;line-height:16px;flex:100%;margin-top:1.5rem; color:#949494;">Today</p>
+                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
+                        <div class="">
+                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        </div>
+                        <div class="trending-card-content">
+                            <div class="card-meta">Jan 11</div>
+                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
+                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                        </div>
+                    </div>
+                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-2;">
+                        <div class="">
+                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        </div>
+                        <div class="trending-card-content">
+                            <div class="card-meta">Jan 11</div>
+                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="side-col">
+                    <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="tag-breaking"><span>breaking</span></div>
+                        <div class="card-meta">
+                            2h ago
+                        </div>
+                        <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
+                    </div>
+                    <div class="placeholder-image-05">
+                        <div class="thumbnailwrapper">
+                            <i class="icofont-bulb-alt"></i>
+                        </div>
+                        <div>
+                            <div class="card-meta">
+                                INSIGHTS
+                            </div>
+                            <p class="card-title fw-400" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border-top border-dark col p-0 trending-container-left">
-                <h2 class="pt-2">Most rated</h2>
-                <ul class="" style="padding-left: 0;">
 
-                    <li>
-                        <div class="d-flex gap-2 w-100">
-                            <a href="" class="news-image">
-                                <img style="width: 105px; height:105px" src="<?= base_url() ?>assets/images/news-image.jpg" alt="news image">
-                            </a>
-                            <div class="child d-flex flex-column border-bottom justify-content-between" style="padding-bottom:0.5rem ;">
-                                <a href="" class="fs-14 fw-500" style="line-height: 1.03;">
-                                    <span>Here's What Needs To Happen In 'The Chi' Season 7</span>
-                                </a>
-                                <div class="">
-                                    <p style="opacity: 0.6; margin-bottom:0; font-size:12px;">July 08, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex gap-2 w-100">
-                            <a href="" class="news-image">
-                                <img style="width: 105px; height:105px" src="<?= base_url() ?>assets/images/news-image.jpg" alt="news image">
-                            </a>
-                            <div class="child d-flex flex-column border-bottom justify-content-between" style="padding-bottom:0.5rem ;">
-                                <a href="" class="fs-14 fw-500" style="line-height: 1.03;">
-                                    <span>Here's What Needs To Happen In 'The Chi' Season 7</span>
-                                </a>
-                                <div class="">
-                                    <p style="opacity: 0.6; margin-bottom:0; font-size:12px;">July 08, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex gap-2 w-100">
-                            <a href="" class="news-image">
-                                <img style="width: 105px; height:105px" src="<?= base_url() ?>assets/images/news-image.jpg" alt="news image">
-                            </a>
-                            <div class="child d-flex flex-column border-bottom justify-content-between" style="padding-bottom:0.5rem ;">
-                                <a href="" class="fs-14 fw-500" style="line-height: 1.03;">
-                                    <span>Here's What Needs To Happen In 'The Chi' Season 7</span>
-                                </a>
-                                <div class="">
-                                    <p style="opacity: 0.6; margin-bottom:0; font-size:12px;">July 08, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex gap-2 w-100">
-                            <a href="" class="news-image">
-                                <img style="width: 105px; height:105px" src="<?= base_url() ?>assets/images/news-image.jpg" alt="news image">
-                            </a>
-                            <div class="child d-flex flex-column border-bottom justify-content-between" style="padding-bottom:0.5rem ;">
-                                <a href="" class="fs-14 fw-500" style="line-height: 1.03;">
-                                    <span>Here's What Needs To Happen In 'The Chi' Season 7</span>
-                                </a>
-                                <div class="">
-                                    <p style="opacity: 0.6; margin-bottom:0; font-size:12px;">July 08, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <!-- section one -->
+            <div class="page-header">
+                <h1 class="page-title">Top Articles</h1>
             </div>
-            <div class="col"></div>
+            <div class="content-section">
+                <div class="content-col">
+                    <div class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
+                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        <div class="trending-card-content">
+                            <div class="card-meta">CERC // Orders</div>
+                            <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
+                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
+                        </div>
+                    </div>
+
+                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
+                        <div class="">
+                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        </div>
+                        <div class="trending-card-content">
+                            <div class="card-meta">Jan 11</div>
+                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
+                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                        </div>
+                    </div>
+                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-2;">
+                        <div class="">
+                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                        </div>
+                        <div class="trending-card-content">
+                            <div class="card-meta">Jan 11</div>
+                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="side-col">
+                    <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="tag-breaking"><span>breaking</span></div>
+                        <div class="card-meta">
+                            2h ago
+                        </div>
+                        <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
+                    </div>
+                    <div class="placeholder-image-05">
+                        <div class="thumbnailwrapper">
+                            <i class="icofont-bulb-alt"></i>
+                        </div>
+                        <div>
+                            <div class="card-meta">
+                                INSIGHTS
+                            </div>
+                            <p class="card-title fw-400" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</body>

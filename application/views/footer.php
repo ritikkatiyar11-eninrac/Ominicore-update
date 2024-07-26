@@ -17,7 +17,7 @@
                     <div class="d-flex footer-column-1 flex flex-lg-column justify-content-lg-between justify-content-md-between justify-content-sm-between h-100  align-items-lg-start">
                         <div style="max-width:170px; padding-left:10px;padding-right:10px;padding-top:0;padding-bottom:10px;">
                         <a href="">
-                            <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" style="width:100%" alt="LOGO" class="footer-header">
+                            <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" style="width:100% filter:brightness(100);" alt="LOGO" class="footer-header">
                         </a>
                         </div>
                        

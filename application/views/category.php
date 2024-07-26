@@ -58,7 +58,7 @@
             <div class="position-relative d-flex my-3">
                 <div class="position-relative w-100">
                     <h3 style="letter-spacing: .0075rem; line-height:1.2; font-size: 24px;">
-                        First category
+                       CERC
                     </h3>
                 </div>
             </div>

@@ -551,11 +551,10 @@ body.bn-working .bn-item,body.bn-working .bn-single {
 .bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
   content: "\e804";
   display: none;
-  
   font-size: 10px;
   font-weight: 400;
   margin-left: 5px;
-  /* transform: translateY(-1px) */
+  transform: translateY(-1px)
 }
 
 @media (min-width: 1201px) {
@@ -650,34 +649,39 @@ body.bn-working .bn-item,body.bn-working .bn-single {
   position: relative;
   text-transform: capitalize;
   transition: all .2s ease-out;
-  width: 100%
+  width: 100%;
+  border-radius: 10px;
 }
 
 .bn-filter-tab-wrapper .bn-filter-item .bn-filter:hover {
-background: #0f3f6e;
-color: #fff;
-}
+  background: #1040f0;
+  color: #fff;
+  }
 
 .bn-filter-tab-wrapper .bn-filter-item .bn-filter:after {
   content: "\e804";
   display: none;
-
   font-size: 10px;
   font-weight: 400;
   margin-left: 5px;
   transform: translateY(-1px)
 }
 
+.bn-filter-tab-wrapper .bn-filter-item .bn-filter{
+  background-color: #eee9ff;
+  color:#1040f0;
+}
+
 @media (min-width: 801px) {
   .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-      font-weight: 700;
+    
       line-height: 25px
   }
 }
 
 @media (min-width: 1201px) {
   .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-      padding: 8px 12px
+      padding: 4px 12px
   }
 }
 
@@ -732,23 +736,20 @@ ul{
       text-align: center
   }
 }
-
+/* .bn-filter-top{
+  background-color: #1040f0;
+  color: white;
+} */
 .bn-filter-tab-wrapper .bn-filter-item:last-child {
   margin-right: 0
 }
 
 @media (min-width: 801px) {
   .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-      font-weight:700;
       line-height: 25px
   }
 }
 
-@media (min-width: 1201px) {
-  .bn-filter-tab-wrapper .bn-filter-item .bn-filter {
-      padding:8px 12px
-  }
-}
 
 @media (min-width: 941px) {
   .bn-subfilter-tabs {
@@ -774,19 +775,23 @@ ul{
   margin-bottom: 3px;
   margin-right: 3px;
   padding: 5px 8px;
+  border-radius: 8px;
   transition: all .2s ease-out;
+  background-color: #eee9ff;
+  color: #1040f0;
 
 }
 
 .bn-subfilter:hover {
-  background: #0f3f6e;
+  background: #1040f0;
   color:#e7e7e7;
 }
 
 .bn-subfilter--active {
-  color: #e7e7e7;
-  background: #0f3f6e
+  color: white!important;
+  background: #1040f0!important;
 }
+
 
 @media (min-width: 1201px) {
   .bn-subfilter {
