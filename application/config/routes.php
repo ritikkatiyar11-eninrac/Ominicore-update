@@ -71,3 +71,4 @@ $route['sitemap'] = 'Omnicore/sitemap';
 $route['terms_and_condition'] = 'Omnicore/terms_and_condition';
 
 
+$route['demolandingpage'] = 'Omnicore/demolandingpage';
