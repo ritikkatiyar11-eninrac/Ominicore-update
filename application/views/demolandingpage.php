@@ -7,6 +7,8 @@
             margin: 0;
         }
 
+       
+
         .langing_page-top {
             letter-spacing: 0.5px;
         }
@@ -292,10 +294,18 @@
         }
 
         .side-col .placeholder-image-05 .thumbnailwrapper {
-            /* margin-bottom: 15px; */
-            margin-top: 20px;
+            margin-top: 0;
+            padding: 10px;
+            width: max-content;
+            background-color: #ccc8ff;
+            border-radius: 50%;
+          
             font-size: 20px;
             font-weight: 800;
+        }
+
+        .side-col .placeholder-image-05 .thumbnailwrapper i{
+            font-size: 40px;
         }
 
         .side-col .placeholder-image-05 .card-title {
