@@ -10,14 +10,17 @@
 </head>
 
 <body>
-    <footer class="footer text-center text-white bg-darklight-700 overflow-hidden">
+    <footer class="footer text-center text-white overflow-hidden" style="background-color: #0f3f6e;">
         <div class="container-xl  p-sm-4">
             <div class="row p-4">
                 <div class="col-lg-4 col-md">
-                    <div class="d-flex footer-column-1 flex flex-lg-column justify-content-lg-between justify-content-md-between justify-content-sm-between h-100  align-items-lg-start ">
+                    <div class="d-flex footer-column-1 flex flex-lg-column justify-content-lg-between justify-content-md-between justify-content-sm-between h-100  align-items-lg-start">
+                        <div style="max-width:170px; padding-left:10px;padding-right:10px;padding-top:0;padding-bottom:10px;">
                         <a href="">
-                            <img src="<?= base_url() ?>assets/images/logo_white.png" style="max-width: 200px;" alt="LOGO" class="footer-header">
+                            <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" style="width:100%" alt="LOGO" class="footer-header">
                         </a>
+                        </div>
+                       
                         <div class="d-flex float-right justify-content-center align-items-center gap-4 social-icons ">
                             <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
                                 <i class="icofont-linkedin"></i>
@@ -80,7 +83,7 @@
                             <div class="d-flex">
                                 <input type="email" name="" id="" placeholder="Enter e-mail address">
 
-                                <button class="btn btn-warning" style="border-radius: 0px;">
+                                <button class="btn btn-light" style="border-radius: 0px; margin-left:5px">
 
                                     SEND
                                 </button>

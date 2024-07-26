@@ -67,7 +67,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-1.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -99,7 +99,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-2.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -131,7 +131,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-3.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -163,7 +163,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-4.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -195,7 +195,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-5.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -227,7 +227,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-6.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
@@ -259,7 +259,7 @@
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden">
+                                <div class="overflow-hidden" style="border-radius:10px">
                                     <img src="<?= base_url() ?>assets/images/category-item-7.webp" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
                                 </div>
                             </a>
