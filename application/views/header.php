@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Omnicore</title>
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="<?=base_url() ?>assets/images/Omnicore-new-logo-4.svg">
 </head>
 <body>
     <header class="position-sticky top-0" style="background:rgba(255 255 255 / 90%);backdrop-filter:blur(2px); z-index:11; height:80px;">
@@ -58,5 +59,13 @@
             </div>
         </div>
     </header>
+
+    <script>
+        // document.querySelector(".icofont-navigation-menu").addEventListener("click", function(e){
+        //     e.preventDefault()
+        //     document.querySelector("#landingsidebarmobile").classList.add("d-flex")
+        // }
+        // )
+    </script>
 
    

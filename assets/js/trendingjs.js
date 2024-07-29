@@ -16,7 +16,7 @@ let dataUrl = "http://localhost/omnicore/assets/js/data.json"
         functionToCallDataBySlug() {
             document.querySelectorAll(".menu-ticker").forEach(item => {
                 item.addEventListener("click", function(e) {
-                    itemId = item.getAttribute("id")
+                   let itemId = item.getAttribute("id")
                     console.log(itemId)
                     let activeStyle = document.getElementsByClassName("--active");
                     activeStyle[0].className = activeStyle[0].className.replace("--active", "")
@@ -25,7 +25,6 @@ let dataUrl = "http://localhost/omnicore/assets/js/data.json"
                     console.log("filterData", filteredData.children)
                 })
             })
-
         }
     };
     storedData.fetchData();

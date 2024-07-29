@@ -36,7 +36,7 @@
 </style>
 <div class="container">
     <div class="subscription-container">
-        <h2 class="form-heading" style="margin-bottom: 30px; text-align:center;">The Art Newspaper Newsletter</h2>
+        <h2 class="form-heading" style="margin-bottom: 30px; text-align:center;">Einfews Newsletter</h2>
         <div class="newsletter-description">
             <p><strong>Daily:</strong> Our Daily newsletter brings you breaking news, comment and insider analysis on the international art world, picked by our editors</p>
             <p><strong>Weekender:</strong> Our Weekender newsletter, sent on Fridays, includes the day's top stories, a guide to must-see exhibitions, long-form features as well as our latest podcast episode and the most recent installment of our series Adventures with Van Gogh</p>
