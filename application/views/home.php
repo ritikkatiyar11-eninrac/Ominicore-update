@@ -1,8 +1,4 @@
-
-
 <?php  require(APPPATH . 'views/header.php'); ?>
-<?php require($this->config->item('views') . '/menusection.php'); ?>
-<?php require($this->config->item('views') . '/trending.php'); ?>
-
-<?php require($this->config->item('views') . '/footer.php'); ?>
-
+<?php require(APPPATH . 'views/menusection.php'); ?>
+<?php require(APPPATH . 'views/trending.php'); ?>
+<?php require(APPPATH . 'views/footer.php'); ?>
