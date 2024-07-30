@@ -83,8 +83,10 @@ class Omnicore extends Default_Controler
     }
 
 
-    public function demolandingpage()
+    
+
+    public function remainingsection()
     {
-        $this->load->view('demolandingpage');
+        $this->load->view('remainingsection');
     }
 }

@@ -313,91 +313,9 @@ input:focus {
   transform: scale(1.3);
 }
 
-.category img:hover {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
-  border-radius: 10px;
-}
 
-.category .news .description {
-  font-size: 0.875rem;
-  margin-top: 1rem;
-  text-align: justify;
-}
-.category .news .keywords {
-  color: var(--primary-800);
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-.news .timestamp {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-.category-header {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
 
-.category-link {
-  align-items: center;
-  margin-left: 3px;
-}
-.category-link span {
-  padding: 1rem 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.category-link i {
-  font-size: 24px;
-}
 
-.leftmost {
-  width: 28rem;
-}
-.middle {
-  width: 27rem;
-}
-.middle .titile-text {
-  font-size: 0.9rem;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.015em;
-}
-
-.leftmost .news .titile-image {
-  width: 100%;
-}
-.leftmost .news .titile-text {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.0075em;
-  line-height: 1.1;
-}
-
-.rightmost {
-  padding-left: 1rem;
-  width: 16rem;
-}
-.rightmost .news-block .timestamp {
-  font-size: 0.8rem;
-  color: #000000;
-  opacity: 0.7;
-  padding: 0.8rem 0;
-}
-
-.news-block a {
-  color: #000000;
-  font-weight: bold !important;
-}
-.news-block + .news-block {
-  margin-top: 20px;
-}
 
 /*============= Login======== */
 .login-header {
