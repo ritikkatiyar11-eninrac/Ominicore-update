@@ -1,8 +1,10 @@
 <?php require(APPPATH . 'views/header.php'); ?>
 
-<?php require(APPPATH . 'views/menusection.php'); ?>
+<div class="container p-0">
+    <?php require(APPPATH . 'views/menusection.php'); ?>
+</div>
 <style>
-    
+
 </style>
 <div class="bn-base">
     <main class="bn-content-area" id="content">
@@ -31,7 +33,7 @@
                     </div>
                 </a>
 
-                
+
 
                 <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
@@ -41,7 +43,7 @@
                     </div>
                 </a>
 
-               
+
                 <a href="" class="bn-item bn-item-2x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img" style="
@@ -100,7 +102,7 @@
                         </div>
                     </div>
                 </a>
-               
+
                 <a href="" class="bn-item bn-item-1x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">

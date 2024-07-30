@@ -21,6 +21,21 @@
             "content";
     }
 
+    @media (min-width:1024px){
+        .analyst-details-name{
+            position: sticky;
+            top: 100px;
+        }
+        .analyst-details-postdate{
+            position: sticky;
+            top: 120px;
+        }
+        .analyst-details-socialmedia{
+            position: sticky;
+            top: 140px;
+        }
+    }
+
     @media (min-width: 1280px) {
         .grid-in-series {
             grid-area: series;
@@ -72,7 +87,7 @@
     }
 </style>
 
-<div class="container  mt-3" style="background-color: aliceblue;">
+<div class="container  mt-3">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">einfews</a></li>
@@ -129,10 +144,10 @@
                                 <a href="#" class="mr-1 mb-3" style="padding:1rem;padding-top: .25rem; padding-bottom: .25rem;transition-duration: .3s; letter-spacing: .015em;line-height: 1;">Solar</a>
                                 <a href="#" class="mr-1 mb-3" style="padding:1rem;padding-top: .25rem; padding-bottom: .25rem;transition-duration: .3s; letter-spacing: .015em;line-height: 1;">Hydrogen</a>
                             </div>
-                            <div class="w-100 ml-auto">
-                                <div class="d-flex justify-content-end pt-3">
+                            <div class="w-100 ml-auto d-flex justify-content-end align-items-center">
+                                <div class="d-flex justify-content-end align-items-center gap-3 w-100 pt-3">
                                     <span class="fs-14 mr-2 flex-end" style="line-height: 1.2;">share</span>
-                                    <div class="flex justif items-center gap-4">
+                                    <div class="d-flex align-items-center gap-4">
                                     <i class="icofont-linkedin"></i><i class="icofont-brand-nexus"></i>
                                     </div>
                                 </div>
@@ -142,14 +157,14 @@
                     </div>
                 </div>
                 <div class="" style="grid-area: sponsor;"></div>
-                <div class="lg-max-w-col-1 mb-3" style="grid-area: byline; line-height: 0;">
+                <div class="lg-max-w-col-1 mb-3 analyst-details-name" style="grid-area: byline; line-height: 0;">
                     <div class="fs-16 text-darklight-800" style="line-height:1.2;">
                         <a href="">
                             Gareth Harris
                         </a>
                     </div>
                 </div>
-                <div class="mb-4 border-top" style="grid-area: toolbar; ">
+                <div class="mb-4 border-top analyst-details-socialmedia" style="grid-area: toolbar; ">
                     <div class="pt-2 d-flex justify-content-between xs-justify-end lg-justify-between  align-items-center">
                         <span class="fs-14 mr-2" style="line-height: 1.2;">share</span>
                         <div class="flex items-center">
@@ -158,10 +173,10 @@
                 </div>
                 <div class="mb-3" style="grid-area: media;">
                     <figure class="">
-                        <img src="<?= base_url() ?>assets/images/details-page-1.webp" style="color: transparent; height:auto;width:100%" alt="">
+                        <img src="<?= base_url() ?>assets/images/details-page-1.webp" style="color: transparent;border-radius:10px; height:auto;width:100%" alt="">
                     </figure>
                 </div>
-                <div class="mb-2 lg-max-w-col-1" style="grid-area: dateline; line-height: 0;">
+                <div class="mb-2 lg-max-w-col-1 analyst-details-postdate" style="grid-area: dateline;  line-height: 0;">
                     <div class="fs-16 d-inline-block" style="line-height: 1.2;">
                         1 September 2023
                     </div>

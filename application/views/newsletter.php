@@ -36,15 +36,15 @@
 </style>
 <div class="container">
     <div class="subscription-container">
-        <h2 class="form-heading" style="margin-bottom: 30px; text-align:center;">Einfews Newsletter</h2>
+        <h2 class="form-heading" style="margin-bottom: 30px; text-align:center;">Omnicore Newsletter</h2>
         <div class="newsletter-description">
             <p><strong>Daily:</strong> Our Daily newsletter brings you breaking news, comment and insider analysis on the international art world, picked by our editors</p>
             <p><strong>Weekender:</strong> Our Weekender newsletter, sent on Fridays, includes the day's top stories, a guide to must-see exhibitions, long-form features as well as our latest podcast episode and the most recent installment of our series Adventures with Van Gogh</p>
             <p><strong>Sunday Best:</strong> In a hurry? Catch up on the week's most popular stories. Sent weekly on Sundays</p>
-            <p><strong>Art Market Eye:</strong> Our monthly Art Market Eye newsletter delivers commentary, insights and analysis from our art market experts</p>
-            <p><strong>Art Fair Daily:</strong> Sent only during the opening days of major art fairs, the Art Fair Daily newsletter brings live news, gossip, interviews and features from our team on the ground</p>
-            <p><strong>Book Club:</strong> One for the bookworms! Our monthly Book Club newsletter brings you exclusive extracts, reviews, features, author interviews and more on the latest art books</p>
-            <p><strong>The Month Ahead:</strong> Want to know all the essential art world dates for your diary? This newsletter includes our pick of the must-see exhibitions, key fairs and important art events, sent at the start of the month</p>
+            <p><strong>Act Market Eye:</strong> Our monthly Art Market Eye newsletter delivers commentary, insights and analysis from our Art market experts</p>
+            <p><strong>Art Fair Daily:</strong> Sent only during the opening days of major Art fairs, the Art Fair Daily newsletter brings live news, gossip, interviews and features from our team on the ground</p>
+            <p><strong>Book Club:</strong> One for the bookworms! Our monthly Book Club newsletter brings you exclusive extracts, reviews, features, author interviews and more on the latest Art books</p>
+            <p><strong>The Month Ahead:</strong> Want to know all the essential Art world dates for your diary? This newsletter includes our pick of the must-see exhibitions, key fairs and important Art events, sent at the start of the month</p>
         </div>
         <form action="" method="POST">
 

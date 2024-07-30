@@ -218,6 +218,33 @@
                     </div>
                 </div>
 
+                <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-3;">
+                    <div class="">
+                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                    </div>
+                    <div class="trending-card-content">
+                        <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
+                        <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                    </div>
+                </div>
+
+
+                <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-4;">
+                    <div class="">
+                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
+                    </div>
+                    <div class="trending-card-content">
+                        <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
+                        <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
+                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>
             <div class="side-col">

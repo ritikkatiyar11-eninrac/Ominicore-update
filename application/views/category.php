@@ -1,5 +1,6 @@
 
 <?php  require(APPPATH . 'views/header.php'); ?>
+
 <style>
     .category-card-items-list {
         display: grid;
@@ -52,13 +53,38 @@
         margin-bottom: .5rem;
     }
 </style>
+<div class="container-xl">
+    <div class="bn-controls-wrapper">
+        <div class="container-xxl p-0">
+            <div class="bn-filter-tab-wrapper">
+                <div class="bn-filter-tabs-inner">
+                    <div class="bn-filter-tabs">
+                        <ul id="parent-category">
+                        </ul>
+                    </div>
+                </div>
+                <div class="bn-subfilter-tabs-inner">
+                    <div class="bn-subfilter-tabs">
+                        <ul id="sub-category">
+                        </ul>
+                    </div>
+                </div>
+                <div class="bn-subfilter-tabs-inner">
+                    <div class="bn-subfilter-tabs">
+                        <ul id="grand-category"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="section category-section">
     <div class="container-xl">
         <div class="category-container pt-xl">
             <div class="position-relative d-flex my-3">
-                <div class="position-relative w-100">
-                    <h3 style="letter-spacing: .0075rem; line-height:1.2; font-size: 24px;">
-                       CERC
+                <div class="position-relative w-100" >
+                    <h3 class="fs-16" style="letter-spacing: .0075rem; line-height:1.2; " id="breadcum-cat">
                     </h3>
                 </div>
             </div>
@@ -72,13 +98,13 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="mb-1 ">
+                        <div class="mb-1">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                    <a id="" href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
-                                <span class="text-capitalize">review</span>
+                                <span class="text-capitalize">Orders</span>
                             </div>
                         </div>
                         <a href="" class="cursor-pointer d-block mb-md-1">
@@ -107,7 +133,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -139,7 +165,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -171,7 +197,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -203,7 +229,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -235,7 +261,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -267,7 +293,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a href="">First Category</a>
+                                   <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -293,4 +319,5 @@
         </div>
     </div>
 </section>
+<script src="<?= base_url() ?>assets/js/menusectioncat.js"></script>
 <?php require(APPPATH . 'views/footer.php'); ?>
