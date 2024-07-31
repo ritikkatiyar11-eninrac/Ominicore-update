@@ -1,94 +1,23 @@
+<?php require(APPPATH . 'views/header.php'); ?>
 
-<?php  require(APPPATH . 'views/header.php'); ?>
+<div class="container-xl px-0">
 
-<style>
-    .category-card-items-list {
-        display: grid;
-        gap: 2rem;
-    }
-
-
-
-    @media (min-width:1280px) {
-        .category-card-items-list {
-            grid-template-columns: repeat(5, minmax(0, 1fr));
-        }
-    }
-
-    @media (min-width:1024px) {
-        .category-card-items-list {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-    }
-
-    @media only screen and (min-width:768px) and (max-width:1024px) {
-        .category-card-items-list {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-    }
-
-
-    @media only screen and (max-width:640px) {
-        .category-card-items-list {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-        }
-    }
-
-    @media only screen and (min-width:520px) and (max-width:768px) {
-        .category-card-items-list {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .category-card-items-list h4 {
-            font-size: 18px;
-        }
-    }
-
-    .category-card-items-list h4 {
-        font-size: 16px;
-    }
-
-    .sm-mb {
-        margin-bottom: .5rem;
-    }
-</style>
-<div class="container-xl">
-    <div class="bn-controls-wrapper">
-        <div class="container-xxl p-0">
-            <div class="bn-filter-tab-wrapper">
-                <div class="bn-filter-tabs-inner">
-                    <div class="bn-filter-tabs">
-                        <ul id="parent-category">
-                        </ul>
-                    </div>
-                </div>
-                <div class="bn-subfilter-tabs-inner">
-                    <div class="bn-subfilter-tabs">
-                        <ul id="sub-category">
-                        </ul>
-                    </div>
-                </div>
-                <div class="bn-subfilter-tabs-inner">
-                    <div class="bn-subfilter-tabs">
-                        <ul id="grand-category"></ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php require(APPPATH . 'views/menusection.php'); ?>
 </div>
+
 
 <section class="section category-section">
     <div class="container-xl">
         <div class="category-container pt-xl">
             <div class="position-relative d-flex my-3">
-                <div class="position-relative w-100" >
-                    <h3 class="fs-16" style="letter-spacing: .0075rem; line-height:1.2; " id="breadcum-cat">
-                    </h3>
+                <div class="position-relative w-100">
+                    <div class="page-header flex-column px-0 pb-0">
+                        <h3 class="fs-16" style="letter-spacing: .0075rem; color: #0f3f6e; line-height:1.2; " id="breadcum-cat"></h3>
+                        <h1 class="page-title mx-0 mt-1" style="color: #3243e9;" id="activeCategory"></h1>
+                    </div>
                 </div>
             </div>
-            <div class="position-relative d-flex my-3" style="padding-top: 2rem; padding-bottom:3.5rem; width:100%; margin-top:2rem; margin-bottom:2rem;">
+            <div class="position-relative d-flex my-3" style=" padding-bottom:3.5rem; width:100%; margin-top:2rem; margin-bottom:2rem;">
                 <div class="position-relative category-card-items-list">
                     <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
@@ -101,14 +30,14 @@
                         <div class="mb-1">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                    <a id="" href="">CERC</a>
+                                    <a id="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">Orders</span>
                             </div>
                         </div>
-                        <a href="" class="cursor-pointer d-block mb-md-1">
-                            <h4 class="fs-16 text-dark" style="letter-spacing: .015em; font-weight:inherit; line-height: 1.1;">
+                        <a target="_blank" href="http://192.168.29.156/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
+                            <h4 class="fs-16 card-title" style="letter-spacing: .015em; font-weight:inherit; line-height: 1.1;">
                                 In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire
                             </h4>
                         </a>
@@ -133,7 +62,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -165,7 +94,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -197,7 +126,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -229,7 +158,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -261,7 +190,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -293,7 +222,7 @@
                         <div class="mb-1 ">
                             <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
-                                   <a href="">CERC</a>
+                                    <a href="">CERC</a>
                                 </span>
                                 <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
                                 <span class="text-capitalize">review</span>
@@ -319,5 +248,8 @@
         </div>
     </div>
 </section>
-<script src="<?= base_url() ?>assets/js/menusectioncat.js"></script>
+
+
+<script src="<?=base_url()?>assets/js/categorypage.js"></script>
+
 <?php require(APPPATH . 'views/footer.php'); ?>

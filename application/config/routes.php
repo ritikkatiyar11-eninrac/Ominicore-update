@@ -49,7 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
 $route['default_controller'] = 'Omnicore';
+
+$route['category'] = 'Omnicore/category';
+$route['category/(:any)'] = 'Omnicore/category/$1';
+$route['category/(:any)/(:any)'] = 'Omnicore/category/$1/$1';
+
+
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
 $route['category'] = 'Omnicore/category';

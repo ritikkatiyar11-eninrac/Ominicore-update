@@ -9,7 +9,8 @@
         "children": [
           {
             "name": "orders",
-            "slug": "central-cerc-orders"
+            "slug": "central-cerc-orders",
+            "title":"orders title"
           },
           {
             "name": "petitions",

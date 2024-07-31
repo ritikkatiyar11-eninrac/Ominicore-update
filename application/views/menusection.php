@@ -3,7 +3,7 @@
         <div class="container-xxl p-0">
             <div class="bn-filter-tab-wrapper">
                 <div class="bn-filter-tabs-inner">
-                    <div class="bn-filter-tabs">
+                    <div class="bn-filter-tabs justify-content-center">
                         <ul id="parent-category">
                         </ul>
                     </div>

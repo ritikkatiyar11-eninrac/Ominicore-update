@@ -1,14 +1,38 @@
+<style>
+    .page-header a {
+        color: #0f3f6e;
+        width: max-content;
+        transition: all 0.4s ease-in-out;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+
+    }
+
+    .page-header a:hover {
+        transform: scale(0.98);
+        color: #3243e9;
+        transition-duration: .4s;
+    }
+
+    .page-header a span {
+        text-transform: uppercase;
+    }
+
+    .page-header a i {
+        font-size: 1.5rem;
+    }
+</style>
+
 <div class="langing_page-top d-flex">
     <div class="langing_page-top-sidebar" id="landing_top-sidebar">
 
         <div class="menuwrapper" style="width:35%;">
             <a href="" class="menu-logo">
-                <div class="logo"><span> Today </span><br /> <span> Updates</span></div>
+                <div class="logo"><span>Recent Updates</span><br /> <span id="totalUpdates"></span></div>
             </a>
             <div class="tickerwrapper">
                 <div class="menu-ticker --active" id="central">
                     <div class="label">Central</div>
-                    <div class="ticker-up" style="color: #8cd19e;">30</div>
+                    <div class="ticker-up" style="color: #8cd19e;">60</div>
                 </div>
                 <div class="menu-ticker" id="state">
                     <div class="label">State</div>
@@ -18,8 +42,6 @@
                     <div class="label">Generation</div>
                     <div class="ticker-up" style="color: #8cd19e;">50</div>
                 </div>
-
-
                 <div class="menu-ticker" id="infographic">
                     <div class="label">Infographics</div>
                     <div class="ticker-up" style="color: #f2555d;">50</div>
@@ -63,8 +85,9 @@
     <div class="langing_page-contentwrapper" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;">
 
         <!-- section one -->
-        <div class="page-header">
-            <h1 class="page-title" style="color: #3243e9;">Top Articles</h1>
+        <div class="page-header flex-column">
+            <h1 class="page-title" style="color: #3243e9; margin-top:0;">Top Articles</h1>
+            <a href="<?= base_url() ?>category"  class="d-flex" style="cursor:pointer;margin-left: 2%;"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
         </div>
         <div class="content-section">
             <div class="content-col">
@@ -109,9 +132,9 @@
                         <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
                     </div>
                 </div>
-                <div class="placeholder-image-05">
-                    <div class="thumbnailwrapper">
-                        <i class="icofont-bulb-alt"></i>
+                <div class="placeholder-image-05 d-flex flex-column align-items-start">
+                    <div class="thumbnailwrapper mb-2">
+                        <i class="icofont-light-bulb"></i>
                     </div>
                     <div>
                         <div class="card-meta">
@@ -124,8 +147,9 @@
         </div>
 
         <!-- section one -->
-        <div class="page-header">
-            <h1 class="page-title" style="color: #3243e9;">CERC</h1>
+        <div class="page-header flex-column">
+            <h1 class="page-title" style="color: #3243e9; margin-top:0;">CERC</h1>
+            <a href="<?= base_url() ?>category/central/central-cerc"  class="d-flex" style="cursor:pointer;margin-left: 2%;"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
         </div>
         <div class="content-section">
             <div class="content-col">
@@ -171,12 +195,10 @@
                     </div>
                 </div>
                 <div class="placeholder-image-05">
-                    <div class="thumbnailwrapper">
-                        <i class="icofont-bulb-alt"></i>
-                    </div>
+
                     <div>
                         <div class="card-meta">
-                            INSIGHTS
+                            30 july 2024
                         </div>
                         <p class="card-title fw-400" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</p>
                     </div>
@@ -184,8 +206,9 @@
             </div>
         </div>
 
-        <div class="page-header">
-            <h1 class="page-title" style="color: #3243e9;">MoP</h1>
+        <div class="page-header flex-column">
+            <h1 class="page-title" style="color: #3243e9; margin-top:0;">MoP</h1>
+            <a href="<?= base_url() ?>category/central/central-mop" class="d-flex" style="cursor:pointer;margin-left: 2%;"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
         </div>
         <div class="content-section">
             <div class="content-col">
@@ -240,12 +263,6 @@
                         <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
             <div class="side-col">
                 <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -258,14 +275,38 @@
                     </div>
                 </div>
                 <div class="placeholder-image-05">
-                    <div class="thumbnailwrapper">
-                        <i class="icofont-bulb-alt"></i>
-                    </div>
                     <div>
                         <div class="card-meta">
-                            INSIGHTS
+                            30 july 2024
+                        </div>
+                        <p class="card-title fw-400" style="line-height: 20px;">Texas city faces backlash for stripping local arts centre's funding over drag performances</p>
+                    </div>
+                </div>
+                <div class="placeholder-image-05">
+
+                    <div>
+                        <div class="card-meta">
+                            30 july 2024
                         </div>
                         <p class="card-title fw-400" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</p>
+                    </div>
+                </div>
+                <div class="placeholder-image-05">
+
+                    <div>
+                        <div class="card-meta">
+                            30 july 2024
+                        </div>
+                        <p class="card-title fw-400" style="line-height: 20px;">Texas city faces backlash for stripping local arts centre's funding over drag performance</p>
+                    </div>
+                </div>
+                <div class="placeholder-image-05">
+
+                    <div>
+                        <div class="card-meta">
+                            30 july 2024
+                        </div>
+                        <p class="card-title fw-400" style="line-height: 20px;">Texas city faces backlash for stripping local arts centre's funding over drag performance</p>
                     </div>
                 </div>
             </div>

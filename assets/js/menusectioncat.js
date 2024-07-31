@@ -585,25 +585,26 @@ const categories = [
   },
 ];
 
+
 function renderCategories() {
   const parentCategory = document.getElementById("parent-category");
-
   let breadcumCategory = document.getElementById("breadcum-cat");
-  
+ 
+
   parentCategory.innerHTML = "";
   categories.forEach((category, index) => {
-    const li = document.createElement("li");
+    let li = document.createElement("li");
     li.className = "bn-filter-item";
-    const btn = document.createElement("button");
+    let a = document.createElement("a");
+    a.href = `http://192.168.29.156/omnicore/category/${category.slug}`;
+    let btn = document.createElement("button");
     btn.className = "bn-filter bn-filter-top";
     btn.dataset.slug = category.slug;
     btn.dataset.title = category.name;
     btn.dataset.index = index;
     btn.textContent = category.name;
 
-   
     btn.addEventListener("click", (e) => {
-       
       if (e.target.classList.contains("bn-subfilter--active")) {
         e.target.classList.remove("bn-subfilter--active");
         let subCategory = document.getElementById("sub-category");
@@ -613,17 +614,19 @@ function renderCategories() {
         breadcumCategory.innerHTML = ``;
       } else {
         showSubCategories(category, index);
-        console.log(breadcumCategory, "breadcumCategory")
+        
         breadcumCategory.innerHTML = `<span>${category.name}</span>`;
       }
     });
-    li.appendChild(btn);
+    a.appendChild(btn);
+    li.appendChild(a);
     parentCategory.appendChild(li);
   });
 }
 
 function showSubCategories(category, parentIndex) {
   let breadcumCategory = document.getElementById("breadcum-cat");
+
   const subCategory = document.getElementById("sub-category");
   let grandCategory = document.getElementById("grand-category");
   subCategory.innerHTML = "";
@@ -633,7 +636,9 @@ function showSubCategories(category, parentIndex) {
     const li = document.createElement("li");
     li.className = "bn-subfilter-item";
     li.style = "transform: scale(1); opacity: 1;";
-    const btn = document.createElement("button");
+    let a = document.createElement("a");
+    a.href = `http://192.168.29.156/omnicore/category/${category.slug}/${sub.slug}`;
+    let btn = document.createElement("button");
     btn.className = "bn-subfilter child ";
     btn.dataset.slug = sub.slug;
     btn.dataset.title = sub.name;
@@ -645,16 +650,19 @@ function showSubCategories(category, parentIndex) {
       if (e.target.classList.contains("bn-subfilter--active")) {
         e.target.classList.remove("bn-subfilter--active");
         grandCategory.innerHTML = "";
+
         breadcumCategory.innerHTML = `<span>${category.name}</span>`;
       } else {
         setActive("sub-category", subIndex);
         setActive("parent-category", parentIndex);
         showGrandCategories(sub, subIndex, parentIndex, category);
         breadcumCategory.innerHTML = `<span>${category.name}</span> > <span>${sub.name}</span>`;
+
+        console.log(activeCategory);
       }
     });
-
-    li.appendChild(btn);
+    a.appendChild(btn);
+    li.appendChild(a);
     subCategory.appendChild(li);
   });
   setActive("parent-category", parentIndex);
@@ -670,7 +678,10 @@ function showGrandCategories(subCategory, ct, pt, cat) {
       const li = document.createElement("li");
       li.className = "bn-subfilter-item";
       li.style = "transform: scale(1); opacity: 1;";
-      const btn = document.createElement("button");
+      let a = document.createElement("a");
+      a.href = `http://192.168.29.156/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
+      a.setAttribute("target", "_blank");
+      let btn = document.createElement("button");
       btn.className = "bn-subfilter";
       btn.dataset.slug = grand.slug;
       btn.dataset.title = grand.name;
@@ -687,7 +698,8 @@ function showGrandCategories(subCategory, ct, pt, cat) {
           breadcumCategory.innerHTML = `<span>${cat.name}</span> > <span>${subCategory.name}</span> > <span>${grand.name}</span>`;
         }
       });
-      li.appendChild(btn);
+      a.appendChild(btn);
+      li.appendChild(a);
       grandCategory.appendChild(li);
     });
     setActive("parent-category", pt);
