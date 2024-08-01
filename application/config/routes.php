@@ -51,31 +51,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'Omnicore';
-
-$route['category'] = 'Omnicore/category';
-$route['category/(:any)'] = 'Omnicore/category/$1';
-$route['category/(:any)/(:any)'] = 'Omnicore/category/$1/$1';
-
-
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
-$route['category'] = 'Omnicore/category';
-$route['login'] = 'Omnicore/login';
-$route['notfound'] = 'Omnicore/notfound';
-$route['newsletter'] = 'Omnicore/newsletter';
-$route['subscribe'] = 'Omnicore/subscribe';
-$route['detailspage/newsdetailspage'] = 'Omnicore/newsdetailspage';
-$route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
-$route['privacy_policy'] = 'Omnicore/privacy_policy';
-$route['detailspage/infodetailspage'] = 'Omnicore/infodetailspage';
-$route['contact'] = 'Omnicore/contact';
-$route['signup'] = 'Omnicore/signup';
-$route['infographicpage'] = 'Omnicore/infographicpage';
-$route['search'] = 'Omnicore/search';
-$route['refund_policy'] = 'Omnicore/refund_policy';
-$route['cookie_page'] = 'Omnicore/cookie_page';
-$route['sitemap'] = 'Omnicore/sitemap';
-$route['terms_and_condition'] = 'Omnicore/terms_and_condition';
 
 
-$route['remainingsection'] = 'Omnicore/remainingsection';
+
+
+
+
+
+$route['category'] = 'Category/index';
+$route['category/(:any)'] = 'category/index/$1';
+$route['category/(:any)/(:any)'] = 'category/index/$1/$1';
+$route['category/(:any)/(:any)/(:any)'] = 'category/index/$1/$1/$1';
+
+
+$route['(:any)'] = 'Omnicore/$1';

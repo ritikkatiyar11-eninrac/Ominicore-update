@@ -69,7 +69,8 @@
         "slug": "central-mnre",
         "children": [
           {
-            "name": "Regulations"
+            "name": "Regulations",
+            "slug": "central-mnre-regulations"
           },
           {
             "name": "Policy",
@@ -153,7 +154,8 @@
         "slug": "state-gujrat",
         "children": [
           {
-            "name": "GERC"
+            "name": "GERC",
+            "slug":"state-gujrat-gerc"
           }
         ]
       },

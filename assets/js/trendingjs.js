@@ -40,19 +40,16 @@ const storedData = {
 
   totalRecentUpdates() {
     let c = document.querySelectorAll(".ticker-up");
-    let totalUpdates = document.getElementById("totalUpdates")
+    let totalUpdates = document.getElementById("totalUpdates");
     let total = 0;
     c.forEach((item) => {
-        let temp = Number(item.innerHTML)
-        total = total + temp
-      
+      let temp = Number(item.innerHTML);
+      total = total + temp;
     });
 
-    totalUpdates.innerHTML = total
+    totalUpdates.innerHTML = total;
 
-   
-return totalUpdates
-   
+    return totalUpdates;
   },
 };
 storedData.fetchData();
