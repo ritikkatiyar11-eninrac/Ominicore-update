@@ -12,14 +12,14 @@
     "publish_date": "",
     "tag": ["regulation", "policy", "orders"],
     "childCategory": [
-      "central-cerc",
-      "central-mop",
-      "central-mnre",
-      "central-mof",
-      "central-moc",
-      "central-apellatetribunal",
-      "central-supremecourt",
-      "central-others"
+      { "name": "CERC", "slug": "central-cerc" },
+      { "name": "MoP", "slug": "central-mop" },
+      { "name": "MNRE", "slug": "central-mnre" },
+      { "name": "MoF", "slug": "central-mof" },
+      { "name": "MoC", "slug": "central-moc" },
+      { "name": "Apellate Tribunal", "slug": "central-apellatetribunal" },
+      { "name": "Honb'le Supreme Court", "slug": "central-supremecourt" },
+      { "name": "Others", "slug": "central-others" }
     ],
     "grandCategory": [
       "central-cerc-orders",
@@ -138,10 +138,13 @@
     "publish_date": "",
     "tag": ["regulation", "policy", "orders"],
     "childCategory": [
-      {"name":"Connectivity","slug":"powertansmission-connectivity"},
-      {"name":"Charges","slug":"powertansmission-charges"},
-      {"name":"Projects", "slug":"powertansmission-projects"},
-      {"name":"Govt Announcements","slug":"powertansmission-govtannouncements"}
+      { "name": "Connectivity", "slug": "powertansmission-connectivity" },
+      { "name": "Charges", "slug": "powertansmission-charges" },
+      { "name": "Projects", "slug": "powertansmission-projects" },
+      {
+        "name": "Govt Announcements",
+        "slug": "powertansmission-govtannouncements"
+      }
     ],
     "grandCategory": [
       "powertansmission-connectivity-stu",

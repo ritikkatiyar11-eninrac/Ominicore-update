@@ -2,6 +2,8 @@
 const slugs = [];
 
 let activeCategory = document.getElementById("activeCategory");
+
+let categoryPathName = document.getElementById("categoryPathName");
 // activeCategory.innerHTML = `<span>${removedbaseUrlfromMainUrl[1]}</span>`;
 
 const getObjectFunction = {
@@ -56,13 +58,18 @@ const getObjectFunction = {
           result.find((parentitem) => {
             if (parentitem.slug === tempUrlLastItem[t - 1]) {
               console.log(parentitem);
+              activeCategory.innerHTML = `<span>${parentitem.name}</span>`;
+              let telmp = parentitem.childCategory.forEach(parentChildPath => parentChildPath.name)
+              console.log(telmp)
+              // categoryPathName.innerHTML = parentitem.childCategory.forEach(parentChildPath => parentChildPath.name)
             }
           });
         } else if (t === 3) {
           result.find((childitem) => {
             childitem.childCategory.find((ci) => {
-              if (ci === tempUrlLastItem[t - 1]) {
-                console.log(ci);
+              if (ci.slug === tempUrlLastItem[t - 1]) {
+                activeCategory.innerHTML = `<span>${ci.name}</span>`;
+                categoryPathName.innerHTML = ci.name
               }
             });
           });
@@ -70,7 +77,7 @@ const getObjectFunction = {
           result.find((granditem) => {
             granditem.grandCategory.find((gditem) => {
               if (gditem === tempUrlLastItem[t - 1]) {
-                console.log(gditem);
+                activeCategory.innerHTML = `<span>${ci.name}</span>`;
               }
             });
           });
