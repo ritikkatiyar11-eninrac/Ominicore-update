@@ -9,8 +9,20 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="bn-subfilter-tabs-inner">
+                        <div class="bn-subfilter-tabs">
+                            <ul id="sub-category">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bn-subfilter-tabs-inner">
+                        <div class="bn-subfilter-tabs">
+                            <ul id="grand-category"></ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="<?= base_url() ?>assets/js/menusectioncat.js"></script>

@@ -18,6 +18,11 @@ class Omnicore extends Default_Controler
         $this->load->view('login');
     }
 
+    public function infodetail()
+    {
+        $this->load->view('infodetail');
+    }
+
     public function notfound()
     {
         $this->load->view('notfound');
@@ -33,18 +38,15 @@ class Omnicore extends Default_Controler
     }
     public function newsdetailspage()
     {
-        $this->load->view('detailspage/newsdetailspage');
+        $this->load->view('newsdetailspage');
     }
 
-    public function infodetailspage()
-    {
-        $this->load->view('detailspage/infodetailspage');
-    }
+  
     public function infographicpage()
     {
         $this->load->view('infographicpage');
     }
-    // newsdetailspage infodetailspage
+   
 
     public function privacy_policy()
     {

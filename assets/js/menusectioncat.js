@@ -157,7 +157,7 @@ const categories = [
         ],
       },
       {
-        name: "maharashtra",
+        name: "Maharashtra",
         slug: "state-maharashtra",
         children: [
           {
@@ -584,19 +584,16 @@ const categories = [
     ],
   },
 ];
-
-
 function renderCategories() {
   const parentCategory = document.getElementById("parent-category");
   let breadcumCategory = document.getElementById("breadcum-cat");
- 
-
+  let activeCategory = document.getElementById("activeCategory")
   parentCategory.innerHTML = "";
   categories.forEach((category, index) => {
     let li = document.createElement("li");
     li.className = "bn-filter-item";
     let a = document.createElement("a");
-    a.href = `http://192.168.29.156/omnicore/category/${category.slug}`;
+    a.href = `${window.location.origin}/omnicore/category/${category.slug}`;
     let btn = document.createElement("button");
     btn.className = "bn-filter bn-filter-top";
     btn.dataset.slug = category.slug;
@@ -612,23 +609,31 @@ function renderCategories() {
         subCategory.innerHTML = "";
         grandCategory.innerHTML = "";
         breadcumCategory.innerHTML = ``;
+        activeCategory.innerHTML = ``;
       } else {
         showSubCategories(category, index);
-        
         breadcumCategory.innerHTML = `<span>${category.name}</span>`;
+        activeCategory.innerHTML = `<span>${category.name}</span>`;
       }
     });
-    a.appendChild(btn);
-    li.appendChild(a);
+    if (window.location.origin + "/omnicore/" === window.location.href) {
+      a.appendChild(btn);
+      li.appendChild(a);
+
+    } else {
+      li.appendChild(btn);
+    }
     parentCategory.appendChild(li);
   });
 }
 
 function showSubCategories(category, parentIndex) {
   let breadcumCategory = document.getElementById("breadcum-cat");
+  let activeCategory = document.getElementById("activeCategory")
 
   const subCategory = document.getElementById("sub-category");
   let grandCategory = document.getElementById("grand-category");
+
   subCategory.innerHTML = "";
   grandCategory.innerHTML = "";
 
@@ -637,7 +642,7 @@ function showSubCategories(category, parentIndex) {
     li.className = "bn-subfilter-item";
     li.style = "transform: scale(1); opacity: 1;";
     let a = document.createElement("a");
-    a.href = `http://192.168.29.156/omnicore/category/${category.slug}/${sub.slug}`;
+    a.href = `${window.location.origin}/omnicore/category/${category.slug}/${sub.slug}`;
     let btn = document.createElement("button");
     btn.className = "bn-subfilter child ";
     btn.dataset.slug = sub.slug;
@@ -650,19 +655,25 @@ function showSubCategories(category, parentIndex) {
       if (e.target.classList.contains("bn-subfilter--active")) {
         e.target.classList.remove("bn-subfilter--active");
         grandCategory.innerHTML = "";
-
         breadcumCategory.innerHTML = `<span>${category.name}</span>`;
+        activeCategory.innerHTML = `<span>${category.name}</span>`;
       } else {
         setActive("sub-category", subIndex);
         setActive("parent-category", parentIndex);
         showGrandCategories(sub, subIndex, parentIndex, category);
         breadcumCategory.innerHTML = `<span>${category.name}</span> > <span>${sub.name}</span>`;
-
+        activeCategory.innerHTML = `<span>${sub.name}</span>`;
         console.log(activeCategory);
       }
     });
-    a.appendChild(btn);
-    li.appendChild(a);
+    if (window.location.origin + "/omnicore/" === window.location.href) {
+    
+      a.appendChild(btn);
+      li.appendChild(a);
+    } else {
+      
+      li.appendChild(btn);
+    }
     subCategory.appendChild(li);
   });
   setActive("parent-category", parentIndex);
@@ -671,6 +682,7 @@ function showSubCategories(category, parentIndex) {
 function showGrandCategories(subCategory, ct, pt, cat) {
   const grandCategory = document.getElementById("grand-category");
   let breadcumCategory = document.getElementById("breadcum-cat");
+  let activeCategory = document.getElementById("activeCategory")
 
   grandCategory.innerHTML = "";
   if (subCategory.children) {
@@ -679,7 +691,7 @@ function showGrandCategories(subCategory, ct, pt, cat) {
       li.className = "bn-subfilter-item";
       li.style = "transform: scale(1); opacity: 1;";
       let a = document.createElement("a");
-      a.href = `http://192.168.29.156/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
+      a.href = `${window.location.origin}/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
       a.setAttribute("target", "_blank");
       let btn = document.createElement("button");
       btn.className = "bn-subfilter";
@@ -691,15 +703,23 @@ function showGrandCategories(subCategory, ct, pt, cat) {
         if (e.target.classList.contains("bn-subfilter--active")) {
           e.target.classList.remove("bn-subfilter--active");
           breadcumCategory.innerHTML = `<span>${cat.name}</span> > <span>${subCategory.name}</span>`;
+          activeCategory.innerHTML = `<span>${subCategory.name}</span>`;
         } else {
           setActive("parent-category", pt);
           setActive("sub-category", ct);
           setActive("grand-category", grandIndex);
           breadcumCategory.innerHTML = `<span>${cat.name}</span> > <span>${subCategory.name}</span> > <span>${grand.name}</span>`;
-        }
+          activeCategory.innerHTML = `<span>${grand.name}</span>`;
+        } 
       });
-      a.appendChild(btn);
-      li.appendChild(a);
+
+      if (window.location.origin + "/omnicore/" === window.location.href) {
+
+        a.appendChild(btn);
+        li.appendChild(a);
+      } else {
+        li.appendChild(btn);
+      }
       grandCategory.appendChild(li);
     });
     setActive("parent-category", pt);
@@ -708,12 +728,17 @@ function showGrandCategories(subCategory, ct, pt, cat) {
 }
 
 function setActive(listId, index) {
-  const items = document.getElementById(listId).children;
-  // console.log(items)
-  for (let i = 0; i < items.length; i++) {
-    items[i].firstChild.classList.remove("bn-subfilter--active");
+  let activeitems;
+  if (window.location.origin + "/omnicore/" === window.location.href) {
+    activeitems = document.getElementById(listId).children.children;
+  } else {
+    activeitems = document.getElementById(listId).children;
   }
-  items[index].firstChild.classList.add("bn-subfilter--active");
+  console.log(activeitems);
+  for (let i = 0; i < activeitems.length; i++) {
+    activeitems[i].firstChild.classList.remove("bn-subfilter--active");
+  }
+  activeitems[index].firstChild.classList.add("bn-subfilter--active");
 }
 
 document.addEventListener("DOMContentLoaded", () => {

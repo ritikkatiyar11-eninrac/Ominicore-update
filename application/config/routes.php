@@ -54,16 +54,13 @@ $route['default_controller'] = 'Omnicore';
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
 
-
-
-
-
-
-
+$route['newsdetailspage'] = 'Omnicore/newsdetailspage';
+$route['infodetail'] = 'Omnicore/infodetail';
 $route['category'] = 'Category/index';
 $route['category/(:any)'] = 'category/index/$1';
 $route['category/(:any)/(:any)'] = 'category/index/$1/$1';
 $route['category/(:any)/(:any)/(:any)'] = 'category/index/$1/$1/$1';
+$route['category/(:any)/(:any)/(:any)/(:any)'] = 'category/index/$1/$1/$1/$1';
 
 
 $route['(:any)'] = 'Omnicore/$1';

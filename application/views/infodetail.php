@@ -1,6 +1,4 @@
-<?php require($this->config->item('views') . '/header.php'); ?>
-
-
+<?php require(APPPATH . 'views/header.php'); ?>
 <style>
     @media (min-width: 641px) {
         .bn-single .bn-single-image .bn-container.bn-container--image {
@@ -69,11 +67,12 @@
 
 <main class="container-fluid">
     <div class="bn-single">
-        <div class="container mt-3">
+        <div class="container-fluid px-0 mt-3">
             <nav aria-label="breadcrumb" id="breadcrumb-nav">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item px-0"><a href="#">Inforaphics</a></li>
-                    <li class="breadcrumb-item active px-0" aria-current="page">detailspage</li>
+                    <li class="breadcrumb-item px-0"><a href="<?= base_url() ?>category">
+                            <!-- <i class="icofont-home"></i> -->
+                        </a></li>
                 </ol>
             </nav>
         </div>
@@ -87,17 +86,17 @@
             <div class="bn-container bn-container--actions">
                 <div class="bn-single-image--actions bn-single-meta-col d-flex justify-content-between">
                     <div class="bn-single-image--action">
-                        <button class="bn-single-nav bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
+                        <button class="bn-single-nav btn btn-sm  bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
                             <i class="icon-left-open"></i><span>Older</span>
                         </button>
                     </div>
                     <div class="bn-single-image--action">
-                        <button href="#" class="bn-single-like" data-state="off" data-id="1290">
+                        <button href="#" class=" btn btn-sm bn-single-like" data-state="off" data-id="1290">
                             <span>Like this post</span>
                         </button>
                     </div>
                     <div class="bn-single-image--action">
-                        <button class="bn-single-nav bn-single-nav--next bn-single-nav--active" data-dir="next" data-id="1292"><span>Newer</span><i class="icon-right-open"></i></button>
+                        <button class="bn-single-nav btn btn-sm  bn-single-nav--next bn-single-nav--active" data-dir="next" data-id="1292"><span>Newer</span><i class="icon-right-open"></i></button>
                     </div>
                 </div>
             </div>
@@ -123,7 +122,7 @@
                             </li>
                             <li class="bn-single-topic">
                                 <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #0f3f6e">
-                                    <a href="" class="bn-single-topic--child bn-int-link">solar</a>
+                                    <a href="" class="bn-single-topic--child bn-int-link">wind</a>
                                 </span>
                             </li>
 
@@ -133,7 +132,7 @@
             </div>
         </div>
 
-        <div class="bn-single-meta bn-single-meta--signup">
+        <!-- <div class="bn-single-meta bn-single-meta--signup">
             <div class="bn-container">
                 <form class="bn-signup" method="post" action="" target="_blank">
                     <div class="bn-signup--col bn-signup--info">
@@ -143,7 +142,7 @@
                     <div class="bn-signup--col bn-signup--input"><input type="email" name="MERGE0" id="MERGE0" placeholder="Your email..."><button type="submit">Sign up</button></div>
                 </form>
             </div>
-        </div>
+        </div> -->
     </div>
 </main>
 

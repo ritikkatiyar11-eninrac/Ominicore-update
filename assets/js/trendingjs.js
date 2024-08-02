@@ -1,4 +1,5 @@
-let dataUrl = "http://localhost/omnicore/assets/js/data.json";
+let dataUrl = `${window.location.origin}/omnicore/assets/js/data.json`;
+
 const storedData = {
   data: {},
   setdata(data) {
@@ -43,8 +44,10 @@ const storedData = {
     let totalUpdates = document.getElementById("totalUpdates");
     let total = 0;
     c.forEach((item) => {
-      let temp = Number(item.innerHTML);
+      let temp = Number(item.children[0].innerHTML);
       total = total + temp;
+      // console.log(item.children)
+
     });
 
     totalUpdates.innerHTML = total;

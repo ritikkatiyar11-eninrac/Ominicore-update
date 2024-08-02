@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "parent": { "name": "Central", "slug": "central" },
+    "imageUrl": "",
+    "title": "Central is a neighborhood in the city of Los Angeles, California",
+    "description": "RERC (Investment Plan): Approval of Investment Plan for Rajasthan Rajya Vidyut Prasaran Nigam Limited & SLDC for the FY 2024-25",
+    "author": "chandan",
+    "author_url": "",
+    "meta_title": "",
+    "meta_description": "",
+    "publish_date": "",
+    "tag": ["regulation", "policy", "orders"]
+  }
+]

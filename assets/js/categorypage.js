@@ -3,6 +3,7 @@ const slugs = [];
 
 let activeCategory = document.getElementById("activeCategory");
 
+
 let categoryPathName = document.getElementById("categoryPathName");
 // activeCategory.innerHTML = `<span>${removedbaseUrlfromMainUrl[1]}</span>`;
 
@@ -21,7 +22,7 @@ const getObjectFunction = {
 
   setUpdatedurl(updatedurl) {
     this.updatedurl = updatedurl;
-    console.log(updatedurl);
+    // console.log(updatedurl);
   },
 
   dataObjectforGetUrl() {
@@ -45,23 +46,21 @@ const getObjectFunction = {
   },
 
   findCategory() {
-    fetch("http://192.168.29.156/omnicore/assets/js/post.json")
+    let self = this;
+    let baseUrl = `${window.location.origin}/omnicore/assets/js/post.json`;
+    fetch(baseUrl)
       .then((response) => response.json())
       .then((result) => {
-        this.setPostData(result);
+        self.setPostData(result);
         let tempUrlLastItem = this.updatedurl;
 
         let t = tempUrlLastItem.length;
-        console.log(t);
 
         if (t === 2) {
           result.find((parentitem) => {
             if (parentitem.slug === tempUrlLastItem[t - 1]) {
               console.log(parentitem);
               activeCategory.innerHTML = `<span>${parentitem.name}</span>`;
-              let telmp = parentitem.childCategory.forEach(parentChildPath => parentChildPath.name)
-              console.log(telmp)
-              // categoryPathName.innerHTML = parentitem.childCategory.forEach(parentChildPath => parentChildPath.name)
             }
           });
         } else if (t === 3) {
@@ -69,7 +68,7 @@ const getObjectFunction = {
             childitem.childCategory.find((ci) => {
               if (ci.slug === tempUrlLastItem[t - 1]) {
                 activeCategory.innerHTML = `<span>${ci.name}</span>`;
-                categoryPathName.innerHTML = ci.name
+                categoryPathName.innerHTML = ci.name;
               }
             });
           });
@@ -87,10 +86,16 @@ const getObjectFunction = {
         console.log("error", err);
       });
   },
+
+  renderDatOnCategoryPage() {
+    let categoryListparent = document.getElementById("categoryitemslist");
+    console.log(categoryListparent);
+  },
 };
 
-let url = "http://192.168.29.156/omnicore";
-let dataUrl = "http://192.168.29.156/omnicore/assets/js/data.json";
+let url = `${window.location.origin}/omnicore`;
+let dataUrl = `${window.location.origin}/omnicore/assets/js/data.json`;
 getObjectFunction.dataObjectforGetUrl(dataUrl);
 getObjectFunction.removeBaseUrl(url);
-getObjectFunction.findCategory();
+// getObjectFunction.findCategory();
+// getObjectFunction.renderDatOnCategoryPage();

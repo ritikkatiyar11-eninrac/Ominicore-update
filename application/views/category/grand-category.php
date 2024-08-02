@@ -5,8 +5,7 @@
                 <div class="bn-filter-tab-wrapper">
                     <div class="bn-filter-tabs-inner">
                         <div class="bn-filter-tabs justify-content-center">
-                            <ul id="parent-category">
-                            </ul>
+                            <ul id="parent-category"></ul>
                         </div>
                     </div>
                     <div class="bn-subfilter-tabs-inner">
@@ -20,3 +19,4 @@
         </div>
     </div>
 </div>
+<script src="<?= base_url() ?>assets/js/menusectioncat.js"></script>
