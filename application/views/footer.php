@@ -31,12 +31,12 @@
                                 Eninrac
                             </a>
                             <ul class="text-capitalize">
-                                <li><a href="">Home and texture</a></li>
-                                <li><a href="">Home and texture</a></li>
-                                <li><a href="">Home and texture</a></li>
-                                <li><a href="">Home and texture</a></li>
-                                <li><a href="">Home and texture</a></li>
-                                <li><a href="">Home and texture</a></li>
+                                <li><a href="https://eninrac.com/advisory-and-consulting-services">Advisory & Consulting Services</a></li>
+                                <li><a href="https://eninrac.com/market-research-service">Market Research Services</a></li>
+                                <li><a href="https://eninrac.com/strategy-and-innovation">Strategy & Innovation</a></li>
+                                <li><a href="https://eninrac.com/transformation-and-sustainability">Transformation & Sustainability</a></li>
+                                <li><a href="https://eninrac.com/training-and-pro-bono-services">Training & Pro Bono</a></li>
+                                
 
                             </ul>
                         </div>
@@ -47,12 +47,14 @@
                                 EXPLORE
                             </a>
                             <ul class="text-capitalize">
-                                <li>item-text</li>
-                                <li>item-text</li>
-                                <li>item-text</li>
-                                <li>item-text</li>
-                                <li>item-text</li>
-                                <li>item-text</li>
+                                <li><a href="https://energyinfra.market/">Energy Infra Market</a></li>
+                                <li><a href="https://eninrac.com/research-reports">Research Reports</a></li>
+                                <li><a href="https://vantedgeplus.com/">Vantedge+</a></li>
+                                <li><a href="https://omnicoreplus.com/">Visionboard</a></li>
+                                <li><a href="https://omnicoreplus.com/">Omnicore+</a></li>
+                                <li><a href="https://eninrac.com/knowledge-grid">Knowledge Grid</a></li>
+                                <li><a href="https://eninrac.com/geography">Geography</a></li>
+    
                             </ul>
                         </div>
 
