@@ -19,8 +19,7 @@ class Default_Controler extends CI_Controller
     public function error404()
     {
         $this->output->set_status_header('404');
-        // $this->load->view('error404');
-        echo "Page No Found";
+        $this->load->view('notfound');
     }
     public function authentication($credential)
     {

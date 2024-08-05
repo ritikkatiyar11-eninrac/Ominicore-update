@@ -7,13 +7,20 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('home');
     }
-    // public function category()
-    // {
-    //     $this->load->view('category');
-    // }
+
+    public function page($id){
+        if($id == 'login') $this->login();
+        if($id == 'infodetail') $this->infodetail();
+        if($id == 'newsletter') $this->newsletter();
+        if($id == 'subscribe') $this->subscribe();
+        if($id == 'newsdetailspage') $this->newsdetailspage();
+        if($id == 'infographicpage') $this->infographicpage();
+        if($id == 'privacy-policy') $this->privacy_policy();
+        if($id == 'login') $this->login();
+    }
 
 
-    public function login()
+    private function login()
     {
         $this->load->view('login');
     }
@@ -21,11 +28,6 @@ class Omnicore extends Default_Controler
     public function infodetail()
     {
         $this->load->view('infodetail');
-    }
-
-    public function notfound()
-    {
-        $this->load->view('notfound');
     }
 
     public function newsletter()

@@ -50,12 +50,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = 'Omnicore';
+$route['default_controller'] = 'Omnicore/index';
 $route['404_override'] = 'Default_Controler/error404';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['newsdetailspage'] = 'Omnicore/newsdetailspage';
-$route['infodetail'] = 'Omnicore/infodetail';
 $route['category'] = 'Category/index';
 $route['category/(:any)'] = 'category/index/$1';
 $route['category/(:any)/(:any)'] = 'category/index/$1/$1';
@@ -63,4 +61,7 @@ $route['category/(:any)/(:any)/(:any)'] = 'category/index/$1/$1/$1';
 $route['category/(:any)/(:any)/(:any)/(:any)'] = 'category/index/$1/$1/$1/$1';
 
 
-$route['(:any)'] = 'Omnicore/$1';
+$route['recent-updates'] = 'RecentUpdates/index';
+$route['recent-updates/(:any)'] = 'recentupdates/getRecentUpdates/$1';
+
+$route['(:any)'] = 'Omnicore/page/$1';

@@ -60,8 +60,12 @@
         }
     }
 
+    .bn-single-image--action button:focus{
+        outline: none;
+    }
+
     .bn-single-image--action button:hover {
-        text-decoration: underline;
+        transform: scale(0.98);
     }
 </style>
 
@@ -71,7 +75,7 @@
             <nav aria-label="breadcrumb" id="breadcrumb-nav">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item px-0"><a href="<?= base_url() ?>category">
-                            <!-- <i class="icofont-home"></i> -->
+                            <i class="icofont-home"></i>
                         </a></li>
                 </ol>
             </nav>
@@ -86,17 +90,17 @@
             <div class="bn-container bn-container--actions">
                 <div class="bn-single-image--actions bn-single-meta-col d-flex justify-content-between">
                     <div class="bn-single-image--action">
-                        <button class="bn-single-nav btn btn-sm  bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
-                            <i class="icon-left-open"></i><span>Older</span>
+                        <button class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
+                        <i class="icofont-simple-left fs-20"></i><span>Older</span>
                         </button>
                     </div>
                     <div class="bn-single-image--action">
-                        <button href="#" class=" btn btn-sm bn-single-like" data-state="off" data-id="1290">
+                        <button href="#" class="btn  btn-sm bn-single-like" data-state="off" data-id="1290">
                             <span>Like this post</span>
                         </button>
                     </div>
                     <div class="bn-single-image--action">
-                        <button class="bn-single-nav btn btn-sm  bn-single-nav--next bn-single-nav--active" data-dir="next" data-id="1292"><span>Newer</span><i class="icon-right-open"></i></button>
+                        <button class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--next bn-single-nav--active" data-dir="next" data-id="1292"><span>Newer</span><i class="icofont-rounded-right fs-20"></i></button>
                     </div>
                 </div>
             </div>
@@ -116,15 +120,27 @@
                         <h3 role="heading" aria-level="3" class="bn-single-meta-title ">Topics</h3>
                         <ul class="bn-single-topics">
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #0f3f6e">
+                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
                                     <a href="" class="bn-single-topic--child bn-int-link">solar</a>
                                 </span>
                             </li>
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #0f3f6e">
+                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
                                     <a href="" class="bn-single-topic--child bn-int-link">wind</a>
                                 </span>
                             </li>
+
+                            <li class="bn-single-topic">
+                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                    <a href="" class="bn-single-topic--child bn-int-link">Hydrogen</a>
+                                </span>
+                            </li>
+                            <li class="bn-single-topic">
+                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                    <a href="" class="bn-single-topic--child bn-int-link">Oil & Gas</a>
+                                </span>
+                            </li>
+                           
 
                         </ul>
                     </div>
@@ -146,4 +162,5 @@
     </div>
 </main>
 
+<script src="<?= base_url() ?>assets/js/singleItem.js"></script>
 <?php require(APPPATH . 'views/footer.php'); ?>

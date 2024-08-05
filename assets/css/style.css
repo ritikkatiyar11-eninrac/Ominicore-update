@@ -2014,7 +2014,17 @@ html.no-grid .bn-item {
   max-width: 100%;
 }
 
-.langing_page-top-sidebar .menu-ticker {
+.langing_page-top-sidebar .menu-ticker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.langing_page-top-sidebar .menu-ticker a {
   display: flex;
   flex-direction: column;
   justify-content: center;

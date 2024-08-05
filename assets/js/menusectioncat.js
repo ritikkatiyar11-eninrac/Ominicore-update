@@ -177,12 +177,12 @@ const categories = [
         ],
       },
       {
-        name: "Panjab",
-        slug: "state-panjab",
+        name: "Punjab",
+        slug: "state-punjab",
         children: [
           {
             name: "PERC",
-            slug: "state-panjab-perc",
+            slug: "state-punjab-perc",
           },
         ],
       },
@@ -207,12 +207,12 @@ const categories = [
         ],
       },
       {
-        name: "Odisa",
-        slug: "state-odisa",
+        name: "odisha",
+        slug: "state-odisha",
         children: [
           {
             name: "OERC",
-            slug: "state-odisa-oerc",
+            slug: "state-odisha-oerc",
           },
         ],
       },
@@ -227,12 +227,12 @@ const categories = [
         ],
       },
       {
-        name: "Asam",
-        slug: "state-asam",
+        name: "Assam",
+        slug: "state-Assam",
         children: [
           {
             name: "AERC",
-            slug: "state-asam-aerc",
+            slug: "state-Assam-aerc",
           },
         ],
       },
@@ -584,163 +584,243 @@ const categories = [
     ],
   },
 ];
-function renderCategories() {
-  const parentCategory = document.getElementById("parent-category");
-  let breadcumCategory = document.getElementById("breadcum-cat");
-  let activeCategory = document.getElementById("activeCategory")
-  parentCategory.innerHTML = "";
-  categories.forEach((category, index) => {
-    let li = document.createElement("li");
-    li.className = "bn-filter-item";
-    let a = document.createElement("a");
-    a.href = `${window.location.origin}/omnicore/category/${category.slug}`;
-    let btn = document.createElement("button");
-    btn.className = "bn-filter bn-filter-top";
-    btn.dataset.slug = category.slug;
-    btn.dataset.title = category.name;
-    btn.dataset.index = index;
-    btn.textContent = category.name;
 
-    btn.addEventListener("click", (e) => {
-      if (e.target.classList.contains("bn-subfilter--active")) {
-        e.target.classList.remove("bn-subfilter--active");
-        let subCategory = document.getElementById("sub-category");
-        let grandCategory = document.getElementById("grand-category");
-        subCategory.innerHTML = "";
-        grandCategory.innerHTML = "";
-        breadcumCategory.innerHTML = ``;
-        activeCategory.innerHTML = ``;
-      } else {
-        showSubCategories(category, index);
-        breadcumCategory.innerHTML = `<span>${category.name}</span>`;
-        activeCategory.innerHTML = `<span>${category.name}</span>`;
-      }
-    });
-    if (window.location.origin + "/omnicore/" === window.location.href) {
+let lastActiveurl;
+let newBaseurl = "http://192.168.1.156/omnicore/";
+
+const menusectionObject = {
+  postData: {},
+  setPostData(postData) {
+    this.postData = postData;
+  },
+
+  fetchData() {
+    let self = this;
+    fetch(newBaseurl + "assets/js/post.json")
+      .then((response) => response.json())
+      .then((result) => {
+        menusectionObject.setPostData(result);
+        menusectionObject.renderCategories();
+      });
+  },
+
+  renderCategories() {
+    let self = this;
+    const parentCategory = document.getElementById("parent-category");
+  
+    parentCategory.innerHTML = "";
+
+    categories.forEach((category, index) => {
+      let li = document.createElement("li");
+      li.className = "bn-filter-item";
+      let a = document.createElement("a");
+      a.className = "a";
+      a.href = `${window.location.origin}/omnicore/category/${category.slug}`;
+      // console.log(a.href)
+      let btn = document.createElement("button");
+      btn.className = "bn-filter bn-filter-top";
+      btn.dataset.slug = category.slug;
+      btn.dataset.title = category.name;
+      btn.dataset.index = index;
+      btn.textContent = category.name;
+
       a.appendChild(btn);
       li.appendChild(a);
-
-    } else {
-      li.appendChild(btn);
-    }
-    parentCategory.appendChild(li);
-  });
-}
-
-function showSubCategories(category, parentIndex) {
-  let breadcumCategory = document.getElementById("breadcum-cat");
-  let activeCategory = document.getElementById("activeCategory")
-
-  const subCategory = document.getElementById("sub-category");
-  let grandCategory = document.getElementById("grand-category");
-
-  subCategory.innerHTML = "";
-  grandCategory.innerHTML = "";
-
-  category.children.forEach((sub, subIndex) => {
-    const li = document.createElement("li");
-    li.className = "bn-subfilter-item";
-    li.style = "transform: scale(1); opacity: 1;";
-    let a = document.createElement("a");
-    a.href = `${window.location.origin}/omnicore/category/${category.slug}/${sub.slug}`;
-    let btn = document.createElement("button");
-    btn.className = "bn-subfilter child ";
-    btn.dataset.slug = sub.slug;
-    btn.dataset.title = sub.name;
-    btn.dataset.parentIndex = parentIndex;
-    btn.dataset.subIndex = subIndex;
-    btn.textContent = sub.name;
-
-    btn.addEventListener("click", (e) => {
-      if (e.target.classList.contains("bn-subfilter--active")) {
-        e.target.classList.remove("bn-subfilter--active");
-        grandCategory.innerHTML = "";
-        breadcumCategory.innerHTML = `<span>${category.name}</span>`;
-        activeCategory.innerHTML = `<span>${category.name}</span>`;
-      } else {
-        setActive("sub-category", subIndex);
-        setActive("parent-category", parentIndex);
-        showGrandCategories(sub, subIndex, parentIndex, category);
-        breadcumCategory.innerHTML = `<span>${category.name}</span> > <span>${sub.name}</span>`;
-        activeCategory.innerHTML = `<span>${sub.name}</span>`;
-        console.log(activeCategory);
-      }
+      parentCategory.appendChild(li);
     });
-    if (window.location.origin + "/omnicore/" === window.location.href) {
-    
-      a.appendChild(btn);
-      li.appendChild(a);
-    } else {
-      
-      li.appendChild(btn);
-    }
-    subCategory.appendChild(li);
-  });
-  setActive("parent-category", parentIndex);
-}
 
-function showGrandCategories(subCategory, ct, pt, cat) {
-  const grandCategory = document.getElementById("grand-category");
-  let breadcumCategory = document.getElementById("breadcum-cat");
-  let activeCategory = document.getElementById("activeCategory")
+    // Set the active category based on the current URL
+    self.setActiveCategoryFromUrl();
+  },
 
-  grandCategory.innerHTML = "";
-  if (subCategory.children) {
-    subCategory.children.forEach((grand, grandIndex) => {
+  showSubCategories(category, parentIndex) {
+    let self = this;
+    const subCategory = document.getElementById("sub-category");
+    const grandCategory = document.getElementById("grand-category");
+
+    subCategory.innerHTML = "";
+    grandCategory.innerHTML = "";
+
+    category.children.forEach((sub, subIndex) => {
       const li = document.createElement("li");
       li.className = "bn-subfilter-item";
       li.style = "transform: scale(1); opacity: 1;";
       let a = document.createElement("a");
-      a.href = `${window.location.origin}/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
-      a.setAttribute("target", "_blank");
+      a.className = "";
+      a.href = `${window.location.origin}/omnicore/category/${category.slug}/${sub.slug}`;
       let btn = document.createElement("button");
-      btn.className = "bn-subfilter";
-      btn.dataset.slug = grand.slug;
-      btn.dataset.title = grand.name;
-      btn.textContent = grand.name;
+      btn.className = "bn-subfilter child";
+      btn.dataset.slug = sub.slug;
+      btn.dataset.title = sub.name;
+      btn.dataset.parentIndex = parentIndex;
+      btn.dataset.subIndex = subIndex;
+      btn.textContent = sub.name;
 
-      btn.addEventListener("click", function (e) {
-        if (e.target.classList.contains("bn-subfilter--active")) {
-          e.target.classList.remove("bn-subfilter--active");
-          breadcumCategory.innerHTML = `<span>${cat.name}</span> > <span>${subCategory.name}</span>`;
-          activeCategory.innerHTML = `<span>${subCategory.name}</span>`;
-        } else {
-          setActive("parent-category", pt);
-          setActive("sub-category", ct);
-          setActive("grand-category", grandIndex);
-          breadcumCategory.innerHTML = `<span>${cat.name}</span> > <span>${subCategory.name}</span> > <span>${grand.name}</span>`;
-          activeCategory.innerHTML = `<span>${grand.name}</span>`;
-        } 
-      });
+      a.appendChild(btn);
+      li.appendChild(a);
+      subCategory.appendChild(li);
+    });
+    self.setActive("parent-category", parentIndex);
+  },
 
-      if (window.location.origin + "/omnicore/" === window.location.href) {
+  showGrandCategories(subCategory, ct, pt, cat) {
+    let self = this;
+    console.log(subCategory, ct, pt, cat);
+    const grandCategory = document.getElementById("grand-category");
 
+    grandCategory.innerHTML = "";
+    if (subCategory.children) {
+      subCategory.children.forEach((grand, grandIndex) => {
+        const li = document.createElement("li");
+        li.className = "bn-subfilter-item";
+        li.style = "transform: scale(1); opacity: 1;";
+        let a = document.createElement("a");  
+        a.className = "";
+        a.href = `${window.location.origin}/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
+        let btn = document.createElement("button");
+        btn.className = "bn-subfilter";
+        btn.dataset.slug = grand.slug;
+        btn.dataset.title = grand.name;
+        btn.textContent = grand.name;
         a.appendChild(btn);
         li.appendChild(a);
-      } else {
-        li.appendChild(btn);
+        grandCategory.appendChild(li);
+      });
+      self.setActive("sub-category", ct);
+      self.setActive("parent-category", pt);
+    }
+  },
+  setActive(listId, index) {
+    const activeItems = document.getElementById(listId).children;
+
+    for (let i = 0; i < activeItems.length; i++) {
+      activeItems[i].firstChild.firstChild.classList.remove(
+        "bn-subfilter--active"
+      );
+    }
+    activeItems[index].firstChild.firstChild.classList.add(
+      "bn-subfilter--active"
+    );
+  },
+  clearSubCategories() {
+    const subCategory = document.getElementById("sub-category");
+    const grandCategory = document.getElementById("grand-category");
+    subCategory.innerHTML = "";
+    grandCategory.innerHTML = "";
+  },
+
+  updateUrlAndState(...pathSegments) {
+    const url = `${
+      window.location.origin
+    }/omnicore/category/${pathSegments.join("/")}`;
+    window.history.pushState({}, "", url);
+  },
+
+  getParentNameByslug(slug) {
+    const categoryObject = categories.find(
+      (category) => category.slug === slug
+    );
+    return categoryObject.name;
+  },
+
+  getChildNameByslug(slug) {
+    let childt;
+    categories.forEach((category) => {
+      const child = category.children.find((child) => child.slug === slug);
+
+      if (child) {
+        childt = child.name;
       }
-      grandCategory.appendChild(li);
     });
-    setActive("parent-category", pt);
-    setActive("sub-category", ct);
-  }
-}
+    return childt;
+  },
 
-function setActive(listId, index) {
-  let activeitems;
-  if (window.location.origin + "/omnicore/" === window.location.href) {
-    activeitems = document.getElementById(listId).children.children;
-  } else {
-    activeitems = document.getElementById(listId).children;
-  }
-  console.log(activeitems);
-  for (let i = 0; i < activeitems.length; i++) {
-    activeitems[i].firstChild.classList.remove("bn-subfilter--active");
-  }
-  activeitems[index].firstChild.classList.add("bn-subfilter--active");
-}
+  getgrandNameByslug(slug) {
+    let childt;
+    categories.forEach((category) => {
+      category.children.forEach((grand) => {
+        grand.name === slug;
+        if (grand) {
+          childt = grand.name;
+        }
+      });
+    });
+    return childt;
+  },
 
-document.addEventListener("DOMContentLoaded", () => {
-  renderCategories();
+  setActiveCategoryFromUrl() {
+    let self = this;
+    let breadcumCategory = document.getElementById("breadcum-cat");
+    let activeCategory = document.getElementById("activeCategory");
+    const urlPath = window.location.pathname.split("/").slice(3);
+
+    if (urlPath.length > 0) {
+      const parentCategoryName = urlPath[0];
+      breadcumCategory.innerHTML = `<span>${self.getParentNameByslug(
+        parentCategoryName
+      )}</span>`;
+      activeCategory.innerHTML = `<span>${self.getParentNameByslug(
+        parentCategoryName
+      )}</span>`;
+      // console.log(activeCategory);
+      const parentSlug = categories.find(
+        (category) => category.slug === parentCategoryName
+      );
+      const parentIndex = categories.findIndex(
+        (category) => category.slug === parentCategoryName
+      );
+      if (parentIndex > -1) {
+        self.showSubCategories(categories[parentIndex], parentIndex);
+        if (urlPath.length > 1) {
+          const subCategoryName = urlPath[1];
+          const subCategory = categories[parentIndex].children.find(
+            (sub) => sub.slug === subCategoryName
+          );
+
+          if (subCategory) {
+            
+            const subIndex =
+              categories[parentIndex].children.indexOf(subCategory);
+            breadcumCategory.innerHTML = `
+            <span>${self.getParentNameByslug(
+              parentCategoryName
+            )}</span> > <span>${self.getChildNameByslug(subCategoryName)}</span>
+            `;
+
+            activeCategory.innerHTML = `<span>${self.getChildNameByslug(
+              subCategoryName
+            )}</span>`;
+
+            self.setActive("sub-category", subIndex);
+            self.showGrandCategories(subCategory, subIndex, parentIndex, parentSlug);
+            console.log(urlPath)
+            if (urlPath.length > 2) {
+              const grandCategoryName = urlPath[2];
+              const grandCategory = subCategory.children.find(
+                (grand) => grand.slug === grandCategoryName
+              );
+              if (grandCategory) {
+                const grandIndex = subCategory.children.indexOf(grandCategory);
+                breadcumCategory.innerHTML = `<span>${self.getParentNameByslug(
+                  parentCategoryName
+                )}</span> > <span>${self.getChildNameByslug(
+                  subCategoryName
+                )}</span> > <span>${self.getgrandNameByslug(grandCategoryName)}</span>`;
+                activeCategory.innerHTML = `<span>${self.getgrandNameByslug(grandCategoryName)}</span>`;
+                self.setActive("grand-category", grandIndex);
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+};
+
+menusectionObject.fetchData();
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  e.preventDefault();
+  menusectionObject.setActiveCategoryFromUrl();
+  menusectionObject.renderCategories();
 });

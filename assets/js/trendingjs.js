@@ -1,11 +1,11 @@
-let dataUrl = `${window.location.origin}/omnicore/assets/js/data.json`;
+let dataUrl = `${window.location.origin}/omnicore/assets/js/post.json`;
 
 const storedData = {
   data: {},
   setdata(data) {
     this.data = data;
   },
-  fetchData() {
+  fetchData(dataUrl) {
     fetch(dataUrl)
       .then((res) => res.json())
       .then((result) => {
@@ -26,11 +26,15 @@ const storedData = {
           ""
         );
         this.className += " --active";
-        const filteredData = storedData.data.find((ite) => ite.slug === itemId);
-        console.log("filterData", filteredData.children);
+        const filteredData = storedData.data.find(
+          (ite) => ite.category.parent.slug === itemId
+        );
+        console.log("filterData", filteredData);
       });
     });
   },
+
+  
 
   cardTitleChar() {
     let title = document.querySelectorAll(".card-title");
@@ -47,7 +51,6 @@ const storedData = {
       let temp = Number(item.children[0].innerHTML);
       total = total + temp;
       // console.log(item.children)
-
     });
 
     totalUpdates.innerHTML = total;
@@ -55,7 +58,7 @@ const storedData = {
     return totalUpdates;
   },
 };
-storedData.fetchData();
+storedData.fetchData(dataUrl);
 storedData.functionToCallDataBySlug();
 storedData.cardTitleChar();
 storedData.totalRecentUpdates();
