@@ -2170,12 +2170,14 @@ a {
 .content-col {
   width: 64%;
   overflow: hidden;
-  display: grid;
+  flex:1;
   gap: 20px;
-  grid-template-areas:
-    "trendingfull-card trendingfull-card"
-    "trendinghalf-1 trendinghalf-2"
-    "trendinghalf-3 trendinghalf-4";
+  display: flex;
+  flex-wrap: wrap;
+}
+#categoryPathName{
+  font-weight: 900;
+  color: #0f3f6e;
 }
 
 @media (max-width: 510px) {
@@ -2188,7 +2190,27 @@ a {
       "trendinghalf-3 trendinghalf-3"
       "trendinghalf-4 trendinghalf-4";
   }
+
+  .card-half{
+    width: 100%;
+   
+  }
 }
+
+.card-placeholder-img-01{
+  width: 100%;
+  flex: 0 auto;
+}
+@media (min-width:500px){
+  .card-half{
+    max-width: 46%;
+    width: 100%;
+    flex: 0 auto;
+  }
+}
+
+
+
 
 .content-col img {
   width: 100%;
@@ -2214,9 +2236,13 @@ a {
 }
 
 .trending-card-content h3 {
-  /* color: #fff; */
+ 
   color: #464646;
   font-weight: 600;
+}
+
+.trending-card-content h3:hover{
+  color: #1040f0!important;
 }
 
 .trending-card-content p {
@@ -2372,6 +2398,7 @@ a {
   .content-section {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -2384,6 +2411,10 @@ a {
 
   .content-section .content-col {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+
   }
 }
 

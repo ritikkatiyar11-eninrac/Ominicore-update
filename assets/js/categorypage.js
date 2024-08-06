@@ -1,4 +1,5 @@
 const slugs = [];
+
 let baseurl_ = "http://192.168.1.156/omnicore/";
 
 const getObjectFunction = {
@@ -20,11 +21,13 @@ const getObjectFunction = {
   },
 
   renderDataOnCategoryPage(postDataList) {
+    
     let categoryContainer = document.getElementById("categoryitemslist");
     categoryContainer.innerHTML = "";
 
-    postDataList.forEach((item) => {
+    postDataList.forEach((item, idx) => {
       let div = document.createElement("div");
+      div.className = "carditem";
       div.innerHTML = `
         <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
                         <div class="w-100 " style="margin-bottom: .75rem;">
@@ -66,13 +69,31 @@ const getObjectFunction = {
       `;
       categoryContainer.appendChild(div);
     });
-
-    categoryParentDiv.appendChild(categoryContainer);
   },
+
+  loadData() {
+    let self = this;
+    let currentItem = 12;
+
+  },
+
+  findCategoryToGetData(slug) {
+    let self = this;
+    let caltegorySlug = slug;
+    console.log(caltegorySlug);
+    let filterArr = self.postData.filter((item) => {
+      return item.category.parent.slug === caltegorySlug;
+    });
+    return self.renderDataOnCategoryPage(filterArr);
+  },
+
+ 
 };
 
 let url = window.location.href;
-let dataUrl = `${window.location.origin}/omnicore/assets/js/post.json`;
+let dataUrl = `${baseurl_}/assets/js/post.json`;
+let dataUrl2 = `${baseurl_}/assets/js/data.json`;
 getObjectFunction.dataObjectforGetUrl();
-
+// getObjectFunction.loadData();
+getObjectFunction.findCategoryToGetData("central");
 // getObjectFunction.renderDataOnCategoryPage();

@@ -77,13 +77,14 @@
                 <h3 class="label" style=" color: #3243e9;">3h ago</h3>
                 <p>SEC Chairman Applauds &#8216;Operation Crypto-Sweep&#8217;</p>
             </a>
+            
             <a href="" class="feed-item">
                 <h3 class="label" style=" color: #3243e9;">5h ago</h3>
-                <p>Darknet Market Rapture Has Been Down for a Week — Users Grow Leery</p>
+                <p>Darknet Market Rapture Has Been Down 18% Retroactive Tax Has Been Down 18% Re</p>
             </a>
             <a href="" class="feed-item">
                 <h3 class="label" style=" color: #3243e9;">8h ago</h3>
-                <p>Indian Government Considering 18% Retroactive Tax on Crypto Trading, Mining</p>
+                <p>Indian Government Considering 18% Retroactive Tax</p>
             </a>
 
 
@@ -102,42 +103,9 @@
             <h1 class="page-title" style="color: #3243e9; margin-top:0;">Top Articles</h1>
             <a href="<?= base_url() ?>category" class="d-flex" style="cursor:pointer;margin-left: 2%;"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
         </div>
-        <div class="" id="toparticleid">
-            <div id="toparticleitem">
-
-            </div>
-            <!-- <div class="content-section" >
-                <div class="content-col">
-                    <div class="trending-card card-placeholder-img-01 imghover" style="grid-area: trendingfull-card;">
-                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        <div class="trending-card-content">
-                            <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
-                            <h3 class="trending-card-title" style="font-size:18px;line-height:28px; font-weight:600; margin-top:0; margin-bottom:0;">The Verge Struck by Second POW Attack in as Many Months</h3>
-                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
-                        </div>
-                    </div>
-
-                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
-                        <div class="">
-                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        </div>
-                        <div class="trending-card-content">
-                            <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
-                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Govt. Growth</h3>
-                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
-                        </div>
-                    </div>
-                    <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-2;">
-                        <div class="">
-                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        </div>
-                        <div class="trending-card-content">
-                            <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">CERC </span>// Orders</div>
-                            <h3 class="child-card-title" style="font-size:16px;line-height:20px; font-weight:600; margin-top:0; margin-bottom:0;">Bitcoin Use Case: Limiting Government Growth</h3>
-                        </div>
-                    </div>
-
-
+        <div class="" >
+         <div class="content-section" id="toparticlecontent" >
+                <div class="content-col" id="toparticleid">
                 </div>
                 <div class="side-col">
                     <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -161,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
 
 

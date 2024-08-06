@@ -22,7 +22,7 @@
     "imageUrl": "assets/images/category-item-7.webp",
     "createdAt": "2024-08-01T09:30:00Z",
     "author": "Chandan",
-    "topArticle": false,
+    "topArticle": true,
     "tags": ["CERC", "Tariff", "Regulations", "Renewable Energy"]
   },
   {

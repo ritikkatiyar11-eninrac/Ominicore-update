@@ -607,7 +607,7 @@ const menusectionObject = {
   renderCategories() {
     let self = this;
     const parentCategory = document.getElementById("parent-category");
-  
+
     parentCategory.innerHTML = "";
 
     categories.forEach((category, index) => {
@@ -665,7 +665,7 @@ const menusectionObject = {
 
   showGrandCategories(subCategory, ct, pt, cat) {
     let self = this;
-    console.log(subCategory, ct, pt, cat);
+
     const grandCategory = document.getElementById("grand-category");
 
     grandCategory.innerHTML = "";
@@ -674,7 +674,7 @@ const menusectionObject = {
         const li = document.createElement("li");
         li.className = "bn-subfilter-item";
         li.style = "transform: scale(1); opacity: 1;";
-        let a = document.createElement("a");  
+        let a = document.createElement("a");
         a.className = "";
         a.href = `${window.location.origin}/omnicore/category/${cat.slug}/${subCategory.slug}/${grand.slug}`;
         let btn = document.createElement("button");
@@ -778,7 +778,6 @@ const menusectionObject = {
           );
 
           if (subCategory) {
-            
             const subIndex =
               categories[parentIndex].children.indexOf(subCategory);
             breadcumCategory.innerHTML = `
@@ -792,8 +791,13 @@ const menusectionObject = {
             )}</span>`;
 
             self.setActive("sub-category", subIndex);
-            self.showGrandCategories(subCategory, subIndex, parentIndex, parentSlug);
-            console.log(urlPath)
+            self.showGrandCategories(
+              subCategory,
+              subIndex,
+              parentIndex,
+              parentSlug
+            );
+
             if (urlPath.length > 2) {
               const grandCategoryName = urlPath[2];
               const grandCategory = subCategory.children.find(
@@ -805,8 +809,12 @@ const menusectionObject = {
                   parentCategoryName
                 )}</span> > <span>${self.getChildNameByslug(
                   subCategoryName
-                )}</span> > <span>${self.getgrandNameByslug(grandCategoryName)}</span>`;
-                activeCategory.innerHTML = `<span>${self.getgrandNameByslug(grandCategoryName)}</span>`;
+                )}</span> > <span>${self.getgrandNameByslug(
+                  grandCategoryName
+                )}</span>`;
+                activeCategory.innerHTML = `<span>${self.getgrandNameByslug(
+                  grandCategoryName
+                )}</span>`;
                 self.setActive("grand-category", grandIndex);
               }
             }

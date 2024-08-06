@@ -9,9 +9,14 @@
                     </div>
                 </div>
             </div>
-            <div class="position-relative d-flex my-3" id="categoryParentDiv" style=" padding-bottom:3.5rem; width:100%; margin-top:2rem; margin-bottom:2rem;">
+            <div class="position-relative d-flex my-3" id="categoryParentDiv" style=" width:100%; margin-top:2rem; margin-bottom:2rem;">
                 <div class="position-relative category-card-items-list" id="categoryitemslist">
                 </div>
+
+
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-center my-3" id="load-more-btn">
+                <button class="btn btn-warning">Load More</button>
             </div>
         </div>
 </section>
