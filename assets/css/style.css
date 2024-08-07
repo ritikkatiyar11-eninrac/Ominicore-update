@@ -2164,6 +2164,7 @@ a {
   padding-right: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 

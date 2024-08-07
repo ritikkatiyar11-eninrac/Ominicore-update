@@ -40,7 +40,7 @@ const getObjectFunction = {
                             </a>
                         </div>
                         <div class="mb-1">
-                            <div class="fs-14" style=" letter-spacing: .015em; line-height:1.1;">
+                            <div style="font-size:13px;letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
                                     <a id="categoryPathName">${
                                       item.category.child.name
@@ -52,7 +52,7 @@ const getObjectFunction = {
                                 }</span>
                             </div>
                         </div>
-                        <a target="_blank" href="http://192.168.29.156/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
+                        <a target="_blank" href="http://192.168.1.156/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
                             <h4 class="fs-16 card-title" style="letter-spacing: .015em; font-weight:inherit; line-height: 1.1;">
                               ${item.title}
                             </h4>

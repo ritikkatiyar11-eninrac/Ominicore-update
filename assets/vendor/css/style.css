@@ -45782,6 +45782,13 @@ div.conv-form-wrapper div.options div.option.selected {
     }
 }
 
+.card-box{background-color: #fff;
+padding: 1.5rem;
+-webkit-box-shadow: 0 .75rem 6rem rgba(56, 65, 74, .03);
+box-shadow: 0 .75rem 6rem rgba(56, 65, 74, .03);
+margin-bottom: 24px;
+border-radius: .25rem;}
+
 .input-group-btn .btn {
     border-radius: 0 4px 4px 0;
 }
@@ -48020,7 +48027,7 @@ table.table-bordered.dataTable thead tr:first-child td {
 
 .brick img {
 	border-radius: 5px;
-	object-fit: scale-down;
+	object-fit: contain;
 	height: 150px;
 	width: 100%;
 }

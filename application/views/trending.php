@@ -24,7 +24,6 @@
 
 <div class="langing_page-top d-flex">
     <div class="langing_page-top-sidebar" id="landing_top-sidebar">
-
         <div class="menuwrapper" style="width:35%;">
             <a href="" class="menu-logo">
                 <div class="logo"><span>Recent Updates</span><br /> <span id="totalUpdates"></span></div>
@@ -104,7 +103,7 @@
             <a href="<?= base_url() ?>category" class="d-flex" style="cursor:pointer;margin-left: 2%;"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
         </div>
         <div class="" >
-         <div class="content-section" id="toparticlecontent" >
+         <div class="content-section flex-row-reverse" id="toparticlecontent" >
                 <div class="content-col" id="toparticleid">
                 </div>
                 <div class="side-col">
@@ -148,7 +147,7 @@
                         <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
                     </div>
                 </div>
-
+                        
                 <div class="trending-card card-half placeholder-image-03 w-inline-block" style="grid-area: trendinghalf-1;">
                     <div class="">
                         <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">

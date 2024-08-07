@@ -28,9 +28,9 @@
 </head>
 <body class="app sidebar-mini ltr">
     <!-- GLOBAL-LOADER -->
-    <div id="global-loader">
+    <!-- <div id="global-loader">
         <img src="<?= base_url() ?>assets/vendor/images/loader.svg" class="loader-img" alt="Loader">
-    </div>
+    </div> -->
     <!-- /GLOBAL-LOADER -->
     <!-- PAGE -->
     <div class="page">

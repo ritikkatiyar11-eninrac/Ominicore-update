@@ -3,13 +3,13 @@
         <h3>Main</h3>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('console-admin/dashboard') ?>"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('backend-dashboard/autho/dashboard') ?>"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
     </li>
     <li class="sub-category">
         <h3>Attachments</h3>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('console-admin/media') ?>">
+        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('backend-dashboard/autho/media') ?>">
             <i class="side-menu__icon fe fe-image"></i>
             <span class="side-menu__label">Media</span>
         </a>

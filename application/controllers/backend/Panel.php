@@ -8,4 +8,6 @@ class Panel extends Default_Backend_Controler
       $this->load->view('backend/login');
     }
 
+    
+
 }

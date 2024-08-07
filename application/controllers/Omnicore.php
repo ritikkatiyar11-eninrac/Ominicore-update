@@ -17,6 +17,7 @@ class Omnicore extends Default_Controler
         if($id == 'infographicpage') $this->infographicpage();
         if($id == 'privacy-policy') $this->privacy_policy();
         if($id == 'login') $this->login();
+        if($id == 'catalog') $this->catalog();
     }
 
 
@@ -24,6 +25,8 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('login');
     }
+
+    
 
     public function infodetail()
     {
@@ -90,5 +93,18 @@ class Omnicore extends Default_Controler
     public function remainingsection()
     {
         $this->load->view('remainingsection');
+    }
+
+    
+
+    public function catalog(){
+        // $this->load->view('remainingsection');
+        echo "<pre>";
+        $filter = $this->db->select('*')->from('filter')->get();
+        if($filter->num_rows() > 0){
+            print_r($filter->result());
+        }else{
+            echo "No Data Found";
+        }
     }
 }
