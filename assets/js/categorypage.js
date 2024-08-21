@@ -1,6 +1,7 @@
 const slugs = [];
 
-let baseurl_ = "http://192.168.1.156/omnicore/";
+let baseurl_ = "http://localhost/omnicore/";
+
 
 const getObjectFunction = {
   postData: {},
@@ -14,6 +15,7 @@ const getObjectFunction = {
       .then((result) => {
         getObjectFunction.setPostData(result);
         getObjectFunction.renderDataOnCategoryPage(result);
+        // getObjectFunction.addgradientToData(result);
       })
       .catch((err) => {
         console.log("error", err);
@@ -21,25 +23,26 @@ const getObjectFunction = {
   },
 
   renderDataOnCategoryPage(postDataList) {
-    
+    let parentCategoryDiv = document.getElementById("categoryParentDivTag");
     let categoryContainer = document.getElementById("categoryitemslist");
     categoryContainer.innerHTML = "";
 
     postDataList.forEach((item, idx) => {
       let div = document.createElement("div");
-      div.className = "carditem";
+      div.className = "col-lg-4 col-md-6 col-sm-6";
       div.innerHTML = `
-        <div class="category-card-item position-relative" style="margin-bottom:3rem; width:100%;">
-                        <div class="w-100 " style="margin-bottom: .75rem;">
+                      <div class="w-100 mb-3 carditem category-card-item position-relative">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden" style="border-radius:10px">
+                                <div class="overflow-hidden rounded" style="background-image:${
+                                  item.gradient
+                                }">
                                     <img src="${
                                       baseurl_ + item.imageUrl
-                                    }" width="208" height="156" loading="lazy" class="" style="color:transparent; height:auto;width:100%;transition-timing-function: cubic-bezier(0,0,.2,1);transition-duration: 1s; border-radius:10px;transition-property: transform;" alt="">
+                                    }" width="208" height="156" loading="lazy" class=""  alt="">
                                 </div>
                             </a>
-                        </div>
-                        <div class="mb-1">
+                      </div>
+                      <div class="mb-1">
                             <div style="font-size:13px;letter-spacing: .015em; line-height:1.1;">
                                 <span class="mr-1">
                                     <a id="categoryPathName">${
@@ -52,48 +55,47 @@ const getObjectFunction = {
                                 }</span>
                             </div>
                         </div>
-                        <a target="_blank" href="http://192.168.1.156/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
-                            <h4 class="fs-16 card-title" style="letter-spacing: .015em; font-weight:inherit; line-height: 1.1;">
+                        <a target="_blank" href="http://localhost/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
+                            <h4 class="fs-16 card-title" style="">
                               ${item.title}
                             </h4>
                         </a>
-                        <div class="w-100 mb-1">
-                            <p class="fs-14 w-100" style="line-height: 1.3;"></p>
+                        <div class="w-100 my-2">
+                            <p class="fs-14 w-100 text-justify card-description" >${
+                              item.description.length > 110
+                                ? item.description.substr(0, 98)
+                                : item.description
+                            }... <span class="text-primary">Readmore</span></p>
                         </div>
-                        <div class="sm-mb" style="line-height: 1;">
-                            <span class="fs-14 text-nowrap">
+                        <div class="sm-mb">
+                            <a href="" class=" authorname fs-14 fw-600">
                                 ${item.author}
-                            </span>
+                            </a>
                         </div>
-                    </div>
+                   
       `;
       categoryContainer.appendChild(div);
     });
+    parentCategoryDiv.appendChild(categoryContainer);
   },
 
-  loadData() {
-    let self = this;
-    let currentItem = 12;
-
-  },
-
-  findCategoryToGetData(slug) {
-    let self = this;
-    let caltegorySlug = slug;
-    console.log(caltegorySlug);
-    let filterArr = self.postData.filter((item) => {
-      return item.category.parent.slug === caltegorySlug;
-    });
-    return self.renderDataOnCategoryPage(filterArr);
-  },
-
- 
+  // addgradientToData(data) {
+  //   let gr_idx = 0;
+  //   let newGArr = [];
+  //   let temp;
+  //   for (let i = 0; i < data.length; i++) {
+  //     temp = gradients[gr_idx].linearGradient;
+  //     data[i].gradient = temp;
+  //     newGArr.push(data[i]);
+  //     if (gr_idx == gradients.length) {
+  //       gr_idx = -1;
+  //     }
+  //     gr_idx++;
+  //   }
+  //   console.log(newGArr);
+  // },
 };
 
 let url = window.location.href;
 let dataUrl = `${baseurl_}/assets/js/post.json`;
-let dataUrl2 = `${baseurl_}/assets/js/data.json`;
 getObjectFunction.dataObjectforGetUrl();
-// getObjectFunction.loadData();
-getObjectFunction.findCategoryToGetData("central");
-// getObjectFunction.renderDataOnCategoryPage();

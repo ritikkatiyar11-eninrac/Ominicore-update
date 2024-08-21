@@ -15,7 +15,7 @@ class Default_Backend_Controler extends CI_Controller
             redirect('backend-dashboard/autho/login');
         }
     }
-
+    
     // public function error404()
     // {
     //     $this->output->set_status_header('404');

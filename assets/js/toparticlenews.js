@@ -1,4 +1,4 @@
-let baseurl_ = "http://192.168.1.156/omnicore/";
+let baseurl_ = "http://localhost/omnicore/";
 const topArticleObject = {
   toparticleData: {},
 
@@ -12,6 +12,7 @@ const topArticleObject = {
       .then((result) => {
         self.setTopArticleData(result);
         self.getTopArticle(result);
+        self.getShortData(result);
       });
   },
 
@@ -31,16 +32,32 @@ const topArticleObject = {
       div.innerHTML = `<div>
                         <img src="${baseurl_}${item.imageUrl}" alt="" style="border-radius:10px">
                         <div class="trending-card-content">
-                            <div class="card-meta"> <span style="color: #0f3f6e; font-weight:600; opacity:1;">${item.category.child.name} </span>// ${item.category.grandChild.name}</div>
+                            <div class="card-meta"> <span>${
+                              item.category.child.name
+                            } </span><span>/ ${item.category.grandChild.name}</span></div>
                             <a href="${baseurl_}/category/${item.category.parent.slug}/${item.category.child.slug}/${item.category.grandChild.slug}/${item.id}">
-                            <h3 class="trending-card-title" style="font-size:16px; font-weight:600; margin-top:0; margin-bottom:10px;">${item.title}</h3>
+                            <h3 class="trending-card-title" style="font-size:16px; font-weight:600; margin-top:0; margin-bottom:10px;">${
+                              item.title
+                            }</h3>
                             </a>
-                            <p class="fs-14">${item.description.slice(0, 60)} cum... <span style="color:blue">Read more</span></p>
+                            <p class="fs-14">${item.description.slice(
+                              0,
+                              60
+                            )}... <span style="color:blue">Read more</span></p>
                         </div>
                     </div>`;
       toparticleid.appendChild(div);
     });
     toparticlecontent.appendChild(toparticleid);
+  },
+
+  getShortData(data) {
+    let self = this;
+    let shortData = [];
+    let centralmainContent = document.getElementById("centralmainContent");
+    let centralcontent = document.getElementById("centralcontent");
+    let recent = data.filter((item) => item.topArticle === true);
+    shortData = recent;
   },
 };
 

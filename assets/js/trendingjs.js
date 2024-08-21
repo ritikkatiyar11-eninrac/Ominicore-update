@@ -43,6 +43,16 @@ const storedData = {
     });
   },
 
+  renderparentDataOnHomePage(){
+    let self = this;
+    let centralData = [];
+     self.data.find(item => {
+       if(item.category.parent.slug === ''){
+         centralData.push(item);
+       }
+     })
+  },
+
   totalRecentUpdates() {
     let c = document.querySelectorAll(".ticker-up");
     let totalUpdates = document.getElementById("totalUpdates");

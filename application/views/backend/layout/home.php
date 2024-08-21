@@ -129,15 +129,35 @@
                     </div>
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Sub Categories</h3>
+                            <i class="fe fe-refresh-cw tag-reload" style="font-size: 15px;color: #fff;padding: 7px;background: #6c5ffc;border-radius: 5px;cursor: pointer;"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="layout-cat-box my-2" style="overflow: auto;height: 170px;">
+                                <div class="custom-controls-stacked subcategorytags">
+                                    <label class="custom-control custom-checkbox mb-3" for="CERC -146">
+                                        <input type="checkbox" class="custom-control-input taxonomy child-cat" id="CERC -146" value="central/cerc" data-target="tags">
+                                        <span class="custom-control-label">CERC </span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox mb-3" for="CERC -146">
+                                        <input type="checkbox" class="custom-control-input taxonomy child-cat" id="MoP -146" value="central/mop" data-target="tags">
+                                        <span class="custom-control-label">MoP</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
                             <h3 class="card-title">Tags</h3>
                             <i class="fe fe-refresh-cw tag-reload" style="font-size: 15px;color: #fff;padding: 7px;background: #6c5ffc;border-radius: 5px;cursor: pointer;"></i>
                         </div>
                         <div class="card-body">
                             <div class="layout-cat-box my-2" style="overflow: auto;height: 170px;">
                                 <div class="custom-controls-stacked loadtags">
-                                    <label class="custom-control custom-checkbox mb-3" for="CERC -146">
-                                        <input type="checkbox" class="custom-control-input taxonomy child-cat" id="CERC -146" value="central/cerc" data-target="tags">
-                                        <span class="custom-control-label">CERC </span>
+                                    <label class="custom-control custom-checkbox mb-3" for="CERC-tag">
+                                        <input type="checkbox" class="custom-control-input taxonomy child-cat" id="CERC-tag" value="cerc" data-target="tags">
+                                        <span class="custom-control-label">CERC</span>
                                     </label>
                                 </div>
                             </div>
@@ -173,7 +193,7 @@
     let metaTitle = document.getElementById("metaTitle")
     let metaDescription = document.getElementById("metaDescription")
     let categories = document.querySelectorAll('.categoriestags .taxonomy');
-    let Activities = document.querySelectorAll('.loadActivities .taxonomy');
+    let subcategorytags = document.querySelectorAll('.subcategorytags .taxonomy');
 
     title.addEventListener("input", function(e) {
         let titleCounter = document.getElementById("posttitleid")
@@ -186,7 +206,7 @@
         let eurlhypn = e.target.value;
         let tempString = eurlhypn.replace(/&/g, "and").replace(/[^A-Za-z0-9]/g, "-")
 
-       
+
         // console.log(eurlhypn)
         document.querySelector('.post-slug').innerHTML = tempString;
         titleCounter.innerHTML = `${e.target.value.length}/80`
@@ -200,7 +220,7 @@
             e.target.value = e.target.value.substr(0, max_char)
         }
         metaTitleCounter.innerHTML = `${e.target.value.length}/60`
-    })
+    });
 
     metaDescription.addEventListener("input", function(e) {
         let metaDescriptionCounter = document.getElementById("dvalue")
@@ -214,6 +234,7 @@
 
     postPublish.addEventListener("submit", function(e) {
         e.preventDefault();
+        // validator()
         if (title.value == "" || editor.value == "" || metaTitle.value == "" || metaDescription.value == "") {
             error.innerHTML = `All Field are mandatory`
             if (!error.classList.contains('text-danger')) {
@@ -226,18 +247,16 @@
                 error.classList.add('text-success')
                 error.classList.remove('text-danger')
             }
+            console.log({
+                "publish_date": publish_date.value,
+                "title": title.value,
+                "editor": editor.value,
+                "metaTitle": metaTitle.value,
+                "metaDescription": metaDescription.value,
+                'taxonomy': Taxonomy.value,
+            })
+            resetFormData();
         }
-
-
-        console.log({
-            "publish_date": publish_date.value,
-            "title": title.value,
-            "editor": editor.value,
-            "metaTitle": metaTitle.value,
-            "metaDescription": metaDescription.value,
-            'taxonomy': Taxonomy.value,
-        })
-        resetFormData();
     });
 
     function validator() {
@@ -247,7 +266,7 @@
                 Taxonomy.push(items.value);
             }
         })
-        Activities.forEach(items => {
+        subcategorytags.forEach(items => {
             if (items.checked) {
                 Taxonomy.push(items.value);
             }
@@ -263,8 +282,6 @@
             return false
         }
     }
-
-
 
     function resetFormData() {
         postPublish.reset()

@@ -20,28 +20,28 @@ class Category extends Default_Controler
     }
 
     private function temp1(){
-        $this->load->view('header');
-        $this->load->view('category/category-body');
+        $this->load->view('frontend/components/header');
+        $this->load->view('frontend/pages/category/category-body');
     }
     private function temp2(){
-        $this->load->view('header');
-        $this->load->view('category/parent-category');
-        $this->load->view('category/category-body');
+         $this->load->view('frontend/components/header');
+        $this->load->view('frontend/pages/category/parent-category');
+        $this->load->view('frontend/pages/category/category-body');
     }
     private function temp3(){
-        $this->load->view('header');
+         $this->load->view('frontend/components/header');
         
-        $this->load->view('category/sub-category');
-        $this->load->view('category/category-body');
+        $this->load->view('frontend/pages/category/sub-category');
+        $this->load->view('frontend/pages/category/category-body');
     }
     private function temp4(){
-        $this->load->view('header');
-        $this->load->view('category/grand-category');
-        $this->load->view('category/category-body');
+         $this->load->view('frontend/components/header');
+        $this->load->view('frontend/pages/category/grand-category');
+        $this->load->view('frontend/pages/category/category-body');
     }
     private function temp5(){
-        $this->load->view('header');
-        $this->load->view('detailspage/infodetailspage');
+         $this->load->view('frontend/components/header');
+        $this->load->view('frontend/pages/detailspage/infodetailspage');
         
     }
 
