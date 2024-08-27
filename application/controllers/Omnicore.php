@@ -6,36 +6,42 @@ class Omnicore extends Default_Controler
     public function index()
 
     {
-        $this->load->view('frontend/pages/home');   
-        
+        $this->load->view('frontend/pages/home');
+
         // $this->load->library('myLibrary');
         // echo $this->mylibrary->resultD("hello");
     }
 
-    public function page($id){
-        if($id == 'login') $this->login();
-        if($id == 'infodetail') $this->infodetail();
-        if($id == 'newsletter') $this->newsletter();
-        if($id == 'subscribe') $this->subscribe();
-        if($id == 'newsdetailspage') $this->newsdetailspage();
-        if($id == 'infographicpage') $this->infographicpage();
-        if($id == 'privacy-policy') $this->privacy_policy();
-        if($id == 'user_profile') $this->user_profile();
-        if($id == 'contact') $this->contact();
-        if($id == 'catalog') $this->catalog();
-        if($id == 'dummypage') $this->dummypage();
-        if($id == 'cookie_page') $this->cookie_page();
+    public function page($id)
+    {
+        if ($id == 'login') $this->login();
+        if ($id == 'infodetail') $this->infodetail();
+        if ($id == 'newsletter') $this->newsletter();
+        if ($id == 'subscribe') $this->subscribe();
+        if ($id == 'newsdetailspage') $this->newsdetailspage();
+        if ($id == 'infographicpage') $this->infographicpage();
+        if ($id == 'privacy-policy') $this->privacy_policy();
+        if ($id == 'user_profile') $this->user_profile();
+        if ($id == 'contact') $this->contact();
+        if ($id == 'catalog') $this->catalog();
+        if ($id == 'dummypage') $this->dummypage();
+        if ($id == 'cookie_page') $this->cookie_page();
+        if ($id == 'pricing_page') $this->pricing_page();
     }
-    
+
     private function login()
     {
         $this->load->view('frontend/components/header');
         $this->load->view('frontend/pages/login');
-        
     }
     public function infodetail()
     {
         $this->load->view('frontend/pages/others/infodetail');
+    }
+
+    public function pricing_page()
+    {
+        $this->load->view('frontend/pages/others/pricing_page');
     }
 
     public function cookie_page()
@@ -44,7 +50,8 @@ class Omnicore extends Default_Controler
     }
 
     public function dummypage()
-    {$this->load->view('frontend/components/header');
+    {
+        $this->load->view('frontend/components/header');
         $this->load->view('frontend/pages/others/dummypage');
     }
     public function user_profile()
@@ -67,7 +74,7 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('frontend/pages/others/infographicpage');
     }
-   
+
 
     public function privacy_policy()
     {
@@ -91,7 +98,7 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('frontend/pages/others/refund_policy');
     }
-    
+
 
     public function sitemap()
     {
@@ -102,13 +109,14 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('frontend/pages/others/terms_and_condition');
     }
-    public function catalog(){
+    public function catalog()
+    {
         // $this->load->view('remainingsection');
         echo "<pre>";
         $filter = $this->db->select('*')->from('filter')->get();
-        if($filter->num_rows() > 0){
+        if ($filter->num_rows() > 0) {
             print_r($filter->result());
-        }else{
+        } else {
             echo "No Data Found";
         }
     }
