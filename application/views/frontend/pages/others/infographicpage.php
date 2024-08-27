@@ -1,14 +1,19 @@
 <?php require(APPPATH . 'views/frontend/components/header.php'); ?>
 
-<div class="container p-0">
-<?php require(APPPATH . 'views/frontend/components/menusection.php'); ?>
-</div>
-<style>
+<div class=""></div>
 
-</style>
+<div class="container-fluid py-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-3">
+      <li class="breadcrumb-item"><a href="<?= base_url() ?>"><i class="icofont-home"></i></a></li>
+      <li class="breadcrumb-item"><a href="<?= base_url() ?>/infographicpage">Infographic</a></li>
+      <li class="breadcrumb-item active" id="btbreadcrumbactiveurllast" aria-current="page"></li>
+    </ol>
+  </nav>
+</div>
 <div class="bn-base">
     <main class="bn-content-area" id="content">
-        <div class="container-xl">
+        <div class="container-fluid">
             <div class="bn-grid">
                 <a href="" class="bn-item">
                     <div class="bn-item-inner">
@@ -32,9 +37,6 @@
                         </div>
                     </div>
                 </a>
-
-
-
                 <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
@@ -42,8 +44,6 @@
                         </div>
                     </div>
                 </a>
-
-
                 <a href="" class="bn-item bn-item-2x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img" style="
@@ -98,6 +98,35 @@
                 <a href="" class="bn-item">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1218-easier-to-repair.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item bn-item-1x2">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/200-H1N1-response.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
                             <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" alt="" />
                         </div>
                     </div>
@@ -128,6 +157,56 @@
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
                             <img src="<?= base_url() ?>assets/images/1381-usa-wind-power.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1218-easier-to-repair.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item bn-item-1x2">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/200-H1N1-response.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item bn-item-1x1">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item bn-item-2x1">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1381-usa-wind-power.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bn-item">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
                         </div>
                     </div>
                 </a>

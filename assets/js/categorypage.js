@@ -2,7 +2,6 @@ const slugs = [];
 
 let baseurl_ = "http://localhost/omnicore/";
 
-
 const getObjectFunction = {
   postData: {},
   setPostData(data) {
@@ -29,49 +28,34 @@ const getObjectFunction = {
 
     postDataList.forEach((item, idx) => {
       let div = document.createElement("div");
-      div.className = "col-lg-4 col-md-6 col-sm-6";
-      div.innerHTML = `
-                      <div class="w-100 mb-3 carditem category-card-item position-relative">
+      div.className = "col-lg-4 col-md-6 col-sm-6 mb-3";
+      div.innerHTML = `<div class="w-100 mb-2 position-relative">
                             <a href="" class="cursor-pointer" style="color:inherit;text-decoration: inherit;">
-                                <div class="overflow-hidden rounded" style="background-image:${
-                                  item.gradient
-                                }">
-                                    <img src="${
-                                      baseurl_ + item.imageUrl
-                                    }" width="208" height="156" loading="lazy" class=""  alt="">
+                                <div class="overflow-hidden rounded" style="background-image:${item.gradient}">
+                                    <img src="${baseurl_ + item.imageUrl}" height="156" loading="lazy" class="w-100"  alt="${item.category.child.name}">
                                 </div>
                             </a>
                       </div>
-                      <div class="mb-1">
-                            <div style="font-size:13px;letter-spacing: .015em; line-height:1.1;">
-                                <span class="mr-1">
-                                    <a id="categoryPathName">${
-                                      item.category.child.name
-                                    }</a>
-                                </span>
-                                <span class="mr-1 -mb-1" style="width:.5rem; display:inline-block;">//</span>
-                                <span class="text-capitalize">${
-                                  item.category.grandChild.name
-                                }</span>
-                            </div>
-                        </div>
-                        <a target="_blank" href="http://localhost/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block mb-md-1">
-                            <h4 class="fs-16 card-title" style="">
-                              ${item.title}
+                      <div class="fs-12 lh-sm mb-1">
+                        <a id="categoryPathName">${item.category.child.name}</a>
+                        <span>//</span>
+                        <span class="text-capitalize">${item.category.grandChild.name}</span>
+                      </div>
+                      <a target="_blank" href="http://localhost/omnicore/detailspage/newsdetailspage" class="cursor-pointer d-block pb-2">
+                            <h4 class="fs-16 text-justify fw-bold text-dark">
+                              ${item.name}
                             </h4>
-                        </a>
-                        <div class="w-100 my-2">
-                            <p class="fs-14 w-100 text-justify card-description" >${
-                              item.description.length > 110
-                                ? item.description.substr(0, 98)
-                                : item.description
-                            }... <span class="text-primary">Readmore</span></p>
+                      </a>
+                      <div class="w-100 pb-2">
+                            <p class="fs-14 w-100 text-justify card-description" style="line-height:13px;" >
+                            <small>
+                            ${item.description.length > 110
+          ? item.description.substr(0, 98)
+          : item.description
+        }... <a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Readmore</a></small></p>
                         </div>
-                        <div class="sm-mb">
-                            <a href="" class=" authorname fs-14 fw-600">
-                                ${item.author}
-                            </a>
-                        </div>
+                        <a href="" class="mb-3 authorname fs-14 fw-600">${item.author}</a>
+                       
                    
       `;
       categoryContainer.appendChild(div);

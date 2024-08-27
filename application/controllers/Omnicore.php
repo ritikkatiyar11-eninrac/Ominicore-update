@@ -4,8 +4,12 @@ require(APPPATH . 'controllers/Default_Controler.php');
 class Omnicore extends Default_Controler
 {
     public function index()
+
     {
-        $this->load->view('frontend/pages/home');
+        $this->load->view('frontend/pages/home');   
+        
+        // $this->load->library('myLibrary');
+        // echo $this->mylibrary->resultD("hello");
     }
 
     public function page($id){
@@ -19,17 +23,29 @@ class Omnicore extends Default_Controler
         if($id == 'user_profile') $this->user_profile();
         if($id == 'contact') $this->contact();
         if($id == 'catalog') $this->catalog();
+        if($id == 'dummypage') $this->dummypage();
+        if($id == 'cookie_page') $this->cookie_page();
     }
     
     private function login()
     {
         $this->load->view('frontend/components/header');
         $this->load->view('frontend/pages/login');
-        $this->load->view('frontend/components/footer');
+        
     }
     public function infodetail()
     {
         $this->load->view('frontend/pages/others/infodetail');
+    }
+
+    public function cookie_page()
+    {
+        $this->load->view('frontend/pages/others/cookie_page');
+    }
+
+    public function dummypage()
+    {$this->load->view('frontend/components/header');
+        $this->load->view('frontend/pages/others/dummypage');
     }
     public function user_profile()
     {
@@ -75,10 +91,7 @@ class Omnicore extends Default_Controler
     {
         $this->load->view('frontend/pages/others/refund_policy');
     }
-    public function cookie_page()
-    {
-        $this->load->view('frontend/pages/others/cookie_page');
-    }
+    
 
     public function sitemap()
     {

@@ -1,8 +1,6 @@
 <style>
     .login-wrapper {
-        height: 100vh;
-        background: #eee9ff;
-        /* background: linear-gradient(45deg, var(--primary-600), var(--extra-800)); */
+        height: 70vh;
     }
 
     .login-wrapper .login-area {
@@ -11,20 +9,8 @@
         height: 100%;
     }
 
-    .login-wrapper .login-area .login-form {
-        min-width: 500px;
-
-        /* opacity: 0.6; */
-        min-height: 200px;
-        flex: 1;
-    }
-
-    .login-wrapper .login-area .login-form .login-text {
-        margin-bottom: 10px;
-    }
-
     .login-wrapper .login-area .login-form .login-body {
-        width: 300px;
+        max-width: 500px;
         margin: auto;
         padding: 20px;
     }
@@ -59,79 +45,43 @@
         box-shadow: 0 0 0px 1px var(--bs-gray-400);
     }
 
-    .company-info {
-        flex: 2;
-        min-width: 0;
-    }
-
-    .company-info img {
-        object-fit: cover;
-        width: 200px;
-        height: 70px;
-        object-position: left;
-    }
-
     .form-footer button {
         border: none;
         background: #0f3f6e;
         color: white;
-        width: 260px;
-        margin: 0 auto;
-        border-radius: 7px;
+        width: 100px;
     }
 
     .form-footer button:hover {
         transform: scale(0.98);
     }
-
-    .form-footer a {
-        display: block;
-        margin: auto;
-        width: fit-content;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    @media(max-width:831px) {
-        .login-area .company-info {
-            display: none;
-            flex-direction: column;
-        }
-    }
 </style>
-<section class="login-wrapper w-100">
+
+<section class="login-wrapper w-100 mx-auto">
     <div class="login-area">
-        <div class="company-info">
-            <div class="d-flex justify-content-center flex-column w-100 mx-auto h-75 align-items-center">
-                <h1>Regulatory, policy updates</h1>
-                <div class="w-75 mx-auto text-center">
-                    <p>First of a kind portal to stay updated on core dynamics governing the regulated sectors of India</p>
-                </div>
-            </div>
-        </div>
-        <div class="login-form" style="width: 60%;">
+        <div class="login-form w-100">
             <div class="d-flex align-items-center justify-content-center h-100">
                 <div class="w-100">
-                    <form action="" class="login-data-form" id="login-Submission">
-                        <div class="login-text py-2">
+                    <form action="" class="login-data-form" id="flogin-Submission">
+                        <div class="login-text py-2 mb-2">
                             <h1 class="text-center fs-25">Login</h1>
-                            <p class="error text-danger fs-14   text-center"></p>
+                            <p class="error text-danger fs-14 text-center"></p>
                         </div>
                         <div class="form-inputs">
                             <div class="login-body">
                                 <div class="login-inputs">
-                                    <input class="login-inputs-fields username" type="text" placeholder="Enter Your Email">
+                                    <input class="login-inputs-fields username" id="f-username" type="text" placeholder="Enter Your Email">
                                     <i class="icofont-email"></i>
                                 </div>
                                 <div class="login-inputs">
-                                    <input class="login-inputs-fields password" type="password" placeholder="Enter Your Password">
+                                    <input class="login-inputs-fields password" id="f-password" type="password" placeholder="Enter Your Password">
                                     <i class="icofont-eye"></i>
                                 </div>
+                                <div class="form-footer py-2 d-md-flex justify-content-md-between align-items-md-center">
+                                    <button type="submit" class="fs-14 fw-300 d-block  px-4 py-2 my-2 rounded">Login</button>
+                                    <a href="" class="p-1">Forgot username or password</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-footer py-2">
-                            <button type="submit" class="fs-14 fw-300 d-block m-auto px-4 py-2 my-2">Login</button>
-                            <a href="">Forgot username or password</a>
                         </div>
                     </form>
                 </div>
@@ -139,3 +89,67 @@
         </div>
     </div>
 </section>
+
+<script>
+    let floginSubmission = document.getElementById("flogin-Submission")
+    floginSubmission.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let fUsername = document.getElementById("f-username").value
+        let fpassword = document.getElementById("f-password").value
+        let error = document.querySelector(".error")
+
+        if (fUsername == "" && fpassword === "") {
+            document.querySelector('.error').innerHTML = "Credential is required";
+            if (!error.classList.contains('text-danger')) {
+                error.classList.add('text-danger')
+            }
+            return false;
+        } else {
+
+            postLoginRequest(fUsername, fpassword, (request) => {
+                console.log("", request)
+                if (request.success) {
+
+                } else {
+
+                }
+            })
+            error.innerHTML = "Login success"
+            setInterval(function() {
+                floginSubmission.reset()
+                error.innerHTML = ''
+                error.classList.remove('text-success')
+
+            }, 1000);
+        }
+
+
+    })
+
+
+
+
+
+    // login({
+    //     'username': fUsername,
+    //     'password': fpassword,
+    // }, function(result) {
+    // if (result.success) {
+    //     if (error.classList.contains('text-danger')) {
+    //         error.classList.remove('text-danger')
+    //     }
+    //     error.classList.add('text-success')
+    //     error.innerHTML = result.msg
+    //     setInterval(function() {
+    //         location.reload();
+    //     }, 1000);
+    // } else {
+    //     if (error.classList.contains('text-success')) {
+    //         error.classList.remove('text-success')
+    //     }
+    //     error.classList.add('text-danger')
+    //     error.innerHTML = result.msg
+    // }
+    // })
+</script>

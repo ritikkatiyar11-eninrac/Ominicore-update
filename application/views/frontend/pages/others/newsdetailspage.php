@@ -96,12 +96,12 @@
 
                 <div class="mb-3" style="grid-area:headline;">
 
-                    <h1 class="" style="font-weight: 600;line-height:1 ">
+                    <h1 class="fs-20" style="font-weight: 600;line-height:1 ">
                         British Museum thefts: Welsh politicians join the queue in calling for objects to be repatriated
                     </h1>
                 </div>
                 <div class="mb-4" style="grid-area:standfirst ;">
-                    <h2 class="fs-20" style="letter-spacing:.03em; line-height:1.1; font-weight: inherit;">The treasures singled out so far include the Mold Gold Cape and Moel Hebog shield</h2>
+                    <h2 class="fs-16" style="letter-spacing:.03em; line-height:1.1; font-weight: inherit;">The treasures singled out so far include the Mold Gold Cape and Moel Hebog shield</h2>
                     <div class="">
                         <div class="flex items-center fs-14 mt-3 -text-red-900" style="letter-spacing: 0.15em; line-height:1.1">
                             <a href="" class="">CERC // orders</a>
@@ -117,29 +117,29 @@
                         <div class="w-100">
                             <div class="mb-4">
                                 <div class="mb-4">
-                                    <p class="fs-18" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
+                                    <p class="fs-14" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
                                         First there was Greece, then Nigeria and China—now Wales is demanding that artefacts housed at the British Museum be returned home in the wake of the recent thefts controversy at the beleaguered London institution.
                                     </p>
-                                    <p class="fs-18" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
+                                    <p class="fs-14" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
                                         First there was Greece, then Nigeria and China—now Wales is demanding that artefacts housed at the British Museum be returned home in the wake of the recent thefts controversy at the beleaguered London institution.
                                     </p>
-                                    <p class="fs-18" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
+                                    <p class="fs-14" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
                                         First there was Greece, then Nigeria and China—now Wales is demanding that artefacts housed at the British Museum be returned home in the wake of the recent thefts controversy at the beleaguered London institution.
                                     </p>
-                                    <p class="fs-18" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
+                                    <p class="fs-14" style="margin-bottom:1rem;word-break: break-word;    letter-spacing: .015em;line-height: 1.5;">
                                         First there was Greece, then Nigeria and China—now Wales is demanding that artefacts housed at the British Museum be returned home in the wake of the recent thefts controversy at the beleaguered London institution.
                                     </p>
                                 </div>
                             </div>
                             <div class="h-auto"></div>
                             <div class="w-100 border-bottom border-top py-3 flex-wrap flex align-items-center">
-                                <a href="#" class="mr-1 mb-3" style="padding:1rem;padding-top: .25rem; padding-bottom: .25rem;transition-duration: .3s; letter-spacing: .015em;line-height: 1;">Wind</a>
-                                <a href="#" class="mr-1 mb-3" style="padding:1rem;padding-top: .25rem; padding-bottom: .25rem;transition-duration: .3s; letter-spacing: .015em;line-height: 1;">Solar</a>
-                                <a href="#" class="mr-1 mb-3" style="padding:1rem;padding-top: .25rem; padding-bottom: .25rem;transition-duration: .3s; letter-spacing: .015em;line-height: 1;">Hydrogen</a>
+                                <a href="#" class="mr-1 mb-3 fs-14 mx-3 p-1 border">Wind</a>
+                                <a href="#" class="mr-1 mb-3 fs-14 mx-3 p-1 border">Solar</a>
+                                <a href="#" class="mr-1 mb-3 fs-14 mx-3 p-1 border">Hydrogen</a>
                             </div>
                             <div class="w-100 ml-auto d-flex justify-content-end align-items-center">
                                 <div class="d-flex justify-content-end align-items-center gap-3 w-100 pt-3">
-                                    <span class="fs-14 mr-2 flex-end" style="line-height: 1.2;">share</span>
+                                    <span class="fs-14 mr-2 flex-end">share</span>
                                     <div class="d-flex  align-items-center gap-4">
                                         <i class="icofont-linkedin"></i><i class="icofont-brand-nexus"></i>
                                     </div>
@@ -175,10 +175,10 @@
                         1 September 2023
                     </div>
                 </div>
-
                 <div class="" style="grid-area: series;"></div>
             </div>
         </main>
     </div>
 </div>
+<script src="<?=base_url("") ?>assets/js/apirequest.js"></script>
 <?php require(APPPATH . 'views/frontend/components/footer.php'); ?>

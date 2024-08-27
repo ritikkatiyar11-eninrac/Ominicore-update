@@ -1,33 +1,5 @@
-<style>
-    .page-header a {
-        color: #0f3f6e;
-        width: max-content;
-        transition: all 0.4s ease-in-out;
-        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-
-    }
-
-    .page-header a:hover {
-        transform: scale(0.98);
-        color: #3243e9;
-        transition-duration: .4s;
-    }
-
-    .page-header a span {
-        text-transform: uppercase;
-    }
-
-    .page-header a i {
-        font-size: 1.5rem;
-    }
-
-    .tickerwrapper .menu-ticker a {
-        width: 100%;
-    }
-</style>
-
-<div class="langing_page-top d-flex">
-    <div class="langing_page-top-sidebar" id="landing_top-sidebar">
+<div class="langing_page-top row">
+    <div class="langing_page-top-sidebar col-md-4" id="landing_top-sidebar">
         <div class="menuwrapper" style="width:35%;">
             <a href="" class="menu-logo">
                 <div class="logo"><span>Recent Updates</span><br /> <span id="totalUpdates"></span></div>
@@ -99,136 +71,179 @@
             </a>
         </div>
     </div>
-    <div class="langing_page-contentwrapper">
 
-        
-        <div class="page-header flex-column">
-            <h1 class="page-title">Top Articles</h1>
-            <a href="<?= base_url() ?>category" class="read-all"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
-        </div>
-        <div class="">
-            <div class="content-section">
-
-                <div class="content-col" id="">
-                    <div class="trending-card card-placeholder-img-01 imghover">
-                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        <div class="trending-card-content">
-                            <div class="card-meta card-path">
-                                <span>CERC </span>
-                                <span>/ Orders</span>
+    <div class="col-md-8 col-sm">
+        <div class="row">
+            <div class="h-article-section">
+                <h1 class="fw-bold mb-2 text-primary-600">Top Articles</h1>
+                <a href="<?= base_url() ?>category" class="cursor-pointer mt-3 text-uppercase text-primary-900"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
+                <div class="py-3">
+                    <div class=" row">
+                        <div class="col-md-7 col-sm">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="child-main-card pb-3">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 pb-4">
+                                        <div class="child-main-card">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 pb-3">
+                                        <div class="child-main-card">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="trending-card-title">The Verge Struck by Second POW Attack in as Many Months</h3>
-                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
                         </div>
-                    </div>
-
-                    <div class="trending-card card-half placeholder-image-03 w-inline-block">
-                        <div class="">
-                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        </div>
-                        <div class="trending-card-content">
-                            <div class="card-meta card-path"><span>CERC </span> <span>/ Orders</span></div>
-                            <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Govt. Growth</h3>
-                            <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
-                        </div>
-                    </div>
-                    <div class="trending-card card-half placeholder-image-03 w-inline-block">
-                        <div class="">
-                            <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                        </div>
-                        <div class="trending-card-content">
-                            <div class="card-meta card-path"> <span>MNRE </span>// Orders</div>
-                            <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Government Growth</h3>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="side-col">
-                    <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                        <div class="tag-breaking"><span>Breaking</span></div>
-                        <div class="">
-                            <div class="card-meta mb-2">
-                                2h ago
+                        <div class="col-md-5">
+                            <div class="">
+                                <div class="overflow-hidden h-50 position-relative rounded w-100 mb-4">
+                                    <div class="w-100 h-100">
+                                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 opacity-75" alt="breaking">
+                                        <div class="top-0 w-100 h-100 position-absolute" style="background-color: rgba(0, 0, 0, 0.4)"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-around flex-column gap-3 position-absolute top-0 text-white  p-2 h-100">
+                                        <div class="tag-breaking"><span class="bg bg-danger py-1 px-2 rounded float-end">Breaking</span></div>
+                                        <div class="">
+                                            <div class="card-meta mb-2">
+                                                2h ago
+                                            </div>
+                                            <div class="fs-14">U.S. Government Shutdown Hits Record Length With No End Seen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" p-4 d-flex flex-column bg-lavender-100 gap-3 rounded align-items-start">
+                                    <div class="thumbnailwrapper fs-34 text-center mb-2 rounded-circle" style="background: #ccc8ff; ">
+                                        <i class="icofont-light-bulb"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-uppercase fw-bold mb-2">
+                                            INSIGHTS
+                                        </div>
+                                        <p class="fs-14 fw-400">McAfee Predicts Bull Run as Crypto Markets Dip</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
-                        </div>
-                    </div>
-                    <div class="placeholder-image-05 d-flex flex-column align-items-start">
-                        <div class="thumbnailwrapper mb-2">
-                            <i class="icofont-light-bulb"></i>
-                        </div>
-                        <div>
-                            <div class="card-meta">
-                                INSIGHTS
-                            </div>
-                            <p class="card-title fw-400" style="line-height: 20px;">McAfee Predicts Bull Run as Crypto Markets Dip</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="page-header flex-column">
-            <h1 class="page-title">Central</h1>
-            <a href="<?= base_url() ?>category/central" class="read-all"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
-        </div>
-        <div class="content-section" id="centralmainContent">
-            <div class="content-col" id="centralcontent">
-                <div class="trending-card card-placeholder-img-01 imghover">
-                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                    <div class="trending-card-content">
-                        <div class="card-meta card-path">
-                            <span>CERC </span>
-                            <span>/ Orders</span>
+            <div class="h-article-section mt-3">
+                <h1 class="fw-bold mb-2 text-primary-600">Central</h1>
+                <a href="<?= base_url() ?>category" class="cursor-pointer mt-3 text-uppercase text-primary-900"><span>Read all</span><i class="icofont-long-arrow-right"></i></a>
+                <div class="py-3">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="child-main-card pb-3">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="child-main-card">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="child-main-card">
+                                            <div class="child-img rounded overflow-hidden w-100 h-100">
+                                                <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 h-100" alt="child image">
+                                            </div>
+                                            <div class="child-content">
+                                                <div class="fs-12 py-2"><span class="text-primary-900 fw-bold">CERC</span> // Orders</div>
+                                                <a href="#" class="fs-16 fw-bold text-dark text-justify">Bitcoin Use Case: Limiting Govt. Growth</a>
+                                                <p class="fs-14 text-justify lh-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis ipsam eos totam possimus autem saepe, id consequatur cupiditate. Nemo?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="trending-card-title">The Verge Struck by Second POW Attack in as Many Months</h3>
-                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
-                    </div>
-                </div>
+                        <div class="col-md-5">
+                            <div class="">
+                                <div class="overflow-hidden h-50 position-relative rounded w-100 mb-4">
+                                    <div class="w-100 h-100">
+                                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" class="w-100 opacity-75" alt="breaking">
+                                        <div class="top-0 w-100 h-100 position-absolute" style="background-color: rgba(0, 0, 0, 0.4)"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-around flex-column gap-3 position-absolute top-0 text-white  p-2 h-100">
+                                        <div class="tag-breaking"><span class="bg bg-danger py-1 px-2 rounded float-end">Breaking</span></div>
+                                        <div class="">
+                                            <div class="card-meta mb-2">
+                                                2h ago
+                                            </div>
+                                            <div class="fs-14">U.S. Government Shutdown Hits Record Length With No End Seen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" p-4 d-flex flex-column bg-lavender-100 gap-3 rounded align-items-start">
+                                    <div class="thumbnailwrapper fs-34 text-center mb-2 rounded-circle" style="background: #ccc8ff; ">
+                                        <i class="icofont-light-bulb"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-uppercase fw-bold mb-2">
+                                            INSIGHTS
+                                        </div>
+                                        <p class="fs-14 fw-400">McAfee Predicts Bull Run as Crypto Markets Dip</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="trending-card card-half placeholder-image-03 w-inline-block">
-                    <div class="">
-                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                    </div>
-                    <div class="trending-card-content">
-                        <div class="card-meta card-path"><span>CERC </span> <span>/ Orders</span></div>
-                        <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Govt. Growth</h3>
-                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
-                    </div>
-                </div>
-                <div class="trending-card card-half placeholder-image-03 w-inline-block">
-                    <div class="">
-                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" alt="" style="border-radius:10px">
-                    </div>
-                    <div class="trending-card-content">
-                        <div class="card-meta card-path"> <span>MNRE </span>// Orders</div>
-                        <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Government Growth</h3>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="side-col">
-                <div class="placeholder-image-04" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                    <div class="tag-breaking"><span>breaking</span></div>
-                    <div class="">
-                        <div class="card-meta mb-2">
-                            2h ago
                         </div>
-                        <div class="card-title" style="line-height: 20px;">U.S. Government Shutdown Hits Record Length With No End Seen</div>
                     </div>
                 </div>
-                <div class="placeholder-image-05 side-card">
-                    <div class="card-meta">
-                        30 july 2024
-                    </div>
-                    <p class="card-title fw-400" style="line-height: 20px;">Texas city faces backlash for stripping local arts centre's funding over drag performances</p>
-                </div>
-
-
             </div>
+
         </div>
+
+
     </div>
 </div>
 

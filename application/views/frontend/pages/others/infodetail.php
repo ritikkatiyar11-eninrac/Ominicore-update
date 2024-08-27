@@ -16,13 +16,8 @@
         }
     }
 
-    @media(min-width:1024px) {}
 
-    .bn-container {
-        margin: auto;
-        max-width: 1440px;
-        width: calc(100% - 40px);
-    }
+   
 
     .bn-single .bn-single-image img {
         height: 100%;
@@ -60,7 +55,7 @@
         }
     }
 
-    .bn-single-image--action button:focus{
+    .bn-single-image--action button:focus {
         outline: none;
     }
 
@@ -69,29 +64,30 @@
     }
 </style>
 
+
 <main class="container-fluid">
     <div class="bn-single">
-        <div class="container-fluid px-0 mt-3">
-            <nav aria-label="breadcrumb" id="breadcrumb-nav">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item px-0"><a href="<?= base_url() ?>category">
-                            <i class="icofont-home"></i>
-                        </a></li>
+        <div class="container-fluid py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mt-3">
+                    <li class="breadcrumb-item"><a href="<?= base_url() ?>"><i class="icofont-home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Infographic</a></li>
+                    <li class="breadcrumb-item active" id="btbreadcrumbactiveurllast" aria-current="page"></li>
                 </ol>
             </nav>
         </div>
 
         <div class="bn-single-image bn-single-image--1x1">
-            <div class="bn-container bn-container--image">
+            <div class="container bn-container--image">
                 <div class="bn-single-image--main d-flex">
                     <img src="<?= base_url() ?>assets/images/1290-vaccine-candidates.svg" alt="">
                 </div>
             </div>
-            <div class="bn-container bn-container--actions">
+            <div class="container bn-container--actions">
                 <div class="bn-single-image--actions bn-single-meta-col d-flex justify-content-between">
                     <div class="bn-single-image--action">
                         <button class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
-                        <i class="icofont-simple-left fs-20"></i><span>Older</span>
+                            <i class="icofont-simple-left fs-20"></i><span>Older</span>
                         </button>
                     </div>
                     <div class="bn-single-image--action">
@@ -107,41 +103,38 @@
         </div>
 
         <div class="bn-single-meta bn-single-meta--text">
-            <div class="bn-container">
+            <div class="container">
                 <div class="bn-single-meta-col">
-                    <div class="bn-single-meta-description" style="line-height: 150%;">
+                    <div class="bn-single-meta-description" >
                         <p>
                             The US National School Lunch Program is nearly 75 years old. It provides billions of low-cost or free lunches to children from low-income families every year.
                             <br>
                             <br>
-
                             That means improved food security for millions of families. Better nutrition for kids. Improvements in health, behaviour and academic performance. Everyone wins.
                         </p>
                         <h3 role="heading" aria-level="3" class="bn-single-meta-title ">Topics</h3>
                         <ul class="bn-single-topics">
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                <span class="bn-single-topic-wrapper border text-uppercase">
                                     <a href="" class="bn-single-topic--child bn-int-link">solar</a>
                                 </span>
                             </li>
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                <span class="bn-single-topic-wrapper border text-uppercase">
                                     <a href="" class="bn-single-topic--child bn-int-link">wind</a>
                                 </span>
                             </li>
 
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                <span class="bn-single-topic-wrapper border text-uppercase">
                                     <a href="" class="bn-single-topic--child bn-int-link">Hydrogen</a>
                                 </span>
                             </li>
                             <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper" style="text-transform: uppercase; border:1px solid #c8cfd6">
+                                <span class="bn-single-topic-wrapper border text-uppercase">
                                     <a href="" class="bn-single-topic--child bn-int-link">Oil & Gas</a>
                                 </span>
                             </li>
-                           
-
                         </ul>
                     </div>
                 </div>

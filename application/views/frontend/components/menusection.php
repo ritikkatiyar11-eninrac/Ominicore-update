@@ -1,23 +1,21 @@
-<div class="container-xxl">
+<div class="container px-0">
     <div class="bn-controls-wrapper">
-        <div class="container-xxl p-0">
-            <div class="bn-filter-tab-wrapper">
-                <div class="bn-filter-tabs-inner">
-                    <div class="bn-filter-tabs justify-content-center">
-                        <ul id="parent-category">
-                        </ul>
-                    </div>
+        <div class="bn-filter-tab-wrapper">
+            <div class="bn-filter-tabs-inner">
+                <div class="bn-filter-tabs justify-content-center">
+                    <ul id="parent-category">
+                    </ul>
                 </div>
-                <div class="bn-subfilter-tabs-inner">
-                    <div class="bn-subfilter-tabs">
-                        <ul id="sub-category">
-                        </ul>
-                    </div>
+            </div>
+            <div class="bn-subfilter-tabs-inner">
+                <div class="bn-subfilter-tabs">
+                    <ul id="sub-category">
+                    </ul>
                 </div>
-                <div class="bn-subfilter-tabs-inner">
-                    <div class="bn-subfilter-tabs">
-                        <ul id="grand-category"></ul>
-                    </div>
+            </div>
+            <div class="bn-subfilter-tabs-inner">
+                <div class="bn-subfilter-tabs">
+                    <ul id="grand-category"></ul>
                 </div>
             </div>
         </div>

@@ -1,4 +1,3 @@
-let newBaseurl = "http://localhost/omnicore/";
 const menusectionObject = {
   postData: {},
   setPostData(postData) {
@@ -7,12 +6,12 @@ const menusectionObject = {
 
   fetchData() {
     let self = this;
-    fetch(newBaseurl + "assets/js/omnicore-category-final.json")
+    fetch("http://localhost/omnicore/assets/js/omnicore-category-final.json")
       .then((response) => response.json())
       .then((result) => {
-        menusectionObject.setPostData(result);
-        menusectionObject.renderCategories(result);
-        menusectionObject.setActiveCategoryFromUrl(result)
+        self.setPostData(result);
+        self.renderCategories(result);
+
       });
   },
 
@@ -41,40 +40,35 @@ const menusectionObject = {
         parentCategory.appendChild(li);
       }
     });
-    
-self.setActive( l,index)
-    
   },
 
-  // showSubCategories(category, parentIndex) {
+  showSubCategories(category, parentIndex) {
+    let self = this;
+    const subCategory = document.getElementById("sub-category");
+    const grandCategory = document.getElementById("grand-category");
+    subCategory.innerHTML = "";
+    grandCategory.innerHTML = "";
+    category.children.forEach((sub, subIndex) => {
+      const li = document.createElement("li");
+      li.className = "bn-subfilter-item";
+      li.style = "transform: scale(1); opacity: 1;";
+      let a = document.createElement("a");
+      a.className = "";
+      a.href = `${window.location.origin}/omnicore/category/${category.slug}/${sub.slug}`;
+      let btn = document.createElement("button");
+      btn.className = "bn-subfilter child";
+      btn.dataset.slug = sub.slug;
+      btn.dataset.title = sub.name;
+      btn.dataset.parentIndex = parentIndex;
+      btn.dataset.subIndex = subIndex;
+      btn.textContent = sub.name;
 
-  //   let self = this;
-  //   const subCategory = document.getElementById("sub-category");
-  //   const grandCategory = document.getElementById("grand-category");
-
-  //   subCategory.innerHTML = "";
-  //   grandCategory.innerHTML = "";
-  //   category.children.forEach((sub, subIndex) => {
-  //     const li = document.createElement("li");
-  //     li.className = "bn-subfilter-item";
-  //     li.style = "transform: scale(1); opacity: 1;";
-  //     let a = document.createElement("a");
-  //     a.className = "";
-  //     a.href = `${window.location.origin}/omnicore/category/${category.slug}/${sub.slug}`;
-  //     let btn = document.createElement("button");
-  //     btn.className = "bn-subfilter child";
-  //     btn.dataset.slug = sub.slug;
-  //     btn.dataset.title = sub.name;
-  //     btn.dataset.parentIndex = parentIndex;
-  //     btn.dataset.subIndex = subIndex;
-  //     btn.textContent = sub.name;
-
-  //     a.appendChild(btn);
-  //     li.appendChild(a);
-  //     subCategory.appendChild(li);
-  //   });
-  //   self.setActive("parent-category", parentIndex);
-  // },
+      a.appendChild(btn);
+      li.appendChild(a);
+      subCategory.appendChild(li);
+    });
+    self.setActive("parent-category", parentIndex);
+  },
 
   // showGrandCategories(subCategory, ct, pt, cat) {
   //   let self = this;
@@ -106,7 +100,8 @@ self.setActive( l,index)
 
   setActive(listId, index) {
     console.log(listId, index)
-    const activeItems = document.getElementById(listId).children;
+    const activeItems = document.getElementById(listId)
+    console.log(activeItems);
 
     for (let i = 0; i < activeItems.length; i++) {
       activeItems[i].firstChild.firstChild.classList.remove(
@@ -124,25 +119,12 @@ self.setActive( l,index)
     grandCategory.innerHTML = "";
   },
 
-  setActiveCategoryFromUrl(data) {
-    let self = this;
-    const urlPath = window.location.pathname.split("/").slice(3);
-    // console.log(urlPath[urlPath.length - 1 ])
-    let tempUrl = urlPath[urlPath.length - 1]
-   
-    let tempVal = data.find(item => item.SLUG==tempUrl)
 
-    // console.log(tempVal);
-
-    
-  
-  },
 };
 
 menusectionObject.fetchData();
 
 document.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
-  menusectionObject.setActiveCategoryFromUrl();
-  // menusectionObject.renderCategories();
+  menusectionObject.renderCategories();
 });

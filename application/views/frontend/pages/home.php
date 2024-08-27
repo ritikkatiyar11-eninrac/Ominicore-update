@@ -1,5 +1,5 @@
 <?php require(APPPATH . 'views/frontend/components/header.php'); ?>
-<div class="container-xxl px-0">
+<div class="container">
     <?php require(APPPATH . 'views/frontend/components/menusection.php'); ?>
     <?php require(APPPATH . 'views/frontend/pages/others/trending.php'); ?>
 </div>
