@@ -1,0 +1,519 @@
+[
+  {
+    "Features": "Applicable Pricing",
+    "Free Forever!": "Price/User/Month*",
+    "Business Starter": "Price/User/Month*",
+    "Business Standard": "Price/User/Month*",
+    "Business Plus": "Price/User/Month*",
+    "Enterprise": "Price/User/Month*"
+  },
+  {
+    "Features": "Billed Monthly",
+    "Free Forever!": "₹ 0.00",
+    "Business Starter": "₹ 5,000.00",
+    "Business Standard": "₹ 5,500.00",
+    "Business Plus": "₹ 6,000.00",
+    "Enterprise": "₹ 7,000.00"
+  },
+  {
+    "Features": "Billed Annually",
+    "Free Forever!": "₹ 0.00",
+    "Business Starter": "₹ 4,333.00",
+    "Business Standard": "₹ 4,583.00",
+    "Business Plus": "₹ 5,200.00",
+    "Enterprise": "₹ 5,833.00"
+  },
+  {
+    "Features": "Central Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "CERC",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "MoP",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "MNRE",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "MoF",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Apellate Tribunal",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Hon'ble Supreme Court",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Others",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "State Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Upto 5 States",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": false
+  },
+  {
+    "Features": ">5 & Upto 10 States",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": true,
+    "Business Plus": false,
+    "Enterprise": false
+  },
+  {
+    "Features": ">10 & Upto 15 States",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": true,
+    "Enterprise": false
+  },
+  {
+    "Features": "All States",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": true
+  },
+  {
+    "Features": "Power Generation Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Thermal",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Solar",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Wind",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Biomass",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Small Hydro Plants",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Nuclear",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Others",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Power Distribution Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Power Tariffs",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "C&I Consumers",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Netwrok Augmentation",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Power Transmission Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Connectivity",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Charges & Losses",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Projects",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Government Announcements",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Bid Updates",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Bid Invites",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Bid Results",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Others",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "New Energies",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "BESS",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Hydrogen",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "PHSP",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Solar Rooftop",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Regulations",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Policies",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Feed-in-Tariffs",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Open Access ",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Solar Source",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Wind Source",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Hybrid Source",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Newsletter ",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Weekly",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Infographics",
+    "Free Forever!": true,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Number of Subscribers",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": " Upto 5 ",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": false
+  },
+  {
+    "Features": ">5 & Upto 10",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": true,
+    "Business Plus": false,
+    "Enterprise": false
+  },
+  {
+    "Features": ">10 & Upto 15",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": true,
+    "Enterprise": false
+  },
+  {
+    "Features": ">15 (Custom)",
+    "Free Forever!": false,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": true
+  },
+  {
+    "Features": "Update Views",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": " Upto 5 ",
+    "Free Forever!": true,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": false
+  },
+  {
+    "Features": "Unlimited",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "Archive Acess",
+    "Free Forever!": "",
+    "Business Starter": "",
+    "Business Standard": "",
+    "Business Plus": "",
+    "Enterprise": "",
+    "isTitle": true
+  },
+  {
+    "Features": "Yes",
+    "Free Forever!": false,
+    "Business Starter": true,
+    "Business Standard": true,
+    "Business Plus": true,
+    "Enterprise": true
+  },
+  {
+    "Features": "No",
+    "Free Forever!": true,
+    "Business Starter": false,
+    "Business Standard": false,
+    "Business Plus": false,
+    "Enterprise": false
+  }
+]
