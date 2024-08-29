@@ -10,13 +10,13 @@
         box-shadow: 0 2px 4px rgb(218, 220, 224);
         background: rgb(248, 249, 250);
         position: fixed;
-        top: 80px;
+        top: 72px;
         left: 0;
         right: 0;
         opacity: 0;
         visibility: hidden;
         z-index: 99999;
-        max-width: 1246px;
+        /* max-width: 1246px; */
         margin: 0px auto;
         transition: all .1s ease-out;
     }
@@ -93,17 +93,46 @@
     .tab-scrollbar-list button {
         height: 48px;
         background-color: #fff;
+        transition: all 0.4s ease-in-out;
     }
 
     .tab-scrollbar-list button:hover {
-        background-color: var(--primary-100);
+        background: var(--primary-700);
+        color: var(--darklight-100);
+    }
+
+    .pricing-btn {
+        border: 1px solid var(--primary-700);
+        cursor: pointer;
+    }
+
+    .pricing-btn.active {
+        background: var(--primary-700);
+        color: var(--darklight-100);
     }
 </style>
 <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="<? base_url() ?>"><i class="icofont-home"></i></a></li>
+            <li class="breadcrumb-item active">Check Pricing</li>
+        </ol>
+    </nav>
+</div>
+<div class="container-fluid">
     <section class="pricing-page pricing-category  py-2">
-        <div class="d-none d-md-flex d-lg-flex w-100">
+        <div class="my-4 d-flex w-100 mx-auto justify-content-end align-items-center">
+            <div class="d-flex mt-4">
+                <div class=" position-relative">
+                    <img src="<?= base_url() ?>assets/images/output-onlinegiftools.gif" class="position-absolute mt-2" style="top: -81px;left: -120px;" width="113px" alt="">
 
-            <div class="flex-grow-1" style="max-width: 260px;">
+                    <div class="fs-14 fw-600 px-3 py-2 pricing-btn active" style="border-radius: 20px 0 0 20px;">Annual Billing</div>
+                </div>
+                <div class="fs-14 fw-600 px-3 py-2 pricing-btn" style="border-radius: 0 20px 20px 0;">Monthly Billing</div>
+            </div>
+        </div>
+        <div class="d-none d-md-flex d-lg-flex w-100">
+            <div style="flex:1;">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Free Forever!</div>
@@ -120,32 +149,28 @@
                             </div>
                         </div>
                         <div class="d-inline">
-                            <button class="btn btn-outline-primary">Start a trial</button>
+                            <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                     <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span>
-                                <b>30&nbsp;GB</b>
-                                <br>
-                                Pooled storage per user
-                            </span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span> --- </span>
                         </li>
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span> Secure custom business email, you@your-company.com</span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span>Any 5 Content</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex-grow-1" style="max-width: 260px;">
+            <div style="flex:1;">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Business Starter</div>
                         <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
                             <div class="fs-36 fw-400 text-primary-400">
-                                ₹ 0.00 <span class="fs-14">INR</span>
+                                ₹ 4166.67 <span class="fs-14">INR</span>
                             </div>
                             <div class="fs-16 fw-500 text-center"></div>
                             <div class="fs-12 mt-1 text-center mb-2">
@@ -156,32 +181,28 @@
                             </div>
                         </div>
                         <div class="d-inline">
-                            <button class="btn btn-outline-primary">Start a trial</button>
+                            <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                     <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span>
-                                <b>30&nbsp;GB</b>
-                                <br>
-                                Pooled storage per user
-                            </span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>5 </b>Users</span>
                         </li>
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span> Secure custom business email, you@your-company.com</span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>5 </b>States</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex-grow-1" style="max-width: 260px;">
+            <div style="flex:1;">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Business Standard</div>
                         <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
                             <div class="fs-36 fw-400 text-primary-400">
-                                ₹ 0.00 <span class="fs-14">INR</span>
+                                ₹ 4583.33 <span class="fs-14">INR</span>
                             </div>
                             <div class="fs-16 fw-500 text-center"></div>
                             <div class="fs-12 mt-1 text-center mb-2">
@@ -192,32 +213,28 @@
                             </div>
                         </div>
                         <div class="d-inline">
-                            <button class="btn btn-outline-primary">Start a trial</button>
+                            <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                     <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span>
-                                <b>30&nbsp;GB</b>
-                                <br>
-                                Pooled storage per user
-                            </span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>10 </b>Users</span>
                         </li>
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span> Secure custom business email, you@your-company.com</span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>10 </b>States</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex-grow-1" style="max-width: 260px;">
+            <div style="flex:1;">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Business Plus</div>
                         <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
                             <div class="fs-36 fw-400 text-primary-400">
-                                ₹ 0.00 <span class="fs-14">INR</span>
+                                ₹ 5000.00 <span class="fs-14">INR</span>
                             </div>
                             <div class="fs-16 fw-500 text-center"></div>
                             <div class="fs-12 mt-1 text-center mb-2">
@@ -228,32 +245,28 @@
                             </div>
                         </div>
                         <div class="d-inline">
-                            <button class="btn btn-outline-primary">Start a trial</button>
+                            <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                     <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span>
-                                <b>30&nbsp;GB</b>
-                                <br>
-                                Pooled storage per user
-                            </span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>15 </b>Users</span>
                         </li>
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span> Secure custom business email, you@your-company.com</span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>15 </b>States</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="flex-grow-1" style="max-width: 260px;">
+            <div style="flex:1;">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Enterprise</div>
                         <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
                             <div class="fs-36 fw-400 text-primary-400">
-                                ₹ 0.00 <span class="fs-14">INR</span>
+                                ₹ 5833.33 <span class="fs-14">INR</span>
                             </div>
                             <div class="fs-16 fw-500 text-center"></div>
                             <div class="fs-12 mt-1 text-center mb-2">
@@ -264,34 +277,28 @@
                             </div>
                         </div>
                         <div class="d-inline">
-                            <button class="btn btn-outline-primary">Start a trial</button>
+                            <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                     <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span>
-                                <b>30&nbsp;GB</b>
-                                <br>
-                                Pooled storage per user
-                            </span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span><b>15 </b>Users</span>
                         </li>
-                        <li class="my-2 mx-0 d-flex  gap-1">
-                            <i class="icofont-tick-mark text-primary"></i>
-                            <span> Secure custom business email, you@your-company.com</span>
+                        <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                            <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                            <span>All States</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
-
         </div>
         <div class="d-sm-block  d-md-none d-lg-none text-center">
             <div class="border-bottom">
                 <div class="overflow-hidden">
-                    <div class="tab-scrollbar-list" style="scrollbar-width: none;">
+                    <div class="tab-scrollbar-list container" style="scrollbar-width: none;">
                         <span class="d-flex gap-2">
-                            <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Free Forever!</button>
+                            <button class=" tab-scrollbar-list-item-active price-tab-btn flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Free Forever!</button>
                             <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Starter</button>
                             <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Standard</button>
                             <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Plus</button>
@@ -301,73 +308,237 @@
                 </div>
             </div>
 
-            <div class="">
-                <div class=""></div>
+            <div class="mt-3">
+                <div class="d-flex justify-content-center w-100">
+                    <div style="flex:1; max-width:300px">
+                        <div class="price-content border py-4 px-3">
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="fs-22 fw-400 mb-1 text-center">Free Forever!</div>
+                                <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
+                                    <div class="fs-36 fw-400 text-primary-400">
+                                        ₹ 0.00 <span class="fs-14">INR</span>
+                                    </div>
+                                    <div class="fs-16 fw-500 text-center"></div>
+                                    <div class="fs-12 mt-1 text-center mb-2">
+                                        <span>Price/User/Month*</span>
+                                        <span>
+                                            <i class="icofont-info-circle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-inline">
+                                    <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span> --- </span>
+                                </li>
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span>Any 5 Content</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none" style="flex:1;  max-width:300px">
+                        <div class="price-content border py-4 px-3">
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="fs-22 fw-400 mb-1 text-center">Business Starter</div>
+                                <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
+                                    <div class="fs-36 fw-400 text-primary-400">
+                                        ₹ 4166.67 <span class="fs-14">INR</span>
+                                    </div>
+                                    <div class="fs-16 fw-500 text-center"></div>
+                                    <div class="fs-12 mt-1 text-center mb-2">
+                                        <span>Price/User/Month*</span>
+                                        <span>
+                                            <i class="icofont-info-circle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-inline">
+                                    <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>5 </b>Users</span>
+                                </li>
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>5 </b>States</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none" style="flex:1;  max-width:300px">
+                        <div class="price-content border py-4 px-3">
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="fs-22 fw-400 mb-1 text-center">Business Standard</div>
+                                <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
+                                    <div class="fs-36 fw-400 text-primary-400">
+                                        ₹ 4583.33 <span class="fs-14">INR</span>
+                                    </div>
+                                    <div class="fs-16 fw-500 text-center"></div>
+                                    <div class="fs-12 mt-1 text-center mb-2">
+                                        <span>Price/User/Month*</span>
+                                        <span>
+                                            <i class="icofont-info-circle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-inline">
+                                    <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>10 </b>Users</span>
+                                </li>
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>10 </b>States</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none" style="flex:1;  max-width:300px">
+                        <div class="price-content border py-4 px-3">
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="fs-22 fw-400 mb-1 text-center">Business Plus</div>
+                                <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
+                                    <div class="fs-36 fw-400 text-primary-400">
+                                        ₹ 5000.00 <span class="fs-14">INR</span>
+                                    </div>
+                                    <div class="fs-16 fw-500 text-center"></div>
+                                    <div class="fs-12 mt-1 text-center mb-2">
+                                        <span>Price/User/Month*</span>
+                                        <span>
+                                            <i class="icofont-info-circle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-inline">
+                                    <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>15 </b>Users</span>
+                                </li>
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>15 </b>States</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none" style="flex:1;  max-width:300px">
+                        <div class="price-content border py-4 px-3">
+                            <div class="d-flex align-items-center flex-column">
+                                <div class="fs-22 fw-400 mb-1 text-center">Enterprise</div>
+                                <div class="d-flex align-items-center flex-column justify-content-center my-2 mx-0">
+                                    <div class="fs-36 fw-400 text-primary-400">
+                                        ₹ 5833.33 <span class="fs-14">INR</span>
+                                    </div>
+                                    <div class="fs-16 fw-500 text-center"></div>
+                                    <div class="fs-12 mt-1 text-center mb-2">
+                                        <span>Price/User/Month*</span>
+                                        <span>
+                                            <i class="icofont-info-circle"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-inline">
+                                    <a href="#scrolltag-smooth" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <ul class="list-style-none fs-14 fw-400 mt-3 border-top ps-0" style="line-height: 1.25rem;">
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span><b>15 </b>Users</span>
+                                </li>
+                                <li class="my-2 py-2 mx-0 d-flex gap-1 justify-content-center">
+                                    <i class="icofont-tick-mark text-primary" style="line-height: 18px;"></i>
+                                    <span>All States</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="scrolltag d-flex flex-column justify-content-center align-items-center pt-5">
+    <section id="scrolltag-smooth" class="scrolltag d-flex flex-column justify-content-center align-items-center pt-5">
         <a href="" class="text-primary fs-16 fw-500">Compare plans in details</a>
+        <i class="icofont-long-arrow-down text-primary mt-2 fs-18"></i>
     </section>
     <section class="position_section">
-        <table class="w-100">
-            <tbody>
-                <tr>
-                    <td class="JICFe w-25 border-all-left-none">
-                        <div class="d-flex">
-                            <div class="me-1 d-block"></div>
-                            <h3 class="fs-14 fw-400 me-1 lh-1">
-                            </h3>
-                        </div>
-                    </td>
-                    <td class="JICFe topcard-child  border text-center">
-                        <p class="wa6ntc">Free Forever!</p>
-                        <div class="CtNnib">
-                            <div class="fs-18 fw-400 pb-1 text-center">Free Forever!</div>
-                            <div class="d-inline">
-                                <button class="btn btn-outline-primary">Start a trial</button>
+        <div class="container-fluid">
+            <table class="w-100">
+                <tbody>
+                    <tr>
+                        <td class="JICFe w-25 border-all-left-none">
+                            <div class="d-flex">
+                                <div class="me-1 d-block"></div>
+                                <h3 class="fs-14 fw-400 me-1 lh-1">
+                                </h3>
                             </div>
-                        </div>
-                    </td>
-                    <td class="JICFe topcard-child  border text-center">
-                        <p class="wa6ntc">Business Starter</p>
-                        <div class="CtNnib">
-                            <div class="fs-18 fw-400 mb-1 text-center">Business Starter</div>
-                            <div class="d-inline">
-                                <button class="btn btn-outline-primary">Start a trial</button>
+                        </td>
+                        <td class="JICFe topcard-child  border text-center">
+                            <p class="wa6ntc">Free Forever!</p>
+                            <div class="CtNnib">
+                                <div class="fs-18 fw-400 pb-1 text-center">Free Forever!</div>
+                                <div class="d-inline">
+                                    <button class="btn btn-outline-primary">Start a trial</button>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td class="JICFe topcard-child  border text-center">
-                        <p class="wa6ntc">Business Standard</p>
-                        <div class="CtNnib">
-                            <div class="fs-18 fw-400 pb-1 text-center">Business Standard</div>
-                            <div class="d-inline">
-                                <button class="btn btn-outline-primary">Start a trial</button>
+                        </td>
+                        <td class="JICFe topcard-child  border text-center">
+                            <p class="wa6ntc">Business Starter</p>
+                            <div class="CtNnib">
+                                <div class="fs-18 fw-400 mb-1 text-center">Business Starter</div>
+                                <div class="d-inline">
+                                    <button class="btn btn-outline-primary">Start a trial</button>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td class="JICFe topcard-child  border text-center">
-                        <p class="wa6ntc">Business Plus</p>
-                        <div class="CtNnib">
-                            <div class="fs-18 fw-400 mb-1 text-center">Business Plus</div>
-                            <div class="d-inline">
-                                <button class="btn btn-outline-primary">Start a trial</button>
+                        </td>
+                        <td class="JICFe topcard-child  border text-center">
+                            <p class="wa6ntc">Business Standard</p>
+                            <div class="CtNnib">
+                                <div class="fs-18 fw-400 pb-1 text-center">Business Standard</div>
+                                <div class="d-inline">
+                                    <button class="btn btn-outline-primary">Start a trial</button>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td class=" JICFe topcard-child  border text-center">
-                        <p class="wa6ntc">Enterprise</p>
-                        <div class="CtNnib">
-                            <div class="fs-18 fw-400 mb-1 text-center">Enterprise</div>
-                            <div class="d-inline">
-                                <button class="btn btn-outline-primary">Start a trial</button>
+                        </td>
+                        <td class="JICFe topcard-child  border text-center">
+                            <p class="wa6ntc">Business Plus</p>
+                            <div class="CtNnib">
+                                <div class="fs-18 fw-400 mb-1 text-center">Business Plus</div>
+                                <div class="d-inline">
+                                    <button class="btn btn-outline-primary">Start a trial</button>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                        <td class=" JICFe topcard-child  border text-center">
+                            <p class="wa6ntc">Enterprise</p>
+                            <div class="CtNnib">
+                                <div class="fs-18 fw-400 mb-1 text-center">Enterprise</div>
+                                <div class="d-inline">
+                                    <button class="btn btn-outline-primary">Start a trial</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section class="pricing-details mb-3">
         <div class="mt-5">
@@ -879,7 +1050,6 @@
                             </h3>
                         </div>
                     </td>
-
                 </tr>
                 <tr>
                     <td class="w-25 py-3 border-all-left-none">
@@ -1762,8 +1932,6 @@
             </table>
         </div>
     </section>
-
-
 </div>
 
 <script>
@@ -1777,13 +1945,18 @@
         const elementreact = element.getBoundingClientRect()
         const viewPortHeight = 1;
         return elementreact.top <= viewPortHeight
+
     }
 
     window.addEventListener("scroll", function() {
         if (isElementIsAtTop(scrolltag)) {
-            position_section.classList.add("position_section-visible")
+            let bottom = scrolltag.getBoundingClientRect().bottom
+            if (bottom > -3100) {
+                position_section.classList.add("position_section-visible")
+            } else {
+                position_section.classList.remove("position_section-visible")
+            }
         } else {
-
             position_section.classList.remove("position_section-visible")
         }
 
