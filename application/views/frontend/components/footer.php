@@ -1,91 +1,120 @@
-    <footer class="footer text-center text-white overflow-hidden">
-        <div class="container-xl  p-sm-4">
+<footer class="text-white bg-primary-800">
+    <div class="container">
+        <div class="py-5">
             <div class="row">
-                <div class="col-lg-3 col-md">
-                    <div class="d-flex footer-column-1 flex flex-lg-column justify-content-lg-between justify-content-md-between justify-content-between h-100  align-items-lg-start">
-                        <div class="footer-logo">
-                            <a href="">
-                                <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" style="width:100%; filter:brightness(100);" alt="LOGO" class="footer-header">
-                            </a>
-                        </div>
-
-                        <div class="d-flex float-right justify-content-center align-items-center gap-4 social-icons ">
-                            <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" class="fs-20" target="_blank" rel="noreferrer">
-                                <i class="icofont-linkedin"></i>
-                            </a>
-                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Feninrac" class="fs-20" target="_blank" rel="noreferrer">
-                                <i class="icofont-brand-nexus"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-md-7">
+                    <p class="fw-bold fs-18">Enter your email to subscribe to our newsletter</p>
+                    <p class="fw-light fs-16">Your weekly dose of regulatory, policy updates, and epxert content</p>
                 </div>
-                <!-- block 2 -->
-                <div class="col-lg-6 col-md">
+                <div class="col-md-5">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control text-darklight-400" placeholder="Enter your email" style="border: none;border-radius: 28px;padding: 8px 8px 8px 37px;">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="submit" class="form-control text-darklight-100 bg-primary-600" style="border: none;border-radius: 28px;padding:8px;width: 100%;" value="Subscribe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://omnicoreplus.com/omni/assets/images/Omnicore-new-logo-4.svg" alt="logo" style="filter: brightness(100);width: 100px;">
+                    <p class="fs-14 fw-bold text-uppercase">Eninrac Consulting Private Limited, 2nd Floor, B-130, B-Block, Sector 65, Noida - 201301, Uttar Pradesh</p>
+                </div>
+                <div class="col-md-8">
                     <div class="row">
-                        <div class="col">
-                            <div class="d-flex gap-2 flex-column align-items-start">
-                                <a href="" class="footer-header">
-                                    Services
-                                </a>
-                                <ul class="text-capitalize d-flex align-items-start flex-column gap-2">
-                                    <li><a href="https://eninrac.com/advisory-and-consulting-services">Advisory & Consulting Services</a></li>
-                                    <li><a href="https://eninrac.com/market-research-service">Market Research Services</a></li>
-                                    <li><a href="https://eninrac.com/strategy-and-innovation">Strategy & Innovation</a></li>
-                                    <li><a href="https://eninrac.com/transformation-and-sustainability">Transformation & Sustainability</a></li>
-                                    <li><a href="https://eninrac.com/training-and-pro-bono-services">Training & Pro Bono</a></li>
-                                </ul>
-                            </div>
+                        <div class="col-md-4">
+                            <h2 class="text-uppercase fw-bold fs-16 text-primary-600 mb-3">Company</h2>
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">About Us (About Eninrac)</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Omnicore</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Resources</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Insights</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col">
-                            <div class="d-flex gap-2 flex-column align-items-start">
-                                <a href="" class="footer-header">
-                                    EXPLORE
-                                </a>
-                                <ul class="text-capitalize d-flex align-items-start flex-column gap-2">
-                                    <li><a href="https://energyinfra.market/">Energy Infra Market</a></li>
-                                    <li><a href="https://eninrac.com/research-reports">Research Reports</a></li>
-                                    <li><a href="https://vantedgeplus.com/">Vantedge+</a></li>
-                                    <li><a href="https://omnicoreplus.com/">Visionboard</a></li>
-                                    <li><a href="https://omnicoreplus.com/">Omnicore+</a></li>
-                                    <li><a href="https://eninrac.com/knowledge-grid">Knowledge Grid</a></li>
-                                    <li><a href="https://eninrac.com/geography">Geography</a></li>
-
-                                </ul>
-                            </div>
+                        <div class="col-md-4">
+                            <h2 class="text-uppercase fw-bold fs-16 text-primary-600 mb-3">Industry</h2>
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Thermal</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Solar</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Wind</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Biomass</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Hydro</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Transmission</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Distribution</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Solar Rooftop</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md">
-                    <div class="d-flex flex-column  justify-content-between w-100 h-100 align-items-start">
-                        <a href="">SUBSCRIBE</a>
-                        <div class="email-block align-self-end">
-                            <div class="d-flex">
-                                <input type="email" name="" class="form-control" id="" placeholder="Enter e-mail address">
-                                <button class="btn btn-light" style=" margin-left:5px">SEND</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex justify-content-between fs-12 ending">
-                    <p class="">© 2013-2024 Eninrac Consulting Pvt. Ltd. </p>
-                    <div class="d-flex flex gap-4">
-                        <div class="d-flex flex gap-2">
-                            <p><a href="<?= base_url() ?>privacy_policy">Privacy Policy</a></p>
-                            <p><a href="<?= base_url() ?>refund_policy">Refund Policy</a></p>
-                        </div>
-                        <div class="vl"></div>
-                        <div class="d-flex flex gap-2">
-                            <p><a href="<?= base_url() ?>cookie_page">Cookie Statement</a></p>
-                            <p><a href="<?= base_url() ?>sitemap">Sitemap</a></p>
+                        <div class="col-md-4">
+                            <h2 class="text-uppercase fw-bold fs-16 text-primary-600 mb-3">Use Cases</h2>
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Open Access</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Commercial Consumers</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Industrial Consumers</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Regulators</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Transmission Utilities</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Generating Uilities</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Distribution Utilities</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="fs-16 text-darklight-100 text-decoration-none" href="">Bid Updates</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-    </footer>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-end">© 2013-2024 <a class="text-decoration-underline text-darklight-100" href="https://eninrac.com">Eninrac Consulting Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 
+</body>
 
-    </body>
-
-    </html>
+</html>
