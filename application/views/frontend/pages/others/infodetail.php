@@ -17,7 +17,7 @@
     }
 
 
-   
+
 
     .bn-single .bn-single-image img {
         height: 100%;
@@ -64,94 +64,142 @@
     }
 </style>
 
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://omnicoreplus.com/omni/"><i class="icofont-home"></i></a></li>
+            <li class="breadcrumb-item"><a href="https://omnicoreplus.com/omni/post">Post</a></li>
+            <li class="breadcrumb-item active">MNRE (Amendment): Approved Models and Manufacturers of Solar Photovoltaic</li>
+        </ol>
+    </nav>
+</div>
+<main class="py-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
 
-<main class="container-fluid">
-    <div class="bn-single">
-        <div class="container-fluid py-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mt-3">
-                    <li class="breadcrumb-item"><a href="<?= base_url() ?>"><i class="icofont-home"></i></a></li>
-                    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Infographic</a></li>
-                    <li class="breadcrumb-item active" id="btbreadcrumbactiveurllast" aria-current="page"></li>
-                </ol>
-            </nav>
+            </div>
+            <div class="col-md-6">
+                <article>
+                    <div>
+                        <div style="border-radius: 10px;position: relative;overflow: hidden;">
+                            <div class="bg-overlay" style="background: linear-gradient(360deg, transparent 48%, rgba(0, 0, 0, 0.8) 86%);position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+                            <img src="https://omnicoreplus.com/omni/assets/om-upload/bess-analyst-view-03.png" alt="" style="width: 100%;height: 350px;object-fit: cover;">
+                            <div style="position: absolute;top: 10px;left: 15px;color: white;font-size: 14px;">
+                                <h1 class="fs-36 fw-bold">MNRE (Amendment): Approved Models and Manufacturers of Solar Photovoltaic Modules (Requirement for Compulsory Registration) Order, 2019 - Amendment</h1>
+                            </div>
+                        </div>
+                        <div class="bn-single-image--actions bn-single-meta-col d-flex justify-content-between py-2">
+                            <div class="bn-single-image--action">
+                                <a href="" class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--prev bn-single-nav--active">
+                                    <i class="icofont-long-arrow-left fs-20"></i><span>Older</span>
+                                </a>
+                            </div>
+                            <div class="bn-single-image--action">
+                                <a href="" class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--next bn-single-nav--active">
+                                    <span>Newer</span><i class="icofont-long-arrow-right fs-20"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2" style="line-height: 1.5;font-size: 18px;">
+                        <div><b>Background:</b></div>
+                        <div><b><br></b></div>
+                        <div>
+                            <div style="">With reference to the Approved Models and Manufacturers of Solar Photovoltaic Modules&nbsp;<span style="font-size: 1rem;">(Requirements for Compulsory Registration) Order, 2019 and subsequent amendments &amp;&nbsp;</span><span style="font-size: 1rem;">clarifications thereto, the undersigned is directed to convey that two new clauses are being&nbsp;</span><span style="font-size: 1rem;">added in MNRE’s O.M. No. 283/22/2023-GRID SOLAR/Pt. dated 10.05.2023 and further, the&nbsp;</span><span style="font-size: 1rem;">sub-para 1.2.2 of Para 1.2 of the MNRE aforesaid O.M. dated 10.05.2023 is being modified.</span></div>
+                        </div>
+                        <div><br></div>
+                        <div><b>Key Amendments:</b></div>
+                        <div><b><br></b></div>
+                        <div><b>Modification to Factory Inspection Process:</b></div>
+                        <div><br></div>
+                        <div><b>Previous Provision: </b>Provisional enlistment of solar PV manufacturers would automatically become final if the factory inspection and enlistment process were not completed within two months.</div>
+                        <div><b>Amended Provision:</b> Now, provisional enlistment will only be deemed final if the inspection by the National Institute of Solar Energy (NISE) has been completed but the recommendation has not yet reached MNRE. If the inspection has not been completed due to delays caused by the manufacturers, the provisional enlistment will be revoked.</div>
+                        <div><br></div>
+                        <div><b>Introduction of Production Data Portal:</b></div>
+                        <div><br></div>
+                        <div>A new clause mandates that all ALMM enlisted manufacturers must submit data on production, sales, and export of solar PV modules on a portal operated by NISE. Failure to do so within the specified timeframe may result in delisting from the ALMM.</div>
+                        <div><br></div>
+                        <div><b>Introduction of Traceability and Domestic Content Requirement (DCR) Verification Portal:</b></div>
+                        <div><br></div>
+                        <div>Another new clause introduces a portal for ensuring traceability of domestically manufactured solar PV cells and modules and verifying compliance with DCR. All ALMM enlisted manufacturers must register and input data on this portal, which will be used exclusively for DCR verification. Non-compliance may lead to penalties.</div>
+                        <div><br></div>
+                        <div><b>Implications for the Indian Solar Energy Market:</b></div>
+                        <div><br></div>
+                        <div><b>Increased Compliance and Accountability: </b>These amendments enhance the stringency of the enlistment and verification processes, requiring manufacturers to maintain timely and accurate records of production and compliance with DCR. This will likely increase transparency and accountability within the solar PV manufacturing sector.</div>
+                        <div><br></div>
+                        <div><b>Potential for Delisting and Penalties:</b> The amendments introduce the possibility of delisting and penalties for manufacturers who fail to comply with the new data submission and inspection requirements, which could lead to a more regulated and standardized market.</div>
+                        <div><br></div>
+                        <div><b>Enhanced Oversight by MNRE: </b>By implementing these portals and stricter inspection protocols, the Ministry of New &amp; Renewable Energy (MNRE) is likely aiming to strengthen oversight and ensure that only compliant manufacturers are part of the Approved List of Models and Manufacturers (ALMM).</div>
+                        <div><br></div>
+                        <div>To view detailed amendments, please visit:&nbsp;<a href="https://shorturl.at/MuP1Y">https://shorturl.at/MuP1Y</a></div>
+                        <div><br></div>
+                        <div>Source: MNRE, Eninrac Research &amp; Analysis</div>
+                    </div>
+                    <div class="py-2">
+                        <hr>
+                        <style>
+                            .social-media-share {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 5px;
+                            }
+
+                            .social-media-share li {
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: var(--primary-600);
+                                border-radius: 6px;
+                            }
+
+                            .social-media-share li a i {
+                                color: white;
+                            }
+                        </style>
+                        <div class="d-flex align-items-center">
+                            <div class="fs-20 d-flex justify-content-start align-items-center me-2">
+
+                                <span class="fs-16">Share</span>
+                            </div>
+                            <ul class="social-media-share">
+                                <li>
+                                    <a onclick="shareLinkedin(this)" data-url="http://localhost/omnicore/post/cerc-final-order-petition-no-38-tt-2020-reg-pgcil" href="JavaScript:void(0)" rel="noreferrer nofollow">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="sharetwitter(this)" data-url="http://localhost/omnicore/post/cerc-final-order-petition-no-38-tt-2020-reg-pgcil" href="JavaScript:void(0)" rel="noreferrer nofollow">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="sharefb(this)" data-url="http://localhost/omnicore/post/cerc-final-order-petition-no-38-tt-2020-reg-pgcil" href="JavaScript:void(0)" rel="noreferrer nofollow">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="javascript:window.print();">
+                                        <i class="icofont-print"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+                    <label style="border: 1px solid var(--primary-600);margin-bottom: 15px;border-radius: 8px;color: var(--primary-600);font-size: 14px;display: flex;width: max-content;text-align: center;align-items: center;padding: 0 10px 0 0;overflow: hidden;">
+                        <i class="icofont-tag" style="height: 25px;display: block;width: 25px;line-height: 25px;border-right: 1px solid var(--primary-600);margin-right: 7px;background: var(--primary-600);color: var(--darklight-100);transform: rotate(90deg);"></i> Tags</label>
+                    <div class="category-list">
+                        <a href="https://omnicoreplus.com/omni/tags/solar" class="category-list-item bg-primary-600 text-darklight-100 fs-14" style="padding: 2px 10px;border-radius: 8px;margin-right: 10px;display: inline-block;margin-bottom: 15px;">Solar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-
-        <div class="bn-single-image bn-single-image--1x1">
-            <div class="container bn-container--image">
-                <div class="bn-single-image--main d-flex">
-                    <img src="<?= base_url() ?>assets/images/1290-vaccine-candidates.svg" alt="">
-                </div>
-            </div>
-            <div class="container bn-container--actions">
-                <div class="bn-single-image--actions bn-single-meta-col d-flex justify-content-between">
-                    <div class="bn-single-image--action">
-                        <button class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--prev bn-single-nav--active" data-dir="prev" data-id="1289">
-                            <i class="icofont-simple-left fs-20"></i><span>Older</span>
-                        </button>
-                    </div>
-                    <div class="bn-single-image--action">
-                        <button href="#" class="btn  btn-sm bn-single-like" data-state="off" data-id="1290">
-                            <span>Like this post</span>
-                        </button>
-                    </div>
-                    <div class="bn-single-image--action">
-                        <button class="bn-single-nav btn btn-sm d-flex align-items-center  bn-single-nav--next bn-single-nav--active" data-dir="next" data-id="1292"><span>Newer</span><i class="icofont-rounded-right fs-20"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bn-single-meta bn-single-meta--text">
-            <div class="container">
-                <div class="bn-single-meta-col">
-                    <div class="bn-single-meta-description" >
-                        <p>
-                            The US National School Lunch Program is nearly 75 years old. It provides billions of low-cost or free lunches to children from low-income families every year.
-                            <br>
-                            <br>
-                            That means improved food security for millions of families. Better nutrition for kids. Improvements in health, behaviour and academic performance. Everyone wins.
-                        </p>
-                        <h3 role="heading" aria-level="3" class="bn-single-meta-title ">Topics</h3>
-                        <ul class="bn-single-topics">
-                            <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper border text-uppercase">
-                                    <a href="" class="bn-single-topic--child bn-int-link">solar</a>
-                                </span>
-                            </li>
-                            <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper border text-uppercase">
-                                    <a href="" class="bn-single-topic--child bn-int-link">wind</a>
-                                </span>
-                            </li>
-
-                            <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper border text-uppercase">
-                                    <a href="" class="bn-single-topic--child bn-int-link">Hydrogen</a>
-                                </span>
-                            </li>
-                            <li class="bn-single-topic">
-                                <span class="bn-single-topic-wrapper border text-uppercase">
-                                    <a href="" class="bn-single-topic--child bn-int-link">Oil & Gas</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="bn-single-meta bn-single-meta--signup">
-            <div class="bn-container">
-                <form class="bn-signup" method="post" action="" target="_blank">
-                    <div class="bn-signup--col bn-signup--info">
-                        <h3><i class="icofont-email"></i> Beautiful Newsletter</h3>
-                        <p>An uplifting occasional roundup: every new chart plus bonus extras</p>
-                    </div>
-                    <div class="bn-signup--col bn-signup--input"><input type="email" name="MERGE0" id="MERGE0" placeholder="Your email..."><button type="submit">Sign up</button></div>
-                </form>
-            </div>
-        </div> -->
     </div>
 </main>
 
