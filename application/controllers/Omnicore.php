@@ -30,6 +30,7 @@ class Omnicore extends Default_Controler
         if ($id == 'omninews') $this->omninews();
         if ($id == 'unsubscribe') $this->unsubscribe();
         if ($id == 'addressbook') $this->addressbook();
+        if ($id == 'marketingpreference') $this->marketingpreference();
     }
 
     private function login()
@@ -40,6 +41,11 @@ class Omnicore extends Default_Controler
     public function infodetail()
     {
         $this->load->view('frontend/pages/others/infodetail');
+    }
+
+    public function marketingpreference()
+    {
+        $this->load->view('frontend/pages/others/marketingpreference');
     }
     public function addressbook()
     {

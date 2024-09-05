@@ -569,7 +569,7 @@
                                     <tr>
                                         <td
                                             style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                            New Energies / Generation / T & D
+                                            New Energies / Generation / T&D
                                         </td>
                                     </tr>
                                     <tr>
@@ -675,7 +675,7 @@
                                                                 <p
                                                                     style="font-size: 14px;color: #333333;text-align: left;">
                                                                     To book EV Ecosystem Reports services & gain first mover
-                                                                    advantage please contact Sales Team.
+                                                                    advantage please contact BD Team.
                                                                 </p>
 
 

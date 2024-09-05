@@ -199,6 +199,10 @@ a {
   background: var(--darklight-800);
 }
 
+.bg-darklight-0-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .fs-12 {
   font-size: 12px;
 }
@@ -241,6 +245,97 @@ a {
   font-weight: 900;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-0-2 {
+  opacity: 0.2 !important;
+}
+.opacity-0-4 {
+  opacity: 0.4 !important;
+}
+.opacity-0-5 {
+  opacity: 0.5 !important;
+}
+.opacity-0-6 {
+  opacity: 0.6 !important;
+}
+.opacity-0-8 {
+  opacity: 0.8 !important;
+}
+
+/* Iphone toggle button */
+
+.ui-switcher {
+  background-color: #bdc1c2;
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: -2px 4px 0 0;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.ui-switcher:after {
+  background-color: #ffffff;
+  content: "\0020";
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  transition: left 0.25s;
+}
+
+.ui-switcher::before {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  height: 12px;
+  width: 20px;
+  text-align: center;
+}
+
+.ui-switcher[aria-checked="true"] {
+  background-color: #0f3f6e;
+}
+
+.ui-switcher[aria-checked="true"]::before {
+  content: "ON";
+  left: 7px;
+}
+
+.ui-switcher[aria-checked="false"]::before {
+  content: "OFF";
+  right: 7px;
+}
+
+.ui-switcher[aria-checked="true"]::after {
+  left: 30px;
+}
+
+.ui-switcher[aria-checked="false"]::after {
+  left: 2px;
+}
+
+/* Iphone toggle button end */
+
 .authorname {
   position: relative;
   color: #000;
@@ -271,7 +366,6 @@ a {
 .thumbnailwrapper {
   width: 54px;
   height: 54px;
-  
 }
 
 /*============= Header ======== */

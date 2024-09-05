@@ -54,7 +54,6 @@
 
 
                         <div class="w-100 text-center">
-
                             <button type="submit" onclick="alert('successfully unsubscribed from Omnicore newsletter')" class="btn btn-danger ">Unsubscribe</button>
                         </div>
                     </form>
