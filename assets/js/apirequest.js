@@ -76,9 +76,16 @@ function postLoginRequest(username, password, callback) {
     },
     body: JSON.stringify(data),
   };
-  fetch("https://omnicoreplus.com/omni/api/v1/authentication/login", options)
+  fetch("http://localhost/omnicore/assets/js/credentials.json", options)
     .then((response) => response.json())
-    .then((data) => callback(data))
+    .then((data) => {
+
+      callback(data)
+    })
     .catch((error) => console.error("Error:", error));
+}
+
+function postlogoutRequest(name) {
+  console.log(name)
 }
 

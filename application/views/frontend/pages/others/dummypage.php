@@ -1,3 +1,4 @@
+<?php require(APPPATH . 'views/frontend/components/header.php'); ?>
 <div class="row">
     <div class="col-md-4" id="landing_top-sidebar">
         <div class="d-flex">
@@ -80,44 +81,37 @@
             <div class="py-3">
                 <div class="row">
                     <div class="col-md-7" id="">
-                        <div class="">
-                            <div class="row">
+                        <div class="d-flex flex-wrap">
+                            <div class="flex-grow-1">
                                 <div class="">
-                                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" height="300px" alt="" style="border-radius:10px">
-                                    <div class="trending-card-content">
-                                        <div class="card-meta card-path">
-                                            <span>CERC </span>
-                                            <span>/ Orders</span>
-                                        </div>
-                                        <h3 class="trending-card-title">The Verge Struck by Second POW Attack in as Many Months</h3>
-                                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet Lorem ipsum dolor sit amet, consectetur adipisicing. world she helped inspire Lorem ipsum dolor sit amet consectetur Reiciendis, cum... <span style="color:blue">Read more</span></p>
-                                    </div>
+                                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" alt="" style="border-radius:10px">
+                                </div>
+                                <div class="trending-card-content">
+                                    <div class="card-meta card-path"><span>CERC </span> <span>/ Orders</span></div>
+                                    <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Govt. Growth</h3>
+                                    <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
                                 </div>
                             </div>
-                        </div>
+                            <div class="w-50">
+                                <div class="">
+                                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" alt="" style="border-radius:10px">
+                                </div>
+                                <div class="trending-card-content">
+                                    <div class="card-meta card-path"><span>CERC </span> <span>/ Orders</span></div>
+                                    <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Govt. Growth</h3>
+                                    <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="">
+                                    <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" alt="" style="border-radius:10px">
+                                </div>
+                                <div class="trending-card-content">
+                                    <div class="card-meta card-path"> <span>MNRE </span>// Orders</div>
+                                    <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Government Growth</h3>
+                                </div>
+                            </div>
 
-                        <div class="">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="">
-                                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" alt="" style="border-radius:10px">
-                                    </div>
-                                    <div class="trending-card-content">
-                                        <div class="card-meta card-path"><span>CERC </span> <span>/ Orders</span></div>
-                                        <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Govt. Growth</h3>
-                                        <p class="fs-14">In Guggenheim exhibition, Jenny Holzer grapples with the post-internet world she helped inspire</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="">
-                                        <img src="<?= base_url() ?>assets/images/trending-img-1.jpeg" width="100%" alt="" style="border-radius:10px">
-                                    </div>
-                                    <div class="trending-card-content">
-                                        <div class="card-meta card-path"> <span>MNRE </span>// Orders</div>
-                                        <h3 class="child-card-title fs-16">Bitcoin Use Case: Limiting Government Growth</h3>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -228,3 +222,5 @@
 
     </div>
 </div>
+
+<script src="assets/js/gradArrObj.js"></script>

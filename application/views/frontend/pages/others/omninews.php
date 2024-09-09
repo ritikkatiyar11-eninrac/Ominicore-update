@@ -87,6 +87,7 @@
                             <a href="https://omnicoreplus.com/" target="_blank">
                                 <img
                                     src="https://eninrac.com/assets/upload/omnicore-logo.png"
+                                    
                                     alt="Logo"
                                     style="max-width: 100px" />
                             </a>
@@ -129,6 +130,7 @@
         <tr>
             <td style="text-align: center">
                 <div style="font-size: 20px; color: #ffffff">
+                    <!--     https://eninrac.com/assets/upload/Banner-Omnicore-Newsletter-1300x500.png -->
                     <img
                         src="https://eninrac.com/assets/upload/Banner-Omnicore-Newsletter-1300x500.png"
                         width="100%"

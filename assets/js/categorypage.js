@@ -1,4 +1,5 @@
 const slugs = [];
+const gradientArrObj = []
 
 let baseurl_ = "http://localhost/omnicore/";
 

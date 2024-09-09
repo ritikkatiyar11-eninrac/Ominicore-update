@@ -62,6 +62,7 @@
         <div class="login-form w-100">
             <div class="d-flex align-items-center justify-content-center h-100">
                 <div class="w-100">
+                    <button class="btn btn-primary" id="logoutBtn">Logout</button>
                     <form action="" class="login-data-form" id="flogin-Submission">
                         <div class="login-text py-2 mb-2">
                             <h1 class="text-center fs-25">Login</h1>
@@ -92,6 +93,7 @@
 
 <script>
     let floginSubmission = document.getElementById("flogin-Submission")
+    let logoutBtn = document.getElementById("logoutBtn")
     floginSubmission.addEventListener('submit', function(e) {
         e.preventDefault();
 
@@ -105,27 +107,50 @@
                 error.classList.add('text-danger')
             }
             return false;
-        } else {
-
-            postLoginRequest(fUsername, fpassword, (request) => {
-                console.log("", request)
-                if (request.success) {
-
-                } else {
-
-                }
-            })
-            error.innerHTML = "Login success"
-            setInterval(function() {
-                floginSubmission.reset()
-                error.innerHTML = ''
-                error.classList.remove('text-success')
-
-            }, 1000);
         }
 
+        const usersArray = [{
+                username: "mahesh@gmail.com",
+                password: "12345"
+            },
+            {
+                username: "admin@gmail.com",
+                password: "admin123"
+            }
+        ]
 
+        for (let i = 0; i < usersArray.length; i++) {
+            if (usersArray[i].username === fUsername && usersArray[i].password === fpassword) {
+                postLoginRequest(fUsername, fpassword, (request) => {
+                    if (request.status === 200) {
+                        const redirectUrl = localStorage.getItem('redirectUrl') || 'https://omnicoreplus.com/omni/';
+                        localStorage.removeItem('redirectUrl'); // Clear the stored URL
+                        window.location.href = redirectUrl;
+                        setCookie('token', request.token);
+                        window.location.href = "http://localhost/omnicore/"
+                        error.innerHTML = request.message
+                        error.classList.remove('text-danger')
+                        error.classList.add('text-success')
+                    }
+                })
+                break;
+            } else {
+                document.querySelector('.error').innerHTML = "Invalid credentials";
+                if (!error.classList.contains('text-danger')) {
+                    error.classList.add('text-danger')
+                }
+            }
+        }
     })
+
+    function redirecToUrl() {
+        localStorage.setItem("redirectUrl", window.location.href)
+        window.location.href = "http://localhost/omnicore/login"
+    }
+
+    function setCookie(token, value) {
+        document.cookie = token + "=" + (value || "")
+    }
 
 
 
