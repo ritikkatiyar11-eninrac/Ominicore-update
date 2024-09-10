@@ -19,15 +19,11 @@ jQuery(function (e) {
         mediaUpload: editorMediaUpload
       }
     });
-    $('#editor').summernote('code', '');
   });
 });
-
-
 function summernoteImage(HTMLstring) {
   $('#editor').summernote('pasteHTML', HTMLstring);
 }
-
 var editorMediaUpload = function (context) {
   var ui = $.summernote.ui;
   // create button
@@ -35,8 +31,8 @@ var editorMediaUpload = function (context) {
     contents: '<i class="fa fa-picture-o"/>',
     tooltip: 'mediaUpload',
     click: function () {
-      imgSelectionType = 'editorUpload';
-      getAttachment(1);
+      mediaObject.setmediaType("editor images");
+      mediaObject.init()
       var myModal = new bootstrap.Modal(document.querySelector('.import-img-model'));
       myModal.show();
     }
@@ -44,6 +40,3 @@ var editorMediaUpload = function (context) {
 
   return button.render();   // return button as jquery object
 }
-
-
-

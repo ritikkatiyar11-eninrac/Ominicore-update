@@ -1,31 +1,33 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
     <!-- META DATA -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Energy infra market - Dashboard">
-    <meta name="author" content="Energy infra market - Dashboard">
+    <meta name="description" content="Omnicore Backend Dashboard">
+    <meta name="author" content="Omnicore Backend Dashboard">
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>assets/vendor/images/brand/favicon.ico" />
     <!-- TITLE -->
-    <title>Energy infra market - Dashboard</title>
+    <title>Omnicore Backend Dashboard</title>
     <link id="style" href="<?= base_url() ?>assets/vendor/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- STYLE CSS -->
     <link href="<?= base_url() ?>assets/vendor/css/style.css" rel="stylesheet" />
     <link href="<?= base_url() ?>assets/vendor/css/dark-style.css" rel="stylesheet" />
     <link href="<?= base_url() ?>assets/vendor/css/transparent-style.css" rel="stylesheet">
-    <link href="<?= base_url() ?>assets/vendor/css/skin-modes.css" rel="stylesheet" />   
+    <link href="<?= base_url() ?>assets/vendor/css/skin-modes.css" rel="stylesheet" />
     <!--- FONT-ICONS CSS -->
     <link href="<?= base_url() ?>assets/vendor/css/icons.css" rel="stylesheet" />
     <!-- COLOR SKIN CSS -->
     <link id="theme" rel="stylesheet" type="text/css" media="all" href="<?= base_url() ?>assets/vendor/colors/color1.css" />
-    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/vendor/css/custom.css" /> 
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/vendor/css/custom.css" />
     <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/css/editor.css">
     <!-- JQUERY JS -->
     <script src="<?= base_url() ?>assets/vendor/js/jquery.min.js"></script>
 </head>
+
 <body class="app sidebar-mini ltr">
     <!-- GLOBAL-LOADER -->
     <!-- <div id="global-loader">
@@ -41,7 +43,7 @@
                     <div class="d-flex">
                         <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
                         <!-- sidebar-toggle-->
-                        <a class="logo-horizontal " href="<?= base_url() ?>v1-backend/dashboard">
+                        <a class="logo-horizontal " href="<?= base_url() ?>backend-dashboard/dashboard">
                             <img src="<?= base_url() ?>assets/vendor/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
                             <img src="<?= base_url() ?>assets/vendor/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
                         </a>
@@ -113,7 +115,7 @@
                                                 <a class="dropdown-item" href="profile.html">
                                                     <i class="dropdown-icon fe fe-user"></i> Profile
                                                 </a>
-                                                <a class="dropdown-item" href="<?= base_url('console-admin/login/logout') ?>">
+                                                <a class="dropdown-item" href="<?= base_url('api/v1/authentication/signout') ?>">
                                                     <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
                                                 </a>
                                             </div>
@@ -131,7 +133,7 @@
                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                 <div class="app-sidebar">
                     <div class="side-header">
-                        <a class="header-brand1" href="<?= base_url() ?>console-admin/dashboard">
+                        <a class="header-brand1" href="<?= base_url() ?>backend-dashboard/dashboard">
                             <img src="<?= base_url() ?>assets/vendor/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
                             <img src="<?= base_url() ?>assets/vendor/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
                             <img src="<?= base_url() ?>assets/vendor/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
@@ -159,8 +161,6 @@
             <!--app-content open-->
             <div class="main-content app-content mt-0">
                 <div class="side-app">
-
                     <!-- CONTAINER -->
                     <div class="main-container container-fluid">
-
                         <!-- PAGE-HEADER -->

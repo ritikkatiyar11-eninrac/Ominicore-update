@@ -3,76 +3,96 @@
         <h3>Main</h3>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('backend-dashboard/autho/dashboard') ?>"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('backend-dashboard/dashboard') ?>">
+            <i class="side-menu__icon fe fe-home"></i>
+            <span class="side-menu__label">Dashboard</span>
+        </a>
     </li>
     <li class="sub-category">
-        <h3>Attachments</h3>
+        <h3>Sections</h3>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="<?= base_url('backend-dashboard/autho/media') ?>">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/media">
             <i class="side-menu__icon fe fe-image"></i>
             <span class="side-menu__label">Media</span>
         </a>
     </li>
-    <li class="sub-category">
-        <h3>Filter</h3>
-    </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
-            <i class="side-menu__icon fe fe-filter"></i>
-            <span class="side-menu__label">Filter</span>
-            <i class="angle fe fe-chevron-right"></i>
-        </a>
-        <ul class="slide-menu">
-            <li><a href="<?= base_url() ?>console-admin/categories?type=amenities" class="slide-item">Amenities</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=activities" class="slide-item">Activities</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=categories" class="slide-item">Categories</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=hoteltypes" class="slide-item">Hoteltypes</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=inclusions" class="slide-item">Inclusions</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=meals" class="slide-item">Meals</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=roomtypes" class="slide-item">Roomtypes</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=tags" class="slide-item">Tags</a></li>
-            <li><a href="<?= base_url() ?>console-admin/categories?type=vehicles" class="slide-item">Vehicles</a></li>
-            
-        </ul>
-    </li>
-    <li class="sub-category">
-        <h3>Categories</h3>
-    </li>
-    <li class="sub-category">
-        <h3>Posts</h3>
-    </li>
-    <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/pages">
             <i class="side-menu__icon fe fe-globe"></i>
             <span class="side-menu__label">Pages</span>
-            <i class="angle fe fe-chevron-right"></i>
         </a>
-        <ul class="slide-menu">
-            <li><a href="<?= base_url() ?>console-admin/post/?type=page&action=view" class="slide-item">All Pages</a></li>
-            <li><a href="<?= base_url() ?>console-admin/post/?type=page&action=add" class="slide-item">Add Pages</a></li>
-        </ul>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/infographic">
             <i class="side-menu__icon fe fe-file-text"></i>
-            <span class="side-menu__label">Blogs</span>
-            <i class="angle fe fe-chevron-right"></i>
+            <span class="side-menu__label">Infographic</span>
         </a>
-        <ul class="slide-menu">
-            <li><a href="<?= base_url() ?>console-admin/post/?type=blog&action=view" class="slide-item">All Blogs</a></li>
-            <li><a href="<?= base_url() ?>console-admin/post/?type=blog&action=add" class="slide-item">Add Blog</a></li>
-        </ul>
     </li>
     <li class="slide">
-        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
-            <i class="side-menu__icon fe fe-navigation-2"></i>
-            <span class="side-menu__label">Destinations</span>
-            <i class="angle fe fe-chevron-right"></i>
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/filters?type=category">
+            <i class="side-menu__icon fe fe-grid"></i>
+            <span class="side-menu__label">Category</span>
         </a>
-        <ul class="slide-menu">
-            <li><a href="<?= base_url() ?>console-admin/post/?type=destination&action=view" class="slide-item">All Destinations</a></li>
-            <li><a href="<?= base_url() ?>console-admin/post/?type=destination&action=add" class="slide-item">Add Destination</a></li>
-        </ul>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/filters?type=type">
+            <i class="side-menu__icon fe fe-layers"></i>
+            <span class="side-menu__label">Type</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/filters?type=state">
+            <i class="side-menu__icon fe fe-slack"></i>
+            <span class="side-menu__label">State</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/filters?type=infographic-tag">
+            <i class="side-menu__icon fe fe-command"></i>
+            <span class="side-menu__label">Infographic Tags</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/filters?type=tags">
+            <i class="side-menu__icon fe fe-tag"></i>
+            <span class="side-menu__label">Tags</span>
+        </a>
+    </li>
+    <li class="sub-category">
+        <h3>Settings</h3>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/category">
+            <i class="side-menu__icon fe fe-more-horizontal"></i>
+            <span class="side-menu__label">General</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/category">
+            <i class="side-menu__icon fe fe-user"></i>
+            <span class="side-menu__label">Users</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/category">
+            <i class="side-menu__icon fe fe-info"></i>
+            <span class="side-menu__label">Website Info</span>
+        </a>
+    </li>
+    <li class="sub-category">
+        <h3>Profile</h3>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/category">
+            <i class="side-menu__icon fe fe-user-check"></i>
+            <span class="side-menu__label">User Profile</span>
+        </a>
+    </li>
+    <li class="slide">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/category">
+            <i class="side-menu__icon fe fe-log-out"></i>
+            <span class="side-menu__label">Logout</span>
+        </a>
     </li>
 </ul>

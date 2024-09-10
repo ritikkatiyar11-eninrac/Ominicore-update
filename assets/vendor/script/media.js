@@ -1,156 +1,250 @@
-var imgSelectionType = "Editor images";
-// Function to get the base URL
-function getBaseUrl() {
-  const pathParts = location.pathname.split("/");
-  if (location.host === "localhost") {
-    return `${location.origin}/${pathParts[1].trim("/")}/`;
-  } else {
-    return `${location.origin}/`;
-  }
-}
-
-// Function to confirm media deletion and display information
-function confirmMediaDeletion(x) {
-  let error = document.querySelector('.media-error');
-  const confirmation = confirm('Are you sure you want to delete this file?');
-  if (confirmation) {
-    let id = x.tagName === "I" ? x.parentElement.getAttribute('data-target') : x.getAttribute('data-target');
-    fetch(`${getBaseUrl()}console-admin/media/delete?attachment=` + id, {
-      method: "get",
+const mediaObject = {
+  ObjectData: {
+    URL: base_url(),
+    entryPath: "api/v1/media/",
+    uploadfile: ".file-upload",
+    errorMessage: ".media-error-message",
+    pageOption: ".goto-page",
+    currentPage: 1,
+    dataOutput: ".mediaDataContainer",
+    mediaUploader: ".media-uploader",
+    toggleMediaBox: ".toggle-media-box",
+    searchInput: ".media-search",
+    gotoPage: ".goto-page",
+    attachmentSelector: ".main-thumbnail img",
+    appendImage: ".addClass"
+  },
+  mediaType: "Default",
+  setmediaType: function (type) {
+    this.mediaType = type
+  },
+  gotopage: function () {
+    let self = this
+    let gotoPage = document.querySelector(self.ObjectData.gotoPage)
+    if (gotoPage) {
+      gotoPage.addEventListener('change', function (e) {
+        self.ObjectData.currentPage = e.target.value
+        self.getAttachment();
+      })
+    }
+  },
+  mediaCloseBtnClick: function (e) {
+    let self = this
+    let mediaCloseBtn = document.querySelectorAll('.media-close-btn')
+    mediaCloseBtn.forEach(item => {
+      item.addEventListener('click', function (e) {
+        let id = item.getAttribute('data-id');
+        self.DeleteAttachment(id)
+      })
     })
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.responseStatus) {
-          getAttachment(1);
-        } else {
-          if (!error.classList.contains('mb-4')) {
-            error.classList.add('mb-4')
-          }
-          error.innerHTML = result.responseData;
+  },
+  fileUpload: function () {
+    let self = this
+    let fileUpload = document.querySelector(self.ObjectData.uploadfile)
+    if (fileUpload) {
+      document.querySelector('.file-upload').addEventListener('change', function (e) {
+        let error = document.querySelector(self.ObjectData.errorMessage)
+        let uploadedFiles = new FormData();
+        uploadedFiles.append('file', e.target.files[0]);
+        let URL = self.ObjectData.URL + self.ObjectData.entryPath + 'add';
+        fetch(URL, {
+          method: 'POST',
+          body: uploadedFiles
+        }).then(function (response) {
+          response.json().then(function (data) {
+            if (data.responseCode == 200) {
+              error.style.color = 'green';
+              error.style.border = '1px solid green';
+            } else {
+              error.style.color = 'red';
+              error.style.border = '1px solid red';
+            }
+            error.style.padding = '10px';
+            error.style.background = 'rgba(255, 255, 255, 0.6)';
+            error.style.borderRadius = '5px';
+            error.style.margin = '10px 0px';
+            error.style.boxShadow = '0 0 10px 0 rgba(0,0,0,0.2)';
+            error.innerHTML = data.responseData;
+            self.getAttachment();
+          })
+        })
+      })
+    }
+  },
+  getAttachment: function () {
+    let self = this
+    let currentPage = self.ObjectData.currentPage
+    let URL = self.ObjectData.URL + self.ObjectData.entryPath + 'get?page=' + currentPage;
+    fetch(URL).then(function (response) {
+      response.json().then(function (data) {
+        if (data.responseCode == 200) {
+          let dataOutput = document.querySelector(self.ObjectData.dataOutput);
+          dataOutput.innerHTML = "";
+          let rowDiv = document.createElement('div')
+          rowDiv.setAttribute('class', 'row align-items-center')
+          rowDiv.setAttribute('style', 'gap: 15px 0;')
+          data.responseData.data.forEach(item => {
+            let colDiv = document.createElement('div')
+            colDiv.setAttribute('class', 'col-md-2')
+            colDiv.innerHTML = `<div class="img-thumbnail position-relative">
+                <button class="media-close-btn btn-danger" data-id="${item.ATT_ID}">x</button>
+                <div class="main-thumbnail">
+                    <img src="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}thumbnail/${item.ATT_TITLE}" alt="${item.ATT_TITLE}">
+                    <input type="text" disabled="" value="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}${item.ATT_TITLE}">
+                    <input type="hidden" class="media-title" value="${item.ATT_TITLE}">
+                </div>
+            </div>`
+            rowDiv.appendChild(colDiv)
+          });
+          dataOutput.appendChild(rowDiv)
+          self.CreatePageOption(data.responseData.total_pages)
+          self.mediaCloseBtnClick()
+          self.appendAttachmentHandler()
         }
       })
-  } else {
-    return false;
-  }
-}
+    })
+  },
+  CreatePageOption: function (no) {
+    let self = this
+    let pageOption = document.querySelector(self.ObjectData.pageOption)
+    pageOption.innerHTML = ''
+    for (let i = 1; i <= no; i++) {
+      let option = document.createElement('option')
+      option.value = i
+      option.innerHTML = "Page No. " + i
+      if (i == self.ObjectData.currentPage) option.setAttribute('selected', 'selected')
+      pageOption.appendChild(option)
+    }
+  },
+  DeleteAttachment: function (id) {
+    let self = this
+    let confirmation = confirm('Are you sure want to delete this attachment?')
+    if (confirmation) {
+      let error = document.querySelector(self.ObjectData.errorMessage)
+      let URL = self.ObjectData.URL + self.ObjectData.entryPath + 'delete?id=' + id;
+      fetch(URL).then(function (response) {
+        response.json().then(function (data) {
+          if (data.responseCode = 200) {
+            error.style.color = 'green';
+            error.style.border = '1px solid green';
+          } else {
+            error.style.color = 'red';
+            error.style.border = '1px solid red';
+          }
+          error.style.padding = '10px';
+          error.style.background = 'rgba(255, 255, 255, 0.6)';
+          error.style.borderRadius = '5px';
+          error.style.margin = '10px 0px';
+          error.style.boxShadow = '0 0 10px 0 rgba(0,0,0,0.2)';
+          error.innerHTML = data.responseData;
+          self.getAttachment();
+        })
+      })
+      return true;
+    } else {
+      return false
+    }
 
-// function to manage media on post blog pages
-function fileManagerHandler(x) {
-  if (imgSelectionType == "features images") {
-    document.querySelector('.add-media').innerHTML = `<div class="img-ifream-section" style="width: 100px;height: 100px;margin: 10px 0;">
-      <span class="btn btn-danger btn-sm rmv" style="position: absolute;cursor: pointer;">X</span>
-      <input type="hidden" class="postimage" name="image" value="${x.getAttribute('data-post')}">
-      <img src="${x.src}" style="width: 100px;height: 100px;border: 1px solid #eee;">
-  </div>`
-  }
-  if (imgSelectionType == "editorUpload") {
-    let filename = x.src.split('/');
-    let HTMLstring = "<img src='/t3upload/" + filename[filename.length - 1] + "' alt='" + x.alt + "' style='width: 100%;'>";
+  },
+  mediaUploaderHandler: function () {
+    let self = this
+    let mediaUploader = document.querySelector(self.ObjectData.mediaUploader)
+    let toggleMediaBox = document.querySelector(self.ObjectData.toggleMediaBox)
+    if (toggleMediaBox && mediaUploader) {
+      toggleMediaBox.addEventListener('click', function () {
+        mediaUploader.classList.toggle('d-none');
+      })
+    }
+  },
+  mediaSearchHandler: function () {
+    let self = this
+    let searchInput = document.querySelector(self.ObjectData.searchInput)
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        let currentPage = self.ObjectData.currentPage = 1
+        let keyword = searchInput.value
+        let URL = self.ObjectData.URL + self.ObjectData.entryPath + 'search?page=' + currentPage + "&keyword=" + keyword;
+        fetch(URL).then(function (response) {
+          response.json().then(function (data) {
+            if (data.responseCode == 200) {
+              let dataOutput = document.querySelector(self.ObjectData.dataOutput);
+              dataOutput.innerHTML = "";
+              let rowDiv = document.createElement('div')
+              rowDiv.setAttribute('class', 'row align-items-center')
+              rowDiv.setAttribute('style', 'gap: 15px 0;')
+              data.responseData.data.forEach(item => {
+                let colDiv = document.createElement('div')
+                colDiv.setAttribute('class', 'col-md-2')
+                colDiv.innerHTML = `<div class="img-thumbnail position-relative">
+                <button class="media-close-btn btn-danger" data-id="${item.ATT_ID}">x</button>
+                <div class="main-thumbnail">
+                    <img src="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}thumbnail/${item.ATT_TITLE}" alt="${item.ATT_TITLE}">
+                    <input type="text" disabled="" value="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}${item.ATT_TITLE}">
+                    <input type="hidden" value="${item.ATT_TITLE}">
+                </div>
+            </div>`
+                rowDiv.appendChild(colDiv)
+              });
+              dataOutput.appendChild(rowDiv)
+              self.CreatePageOption(data.responseData.total_pages)
+              self.mediaCloseBtnClick()
+              self.appendAttachmentHandler()
+            }
+          })
+        })
+      })
+    }
+  },
+  appendAttachmentHandler: function () {
+    let self = this
+    document.querySelectorAll(self.ObjectData.attachmentSelector).forEach(item => {
+      item.addEventListener('click', function () {
+        if (self.mediaType == "features images") self.fetchImage(item)
+        if (self.mediaType == "editor images") self.editorImage(item)
+        if (self.mediaType == "Default") self.ZoomFeature(item)
+      })
+    })
+  },
+  fetchImage: function (item) {
+    let self = this
+    let featuresImage = document.querySelector(self.ObjectData.appendImage)
+    let imageSRC = item.getAttribute('src')
+    let imputelement = item.nextElementSibling.nextElementSibling.value
+    featuresImage.innerHTML = `<div class="position-relative features-image">
+          <span style="position: absolute;right: 2px;height: 30px;width: 30px;text-align: center;background: red;color: white;font-size: 20px;top: 2px;font-weight: bold;cursor: pointer;">X</span>
+          <img src="${imageSRC}" alt="">
+          <input type="hidden" class="media-title" value="${imputelement}">
+          </div>`
+
+    document.querySelector('.addClass span').addEventListener('click', function () {
+      document.querySelector('.addClass').innerHTML = ""
+    })
+    hideFunc('.import-img-model')
+  },
+  editorImage: function (item) {
+    let self = this
+    let imputelement = item.nextElementSibling.nextElementSibling.value
+    let imgSrc = self.ObjectData.URL + "assets/om-upload/" + imputelement
+    let name = imputelement.split('.');
+    let HTMLstring = `<img src="${imgSrc}" alt="${name[0]}" style="width: 100%;">`;
     summernoteImage(HTMLstring)
+    hideFunc('.import-img-model');
+  },
+  ZoomFeature: function (item) {
+
+  },
+  init: function () {
+    this.getAttachment();
+    this.fileUpload();
+    this.mediaUploaderHandler();
+    this.mediaSearchHandler();
+    this.gotopage();
   }
-
-  if (document.querySelectorAll('.rmv') != undefined || document.querySelectorAll('.rmv') != null) {
-    let remove = document.querySelectorAll('.rmv')
-    remove.forEach((item) => {
-      item.addEventListener('click', (e) => e.target.parentElement.remove());
-    })
-  }
-
-  let importModel = document.querySelector('.import-img-model');
-  let close = bootstrap.Modal.getInstance(importModel)
-  close.hide();
 }
 
-// Function to render a media item with HTML
-function renderMediaItem(item) {
-  const mediaPage = document.querySelector(".masonry.media-page");
-  const div = document.createElement("div");
-  div.classList.add("col-xl-3", "col-lg-3", "col-sm-6");
-  div.innerHTML = `<div class="brick">
-      <img src="${getBaseUrl()}${item.post_excerpt}thumbnail/${item.post_title}" alt="${item.post_meta_title}" data-post="${item.ID}">
-      <input type="text" class="form-control disable" value="${item.post_slug}${item.post_meta_excerpt}">
-      <button type="button" data-target="${item.ID}" class="btn btn-danger btn-sm med-close">
-        <i class="side-menu__icon fe fe-x"></i>
-      </button>
-    </div>`;
-  mediaPage.appendChild(div);
+function hideFunc(selected) {
+  const truck_modal = document.querySelector(selected);
+  const modal = bootstrap.Modal.getInstance(truck_modal);
+  modal.hide();
 }
 
-// Event listener for the mediaToggle button
-const mediaToggle = document.querySelector(".media-toggle");
-if (mediaToggle) {
-  mediaToggle.addEventListener("click", (e) => {
-    const fileUploader = document.getElementById("fileuploader");
-    fileUploader.classList.toggle("d-none");
-  });
-}
-
-// Event listener for the mediaUpload input element
-const mediaUpload = document.querySelector("#file");
-if (mediaUpload) {
-  mediaUpload.addEventListener("change", (e) => {
-    let error = document.querySelector('.media-error');
-    error.innerHTML = "";
-    const formData = new FormData();
-    formData.append("file", e.target.files[0]);
-    fetch(`${getBaseUrl()}console-admin/media/insert`, {
-      method: "POST",
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.responseCode === 200) {
-          getAttachment(1)
-        } else {
-          if (!error.classList.contains('mb-4')) {
-            error.classList.add('mb-4');
-          }
-          error.innerHTML = result.responseData;
-        }
-      });
-  });
-}
-
-// Function to fetch media attachments and display them on the page
-function getAttachment(pages) {
-  const mediaPage = document.querySelector('.mediaPages');
-  const pagination = document.querySelector('.paginnation-value');
-  fetch(`${getBaseUrl()}console-admin/media/get?attachment=all&p=${pages}`, {
-    method: "get",
-  })
-    .then((res) => res.json())
-    .then((result) => {
-      if (result.responseCode === 200) {
-        document.querySelector(".masonry.media-page").innerHTML = "";
-        result.responseData.data.forEach(element => {
-          renderMediaItem(element);
-        });
-        mediaPage.innerHTML = "";
-        for (let i = 1; i <= result.responseData.total_pages; i++) {
-          const option = document.createElement("option");
-          option.value = i;
-          option.textContent = i;
-          if (result.responseData.current_page === i) {
-            option.selected = true;
-          }
-          mediaPage.appendChild(option);
-        }
-
-        mediaPage.addEventListener('change', (e) => getAttachment(e.target.value));
-        pagination.textContent = result.responseData.current_page_results;
-
-        const closeButtonList = document.querySelectorAll('.med-close');
-        closeButtonList.forEach(element => {
-          element.addEventListener('click', (e) => confirmMediaDeletion(e.target));
-        });
-
-        const imgList = document.querySelectorAll('.brick img');
-        imgList.forEach(element => {
-          element.addEventListener('click', (e) => fileManagerHandler(e.target));
-        });
-      } else {
-        // Handle error case
-        document.querySelector('.media-page').innerHTML = result.responseMessage
-      }
-    });
-}

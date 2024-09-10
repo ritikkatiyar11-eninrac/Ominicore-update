@@ -12,10 +12,22 @@ class Default_Backend_Controler extends CI_Controller
     public function is_login()
     {
         if (!$this->session->userdata('UID')) {
-            redirect('backend-dashboard/autho/login');
+            redirect('backend-dashboard/login');
         }
     }
-    
+
+    function createSlug($title) {
+        // Convert the string to lowercase
+        $slug = strtolower($title);
+        // Remove any characters that are not letters, numbers, or spaces
+        $slug = preg_replace('/[^a-z0-9\s-]/', '', $slug);
+        // Replace any spaces or multiple hyphens with a single hyphen
+        $slug = preg_replace('/[\s-]+/', '-', $slug);
+        // Trim hyphens from the beginning and end of the slug
+        $slug = trim($slug, '-');
+        return $slug;
+    }
+
     // public function error404()
     // {
     //     $this->output->set_status_header('404');

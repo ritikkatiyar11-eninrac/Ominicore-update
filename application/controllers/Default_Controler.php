@@ -1,25 +1,22 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-
 class Default_Controler extends CI_Controller
 {
-
     public function __construct()
     {
         parent::__construct();
+        $this->CI = &get_instance();
     }
-
     public function is_login()
     {
         if (!$this->session->userdata('UID')) {
             redirect('/login');
         }
     }
-
     public function error404()
     {
         $this->output->set_status_header('404');
-        $this->load->view('frontend/pages/others/notfound');
+        $this->load->view('notfound');
     }
     public function authentication($credential)
     {
@@ -42,11 +39,7 @@ class Default_Controler extends CI_Controller
         $signature = base64_encode($signature);
         return "$header.$payload.$signature";
     }
-
-
-
     // login login Important
-
     public function is_email_exist($email)
     {
         $emailcheck = $this->db->select("*")->from('member')->where('email', $email)->get();
@@ -56,5 +49,31 @@ class Default_Controler extends CI_Controller
             return 0;
         }
     }
+    public function time_elapsed_string($datetime, $full = false)
+    {
+        $now = new DateTime;
+        $ago = new DateTime($datetime);
+        $diff = $now->diff($ago);
+        $diff->w = floor($diff->d / 7);
+        $diff->d -= $diff->w * 7;
+        $string = array(
+            'y' => 'year',
+            'm' => 'month',
+            'w' => 'week',
+            'd' => 'day',
+            'h' => 'hour',
+            'i' => 'minute',
+            's' => 'second',
+        );
+        foreach ($string as $k => &$v) {
+            if ($diff->$k) {
+                $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+            } else {
+                unset($string[$k]);
+            }
+        }
 
+        if (!$full) $string = array_slice($string, 0, 1);
+        return $string ? implode(', ', $string) . ' ago' : 'just now';
+    }
 }

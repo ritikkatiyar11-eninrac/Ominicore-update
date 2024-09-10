@@ -100,7 +100,7 @@
             <!-- CUSTOM JS -->
             <script src="<?= base_url() ?>assets/vendor/js/custom.js"></script>
             <script src="<?= base_url() ?>assets/vendor/script/script.js"></script>
-            <script src="<?= base_url() ?>assets/vendor/script/media.js"></script>
+            <!-- <script src="<?= base_url() ?>assets/vendor/script/media.js"></script> -->
             <script src="<?= base_url() ?>assets/vendor/script/editor.js"></script>
 
             </body>
