@@ -1,6 +1,6 @@
-<?php require(APPPATH . 'views/frontend/components/header.php'); ?>
+<?php require(APPPATH . 'views/frontend/header.php'); ?>
 <style>
-       .container {
+    .container {
         padding: 2rem 2rem;
         margin: 1rem 1rem;
         font-size: 20px !important;
@@ -67,4 +67,4 @@
 
     <p>By using Omnicore, you acknowledge that you have read, understood, and agreed to the terms of this Privacy Policy.</p>
 </div>
-<?php require(APPPATH . 'views/frontend/components/footer.php'); ?>
+<?php require(APPPATH . 'views/frontend/footer.php'); ?>

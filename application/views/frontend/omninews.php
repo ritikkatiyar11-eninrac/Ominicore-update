@@ -87,7 +87,7 @@
                             <a href="https://omnicoreplus.com/" target="_blank">
                                 <img
                                     src="https://eninrac.com/assets/upload/omnicore-logo.png"
-                                    
+
                                     alt="Logo"
                                     style="max-width: 100px" />
                             </a>

@@ -49044,6 +49044,10 @@ table.table-bordered.dataTable thead tr:first-child td {
     font-size: 50px;
 }
 
+.fs-60 {
+    font-size: 60px;
+}
+
 .fs-100 {
     font-size: 100px;
 }

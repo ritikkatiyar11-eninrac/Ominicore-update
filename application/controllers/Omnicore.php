@@ -22,16 +22,22 @@ class Omnicore extends Default_Controler
         if ($id == 'infodetail') $this->infodetail();
         if ($id == 'postdetail') $this->postdetail();
         if ($id == 'postbycategory') $this->getdateaccordingtocategory();
+        if ($id == 'omniweeklynews') $this->omniweeklynews();
         if ($id == 'download-image') $this->downloadImage();
     }
 
     private function login()
+
     {
         $this->load->view('frontend/login');
     }
     private function newsletter()
     {
         $this->load->view('frontend/newsletter');
+    }
+    private function omniweeklynews()
+    {
+        $this->load->view('frontend/omniweeklynews');
     }
     private function check_pricing()
     {
@@ -59,7 +65,7 @@ class Omnicore extends Default_Controler
     }
     public function privacy_policy()
     {
-        $this->load->view('privacy_policy');
+        $this->load->view('frontend/privacy_policy');
     }
 
     public function contact()
@@ -263,7 +269,8 @@ class Omnicore extends Default_Controler
         return $html;
     }
 
-    private function get_filter_array_list($id){
+    private function get_filter_array_list($id)
+    {
         $spam = ""; // Initialize an empty string to hold the HTML
         // Initialize an array to hold filters
         $filtersArray = [];
@@ -278,7 +285,7 @@ class Omnicore extends Default_Controler
         // If filters exist, convert the result to an array
         if ($filters->num_rows() > 0) {
             $filtersArray = $filters->result_array();
-        }        
+        }
         foreach ($filtersArray as $index => $filter) {
             // If it's the first filter and the URL contains "state"
             if ($index === 0 && strpos($filter['URL_SLUG'], '/state') !== false) {
