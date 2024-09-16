@@ -20,64 +20,63 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
-    ">
+      ">
     <table
         role=" presentation"
         cellpadding="0"
         cellspacing="0"
         border="0"
         style="
-        margin: 0 auto;
-        padding: 0 0 0 0;
-        width: 100%;
-        max-width: 650px;
-        background-color: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 1px solid #e5e8ec;
-      ">
+         margin: 0 auto;
+         padding: 0 0 0 0;
+         width: 100%;
+         max-width: 650px;
+         background-color: #ffffff;
+         font-family: Arial, Helvetica, sans-serif;
+         border: 1px solid #e5e8ec;
+         ">
         <!-- Top Header -->
         <tr>
             <td
                 style="
-            text-align: center;
-            background-color: #062045;
-            color: #ffffff;
-            padding: 20px 0;
-          ">
+               text-align: center;
+               background-color: #062045;
+               color: #ffffff;
+               padding: 20px 0;
+               ">
                 <a
                     href="#"
                     style="
-              text-wrap: nowrap;
-              color: #ffffff;
-              margin: 0 5px;
-              text-decoration: none;
-              font-size: 14px;
-            ">View as a webpage</a>
+                  text-wrap: nowrap;
+                  color: #ffffff;
+                  margin: 0 5px;
+                  text-decoration: none;
+                  font-size: 14px;
+                  ">View as a webpage</a>
                 <span style="margin: 0 5px">|</span>
                 <a
                     href="#link2"
                     style="
-              text-wrap: nowrap;
-              color: #ffffff;
-              margin: 0 5px;
-              text-decoration: none;
-              font-size: 14px;
-            ">
+                  text-wrap: nowrap;
+                  color: #ffffff;
+                  margin: 0 5px;
+                  text-decoration: none;
+                  font-size: 14px;
+                  ">
                     Add us to your safe senders list</a>
                 <span style="margin: 0 5px">|</span>
                 <a
                     href="#link3"
                     style="
-              text-wrap: nowrap;
-              color: #ffffff;
-              margin: 0 5px;
-              text-decoration: none;
-              font-size: 14px;
-            ">
+                  text-wrap: nowrap;
+                  color: #ffffff;
+                  margin: 0 5px;
+                  text-decoration: none;
+                  font-size: 14px;
+                  ">
                     Marketing preferences</a>
             </td>
         </tr>
-
         <!-- Main Header -->
         <tr>
             <td style="padding: 15px">
@@ -87,7 +86,6 @@
                             <a href="https://omnicoreplus.com/" target="_blank">
                                 <img
                                     src="https://eninrac.com/assets/upload/omnicore-logo.png"
-
                                     alt="Logo"
                                     style="max-width: 100px" />
                             </a>
@@ -95,44 +93,43 @@
                         <td style="text-align: right">
                             <h4
                                 style="
-                    font-size: 20px;
-                    color: #003366;
-                    margin: 10px 0;
-                    position: relative;
-                    padding-bottom: 5px;
-                  ">
+                           font-size: 20px;
+                           color: #003366;
+                           margin: 10px 0;
+                           position: relative;
+                           padding-bottom: 5px;
+                           ">
                                 Regulatory, Policy Updates
                                 <span
                                     style="
-                      display: block;
-                      height: 5px;
-                      width: 100px;
-                      background: rgb(0, 27, 255);
-                      background: linear-gradient(
-                        320deg,
-                        rgba(0, 27, 255, 1) 0%,
-                        rgba(6, 66, 159, 1) 42%,
-                        rgba(9, 9, 121, 1) 100%,
-                        rgba(2, 0, 36, 1) 100%
-                      );
-                      border-radius: 8px;
-                      margin-top: 10px;
-                      margin-left: auto;
-                    "></span>
+                              display: block;
+                              height: 5px;
+                              width: 100px;
+                              background: rgb(0, 27, 255);
+                              background: linear-gradient(
+                              320deg,
+                              rgba(0, 27, 255, 1) 0%,
+                              rgba(6, 66, 159, 1) 42%,
+                              rgba(9, 9, 121, 1) 100%,
+                              rgba(2, 0, 36, 1) 100%
+                              );
+                              border-radius: 8px;
+                              margin-top: 10px;
+                              margin-left: auto;
+                              "></span>
                             </h4>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
-
         <!-- Banner -->
         <tr>
             <td style="text-align: center">
                 <div style="font-size: 20px; color: #ffffff">
                     <!--     https://eninrac.com/assets/upload/Banner-Omnicore-Newsletter-1300x500.png -->
                     <img
-                        src="https://eninrac.com/assets/upload/Banner-Omnicore-Newsletter-1300x500.png"
+                        src="https://eninrac.com/assets/upload/september-week-1.png"
                         width="100%"
                         height="228px"
                         style="object-fit: fill"
@@ -140,7 +137,6 @@
                 </div>
             </td>
         </tr>
-
         <!-- Top Articles -->
         <tr>
             <td style="padding: 20px 20px 0px 20px">
@@ -149,9 +145,9 @@
                     cellpadding="0"
                     cellspacing="0"
                     style="
-              border-collapse: collapse;
-              font-family: Arial, Helvetica, sans-serif;
-            ">
+                  border-collapse: collapse;
+                  font-family: Arial, Helvetica, sans-serif;
+                  ">
                     <tr>
                         <td style="width: 65%; vertical-align: top; padding-right: 20px">
                             <table
@@ -174,95 +170,97 @@
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/merc-order-approval-of-power-purchase-rate-for-purchasing-of-power-from-solar-power-project-for-three-years-rsquo-period"
+                                                    href="https://omnicoreplus.com/post/cerc-order-corrigendum-to-the-order-dated-2-8-2024-in-petition-no-649-tt-2020"
                                                     target="_blank"
-                                                    style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">MERC (Order): Approval of Power Purchase Rate for purchasing of power from Solar Power Project for three years&#8217; period</a>
+                                                    style=" text-decoration: none;
+                                          color: #003366;
+                                          font-size: 14px;
+                                          text-align: justify;">
+                                                    CERC (Order): Corrigendum to the order dated 2.8.2024 in Petition No. 649/TT/2020</a>
                                             </li>
                                             <li
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/merc-order-prior-approval-of-fuel-adjustment-charges-fac-submission-of-aeml-d-for-the-month-of-january-2024"
+                                                    href="https://omnicoreplus.com/post/mnre-public-notice-draft-green-hydrogen-certification-scheme-of-india-for-stakeholder-comments"
                                                     target="_blank"
                                                     style="
-                              text-decoration: none;
-                              color: #003366;
-                              font-size: 14px;
-                              text-align: justify;
-                            ">MERC (Order): Prior Approval of Fuel Adjustment Charges (FAC) submission of AEML-D for the month of January, 2024
+                                          text-decoration: none;
+                                          color: #003366;
+                                          font-size: 14px;
+                                          text-align: justify;
+                                          ">MNRE (Public Notice): Draft Green Hydrogen Certification Scheme of India for Stakeholder Comments
                                                 </a>
                                             </li>
                                             <li
                                                 style="
-                            margin-bottom: 10px;
-                            display: flex;
-                            align-items: flex-start;
-                          ">
+                                       margin-bottom: 10px;
+                                       display: flex;
+                                       align-items: flex-start;
+                                       ">
                                                 <span
                                                     style="
-                              line-height: 20px;
-                              margin-right: 10px;
-                              font-size: 20px;
-                              font-weight: bold;
-                            ">&#187;</span>
+                                          line-height: 20px;
+                                          margin-right: 10px;
+                                          font-size: 20px;
+                                          font-weight: bold;
+                                          ">&#187;</span>
                                                 <a
                                                     href="https://omnicoreplus.com/post/merc-order-schreiber-dynamics-dairies-pvt-ltd-case-on-power-factor-incentive-denial-for-fy-2013-14-to-fy-2016-17"
                                                     target="_blank"
                                                     style="
-                              text-decoration: none;
-                              color: #003366;
-                              font-size: 14px;
-                              text-align: justify;
-                            ">MERC (Order): Schreiber Dynamics Dairies Pvt. Ltd. Case on Power Factor Incentive Denial for FY 2013-14 to FY 2016-17</a>
+                                          text-decoration: none;
+                                          color: #003366;
+                                          font-size: 14px;
+                                          text-align: justify;
+                                          ">MERC (Order): Schreiber Dynamics Dairies Pvt. Ltd. Case on Power Factor Incentive Denial for FY 2013-14 to FY 2016-17</a>
                                             </li>
                                             <li
                                                 style="
-                            margin-bottom: 10px;
-                            display: flex;
-                            align-items: flex-start;
-                          ">
+                                       margin-bottom: 10px;
+                                       display: flex;
+                                       align-items: flex-start;
+                                       ">
                                                 <span
                                                     style="
-                              line-height: 20px;
-                              margin-right: 10px;
-                              font-size: 20px;
-                              font-weight: bold;
-                            ">&#187;</span>
+                                          line-height: 20px;
+                                          margin-right: 10px;
+                                          font-size: 20px;
+                                          font-weight: bold;
+                                          ">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/pserc-review-petition-review-of-the-tariff-order-dated-14-06-2024"
+                                                    href="https://omnicoreplus.com/post/mnre-public-notice-draft-guidelines-for-implementation-of-the-ldquo-payment-security-mechanism-rdquo-component-and-ldquo-central-financial-assistance-rdquo-component-for-resco-models-utility-led-aggregation-models-of-pm-surya-ghar-muft-bijli-yojana"
                                                     target="_blank"
                                                     style="
-                              text-decoration: none;
-                              color: #003366;
-                              font-size: 14px;
-                              text-align: justify;
-                            ">PSERC (Review Petition): Review of the Tariff Order dated 14/06/2024</a>
+                                          text-decoration: none;
+                                          color: #003366;
+                                          font-size: 14px;
+                                          text-align: justify;
+                                          ">MNRE (Public Notice): Draft Guidelines for Implementation of the “Payment Security Mechanism” Component and “Central Financial Assistance” Component for RESCO Models/ Utility Led Aggregation Models of PM-Surya Ghar: Muft Bijli Yojana</a>
                                             </li>
                                             <li
                                                 style="
-                            margin-bottom: 10px;
-                            display: flex;
-                            align-items: flex-start;
-                          ">
+                                       margin-bottom: 10px;
+                                       display: flex;
+                                       align-items: flex-start;
+                                       ">
                                                 <span
                                                     style="
-                              line-height: 20px;
-                              margin-right: 10px;
-                              font-size: 20px;
-                              font-weight: bold;
-                            ">&#187;</span>
+                                          line-height: 20px;
+                                          margin-right: 10px;
+                                          font-size: 20px;
+                                          font-weight: bold;
+                                          ">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/cea-advisory-advisory-for-proactive-and-comprehensive-monitoring-of-transmission-lines-to-ensure-safety"
+                                                    href="https://omnicoreplus.com/post/cerc-order-grant-of-transmission-licence-to-neres-xvi-power-transmission-limited"
                                                     target="_blank"
                                                     style="
-                              text-decoration: none;
-                              color: #003366;
-                              font-size: 14px;
-                              text-align: justify;
-                            ">CEA (Advisory): Advisory for proactive and
-                                                    comprehensive monitoring of Transmission Lines to
-                                                    Ensure Safety</a>
+                                          text-decoration: none;
+                                          color: #003366;
+                                          font-size: 14px;
+                                          text-align: justify;
+                                          ">CERC (Order): Grant of transmission licence to NERES XVI Power Transmission Limited</a>
                                             </li>
                                         </ul>
                                     </td>
@@ -285,11 +283,9 @@
                                         <td>
                                             <div
                                                 style="margin-top:10px;padding: 20px;width: 100%;margin-bottom: 20px;border-radius: 8px;background-color: #eee9ff;">
-
                                                 <p style="font-size: 14px; color: #003366">
-                                                    Uttar Pradesh Solar Parks to Generate 3,710
-                                                    MW&nbsp;&nbsp;<span><a
-                                                            href="https://einfews.energyinfra.market/news/uttar-pradesh-solar-parks-to-generate-3-710-mw"
+                                                    Kerala's Plan to install 205 MW BESS by Viability Gap Fund&nbsp;&nbsp;<span><a
+                                                            href="https://einfews.energyinfra.market/news/keralas-plan-to-install-205-mw-bess-by-viability-gap-fund"
                                                             target="_blank"
                                                             style="font-size: 14px;text-decoration: none;color: blue;margin-top: 10px;">Learn More</a></span>
                                                 </p>
@@ -305,10 +301,9 @@
                                         <td>
                                             <div
                                                 style="margin-top:10px;padding: 20px;width: 100%;margin-bottom: 20px;border-radius: 8px;background-color: #eee9ff;">
-
                                                 <p style="font-size: 14px; color: #003366">
-                                                    CERC (Transmission License): Grant of transmission licence to NERES XVI Power Transmission Limited&nbsp;&nbsp;<span><a
-                                                            href="https://omnicoreplus.com/post/cerc-transmission-license-grant-of-transmission-licence-to-neres-xvi-power-transmission-limited"
+                                                    CERC (Order): Grant of transmission licence to NERES XVI Power Transmission Limited&nbsp;&nbsp;<span><a
+                                                            href="https://omnicoreplus.com/post/cerc-order-grant-of-transmission-licence-to-neres-xvi-power-transmission-limited"
                                                             target="_blank"
                                                             style="font-size: 14px;text-decoration: none;color: blue;margin-top: 10px;">Learn More</a></span>
                                                 </p>
@@ -322,7 +317,6 @@
                 </table>
             </td>
         </tr>
-
         <!-- Open Access -->
         <tr>
             <td style="padding: 20px 20px 0px 20px">
@@ -343,13 +337,13 @@
                                     <tr>
                                         <td
                                             style="
-                          font-size: 18px;
-                          color: #003366;
-                          border-bottom: 2px solid #003366;
-                          padding-bottom: 5px;
-                          margin-bottom: 10px;
-                          font-weight: bold;
-                        ">
+                                    font-size: 18px;
+                                    color: #003366;
+                                    border-bottom: 2px solid #003366;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 10px;
+                                    font-weight: bold;
+                                    ">
                                             Open Access / Solar Rooftop
                                         </td>
                                     </tr>
@@ -363,70 +357,70 @@
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/merc-order-schreiber-dynamics-dairies-pvt-ltd-case-on-power-factor-incentive-denial-for-fy-2013-14-to-fy-2016-17"
+                                                        href="https://omnicoreplus.com/post/msedcl-circular-grant-of-green-open-access-to-consumers-availing-power-from-renewable-energy-with-green-attribute"
                                                         target="_blank"
                                                         style="
-                                text-decoration: none;
-                                color: #003366;
-                                font-size: 14px;
-                                text-align: justify;
-                              ">MERC (Order): Schreiber Dynamics Dairies Pvt. Ltd. Case on Power Factor Incentive Denial for FY 2013-14 to FY 2016-17</a>
+                                             text-decoration: none;
+                                             color: #003366;
+                                             font-size: 14px;
+                                             text-align: justify;
+                                             ">MSEDCL (Circular): Grant of Green Open Access to consumers availing power from Renewable Energy with Green Attribute</a>
                                                 </li>
                                                 <li
                                                     id="openaccess-2"
                                                     style="
-                              margin-bottom: 10px;
-                              display: flex;
-                              align-items: flex-start;
-                            ">
+                                          margin-bottom: 10px;
+                                          display: flex;
+                                          align-items: flex-start;
+                                          ">
                                                     <span
                                                         style="
-                                line-height: 20px;
-                                margin-right: 10px;
-                                font-size: 20px;
-                                font-weight: bold;
-                              ">&#187;</span>
+                                             line-height: 20px;
+                                             margin-right: 10px;
+                                             font-size: 20px;
+                                             font-weight: bold;
+                                             ">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/gerc-public-notice-terms-and-conditions-for-green-energy-open-access-first-amendment-regulations-2024"
+                                                        href="https://omnicoreplus.com/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation"
                                                         target="_blank"
                                                         style="
-                                text-decoration: none;
-                                color: #003366;
-                                font-size: 14px;
-                                text-align: justify;
-                              ">GERC (Public Notice): Terms and Conditions for Green Energy Open Access, First Amendment Regulations, 2024</a>
+                                             text-decoration: none;
+                                             color: #003366;
+                                             font-size: 14px;
+                                             text-align: justify;
+                                             ">TGERC (Public Notice): Verification of captive status of CPPs through the open access regulation</a>
                                                 </li>
                                                 <li
                                                     id="openaccess-3"
                                                     style="
-                              margin-bottom: 10px;
-                              display: flex;
-                              align-items: flex-start;
-                            ">
+                                          margin-bottom: 10px;
+                                          display: flex;
+                                          align-items: flex-start;
+                                          ">
                                                     <span
                                                         style="
-                                line-height: 20px;
-                                margin-right: 10px;
-                                font-size: 20px;
-                                font-weight: bold;
-                              ">&#187;</span>
+                                             line-height: 20px;
+                                             margin-right: 10px;
+                                             font-size: 20px;
+                                             font-weight: bold;
+                                             ">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/herc-order-necessary-directions-regarding-applicability-of-herc-green-energy-open-access-regulations-2023-to-existing-ltoa-agreements-executed-prior-to-02-05-2023"
+                                                        href="https://omnicoreplus.com/post/mnre-public-notice-draft-amendment-to-almm-order-for-implementation-of-almm-for-solar-pv-cells"
                                                         target="_blank"
                                                         style="
-                                text-decoration: none;
-                                color: #003366;
-                                font-size: 14px;
-                                text-align: justify;
-                              ">HERC (Order): Necessary directions regarding applicability of HERC (Green Energy Open Access) Regulations, 2023 to existing LTOA agreements executed prior to 02.05.2023</a>
+                                             text-decoration: none;
+                                             color: #003366;
+                                             font-size: 14px;
+                                             text-align: justify;
+                                             ">MNRE (Public Notice): Draft Amendment to ALMM Order for Implementation of ALMM for Solar PV cells</a>
                                                 </li>
                                                 <li
                                                     id="openaccess-4"
                                                     style="
-                              margin-bottom: 10px;
-                              display: flex;
-                              align-items: flex-start;
-                            ">
+                                          margin-bottom: 10px;
+                                          display: flex;
+                                          align-items: flex-start;
+                                          ">
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
@@ -440,15 +434,11 @@
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/gerc-public-notice-for-amendment-of-the-order-no-1-of-2024-for-tariff-framework-for-procurement-of-power-by-distribution-licensees-and-others-from-wind-solar-hybrid-power-projects-including-storage"
+                                                        href="https://omnicoreplus.com/post/aperc-order-grid-interactive-solar-rooftop-photovoltaic-systems-energy-settlement-and-billing"
                                                         target="_blank"
-                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">GERC (Public Notice): For amendment of the Order
-                                                        No. 1 of 2024 for Tariff Framework for Procurement
-                                                        of Power by Distribution Licensees and others from
-                                                        Wind-Solar Hybrid Power Projects including Storage
+                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">APERC (Order): Grid interactive Solar Rooftop Photovoltaic systems - Energy settlement and billing
                                                     </a>
                                                 </li>
-
                                             </ul>
                                         </td>
                                     </tr>
@@ -471,14 +461,13 @@
                                                         src="https://einfews.energyinfra.market/assets/images/einfews-advertisment-banner-001.png"
                                                         alt=""
                                                         style="height:160px;
-                                width: 100%;
-                                border-radius: 8px;
-                                display: block;
-                              " />
+                                             width: 100%;
+                                             border-radius: 8px;
+                                             display: block;
+                                             " />
                                                 </div>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <table
@@ -486,20 +475,20 @@
                                                     cellpadding="0"
                                                     cellspacing="0"
                                                     style="
-                              font-family: Arial, Helvetica, sans-serif;
-                              border-collapse: collapse;
-                              margin-bottom: 10px;
-                            ">
+                                          font-family: Arial, Helvetica, sans-serif;
+                                          border-collapse: collapse;
+                                          margin-bottom: 10px;
+                                          ">
                                                     <tr>
                                                         <td
                                                             style="
-                                  padding-top: 20px;
-                                  font-size: 18px;
-                                  color: #003366;
-                                  border-bottom: 2px solid #003366;
-                                  font-weight: bold;
-                                  padding-bottom: 5px;
-                                ">
+                                                padding-top: 20px;
+                                                font-size: 18px;
+                                                color: #003366;
+                                                border-bottom: 2px solid #003366;
+                                                font-weight: bold;
+                                                padding-bottom: 5px;
+                                                ">
                                                             Contact
                                                         </td>
                                                     </tr>
@@ -529,11 +518,9 @@
                                                                                 href="mailto:nsharma@eninrac.com"
                                                                                 style="color: rgb(64, 114, 210);text-decoration: none;">nsharma@eninrac.com</a></span>
                                                                         <br>
-
                                                                         <span>
                                                                             <a href="tel:9319048963" style="color: rgb(64, 114, 210);text-decoration: none;">+91 9319048963</a>
                                                                         </span>
-
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -550,7 +537,6 @@
                 </table>
             </td>
         </tr>
-
         <!-- New Energies / Generation  -->
         <tr>
             <td style="padding: 20px 20px 0px 20px">
@@ -584,9 +570,9 @@
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/merc-order-petition-by-m-s-t-p-saurya-limited-for-in-principle-change-in-law-declaration-under-ppa"
+                                                        href="https://omnicoreplus.com/post/jserc-draft-regulation-merit-order-dispatch-and-optimization-of-power-purchase-cost-regulations-2024"
                                                         target="_blank"
-                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">MERC (Order): Petition by M/s. T.P. Saurya Limited for In-Principle Change in Law Declaration under PPA</a>
+                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">JSERC (Draft Regulation): Merit Order Dispatch & Optimization of Power Purchase Cost Regulations, 2024</a>
                                                 </li>
                                                 <li
                                                     id="newenergies-2"
@@ -594,19 +580,19 @@
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/gerc-order-tariff-framework-for-procurement-of-power-by-distribution-licensees-and-others-from-wind-power-projects-for-state-of-gujarat"
+                                                        href="https://omnicoreplus.com/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation"
                                                         target="_blank"
-                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">GERC (Order): Tariff Framework for Procurement of Power by Distribution licensees and Others from Wind Power Projects for State of Gujarat</a>
+                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">TGERC (Public Notice): Verification of captive status of CPPs through the open access regulation</a>
                                                 </li>
                                                 <li
-                                                    id="openaccess-3"
+                                                    id="newenergies-3"
                                                     style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/gerc-public-notice-draft-gerc-electricity-supply-code-and-related-matters-fourth-amendment-regulations-2024-and-draft-gerc-licensee-rsquo-s-power-to-recover-expenditure-incurred-in-providing-supply-and-other-miscellaneous-charges-fourth-amendment-regulations-2024"
+                                                        href="https://omnicoreplus.com/post/kerc-guidelines-smart-modules-for-existing-digital-static-meters-guidelines-2024"
                                                         target="_blank"
-                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">GERC (Public Notice): Draft GERC (Electricity Supply Code and Related Matters) (Fourth Amendment) Regulations, 2024 and Draft GERC (Licensee&#8217;s Power to Recover Expenditure incurred in providing Supply and other Miscellaneous Charges) (Fourth Amendment) Regulations, 2024</a>
+                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">KERC (Guidelines): Smart Modules for Existing Digital Static Meters Guidelines, 2024</a>
                                                 </li>
                                                 <li
                                                     id="newenergies-4"
@@ -614,21 +600,18 @@
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                     <a
-                                                        href="https://omnicoreplus.com/post/gerc-public-notice-terms-and-conditions-for-green-energy-open-access-first-amendment-regulations-2024"
+                                                        href="https://omnicoreplus.com/post/cerc-order-determination-of-transmission-tariff-of-the-2019-24-tariff-period-for-the-assets-of-southern-and-northern-regions-under-project-ldquo-phase-i-unified-real-time-dynamic-state-measurement-rdquo-"
                                                         target="_blank"
-                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">GERC (Public Notice): Terms and Conditions for Green Energy Open Access, First Amendment Regulations, 2024</a>
+                                                        style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">CERC (Order): Determination of transmission tariff of the 2019-24 tariff period for the assets of Southern and Northern Regions under project “Phase-I-Unified Real Time Dynamic State Measurement”</a>
                                                 </li>
                                                 <li
                                                     id="newenergies-5"
                                                     style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                     <span
                                                         style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
-                                                    <a href="https://omnicoreplus.com/post/cerc-trading-license-grant-of-an-inter-state-trading-license-to-juniper-green-power-trading-private-limited1"
+                                                    <a href="https://omnicoreplus.com/post/wberc-review-petition-determination-of-tariff-for-distribution-and-retail-supply-of-electricity-in-damodar-valley-area"
                                                         target="_blank"
-                                                        style="text-decoration: none; color: #003366;font-size:14px ;text-align:justify ;text-align:justify">CERC
-                                                        (Trading License): Grant of an inter-state trading
-                                                        license to Juniper Green Power Trading Private
-                                                        Limited</a>
+                                                        style="text-decoration: none; color: #003366;font-size:14px ;text-align:justify ;text-align:justify">WBERC (Review Petition): Determination of Tariff For Distribution & Retail Supply of Electricity in Damodar Valley Area</a>
                                                 </li>
                                             </ul>
                                         </td>
@@ -655,7 +638,6 @@
                                                 </div>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
                                                 <table
@@ -679,8 +661,6 @@
                                                                     To book EV Ecosystem Reports services & gain first mover
                                                                     advantage please contact BD Team.
                                                                 </p>
-
-
                                                                 <div style="margin-top: 10px">
                                                                     <div
                                                                         style="border-radius: 50%;width: 70px;height: 70px;overflow: hidden;">
@@ -697,11 +677,9 @@
                                                                                 href="mailto:nsharma@eninrac.com"
                                                                                 style="color: rgb(64, 114, 210);text-decoration: none;">nsharma@eninrac.com</a></span>
                                                                         <br>
-
                                                                         <span>
                                                                             <a href="tel:9319048963" style="color: rgb(64, 114, 210);text-decoration: none;">+91 9319048963</a>
                                                                         </span>
-
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -719,7 +697,6 @@
             </td>
         </tr>
         <!-- Central -->
-
         <tr>
             <td style="padding: 20px 20px 0px 20px">
                 <table
@@ -744,70 +721,55 @@
                                     <td>
                                         <ul
                                             style="list-style: none; padding: 0; margin: 10px 0 0 0">
-
-                                            <li id="state-item-1"
+                                            <li id="central-item-1"
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
-                                                <a href="https://omnicoreplus.com/post/rerc-public-notice-approval-of-parallel-operation-charges-poc-"
+                                                <a href="https://omnicoreplus.com/post/cerc-public-notice-draft-terms-and-conditions-of-tariff-first-amendment-regulations-2024-ndash-extension-thereof"
                                                     target="_blank" style="text-decoration: none; color: #003366;font-size:14px ;
-                                                        text-align:justify">RERC (Public Notice): Approval of Parallel
-                                                    Operation charges (POC)</a>
+                                          text-align:justify">CERC (Public Notice): Draft Terms and Conditions of Tariff (First Amendment) Regulations, 2024 &#8211; Extension thereof</a>
                                             </li>
-                                            <li id="state-item-2"
+                                            <li id="central-item-2"
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
-                                                <a href="https://omnicoreplus.com/post/merc-regulation-draft-demand-flexibility-and-demand-side-management-ndash-implementation-framework-cost-effectiveness-assessment-and-evaluation-measurement-and-verification-regulations-2024"
+                                                <a href="https://omnicoreplus.com/post/cerc-public-notice-draft-central-electricity-regulatory-commission-conduct-of-business-first-amendment-regulations-2024"
                                                     target="_blank"
-                                                    style="text-decoration: none; color: #003366;font-size:14px;text-align:justify">MERC
-                                                    (Regulation): Draft Demand Flexibility and Demand Side
-                                                    Management - Implementation Framework, Cost-effectiveness
-                                                    Assessment; and Evaluation, Measurement and Verification
-                                                    Regulations, 2024</a>
+                                                    style="text-decoration: none; color: #003366;font-size:14px;text-align:justify">CERC (Public Notice): Draft Central Electricity Regulatory Commission (Conduct of Business) (First Amendment) Regulations, 2024</a>
                                             </li>
                                             <li id="state-item-3"
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
-                                                <a href="https://omnicoreplus.com/post/tgerc-public-notice-suo-moto-determination-of-compliance-renewable-power-purchase-obligation-for-the-obligated-entities-for-fy-2022-23"
+                                                <a href="https://omnicoreplus.com/post/cerc-order-grant-of-transmission-licence-to-neres-xvi-power-transmission-limited"
                                                     target="_blank"
-                                                    style="text-decoration: none; color: #003366;font-size:14px;text-align:justify">TGERC
-                                                    (Public Notice): Suo-Moto determination of Compliance Renewable
-                                                    Power Purchase Obligation for the obligated entities for FY
-                                                    2022-23</a>
+                                                    style="text-decoration: none; color: #003366;font-size:14px;text-align:justify">CERC (Order): Grant of transmission licence to NERES XVI Power Transmission Limited</a>
                                             </li>
                                             <li
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/cerc-transmission-license-grant-of-a-separate-transmission-licence-to-powergrid-kps2-transmission-system-limited"
-                                                    style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">CERC (Transmission License): Grant of a separate
-                                                    transmission licence to POWERGRID KPS2 Transmission
-                                                    System Limited</a>
+                                                    href="https://omnicoreplus.com/post/cerc-order-creation-of-security-interest-over-all-the-movable-and-immovable-assets-of-the-petitioner"
+                                                    style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">CERC (Order): Creation of security interest over all the movable and immovable assets of the Petitioner</a>
                                             </li>
                                             <li
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
-                                                <a href="https://omnicoreplus.com/post/cerc-adoption-of-transmission-tariff-adoption-of-transmission-tariff-with-respect-to-the-development-and-operation-of-ldquo-transmission-scheme-for-north-eastern-region-expansion-scheme-xvi-neres-xvi-rdquo-"
+                                                <a href="https://omnicoreplus.com/post/cerc-public-notice-draft-connectivity-and-general-network-access-to-the-inter-state-transmission-system-third-amendment-regulations-2024"
                                                     target="_blank"
-                                                    style="text-decoration: none; color: #003366;font-size:14px ;text-align:justify">CERC
-                                                    (Adoption of Transmission Tariff): Adoption of
-                                                    Transmission Tariff with respect to the development and
-                                                    operation of “Transmission Scheme for North Eastern
-                                                    Region Expansion Scheme-XVI (NERES-XVI)”</a>
+                                                    style="text-decoration: none; color: #003366;font-size:14px ;text-align:justify">CERC (Public Notice): Draft Connectivity and General Network Access to the inter-State Transmission System (Third Amendment) Regulations, 2024</a>
                                             </li>
                                             <li
+                                                id="state-item-2"
                                                 style="margin-bottom: 10px;display: flex;align-items: flex-start;">
                                                 <span
                                                     style="line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;">&#187;</span>
                                                 <a
-                                                    href="https://omnicoreplus.com/post/ctu-minutes-of-meeting-minutes-of-33rd-cmets-nr-meeting-held-on-05-08-2024"
+                                                    href="https://omnicoreplus.com/post/tgerc-suo-moto-order-determination-of-variable-cost-for-the-period-from-fy-2024-25-to-fy-2028-29-for-existing-biomass-bagasse-and-industrial-waste-based-power-projects"
                                                     target="_blank"
-                                                    style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">CTU (Minutes of Meeting): Minutes of 33rd CMETS NR
-                                                    meeting held on 05.08.2024</a>
+                                                    style="text-decoration: none;color: #003366;font-size: 14px;text-align: justify;">TGERC (Suo-Moto Order): Determination of Variable Cost for the period from FY 2024-25 to FY 2028-29 for existing Biomass, Bagasse and Industrial waste-based power projects</a>
                                             </li>
                                         </ul>
                                     </td>
@@ -821,7 +783,6 @@
                                 cellspacing="0"
                                 style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
                                 <tbody>
-
                                     <tr>
                                         <td
                                             style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
@@ -894,9 +855,7 @@
                 </table>
             </td>
         </tr>
-
         <!-- Infographics -->
-
         <tr>
             <td style="padding: 20px; width: 100%; vertical-align: top">
                 <table
@@ -918,10 +877,10 @@
                                     <td>
                                         <div class="">
                                             <a
-                                                href="https://omnicoreplus.com/post/state-and-region-wise-wind-power-generation-mus-"
+                                                href="https://omnicoreplus.com/post/state-wise-small-hydro-power-up-to-25-mw-installed-capacity-generation-mus-"
                                                 target="_blank">
                                                 <img
-                                                    src="https://eninrac.com/assets/upload/Wind_Power_Generation.jpg"
+                                                    src="https://eninrac.com/assets/upload/small-power-generation-hydro.jpg"
                                                     style="object-fit: cover; border-radius: 8px"
                                                     width="100%"
                                                     height="auto"
@@ -936,9 +895,7 @@
                 </table>
             </td>
         </tr>
-
         <!-- Footer -->
-
         <tr>
             <td style="margin: 0 0 0 0; padding: 0 0 0 0; width: 100%">
                 <table
@@ -982,7 +939,6 @@
                                     Floor, B-130, B-Block, Sector 65, Noida, Uttar Pradesh,
                                     India
                                 </p>
-
                                 <p
                                     style="margin: 10px 0 20px 0;padding: 0 0 0 0;font-size: 11px;width: 90%;">
                                     <span><a href="" style="color: #ffffff" target="_blank">

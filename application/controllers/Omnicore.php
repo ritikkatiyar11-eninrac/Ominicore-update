@@ -24,12 +24,18 @@ class Omnicore extends Default_Controler
         if ($id == 'postbycategory') $this->getdateaccordingtocategory();
         if ($id == 'omniweeklynews') $this->omniweeklynews();
         if ($id == 'download-image') $this->downloadImage();
+        if ($id == 'omninews') $this->omninews();
     }
 
     private function login()
 
     {
         $this->load->view('frontend/login');
+    }
+    private function omninews()
+
+    {
+        $this->load->view('frontend/omninews');
     }
     private function newsletter()
     {

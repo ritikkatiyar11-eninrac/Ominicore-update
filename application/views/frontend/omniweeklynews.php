@@ -3,9 +3,61 @@
     .dw-banner-bcg-img {
         min-height: 250px;
         display: flex;
+    }
 
+    #preloader {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        z-index: 9999;
+        transition: bottom 0.5s ease-in-out;
+    }
+
+    .preloader-inner {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+        position: relative;
+        margin: 10px 30px 30px 0px;
+        animation: preloader-spin 2s linear infinite;
+    }
+
+    .preloader-circle {
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes preloader-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
 </style>
+
+<div id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-circle"></div>
+    </div>
+</div>
+
+
+
 <div class="container-fluid p-0 overflow-hidden">
     <section class="position-relative w-100 h-auto pb-2 mb-2 mx-auto overflow-hidden" style="z-index: 0 ;">
         <div class="">
@@ -16,6 +68,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section>
         <div class="container">
