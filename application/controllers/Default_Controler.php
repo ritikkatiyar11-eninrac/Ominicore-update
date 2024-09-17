@@ -39,10 +39,11 @@ class Default_Controler extends CI_Controller
         $signature = base64_encode($signature);
         return "$header.$payload.$signature";
     }
-    // login login Important
+    // login login Important login
     public function is_email_exist($email)
     {
         $emailcheck = $this->db->select("*")->from('member')->where('email', $email)->get();
+
         if ($emailcheck->num_rows() > 0) {
             return $emailcheck->result();
         } else {

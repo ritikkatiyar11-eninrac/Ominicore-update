@@ -92,7 +92,7 @@
                                             <a href='" . $cat_slug . "'>
                                             <button class='bn-filter bn-filter-top $makeActive'>$value->NAME</button>
                                             </a>
-                                        </li>";
+                                  </li>";
                             }
                         }
                     }

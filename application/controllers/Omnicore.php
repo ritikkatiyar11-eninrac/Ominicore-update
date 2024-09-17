@@ -25,12 +25,18 @@ class Omnicore extends Default_Controler
         if ($id == 'omniweeklynews') $this->omniweeklynews();
         if ($id == 'download-image') $this->downloadImage();
         if ($id == 'omninews') $this->omninews();
+        if ($id == 'ourteam') $this->ourteam();
     }
 
     private function login()
 
     {
         $this->load->view('frontend/login');
+    }
+    private function ourteam()
+
+    {
+        $this->load->view('frontend/ourteam');
     }
     private function omninews()
 

@@ -30,13 +30,11 @@
 
     <!-- BACKGROUND-IMAGE -->
     <div class="login-img">
-
         <!-- GLOABAL LOADER -->
         <div id="global-loader">
             <img src="<?= base_url() ?>assets/vendor/images/loader.svg" class="loader-img" alt="Loader">
         </div>
         <!-- /GLOABAL LOADER -->
-
         <!-- PAGE -->
         <div class="page">
             <!-- CONTAINER OPEN -->
@@ -74,7 +72,6 @@
             <!-- CONTAINER CLOSED -->
         </div>
         <!-- End PAGE -->
-
     </div>
     <!-- BACKGROUND-IMAGE CLOSED -->
     <!-- JQUERY JS -->
@@ -93,7 +90,7 @@
     <!-- CUSTOM JS -->
     <script src="<?= base_url() ?>assets/vendor/js/custom.js"></script>
     <script src="<?= base_url() ?>assets/vendor/script/script.js"></script>
-    
+   
 </body>
 
 </html>
