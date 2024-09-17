@@ -102,9 +102,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-3">
                         <div class="text-center pb-3 fs-14" style="box-shadow: 0 2px 18px 0 rgba(0, 0, 0, .07);">
                             <div class="enin_team-member-image mb-3">
@@ -237,20 +234,20 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+</div>
+</div>
 </div>
 
 
 <script>
+    function eninracFamilyData(data) {
+        let self = this;
 
-function eninracFamilyData(data){
-    let self = this;
 
-    
-
-}
-
+    }
 </script>
 
 <?php require(APPPATH . 'views/frontend/footer.php'); ?>
