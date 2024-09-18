@@ -1,14 +1,14 @@
 <footer class="text-white bg-primary-800">
     <div class="container">
         <div class="py-5">
-            <div class="row">
+            <div class="row row-gap-2">
                 <div class="col-md-7">
                     <p class="fw-bold fs-18">Enter your email to subscribe to our newsletter</p>
                     <p class="fw-light fs-16">Your weekly dose of regulatory, policy updates, and epxert content</p>
                 </div>
                 <div class="col-md-5">
                     <form action="">
-                        <div class="row">
+                        <div class="row row-gap-2">
                             <div class="col-md-8">
                                 <input type="email" class="form-control text-darklight-400" placeholder="Enter your email" style="border: none;border-radius: 28px;padding: 8px 8px 8px 37px;">
                             </div>
@@ -21,13 +21,13 @@
             </div>
         </div>
         <div class="py-5">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
                     <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" alt="logo" style="filter: brightness(100);width: 100px;">
                     <p class="fs-14 fw-bold text-uppercase">Eninrac Consulting Private Limited, 2nd Floor, B-130, B-Block, Sector 65, Noida - 201301, Uttar Pradesh</p>
                 </div>
                 <div class="col-md-8">
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-md-4">
                             <h2 class="text-uppercase fw-bold fs-16 text-primary-600 mb-3">Company</h2>
                             <ul>
@@ -114,6 +114,7 @@
         </div>
     </div>
 </footer>
+
 <script type="text/javascript" src="<? base_url() ?>assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="<? base_url() ?>assets/plugins/bootstrap.min.js"></script>
 <script type="text/javascript" src="<? base_url() ?>assets/plugins/moment.min.js"></script>

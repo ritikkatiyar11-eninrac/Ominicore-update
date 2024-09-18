@@ -79,7 +79,7 @@
 
 <body>
     <header class="position-sticky top-0" style="background-image: -webkit-gradient( linear, left top, right top, from(transparent), to(#fff) ), -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#dbd3f7), to(#eee9ff));backdrop-filter:blur(7px); z-index:11;">
-        <div class="container-fluid">
+        <div class="container-fluid position-relative">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="w-25">
                     <div class="logo" style="max-width: 140px; ">
@@ -100,8 +100,10 @@
                                 <i class="icofont-search-1"></i>
                             </a>
                         </li>
+
                     </ul>
                     <ul class="header_list">
+
                         <li class="d-flex justify-content-center align-items-center  py-4 px-3  cursor-pointer h-100">
                             <a href="<?= base_url() ?>infographic" class="header-link">Infographics</a>
                         </li>
@@ -123,9 +125,27 @@
                 </div>
 
             </div>
+
+        </div>
+        <div class="progress-container position-absolute bottom-0 w-100">
+            <div class="progress-bar " id="myBar" style="width: 0%;background-color: #0f3f6e;height: 5px;"></div>
         </div>
     </header>
     <script>
+        if (window.location.href == "http://localhost/omnicore/omniweeklynews") {
+            window.onscroll = function() {
+                scrollbarWidth()
+            }
+
+            function scrollbarWidth() {
+                let winScroll = document.body.scrollTop || document.documentElement.scrollTop
+                let winHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrolled = (winScroll / winHeight) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%"
+            }
+        }
+
+
         // function getCookie(token) {
         //     const nameEQ = token + "=";
         //     const ca = document.cookie.split(';');

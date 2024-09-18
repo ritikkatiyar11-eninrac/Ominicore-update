@@ -71,19 +71,19 @@
     .toprightcard .content a {
         position: relative;
         display: inline-block;
-        color: #0f3f6e;
+        color: #fff;
         padding: 10px 40px;
         background: #fff;
         margin-top: 25px;
         text-decoration: none;
-        background-color: #dbd3f7;
-        border: solid 2px #dbd3f7;
+        background-color: #e7cc0e;
+        border: solid 2px #e7cc0e;
         transition: 0.3s;
         z-index: 99;
     }
 
     .toprightcard .content a:hover {
-        color: #0f3f6e;
+        color: #e7cc0e;
         background-color: #fff;
     }
 
@@ -123,18 +123,10 @@
 </style>
 
 <div class="container-fluid px-0 overflow-hidden">
-    <section class="position-relative w-100 h-auto pb-2 mb-2 mx-auto overflow-hidden" style="z-index: 0 ;">
-        <div class="">
-            <div class="dw-banner-bcg-img">
-                <img src="http://localhost/omnicore/assets/images/Omnicore-new-logo-4.svg" width="400px" style="display:block;margin: 0 auto;" alt="">
-            </div>
-            <div class="w-100 position-absolute" style="top:-4px;z-index: -1;background-color: #dbd3f7;max-height: 128px;min-height: 128px;">
-            </div>
-        </div>
-    </section>
+    <div style="top:-4px;z-index: -1;background-color: #dbd3f7;max-height: 128px;min-height: 128px;" class=""></div>
     <section class="container w-100 mx-auto ps-4 pe-4">
         <h1 class="text-center fs-60 mt-5 fw-bold" style="font-size:60px;">
-            Our Omnicore newsletters
+            Our <span class="text-primary-600">Regulatory &amp; Policy</span> watch newsletter &amp; expert insights
         </h1>
         <div class="text-justify mt-5 mx-0 pt-2 px-0">
             <p></p>
@@ -146,13 +138,13 @@
                 <div class="first-section-right ">
                     <h2 class="fs-40 mb-3 fw-600 text-end" style="line-height: 42px;">
                         <a href="" class="text-decoration-none text-darklight-700">
-                            The Digital
+                            The Digital Omnicore Regulatory &amp; Policy
                             <br>
                             Watch weekly
                         </a>
                     </h2>
                     <p class="fs-20 text-end" style="letter-spacing: 0.002em;">
-                        Published every Friday, wrapping up the news of the previous week and what to expect in the week ahead.
+                        Published every Friday, wrapping up the updates &amp; insight of the previous week and what to expect in the week ahead.
                     </p>
                 </div>
             </div>
@@ -160,47 +152,45 @@
                 <div class=" toprightcard">
                     <div class="content">
                         <h2 class="mb-3 fw-600">
-                            Omnicore Weekly #176 &#8211; 6 September 2024
+                            Omnicore Weekly – 6 September 2024
                         </h2>
                         <p class="fs-16">
-                            Council of Europe opens AI convention for signature. Global AI framework signed to safeguard human rights. Musk's X wins...
+                            Published every Friday, wrapping up the updates &amp; insight of the previous week and what to expect in the week ahead.
                         </p>
                         <a href="" class="dbtn1">Subscribe</a>
                     </div>
-                    <img src="https://dig.watch/wp-content/uploads/2022/10/dw-weekly.png" alt="">
+                    <img src="https://omnicoreplus.com/omni/assets/images/weekly-report.png" alt="">
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="container w-100 mx-auto ps-4 pe-4 py-5 mt-5">
+    <section class="container w-100 mx-auto ps-4 pe-4 py-4 mt-5">
         <div class="row flex-row-reverse  gy-5">
             <div class="col-md-6">
                 <div class="first-section-right align-items-start ">
                     <h2 class="fs-40 mb-3 fw-600 text-left" style="line-height: 42px;">
                         <a href="" class="text-decoration-none text-darklight-700">
-                            The Omnicore
-                            <br>
-                            Monthly newsletter
+                            The Omnicore Regulatory &amp; Policy Watch Monthly
                         </a>
                     </h2>
                     <p class="fs-20 text-left" style="letter-spacing: 0.002em;">
-                        Published every Friday, wrapping up the news of the previous week and what to expect in the week ahead.
+                        Published in first week of every month, extensive analysis of key regulatory &amp; policy update of the month.
                     </p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class=" toprightcard">
+                <div class=" toprightcard" style="background: linear-gradient(135deg, #fff, #153ced) !important;">
                     <div class="content">
                         <h2 class="mb-3 fw-600 ">
-                            OMNICORE monthly #176 &#8211; 6 September 2024
+                            OMNICORE monthly – 6 September 2024
                         </h2>
                         <p class="fs-16">
-                            Council of Europe opens AI convention for signature. Global AI framework signed to safeguard human rights. Musk's X wins...
+                            Published in first week of every month, extensive analysis of key regulatory &amp; policy update of the month.
                         </p>
                         <a href="" class="dbtn1">Subscribe</a>
                     </div>
-                    <img src="https://dig.watch/wp-content/uploads/2022/10/dw-weekly.png" alt="">
+                    <img src="https://omnicoreplus.com/omni/assets/images/monthly-report.png" alt="">
                 </div>
             </div>
         </div>
@@ -238,7 +228,6 @@
                                 </svg>
                             </a>
                         </div>
-
                         <div class="" style="width: 40px; height:40px;transition:0.3s">
                             <a href="" class="d-flex justify-content-center align-items-center">
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -246,7 +235,6 @@
                                 </svg>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -254,10 +242,10 @@
                 <div class="h-100 d-flex justify-content-center flex-column gap-2">
                     <span class="fw-600 my-2 fs-28">Subscribe to the Omnicore newsletters</span>
                     <span>Choose whether you would like to receive our weekly and/or monthly newsletters.</span>
-                    <span>By clicking on the Subscribe button, you are agreeing to our <a href="<?= base_url() ?>privacy-policy" class="fst-italic" target="_blank">Privacy Policy</a> </span>
+                    <span>By clicking on the Subscribe button, you are agreeing to our <a href="https://omnicoreplus.com/omni/privacy-policy" class="fst-italic" target="_blank">Privacy Policy</a> </span>
                     <div class="redered-form w-100 fs-14">
                         <section class="mb-4">
-                            <form action="" class="d-block w-100" id="omni-news-form" style="max-width: 460px;">
+                            <form action="" class="d-block w-100" style="max-width: 460px;">
                                 <div class="form-group p-2">
                                     <label for="" class="form-label"></label>
                                     <input type="text" class="form-control rounded-pill py-2 " placeholder="Email">
@@ -266,16 +254,15 @@
                                     <div class="form-check fs-18">
                                         <input class="form-check-input" type="checkbox" value="" id="omnicore-weekly">
                                         <label class="form-check-label" for="omnicore-weekly">
-                                            Omnicore weekly NewsLetter
+                                            Omnicore Watch weekly
                                         </label>
                                     </div>
                                     <div class="form-check fs-18">
                                         <input class="form-check-input" type="checkbox" value="" id="omnicore-monthly">
                                         <label class="form-check-label" for="omnicore-monthly">
-                                            Omnicore monthly NewsLetter
+                                            Omnicore Watch monthly
                                         </label>
                                     </div>
-
                                 </div>
                                 <div class="form-group p-2">
                                     <button class="btn btn-primary fs-16 fw-600 w-50 py-2 rounded-pill">Subscribe</button>

@@ -7,7 +7,7 @@
     </div>
 </div>
 <style>
-    .mediaDataContainer .img-thumbnail button {
+    #image-container .img-thumbnail button {
         position: absolute;
         text-align: center;
         border-radius: 50%;
@@ -20,24 +20,24 @@
         z-index: 1;
     }
 
-    .mediaDataContainer .img-thumbnail .main-thumbnail {
+    #image-container .img-thumbnail .main-thumbnail {
         cursor: pointer;
         overflow: hidden;
     }
 
-    .mediaDataContainer .img-thumbnail .main-thumbnail img {
+    #image-container .img-thumbnail .main-thumbnail img {
         height: 130px;
         object-fit: cover;
         width: 100%;
         transition: 500ms;
     }
 
-    .mediaDataContainer .img-thumbnail .main-thumbnail img:hover {
+    #image-container .img-thumbnail .main-thumbnail img:hover {
         transform: scale(1.3);
         transition: 500ms;
     }
 
-    .mediaDataContainer .img-thumbnail .main-thumbnail input {
+    #image-container .img-thumbnail .main-thumbnail input {
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -80,15 +80,18 @@
                             </select>
                         </div>
                     </div>
-                    <div class="mediaDataContainer"></div>
+                    <!-- <div class="mediaDataContainer"></div> -->
+                    <div id="loader" style="display: none;">Loading...</div>
+                    <div id="image-container"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <script src="<?= base_url() ?>assets/vendor/script/media.js" defer></script>
+<script src="<?= base_url() ?>assets/js/imageUrl.js" defer></script>
 <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        mediaObject.init();
-    });
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    //     mediaObject.init();
+    // });
 </script>

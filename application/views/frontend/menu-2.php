@@ -90,7 +90,7 @@
                                 }
                                 echo "<li class='bn-filter-item'>
                                             <a href='" . $cat_slug . "'>
-                                            <button class='bn-filter bn-filter-top $makeActive'>$value->NAME</button>
+                                            <button class='bn-filter bn-filter-top  $makeActive'>$value->NAME</button>
                                             </a>
                                   </li>";
                             }

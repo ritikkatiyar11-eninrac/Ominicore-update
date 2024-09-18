@@ -1,75 +1,22 @@
-<!-- <?php require(APPPATH . 'views/frontend/header.php'); ?>
+<?php require(APPPATH . 'views/frontend/header.php'); ?>
 <style>
     .dw-banner-bcg-img {
         min-height: 250px;
         display: flex;
     }
 
-    #preloader {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        z-index: 9999;
-        transition: bottom 0.5s ease-in-out;
-    }
 
-    .preloader-inner {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        background: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
-        position: relative;
-        margin: 10px 30px 30px 0px;
-        animation: preloader-spin 2s linear infinite;
-    }
 
-    .preloader-circle {
-        width: 70px;
-        height: 70px;
-        background-color: white;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    @keyframes preloader-spin {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
+    .omni-ngw-item-title a:hover {
+        text-decoration: underline !important;
     }
 </style>
 
-<div id="preloader">
-    <div class="preloader-inner">
-        <div class="preloader-circle"></div>
+<div class="container-fluid p-0 overflow-hidden mb-3">
+
+    <div style="top:-4px;z-index: -1;background-color: #dbd3f7;max-height: 128px;min-height: 128px;" class="position-relative">
+
     </div>
-</div>
-
-
-
-<div class="container-fluid p-0 overflow-hidden">
-    <section class="position-relative w-100 h-auto pb-2 mb-2 mx-auto overflow-hidden" style="z-index: 0 ;">
-        <div class="">
-            <div class="dw-banner-bcg-img">
-                <img src="http://localhost/omnicore/assets/images/Omnicore-new-logo-4.svg" width="400px" style="display:block;margin: 0 auto;" alt="">
-            </div>
-            <div class="w-100 position-absolute" style="top:-4px;z-index: -1;background-color: #dbd3f7;max-height: 128px;min-height: 128px;">
-            </div>
-        </div>
-    </section>
-
-
 
     <section>
         <div class="container">
@@ -82,248 +29,155 @@
         </div>
     </section>
 
-    <section>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="">
-                    <h1 class="fs-32"></h1>
+    <div class="px-sm-3 px-3" style="max-width: 650px; margin:0 auto;">
+        <section class="w-100">
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-12">
+                    <div class="">
+                        <h1 class="fs-30 fw-bold my-1" style="line-height: 1.25em;">
+                            The Digital Omnicore Regulatory & Policy
+                            Watch weekly
+                        </h1>
+                    </div>
+                    <div class="">
+                        <div class="d-flex justify-content-start py-3 align-items-center gap-2">
+                            <div class="" style="width: 30px; height:30px;transition:0.3s">
+                                <a href="" class="d-flex justify-content-center align-items-center">
+                                    <svg id="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 963.66 963.66">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #fff;
+                                                }
+
+                                                .cls-2 {
+                                                    stroke: #fff;
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <circle class="cls-2" cx="481.83" cy="481.83" r="481.33"></circle>
+                                        <g id="layer1">
+                                            <path id="path1009" class="cls-1" d="M185.33,202.96l230.07,307.62-231.52,250.11h52.11l202.7-218.98,163.77,218.98h177.32l-243.02-324.92,215.5-232.81h-52.11l-186.67,201.67-150.83-201.67H185.33Zm76.63,38.38h81.46l359.72,480.97h-81.46L261.96,241.34Z"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="" style="width: 30px; height:30px;transition:0.3s">
+                                <a href="" class="d-flex justify-content-center align-items-center">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M405.33,0H106.67A106.69,106.69,0,0,0,0,106.67V405.33A106.69,106.69,0,0,0,106.67,512H405.33A106.67,106.67,0,0,0,512,405.33V106.67A106.67,106.67,0,0,0,405.33,0ZM170.67,405.33h-64V170.67h64Zm-32-261.71A37.64,37.64,0,1,1,176,106,37.5,37.5,0,0,1,138.67,143.62Zm288,261.71h-64V285.78c0-71.85-85.34-66.41-85.34,0V405.33h-64V170.67h64v37.65c29.78-55.17,149.34-59.24,149.34,52.82Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+        </section>
+
+        <hr class="py-2">
+
+        <div style="height:12px;" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- blog start -->
+        <div class="w-100">
+            <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
+                <p>Dear readers,&nbsp;</p>
+            </div>
+        </div>
+
+        <div class="w-100">
+            <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
+                <p>This week, Margrethe Vestager’s final months as the EU antitrust chief were crowned with two significant victories, cementing her legacy as a fearless challenger of Big Tech’s monopolistic grip. Europe’s top court sided with her in two high-profile cases, one involving Apple’s controversial Irish tax deal and another targeting Google’s anti-competitive behaviour. Both rulings sent ripples through the tech world, signalling a tightening grip on regulatory oversight and reaffirming Europe’s commitment to holding global giants accountable.</p>
+            </div>
+        </div>
+
+        <div class="w-100">
+            <div class="w-100" style="line-height:1.6">
+                <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/09/020-3-1024x576.png" width="600" height="337" style="border-style:none;border-color:transparent;box-sizing:border-box" alt="">
+            </div>
+        </div>
+
+        <div class="w-100">
+            <div class=" py-2 px-3 text-dark" style="line-height:1.6">
+                <p class="fs-18">This week, Margrethe Vestager’s final months as the EU antitrust chief were crowned with two significant victories, cementing her legacy as a fearless challenger of Big Tech’s monopolistic grip. Europe’s top court sided with her in two high-profile cases, one involving Apple’s controversial Irish tax deal and another targeting Google’s anti-competitive behaviour. Both rulings sent ripples through the tech world, signalling a tightening grip on regulatory oversight and reaffirming Europe’s commitment to holding global giants accountable.</p>
+            </div>
+        </div>
+
+        <div style="height:12px;" aria-hidden="true" class="wp-block-spacer"></div>
+        <div class="w-100">
+            <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
+                <p>Eninrac and the Omnicore Research team,&nbsp;</p>
+            </div>
+        </div>
+
+        <div style="height:12px;" aria-hidden="true" class="wp-block-spacer"></div>
+        <hr class="py-2">
+
+        <div class="row" style="color: #0f3f6e;">
+            <div class="col-md-12">
+                <section class="w-100" style="background-color:#dbd3f7;">
+                    <div class="px-4 text-center py-3 ">
+                        <p class="fs-20"><strong>Highlights from the week of 6-13 September 2024</strong></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="w-100">
+            <div class="p-2 m-0 omni-ngw-items ">
+                <div class="omni-ngw-item py-2 position-relative">
+                    <div class="row ">
+                        <div class="omni-ngw-item-img col-md-3 ">
+                            <a href="https://omnicoreplus.com/omni/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/">
+                                <img width="100%" height="100%" src="https://omnicoreplus.com/omni/assets/om-upload/power-tariff.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="omni-ngw-item-title">
+                                <h3 class="fs-18">
+                                    <a href="https://omnicoreplus.com/omni/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/" class="fs-18 text-dark fw-600">
+                                        Verification of captive status of CPPs through the open access regulation
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="" style="font-family: Arial; font-size: 14px; color: #404040; line-height: 1.5; padding: 2px 0">
+                                <p class="fs-14">Draft Procedure for verification of Captive Status of such Generating Plants, where Captive Generating Plant and its Captive User(s) are located in Telangana State.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="omni-ngw-item py-2 position-relative">
+                    <div class="row ">
+                        <div class="omni-ngw-item-img col-md-3 ">
+                            <a href="https://omnicoreplus.com/omni/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024">
+                                <img width="100%" height="100%" src="https://omnicoreplus.com/omni/assets/om-upload/Renewable-energy-Cover-Image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="omni-ngw-item-title">
+                                <h3 class="fs-18">
+                                    <a href="https://omnicoreplus.com/omni/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024" class="fs-18 text-dark fw-600">
+                                        Procurement of Energy from Renewable Sources and its Compliance Regulations, 2024
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="" style="font-family: Arial; font-size: 14px; color: #404040; line-height: 1.5; padding: 2px 0">
+                                <p class="fs-14">The Commission has framed the draft OERC (Procurement of Energy from Renewable Sources and its Compliance) Regulations.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
-    </section>
-</div>
- -->
+    </div>
 
-<div class="row" id="media-area">
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('meetinG.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/meetinG.png" alt="meetinG" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="meetinG.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7176)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-06.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-06.png" alt="EV-Adaptablity-Gujarat-06" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-06.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7174)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-05.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-05.png" alt="EV-Adaptablity-Gujarat-05" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-05.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7173)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-04.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-04.png" alt="EV-Adaptablity-Gujarat-04" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-04.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7172)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-03.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-03.png" alt="EV-Adaptablity-Gujarat-03" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-03.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7171)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-02.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-02.png" alt="EV-Adaptablity-Gujarat-02" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-02.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7170)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('EV-Adaptablity-Gujarat-01.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-01.jpg" alt="EV-Adaptablity-Gujarat-01" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="EV-Adaptablity-Gujarat-01.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7169)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Electric_Vehicle_Adaptablity_in_Gujarat-_A_Snapshot.pdf')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/images/pdf.png" alt="Electric_Vehicle_Adaptablity_in_Gujarat-_A_Snapshot" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Electric_Vehicle_Adaptablity_in_Gujarat-_A_Snapshot.pdf" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7167)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar_Rooftop_Generation_Status_in_India.pdf')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/images/pdf.png" alt="Solar_Rooftop_Generation_Status_in_India" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar_Rooftop_Generation_Status_in_India.pdf" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7165)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar-Rooftop-Generation-05.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Solar-Rooftop-Generation-05.png" alt="Solar-Rooftop-Generation-05" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar-Rooftop-Generation-05.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7164)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar-Rooftop-Generation-04.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Solar-Rooftop-Generation-04.png" alt="Solar-Rooftop-Generation-04" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar-Rooftop-Generation-04.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7163)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar-Rooftop-Generation-03.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Solar-Rooftop-Generation-03.png" alt="Solar-Rooftop-Generation-03" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar-Rooftop-Generation-03.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7162)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar-Rooftop-Generation-02.png')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Solar-Rooftop-Generation-02.png" alt="Solar-Rooftop-Generation-02" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar-Rooftop-Generation-02.png" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7161)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Solar-Rooftop-Generation-01.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Solar-Rooftop-Generation-01.jpg" alt="Solar-Rooftop-Generation-01" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Solar-Rooftop-Generation-01.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7160)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('omnicore_7.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/omnicore_7.jpg" alt="omnicore_7" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="omnicore_7.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7158)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('omnicore____9.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/omnicore____9.jpg" alt="omnicore____9" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="omnicore____9.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7156)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('electric_omnicore5.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/electric_omnicore5.jpg" alt="electric_omnicore5" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="electric_omnicore5.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7154)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('high_electrcity_omnicore12.jpeg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/high_electrcity_omnicore12.jpeg" alt="high_electrcity_omnicore12" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="high_electrcity_omnicore12.jpeg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7152)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('UPERC8.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/UPERC8.jpg" alt="UPERC8" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="UPERC8.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7150)">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="img-thumbnail" style="position: relative;">
-            <div class="main-thumbnail" onclick="closeifm('Redressal_of_Consumer7.jpg')" style="cursor: pointer;">
-                <img src="https://eninrac.com/assets/upload/Redressal_of_Consumer7.jpg" alt="Redressal_of_Consumer7" style="width: 100%;height: 10rem;">
-            </div>
-            <div class="footer-thumbnail" style="overflow-x: hidden;">
-                <input type="text" disabled="" value="Redressal_of_Consumer7.jpg" style="margin:5px 0;width: 100%;">
-                <a href="javascript:void(0)" class="btn btn-block btn-xs btn-danger waves-effect waves-light" onclick="deleteimage(7149)">Delete</a>
-            </div>
-        </div>
-    </div>
 </div>
 
-<script>
-    let imageArr = [];
-    document.querySelectorAll(".main-thumbnail img").forEach(item => {
-        let tempSrc = item.getAttribute("src")
-        imageArr.push(tempSrc)
-    })
-    console.log(imageArr)
-</script>
+
+
+<?php require(APPPATH . 'views/frontend/footer.php'); ?>

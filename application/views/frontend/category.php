@@ -53,9 +53,9 @@
                             <?php if (!empty($posts)) echo $posts ?>
                         </div>
                     </div>
-                    <div class="position-relative d-flex align-items-center justify-content-center my-3" id="load-more-btn">
+                    <!-- <div class="position-relative d-flex align-items-center justify-content-center my-3" id="load-more-btn">
                         <button class="btn btn-warning">Load More</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -1,105 +1,76 @@
-[
-    "https://eninrac.com/assets/upload/ev-img-omni.png",
-    "https://eninrac.com/assets/upload/ev-neon-car.png",
-    "https://eninrac.com/assets/upload/Power-Sector_BG.jpg",
-    "https://eninrac.com/assets/upload/Solar_Utility_1.jpg",
-    "https://eninrac.com/assets/upload/omni-white.png",
-    "https://eninrac.com/assets/upload/market-research-report.jpg",
-    "https://eninrac.com/assets/upload/openaccess.png",
-    "https://eninrac.com/assets/upload/research-report1.png",
-    "https://eninrac.com/assets/upload/387-banned-puppy-sales.png",
-    "https://eninrac.com/assets/upload/omnicore-logo.png",
-    "https://eninrac.com/assets/upload/samirshekhar.jpg",
-    "https://eninrac.com/assets/upload/1722919633024.jpg",
-    "https://eninrac.com/assets/upload/Public_Notice_GERC1.png",
-    "https://eninrac.com/assets/images/pdf.png",
-    "https://eninrac.com/assets/upload/Public_Notice_GERC.png",
-    "https://eninrac.com/assets/upload/RERC_POC.png",
-    "https://eninrac.com/assets/upload/Open_Access_Metering.jpg",
-    "https://eninrac.com/assets/upload/CyberSecurity.jpg",
-    "https://eninrac.com/assets/upload/Cross_Border_Trade_1.jpeg",
-    "https://eninrac.com/assets/upload/Compressed_BioCNG.jpg",
-    "https://eninrac.com/assets/upload/Indian_Power_Sec…ajor_Policies_Changing_the_Sector_Dynamics-01.png",
-    "https://eninrac.com/assets/upload/FGD.jpg",
-    "https://eninrac.com/assets/upload/Adani_Khavada.png",
-    "https://eninrac.com/assets/upload/Solar_Rooftop_V5.jpg",
-    "https://eninrac.com/assets/upload/small-power-generation-hydro.jpg",
-    "https://eninrac.com/assets/upload/Wind_Power_Generation.jpg",
-    "https://eninrac.com/assets/upload/PHES_1.jpeg",
-    "https://eninrac.com/assets/upload/Hydro_V1.jpeg",
-    "https://eninrac.com/assets/upload/Solar_Rooftop_V4.jpg",
-    "https://eninrac.com/assets/upload/Solar_Rooftop_V3.jpg",
-    "https://eninrac.com/assets/upload/Solar_Rooftop_V2.jpg",
-    "https://eninrac.com/assets/upload/PHES.jpg",
-    "https://eninrac.com/assets/upload/Minutes_of_Meeting.png",
-    "https://eninrac.com/assets/upload/Pellet.jpg",
-    "https://eninrac.com/assets/upload/Coal_India.jpg",
-    "https://eninrac.com/assets/upload/DVC3.jpg",
-    "https://eninrac.com/assets/upload/Power_Trading.jpg",
-    "https://eninrac.com/assets/upload/Teesta.jpeg",
-    "https://eninrac.com/assets/upload/TAriff.jpg",
-    "https://eninrac.com/assets/upload/Chamera_Hydro.jpg",
-    "https://eninrac.com/assets/upload/TPP1.jpg",
-    "https://eninrac.com/assets/upload/Solar_Utility.jpg",
-    "https://eninrac.com/assets/upload/Captive.jpg",
-    "https://eninrac.com/assets/upload/Solar_Rooftop_V1.jpg",
-    "https://eninrac.com/assets/upload/Coal_Blending.jpg",
-    "https://eninrac.com/assets/upload/EV_Charging.jpg",
-    "https://eninrac.com/assets/upload/04-Cement_Production_Imports_05-July-2024.png",
-    "https://eninrac.com/assets/images/pdf.png",
-    "https://eninrac.com/assets/upload/chemical-petrochemical-market-2030-02.png",
-    "https://eninrac.com/assets/upload/chemical-petrochemical-market-2030-01.png",
-    "https://eninrac.com/assets/upload/H2_Newww.jpg",
-    "https://eninrac.com/assets/upload/H2_New.jpg",
-    "https://eninrac.com/assets/upload/chemical-petrochemical-market-2030-04.png",
-    "https://eninrac.com/assets/upload/chemical-petrochemical-market-2030-05.jpg",
-    "https://eninrac.com/assets/upload/Wind1.jpg",
-    "https://eninrac.com/assets/upload/Solapur_TPP.jpg",
-    "https://eninrac.com/assets/upload/chemical-petrochemical-market-2030-03.png",
-    "https://eninrac.com/assets/upload/03-Steel_Production_Imports03-July-2024.png",
-    "https://eninrac.com/assets/upload/H2.jpeg",
-    "https://eninrac.com/assets/upload/EV11.jpg",
-    "https://eninrac.com/assets/upload/02-Heavy_Industries_Manufacturing_02-July-2024.png",
-    "https://eninrac.com/assets/upload/FEES.jpg",
-    "https://eninrac.com/assets/upload/01-Solar-Power-Generation_01-July-2024.png",
-    "https://eninrac.com/assets/upload/Renewable-energy-Cover-Image.jpg",
-    "https://eninrac.com/assets/upload/Power_Tariff.jpg",
-    "https://eninrac.com/assets/upload/anurag-dubey.jpg",
-    "https://eninrac.com/assets/upload/nitika-sharma.jpg",
-    "https://eninrac.com/assets/upload/ravi-shekhar.jpg",
-    "https://eninrac.com/assets/upload/TPP.jpg",
-    "https://eninrac.com/assets/upload/RoW_Transmission.jpg",
-    "https://eninrac.com/assets/upload/Make-in-India.jpg",
-    "https://eninrac.com/assets/upload/Solar_Rooftop.jpg",
-    "https://eninrac.com/assets/upload/Ammonia.jpg",
-    "https://eninrac.com/assets/upload/electricity_pole_omnicore11.jpg",
-    "https://eninrac.com/assets/upload/electricity-omnicore18.jpg",
-    "https://eninrac.com/assets/upload/HERC_TT15.jpg",
-    "https://eninrac.com/assets/upload/electricity_Omnicore__14.jpg",
-    "https://eninrac.com/assets/images/pdf.png",
-    "https://eninrac.com/assets/upload/RenewableEnergy_EInfews2.jpg",
-    "https://eninrac.com/assets/upload/Screenshot_2024-06-11_191142.png"
+const imagesContainer = document.getElementById('image-container');
+const loader = document.getElementById('loader');
 
-    ,
-    "https://eninrac.com/assets/upload/meetinG.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-06.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-05.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-04.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-03.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-02.png",
-    "https://eninrac.com/assets/upload/EV-Adaptablity-Gujarat-01.jpg",
-    "https://eninrac.com/assets/images/pdf.png",
-    "https://eninrac.com/assets/images/pdf.png",
-    "https://eninrac.com/assets/upload/Solar-Rooftop-Generation-05.png",
-    "https://eninrac.com/assets/upload/Solar-Rooftop-Generation-04.png",
-    "https://eninrac.com/assets/upload/Solar-Rooftop-Generation-03.png",
-    "https://eninrac.com/assets/upload/Solar-Rooftop-Generation-02.png",
-    "https://eninrac.com/assets/upload/Solar-Rooftop-Generation-01.jpg",
-    "https://eninrac.com/assets/upload/omnicore_7.jpg",
-    "https://eninrac.com/assets/upload/omnicore____9.jpg",
-    "https://eninrac.com/assets/upload/electric_omnicore5.jpg",
-    "https://eninrac.com/assets/upload/high_electrcity_omnicore12.jpeg",
-    "https://eninrac.com/assets/upload/UPERC8.jpg",
-    "https://eninrac.com/assets/upload/Redressal_of_Consumer7.jpg"
+// Set a fixed height for the image container
+imagesContainer.style.height = '600px'; // Adjust this value as needed
+imagesContainer.style.overflowY = 'auto'; // Enable vertical scrolling
 
-];
+function fetchImages(page) {
+    const apiUrl = `http://localhost/omnicore/api/v1/media/get?page=${page}`;
+    return fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            let rowDiv = document.createElement('div');
+            rowDiv.setAttribute('class', 'row align-items-center w-100');
+            rowDiv.setAttribute('style', 'gap: 15px 0;');
+            data.responseData.data.forEach(item => {
+                let colDiv = document.createElement('div');
+                colDiv.setAttribute('class', 'col-md-3');
+                colDiv.innerHTML = `<div class="img-thumbnail position-relative">
+                <button class="media-close-btn btn-danger" data-id="${item.ATT_ID}">x</button>
+                <div class="main-thumbnail">
+                    <img src="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}thumbnail/${item.ATT_TITLE}" 
+                         alt="${item.ATT_TITLE}" 
+                         loading="lazy" 
+                         width="200" 
+                         height="150"> <!-- Specify width and height to prevent layout shifts -->
+                    <input type="text" disabled="" value="${item.ATT_BASE_PATH}${item.ATT_ENTRY_PATH}${item.ATT_TITLE}">
+                    <input type="hidden" class="media-title" value="${item.ATT_TITLE}">
+                </div>
+            </div>`;
+                rowDiv.appendChild(colDiv);
+            });
+            imagesContainer.appendChild(rowDiv);
+        });
+}
+
+let page = 1;
+let isLoading = false; // Flag to prevent multiple loads
+
+function loadMoreImages() {
+    if (isLoading) return; // Prevent loading if already in progress
+    isLoading = true; // Set loading flag
+    loader.style.display = 'block';
+
+    fetchImages(page).then(() => {
+        page++; // Increment page after successful fetch
+    }).finally(() => {
+        isLoading = false; // Reset loading flag after fetch completes
+    });
+}
+
+fetchImages(page); // Initial fetch
+
+// Debounce function to limit how often the scroll event fires
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+imagesContainer.addEventListener('scroll', debounce(() => {
+    const scrollHeight = imagesContainer.scrollHeight;
+    const scrollTop = imagesContainer.scrollTop;
+    const clientHeight = imagesContainer.clientHeight;
+
+    // Check if the scrollbar is at the bottom
+    if (scrollTop + clientHeight >= scrollHeight - 10) { // Using a small threshold to account for rounding
+        loadMoreImages();
+    }
+}, 200)); 

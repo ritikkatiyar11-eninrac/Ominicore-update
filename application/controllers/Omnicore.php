@@ -26,12 +26,18 @@ class Omnicore extends Default_Controler
         if ($id == 'download-image') $this->downloadImage();
         if ($id == 'omninews') $this->omninews();
         if ($id == 'ourteam') $this->ourteam();
+        if ($id == 'unsubscribe') $this->unsubscribe();
     }
 
     private function login()
 
     {
         $this->load->view('frontend/login');
+    }
+    private function unsubscribe()
+
+    {
+        $this->load->view('frontend/unsubscribe');
     }
     private function ourteam()
 
