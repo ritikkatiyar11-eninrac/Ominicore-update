@@ -39,7 +39,7 @@ const mediaObject = {
     })
   },
   fileUpload: function () {
-    let self = this
+    let self = this;
     let fileUpload = document.querySelector(self.ObjectData.uploadfile)
     if (fileUpload) {
       document.querySelector('.file-upload').addEventListener('change', function (e) {
@@ -195,6 +195,7 @@ const mediaObject = {
       })
     }
   },
+
   appendAttachmentHandler: function () {
     let self = this
     document.querySelectorAll(self.ObjectData.attachmentSelector).forEach(item => {
@@ -247,4 +248,3 @@ function hideFunc(selected) {
   const modal = bootstrap.Modal.getInstance(truck_modal);
   modal.hide();
 }
-

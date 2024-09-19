@@ -27,7 +27,9 @@ class Omnicore extends Default_Controler
         if ($id == 'omninews') $this->omninews();
         if ($id == 'ourteam') $this->ourteam();
         if ($id == 'unsubscribe') $this->unsubscribe();
+        if ($id == 'categorytags') $this->categorytags();
     }
+    
 
     private function login()
 
@@ -35,10 +37,15 @@ class Omnicore extends Default_Controler
         $this->load->view('frontend/login');
     }
     private function unsubscribe()
-
     {
         $this->load->view('frontend/unsubscribe');
     }
+
+    private function categorytags()
+    {
+        $this->load->view('frontend/categorytags');
+    }
+
     private function ourteam()
 
     {

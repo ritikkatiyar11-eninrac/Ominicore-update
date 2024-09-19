@@ -79,7 +79,7 @@
 
 <body>
     <header class="position-sticky top-0" style="background-image: -webkit-gradient( linear, left top, right top, from(transparent), to(#fff) ), -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#dbd3f7), to(#eee9ff));backdrop-filter:blur(7px); z-index:11;">
-        <div class="container-fluid position-relative">
+        <div class="container-fluid position-relative px-0 overflow-hidden">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="w-25">
                     <div class="logo" style="max-width: 140px; ">
@@ -90,20 +90,13 @@
                 </div>
                 <div class="header-right d-flex justify-content-end">
                     <ul style="margin-bottom: 0; padding-left:0; height:100%;" class="header-iconlist">
-                        <li class="d-flex justify-content-center align-items-center py-2 px-3  cursor-pointer">
-                            <a href="">
+                        <li>
+                            <button class="btn btn-outline-primary border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                 <i class="icofont-navigation-menu"></i>
-                            </a>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center py-2 px-3  cursor-pointer">
-                            <a href="">
-                                <i class="icofont-search-1"></i>
-                            </a>
-                        </li>
-
+                            </button>
+                        </li>   
                     </ul>
                     <ul class="header_list">
-
                         <li class="d-flex justify-content-center align-items-center  py-4 px-3  cursor-pointer h-100">
                             <a href="<?= base_url() ?>infographic" class="header-link">Infographics</a>
                         </li>
@@ -123,14 +116,53 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
+            <div class="progress-container position-absolute bottom-0 w-100">
+                <div class="progress-bar " id="myBar" style="width: 0%;background-color: #0f3f6e;height: 5px;"></div>
+            </div>
+        </div>
 
-        </div>
-        <div class="progress-container position-absolute bottom-0 w-100">
-            <div class="progress-bar " id="myBar" style="width: 0%;background-color: #0f3f6e;height: 5px;"></div>
-        </div>
     </header>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <div class="w-100">
+                <div class="logo" style="max-width: 140px; ">
+                    <a href="<?= base_url() ?>">
+                        <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" id="logo-img" alt="logo" style="width: 100px;margin: auto;">
+                    </a>
+                </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mt-3">
+                <ul class="d-flex flex-column justify-content-between align-items-center">
+                    <li class="d-flex justify-content-center align-items-start  py-4 px-3  cursor-pointer h-100">
+                        <a href="<?= base_url() ?>infographic" class="header-link fs-20">Infographics</a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-start py-4 px-3  cursor-pointer h-100">
+                        <a href="<?= base_url() ?>check-pricing" class="header-link fs-20">Check Pricing</a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-start  py-4 px-3  cursor-pointer h-100">
+                        <a href="<?= base_url() ?>newsletter" class="header-link fs-20">Newsletter</a>
+                    </li>
+                    <li id="auth-button" class="d-flex justify-content-center align-items-start  py-4 px-3  cursor-pointer h-100">
+                        <a href="<?= base_url() ?>login" class="header-link fs-20">Login</a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-start py-4 px-3  cursor-pointer h-100">
+                        <a href="<?= base_url() ?>" class="header-link fs-20">
+                            <i class="icofont-search-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row w-100 position-absolute mb-2" style="bottom: 20px;">
+                <div class="col-12 px-0">
+                    <p class="text-center">© 2013-2024 <a class="text-decoration-underline text-darklight-600" href="https://eninrac.com">Eninrac Consulting Pvt. Ltd.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         if (window.location.href == "http://localhost/omnicore/omniweeklynews") {
             window.onscroll = function() {

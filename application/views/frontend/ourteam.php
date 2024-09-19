@@ -114,7 +114,7 @@
                                     Since founding IoT Analytics in 2014, my focus has been to build a team that produces high-quality research in areas such as IoT, AI, Cloud, and smart manufacturing. Throughout my journey, I have authored or co-authored over 100 reports, always with a commitment to delivering analyses that are not only trustworthy but also rich in insight and uniqueness.
                                     <p class="pb-2"></p>
                                     <p class="d-none">
-                                        →&nbsp;&nbsp
+                                        →&nbsp;&nbsp;
                                         <a href="" target="_blank" rel="noopener">View publications</a>
                                     </p>
                                 </div>
