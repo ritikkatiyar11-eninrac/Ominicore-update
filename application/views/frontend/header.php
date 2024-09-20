@@ -7,7 +7,9 @@
     <title>Omnicore</title>
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/animated.css">
     <link rel="icon" type="image/png" href="<?= base_url() ?>assets/images/Omnicore-favicon.svg">
+
     <style>
         .header_list li:hover {
             background: rgba(96, 50, 233, 0.08);
@@ -94,7 +96,7 @@
                             <button class="btn btn-outline-primary border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                 <i class="icofont-navigation-menu"></i>
                             </button>
-                        </li>   
+                        </li>
                     </ul>
                     <ul class="header_list">
                         <li class="d-flex justify-content-center align-items-center  py-4 px-3  cursor-pointer h-100">

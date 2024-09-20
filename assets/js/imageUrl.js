@@ -1,43 +1,35 @@
 const imagesContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
-const mediaSearch = document.getElementById("media-search")
-
-let allImages = [];
+const mediaSearch = document.getElementById("media-search");
 
 imagesContainer.style.height = '600px';
 imagesContainer.style.overflowY = 'auto';
 
-function mediaSearchHandler(searchVal) {
-    const searchTerm = searchVal.toLowerCase();
-
-    const matchingImages = Array.from(imagesContainer.querySelectorAll('.media-title')).filter(titleInput => titleInput.value.toLowerCase().includes(searchTerm));
-
-    imagesContainer.innerHTML = '';
-
-    // Display the matching images
-    matchingImages.forEach(titleInput => {
-        const imageContainer = titleInput.closest('.img-thumbnail');
-        imagesContainer.appendChild(imageContainer.cloneNode(true));
-    });
-}
-
-if (mediaSearch !== "") {
-    mediaSearch.addEventListener('input', (event) => {
-        mediaSearchHandler(event.target.value);
-    });
-}
-
+let allImages = []; // Store all fetched images
 
 async function fetchImages(page) {
     const apiUrl = `http://localhost/omnicore/api/v1/media/get?page=${page}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    allImages = allImages.concat(data.responseData.data)
+    // Concatenate new images to the allImages array
+    allImages = allImages.concat(data.responseData.data);
+    displayImages(allImages); // Display all images initially
+}
+
+function displayImages(images) {
+    imagesContainer.innerHTML = ''; // Clear previous images
+    if (images.length === 0) {
+        // Show message if no images found
+        imagesContainer.innerHTML = '<p>Image not found</p>';
+        return;
+    }
+
     let rowDiv = document.createElement('div');
     rowDiv.setAttribute('class', 'row align-items-center w-100');
     rowDiv.setAttribute('style', 'gap: 15px 0;');
-    data.responseData.data.forEach(item => {
+
+    images.forEach(item => {
         let colDiv = document.createElement('div');
         colDiv.setAttribute('class', 'col-md-3');
         colDiv.innerHTML = `<div class="img-thumbnail position-relative">
@@ -56,6 +48,13 @@ async function fetchImages(page) {
     });
     imagesContainer.appendChild(rowDiv);
 }
+
+mediaSearch.addEventListener("input", () => {
+    const searchValue = mediaSearch.value.toLowerCase();
+    const filteredImages = allImages.filter(item => item.ATT_SLUG.toLowerCase().includes(searchValue));
+
+    displayImages(filteredImages); // Show filtered images or "Image not found" message
+});
 
 let page = 1;
 let isLoading = false;
@@ -90,8 +89,7 @@ imagesContainer.addEventListener('scroll', debounce(() => {
     const scrollHeight = imagesContainer.scrollHeight;
     const scrollTop = imagesContainer.scrollTop;
     const clientHeight = imagesContainer.clientHeight;
-
     if (scrollTop + clientHeight >= scrollHeight - 10) {
         loadMoreImages();
     }
-}, 200)); 
+}, 200));

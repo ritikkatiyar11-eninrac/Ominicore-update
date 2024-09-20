@@ -89,7 +89,7 @@
     </div>
 </div>
 <!-- <script src="<?= base_url() ?>assets/vendor/script/media.js" defer></script> -->
-<script src="<?= base_url() ?>assets/js/imageUrl.js" defer></script>
+<script src="<?= base_url() ?>assets/js/imageUrl.js"></script>
 <script>
     // window.addEventListener('DOMContentLoaded', (event) => {
     //     mediaObject.init();

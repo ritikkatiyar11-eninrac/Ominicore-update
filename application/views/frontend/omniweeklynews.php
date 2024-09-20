@@ -111,7 +111,7 @@
         <div style="height:12px;" aria-hidden="true" class="wp-block-spacer"></div>
         <div class="w-100">
             <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
-                <p>Eninrac and the Omnicore Research team,&nbsp;</p>
+                <p class="wow bounce">Eninrac and the Omnicore Research team,&nbsp;</p>
             </div>
         </div>
 
