@@ -202,10 +202,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="bn-item">
+                <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
+                            <img src="<?= base_url() ?>assets/images/SECI_BID_RfS123457.svg" style="min-width: 200px; min-height: 200px" alt="" />
                         </div>
                     </div>
                 </a>
@@ -213,4 +213,5 @@
         </div>
     </main>
 </div>
+
 <?php require(APPPATH . 'views/frontend/footer.php'); ?>

@@ -1,7 +1,11 @@
 <?php require(APPPATH . 'views/frontend/header.php'); ?>
-<?php require(APPPATH . 'views/frontend/menu.php'); ?>
+
 
 <style>
+    .overlay-for-subscribe {
+        background-color: white;
+    }
+
     .grid-areas-materialLG {
         display: grid;
         max-width: 62.5rem;
@@ -111,7 +115,35 @@ if ($post->num_rows() > 0) {
     </nav>
 </div>
 <main class="py-4">
-    <div class="container-fluid">
+    <div class="overlay-for-subscribe position-fixed" style="width:100vw;height:100vh;top:70px; z-index:99999;">
+        <div class="position-relative p-4">
+            <div class="row row-gap-4">
+                <div class="col-md-2">
+                    <img src="<?= base_url() ?>assets/images/Omnicore-new-logo-4.svg" width="100px" height="50px" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="">
+                        <div class="">
+                            <h3>Thank you for reading. Register for four more free articles.</h3>
+                            <p>Register to unlock four more free articles or subscribe today to enjoy unlimited access to The Art Newspaper.</p>
+                        </div>
+                        <div class="mt-4">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary">Register Now</button>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>Or subscribe for unlimited access</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-deltails-content container-fluid">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
@@ -202,47 +234,45 @@ if ($post->num_rows() > 0) {
             </div>
             <div class="col-md-1"></div>
         </div>
-    </div>
-</main>
-<section class="py-5">
-    <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center py-4">
-            <div class="fs-20">
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.333 4H4v9.333h9.333V4ZM28 4h-9.333v9.333H28V4ZM28 18.667h-9.333V28H28v-9.333ZM13.333 18.667H4V28h9.333v-9.333Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                Related
+        <section class="py-5">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center py-4">
+                    <div class="fs-20">
+                        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.333 4H4v9.333h9.333V4ZM28 4h-9.333v9.333H28V4ZM28 18.667h-9.333V28H28v-9.333ZM13.333 18.667H4V28h9.333v-9.333Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        Related
+                    </div>
+                    <div class="fs-16">
+                        <a class="text-primary-700" href="<?= base_url() ?>post">See all <i class="icofont-simple-right"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="fs-16">
-                <a class="text-primary-700" href="<?= base_url() ?>post">See all <i class="icofont-simple-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row row-gap-3">
-            <?php
-            $filter_array = [];
-            $filtersId = $this->db->select('RELATION_ID')->from('filter_post_relationship')->where('OBJECT_ID', $id)->get();
-            if ($filtersId->num_rows() > 0) {
-                foreach ($filtersId->result() as $value) {
-                    $filter_array[] = $value->RELATION_ID;
-                }
-            }
+            <div class="container-fluid">
+                <div class="row row-gap-3">
+                    <?php
+                    $filter_array = [];
+                    $filtersId = $this->db->select('RELATION_ID')->from('filter_post_relationship')->where('OBJECT_ID', $id)->get();
+                    if ($filtersId->num_rows() > 0) {
+                        foreach ($filtersId->result() as $value) {
+                            $filter_array[] = $value->RELATION_ID;
+                        }
+                    }
 
-            $related_post = $this->db->select('post.id,post.slug,post.created_at,post.title')->from('filter_post_relationship')
-                ->where('OBJECT_ID !=', $id)->where('post.status', 1)->where_in('RELATION_ID', $filter_array)
-                ->join('post', 'post.id = filter_post_relationship.OBJECT_ID')->limit(4)->group_by('post.id')
-                ->order_by('RELATION_ID', 'RANDOM')->get();
-            if ($related_post->num_rows() > 0) {
-                foreach ($related_post->result() as $key => $value) {
-                    $featureImage = $this->db->select('POST_VALUE')->from('postmeta')->where('POST_ID', $value->id)->where('POST_KEY', 'feature_image')->get();
-                    $image = $featureImage->num_rows() > 0 ? $featureImage->result()[0]->POST_VALUE : "";
+                    $related_post = $this->db->select('post.id,post.slug,post.created_at,post.title')->from('filter_post_relationship')
+                        ->where('OBJECT_ID !=', $id)->where('post.status', 1)->where_in('RELATION_ID', $filter_array)
+                        ->join('post', 'post.id = filter_post_relationship.OBJECT_ID')->limit(4)->group_by('post.id')
+                        ->order_by('RELATION_ID', 'RANDOM')->get();
+                    if ($related_post->num_rows() > 0) {
+                        foreach ($related_post->result() as $key => $value) {
+                            $featureImage = $this->db->select('POST_VALUE')->from('postmeta')->where('POST_ID', $value->id)->where('POST_KEY', 'feature_image')->get();
+                            $image = $featureImage->num_rows() > 0 ? $featureImage->result()[0]->POST_VALUE : "";
 
-                    $today = date("Y-m-d");
-                    $publish_data = date_format(date_create($value->created_at), "Y-m-d");
-                    $post_date = $today == $publish_data ? $this->CI->time_elapsed_string($value->created_at) : date_format(date_create($value->created_at), "F d,Y");
+                            $today = date("Y-m-d");
+                            $publish_data = date_format(date_create($value->created_at), "Y-m-d");
+                            $post_date = $today == $publish_data ? $this->CI->time_elapsed_string($value->created_at) : date_format(date_create($value->created_at), "F d,Y");
 
-                    echo "<div class='col-lg-3 col-md-6 col-sm-6'>
+                            echo "<div class='col-lg-3 col-md-6 col-sm-6'>
                                 <div class='position-relative rounded overflow-hidden'>
                                     <div class='bg-overlay' style='background: linear-gradient(180deg, transparent 48%, rgba(0, 0, 0, 0.8) 86%);position: absolute;top: 0;left: 0;width: 100%;height: 100%;'></div>
                                     <img class='w-100' src='" . base_url() . "assets/om-upload/" . $image . "' alt='' style='height: 220px;object-fit: cover;'>
@@ -254,10 +284,14 @@ if ($post->num_rows() > 0) {
                                     </div>
                                 </div>
                             </div>";
-                }
-            }
-            ?>
-        </div>
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
+</main>
+
+<script src="<?= base_url() ?>assets/js/getIPandMacAddress.js"></script>
 <?php require(APPPATH . 'views/frontend/footer.php'); ?>

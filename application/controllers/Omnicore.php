@@ -28,13 +28,23 @@ class Omnicore extends Default_Controler
         if ($id == 'ourteam') $this->ourteam();
         if ($id == 'unsubscribe') $this->unsubscribe();
         if ($id == 'categorytags') $this->categorytags();
+        if ($id == 'contact_page') $this->contact_page();
+        if ($id == 'dummycontactpage') $this->dummycontactpage();
     }
-    
+
 
     private function login()
-
     {
         $this->load->view('frontend/login');
+    }
+    private function dummycontactpage()
+    {
+        $this->load->view('frontend/dummycontactpage');
+    }
+    private function contact_page()
+
+    {
+        $this->load->view('frontend/contact_page');
     }
     private function unsubscribe()
     {

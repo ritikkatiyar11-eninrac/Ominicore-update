@@ -1,5 +1,5 @@
 <?php require(APPPATH . 'views/frontend/header.php'); ?>
-<?php require(APPPATH . 'views/frontend/menu.php'); ?>
+
 <style>
     .login-wrapper {
         /* height: 70vh; */
@@ -58,14 +58,7 @@
         transform: scale(0.98);
     }
 </style>
-<div class="container-fluid">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="<? base_url() ?>"><i class="icofont-home"></i></a></li>
-            <li class="breadcrumb-item active">Login</li>
-        </ol>
-    </nav>
-</div>
+
 <section class="login-wrapper w-100 my-5">
     <div class="login-area">
         <div class="login-form w-100" style="max-width: 500px;padding: 15px;box-shadow: 0 0 11px -3px var(--primary-100);border-radius: 10px;">
