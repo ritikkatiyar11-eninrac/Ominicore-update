@@ -1,6 +1,4 @@
 <?php require(APPPATH . 'views/frontend/header.php'); ?>
-<?php require(APPPATH . 'views/frontend/menu.php'); ?>
-
 <style>
     .border-all-left-none {
         border: 1px solid rgb(232, 234, 237);
@@ -91,13 +89,14 @@
         border-bottom: 2px solid var(--primary-500);
     }
 
-    .tab-scrollbar-list button {
+    .tab-scrollbar-list a {
         height: 48px;
         background-color: #fff;
+        color: var(--primary-700);
         transition: all 0.4s ease-in-out;
     }
 
-    .tab-scrollbar-list button:hover {
+    .tab-scrollbar-list a:hover {
         background: var(--primary-700);
         color: var(--darklight-100);
     }
@@ -148,7 +147,10 @@
             }
 
             function updatePriceValue(key) {
-                let data = [[4166.67, 4583.33, 5000.00, 5833.33], [5000.00, 5500.00, 6000.00, 7000.00]]
+                let data = [
+                    [4166.67, 4583.33, 5000.00, 5833.33],
+                    [5000.00, 5500.00, 6000.00, 7000.00]
+                ]
                 document.querySelector('.business-starter').innerHTML = `₹ ${data[key][0]} <span class="fs-14">INR</span>`
                 document.querySelector('.business-standard').innerHTML = `₹ ${data[key][1]} <span class="fs-14">INR</span>`
                 document.querySelector('.business-plus').innerHTML = `₹ ${data[key][2]} <span class="fs-14">INR</span>`
@@ -156,7 +158,7 @@
             }
         </script>
         <div class="d-none d-md-flex d-lg-flex w-100">
-            <div style="flex:1;">
+            <div style="flex:1;" id="freeforever">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Free Forever!</div>
@@ -188,7 +190,7 @@
                     </ul>
                 </div>
             </div>
-            <div style="flex:1;">
+            <div style="flex:1;" id="businessstarter">
                 <div class="price-content border py-4 px-3">
                     <div class="d-flex align-items-center flex-column">
                         <div class="fs-22 fw-400 mb-1 text-center">Business Starter</div>
@@ -322,16 +324,15 @@
                 <div class="overflow-hidden">
                     <div class="tab-scrollbar-list container" style="scrollbar-width: none;">
                         <span class="d-flex gap-2">
-                            <button class=" tab-scrollbar-list-item-active price-tab-btn flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Free Forever!</button>
-                            <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Starter</button>
-                            <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Standard</button>
-                            <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Plus</button>
-                            <button class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Enterprise</button>
+                            <a href="#freeforever" style="line-height: 30px;" class=" tab-scrollbar-list-item-active price-tab-btn flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Free Forever!</a>
+                            <a href="#businessstarter" style="line-height: 30px;" class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Starter</a>
+                            <a href="#" style="line-height: 30px;" class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Standard</a>
+                            <a href="#" style="line-height: 30px;" class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Business Plus</a>
+                            <a href="#" style="line-height: 30px;" class=" flex-grow-1 px-2 fw-500 cursor-pointer px-2 py-2">Enterprise</a>
                         </span>
                     </div>
                 </div>
             </div>
-
             <div class="mt-3">
                 <div class="d-flex justify-content-center w-100">
                     <div style="flex:1; max-width:300px">

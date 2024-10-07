@@ -7,7 +7,7 @@
     <title>Omnicore</title>
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
-    
+
     <link rel="icon" type="image/png" href="<?= base_url() ?>assets/images/Omnicore-favicon.svg">
 
     <style>

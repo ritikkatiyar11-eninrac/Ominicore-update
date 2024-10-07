@@ -1,3 +1,4 @@
+<?php require(APPPATH . 'views/backend/layout/header.php') ?>
 <div class="page-header">
     <h1 class="page-title">Edit Pages</h1>
     <div>

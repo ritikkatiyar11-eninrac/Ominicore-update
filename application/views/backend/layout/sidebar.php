@@ -24,7 +24,7 @@
         </a>
     </li>
     <li class="slide">
-        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/infographic">
+        <a class="side-menu__item" href="<?= base_url() ?>backend-dashboard/infographic ">
             <i class="side-menu__icon fe fe-file-text"></i>
             <span class="side-menu__label">Infographic</span>
         </a>

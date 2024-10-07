@@ -124,16 +124,9 @@
             </td>
         </tr>
         <!-- Banner -->
-        <tr>
+        <tr style="width:100%">
             <td style="text-align: center">
-                <div style="font-size: 20px; color: #ffffff">
-                    <!--     https://eninrac.com/assets/upload/Banner-Omnicore-Newsletter-1300x500.png -->
-                    <img
-                        src="https://eninrac.com/assets/upload/september-week-1.png"
-                        width="100%"
-                        height="228px"
-                        style="object-fit: fill"
-                        alt="banner image" />
+                <div style="font-size: 20px; color: #ffffff; background-position: center;background-size: cover;background-image: url(https://eninrac.com/assets/upload/september-week-1.png);height: 228px;background-repeat: no-repeat;">
                 </div>
             </td>
         </tr>

@@ -14,28 +14,6 @@
     <main class="bn-content-area" id="content">
         <div class="container-fluid">
             <div class="bn-grid">
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1218-easier-to-repair.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
                 <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
@@ -58,6 +36,14 @@
                         </div>
                     </div>
                 </a>
+                <a href="" class="bn-item bn-item-2x2">
+                    <div class="bn-item-inner">
+                        <div class="bn-item-img">
+                            <img src="<?= base_url() ?>assets/images/Large_Hydro_Installed_Capacity_July_2024.svg" style="min-width: 200px; min-height: 200px" alt="" />
+                        </div>
+                    </div>
+                </a>
+
                 <a href="" class="bn-item bn-item-1x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img" style="
@@ -94,57 +80,30 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="bn-item">
+
+
+
+                <a href="" class="bn-item bn-item-2x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
+                            <img src="<?= base_url() ?>assets/images/Solar-Power-Factsheet-July-2024-Updated-01.svg" alt="" />
                         </div>
                     </div>
                 </a>
 
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1218-easier-to-repair.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
+
+
                 <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/200-H1N1-response.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" alt="" />
+                            <img src="<?= base_url() ?>assets/images/Wind-Power-Developer.svg" alt="" />
                         </div>
                     </div>
                 </a>
 
-                <a href="" class="bn-item bn-item-1x1">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="bn-item bn-item-1x2">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1382-disease-eradication.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
+
+
+
                 <a href="" class="bn-item bn-item-1x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
@@ -155,24 +114,12 @@
                 <a href="" class="bn-item bn-item-2x1">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1381-usa-wind-power.svg" alt="" />
+                            <img src="<?= base_url() ?>assets/images/Wind-Power-Factsheet-India-July-2024.svg" alt="" />
                         </div>
                     </div>
                 </a>
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1076-scotland-wind-energy.svg" style="min-width: 200px; min-height: 200px" alt="" />
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="bn-item">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1110-tb-curable.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
+
+
 
                 <a href="" class="bn-item">
                     <div class="bn-item-inner">
@@ -195,13 +142,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="bn-item bn-item-2x1">
-                    <div class="bn-item-inner">
-                        <div class="bn-item-img">
-                            <img src="<?= base_url() ?>assets/images/1381-usa-wind-power.svg" alt="" />
-                        </div>
-                    </div>
-                </a>
+
                 <a href="" class="bn-item bn-item-1x2">
                     <div class="bn-item-inner">
                         <div class="bn-item-img">

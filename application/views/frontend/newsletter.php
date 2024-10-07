@@ -159,7 +159,7 @@
                         </p>
                         <a href="" class="dbtn1">Subscribe</a>
                     </div>
-                    <img src="https://omnicoreplus.com/omni/assets/images/weekly-report.png" alt="">
+                    <img src="https://omnicoreplus.com/assets/images/weekly-report.png" alt="">
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
                         </p>
                         <a href="" class="dbtn1">Subscribe</a>
                     </div>
-                    <img src="https://omnicoreplus.com/omni/assets/images/monthly-report.png" alt="">
+                    <img src="https://omnicoreplus.com/assets/images/monthly-report.png" alt="">
                 </div>
             </div>
         </div>
@@ -242,7 +242,7 @@
                 <div class="h-100 d-flex justify-content-center flex-column gap-2">
                     <span class="fw-600 my-2 fs-28">Subscribe to the Omnicore newsletters</span>
                     <span>Choose whether you would like to receive our weekly and/or monthly newsletters.</span>
-                    <span>By clicking on the Subscribe button, you are agreeing to our <a href="https://omnicoreplus.com/omni/privacy-policy" class="fst-italic" target="_blank">Privacy Policy</a> </span>
+                    <span>By clicking on the Subscribe button, you are agreeing to our <a href="https://omnicoreplus.com/privacy-policy" class="fst-italic" target="_blank">Privacy Policy</a> </span>
                     <div class="redered-form w-100 fs-14">
                         <section class="mb-4">
                             <form action="" class="d-block w-100" style="max-width: 460px;">

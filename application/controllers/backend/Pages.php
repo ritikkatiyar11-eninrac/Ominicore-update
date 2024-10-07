@@ -22,7 +22,7 @@ class Pages extends Default_Backend_Controler
       $this->editPage();
     }
   }
-
+  
   private function defaultPage()
   {
     $this->load->view('backend/layout/header');
@@ -39,6 +39,12 @@ class Pages extends Default_Backend_Controler
   {
     $this->load->view('backend/layout/header');
     $this->load->view('backend/pages/edit_pages');
+    $this->load->view('backend/layout/footer');
+  }
+  private function infographic()
+  {
+    $this->load->view('backend/layout/header');
+    $this->load->view('backend/pages/infographics');
     $this->load->view('backend/layout/footer');
   }
 
@@ -59,6 +65,7 @@ class Pages extends Default_Backend_Controler
     if ($id == 'set') $this->set_api_pages();
     if ($id == 'delete') $this->delete_api_pages();
     if ($id == 'check-slug') $this->check_slug();
+    if ($id == 'infographic') $this->infographic();
   }
 
   public function get_api_pages()

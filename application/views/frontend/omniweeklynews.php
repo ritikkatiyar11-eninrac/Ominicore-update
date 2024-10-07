@@ -5,17 +5,13 @@
         display: flex;
     }
 
-
-
     .omni-ngw-item-title a:hover {
         text-decoration: underline !important;
     }
 </style>
 
 <div class="container-fluid p-0 overflow-hidden mb-3">
-
     <div style="top:-4px;z-index: -1;background-color: #dbd3f7;max-height: 128px;min-height: 128px;" class="position-relative">
-
     </div>
 
     <section>
@@ -28,7 +24,7 @@
             </nav>
         </div>
     </section>
-
+    
     <div class="px-sm-3 px-3" style="max-width: 650px; margin:0 auto;">
         <section class="w-100">
             <div class="row">
@@ -175,7 +171,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 

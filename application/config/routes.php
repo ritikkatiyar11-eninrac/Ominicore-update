@@ -71,10 +71,6 @@ if (file_exists(APPPATH . 'cache/post-routes.php')) require(APPPATH . 'cache/pos
 
 $route['(:any)'] = 'Omnicore/page/$1';
 
-
-
-
-
 /// Backend Routes URLS
 // For Login
 $route['backend-dashboard/login'] = 'backend/login';
@@ -85,8 +81,6 @@ $route['backend-dashboard/dashboard'] = 'backend/dashboard/index';
 $route['backend-dashboard/pages'] = 'backend/pages/index';
 // For Page Action
 $route['backend-dashboard/pages/(:any)'] = 'backend/pages/action/$1';
-
-
 
 // For Media
 $route['backend-dashboard/media'] = 'backend/media/index';

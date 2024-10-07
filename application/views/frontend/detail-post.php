@@ -115,7 +115,7 @@ if ($post->num_rows() > 0) {
     </nav>
 </div>
 <main class="py-4">
-    <div class="overlay-for-subscribe position-fixed" style="width:100vw;height:100vh;top:70px; z-index:99999;">
+    <div class="overlay-for-subscribe d-none position-fixed" style="width:100vw;height:100vh;top:70px; z-index:99999;">
         <div class="position-relative p-4">
             <div class="row row-gap-4">
                 <div class="col-md-2">

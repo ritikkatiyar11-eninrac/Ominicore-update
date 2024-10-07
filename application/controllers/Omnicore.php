@@ -30,12 +30,22 @@ class Omnicore extends Default_Controler
         if ($id == 'categorytags') $this->categorytags();
         if ($id == 'contact_page') $this->contact_page();
         if ($id == 'dummycontactpage') $this->dummycontactpage();
+        if ($id == 'userprofile') $this->userprofile();
+        if ($id == 'author') $this->author();
     }
 
 
     private function login()
     {
         $this->load->view('frontend/login');
+    }
+    private function author()
+    {
+        $this->load->view('frontend/author');
+    }
+    private function userprofile()
+    {
+        $this->load->view('frontend/user_profile');
     }
     private function dummycontactpage()
     {

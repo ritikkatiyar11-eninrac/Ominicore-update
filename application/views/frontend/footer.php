@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-md-5">
                     <form action="">
-                        <div class="row row-gap-2">
+                        <div class="row mt-sm-3 row-gap-2">
                             <div class="col-md-8">
                                 <input type="email" class="form-control text-darklight-400" placeholder="Enter your email" style="border: none;border-radius: 28px;padding: 8px 8px 8px 37px;">
                             </div>
