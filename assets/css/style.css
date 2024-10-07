@@ -1556,6 +1556,7 @@ body.bn-zero-results .bn-trending {
   display: block;
   margin-bottom: 6px;
   position: relative;
+  opacity: 0;
 }
 
 html.no-grid .bn-item {
@@ -2434,5 +2435,50 @@ a {
   .langing_page-top-sidebar {
     display: flex;
     width: 400px;
+  }
+}
+
+/* loader */
+
+.progress-indicator {
+  bottom: 1.5rem;
+  height: 2.5rem;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 1.25rem;
+  transition: opacity 0.3s, transform 0.3s;
+  width: 2.5rem;
+  z-index: 1000;
+}
+
+.progress-indicator {
+  transform: translate3d(0, 100%, 0);
+}
+
+@media (min-width: 51.25em) {
+  .progress-indicator {
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+}
+
+.progress-indicator.is-animating {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .progress-indicator.is-animating svg {
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

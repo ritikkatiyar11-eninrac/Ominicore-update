@@ -18,7 +18,7 @@
     }
 
 
-   
+
 
     .bn-single .bn-single-image img {
         height: 100%;
@@ -106,7 +106,7 @@
         <div class="bn-single-meta bn-single-meta--text">
             <div class="container">
                 <div class="bn-single-meta-col">
-                    <div class="bn-single-meta-description" >
+                    <div class="bn-single-meta-description">
                         <p>
                             The US National School Lunch Program is nearly 75 years old. It provides billions of low-cost or free lunches to children from low-income families every year.
                             <br>
@@ -141,20 +141,29 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="bn-single-meta bn-single-meta--signup">
-            <div class="bn-container">
-                <form class="bn-signup" method="post" action="" target="_blank">
-                    <div class="bn-signup--col bn-signup--info">
-                        <h3><i class="icofont-email"></i> Beautiful Newsletter</h3>
-                        <p>An uplifting occasional roundup: every new chart plus bonus extras</p>
-                    </div>
-                    <div class="bn-signup--col bn-signup--input"><input type="email" name="MERGE0" id="MERGE0" placeholder="Your email..."><button type="submit">Sign up</button></div>
-                </form>
-            </div>
-        </div> -->
     </div>
 </main>
+
+<script>
+    // http://localhost/omnicore/assets/js/infodata.json;
+
+    fetch("http://localhost/omnicore/assets/js/infodata.json")
+    .then(response => response.json())
+    .then(data => {
+        let itemData = data.data.items;
+        let currentItem = itemData.find(item => item.id === parseInt(getUrlParameter('id')));
+      let infographicItemDetail = document.querySelector(".bn-container--image")
+
+       infographicItemDetail.innerHTML = `
+        <div class="bn-single-image--main d-flex">
+             <img class="lazy" loading="lazy" src="https://s3.amazonaws.com/infobeautiful-bnews/images/${currentItem.id}/${currentItem.filename}.svg" alt="" />
+        </div>
+       `
+    })
+    .catch(error => console.error('Error:', error));
+
+    
+</script>
 
 <script src="<?= base_url() ?>assets/js/singleItem.js"></script>
 <?php require(APPPATH . 'views/frontend/footer.php'); ?>

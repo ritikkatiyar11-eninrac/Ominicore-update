@@ -80,6 +80,17 @@
 </head>
 
 <body>
+    <div class="progress-indicator">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" stroke="url(#progress_gradient)" stroke-width="20"></circle>
+            <defs>
+                <linearGradient id="progress_gradient" x1="57" y1="91" x2="19" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#14355B"></stop>
+                    <stop offset="1" stop-color="#3878CD"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
     <header class="position-sticky top-0" style="background-image: -webkit-gradient( linear, left top, right top, from(transparent), to(#fff) ), -webkit-gradient(linear, left top, left bottom, from(transparent), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#dbd3f7), to(#eee9ff));backdrop-filter:blur(7px); z-index:11;">
         <div class="container-fluid position-relative px-0 overflow-hidden">
             <div class="d-flex justify-content-between align-items-center w-100">
@@ -166,6 +177,17 @@
         </div>
     </div>
     <script>
+        let loader = document.querySelector(".progress-indicator")
+
+        function showSpinner() {
+            loader.classList.add("is-animating")
+        }
+
+        function hideSpinner() {
+            loader.classList.remove("is-animating")
+        }
+
+        
         if (window.location.href == "http://localhost/omnicore/omniweeklynews") {
             window.onscroll = function() {
                 scrollbarWidth()
