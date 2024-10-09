@@ -187,8 +187,8 @@
             loader.classList.remove("is-animating")
         }
 
-        
-        if (window.location.href == "http://localhost/omnicore/omniweeklynews") {
+
+        if (window.location.href.includes("http://localhost/omnicore/omniweeklynews")) {
             window.onscroll = function() {
                 scrollbarWidth()
             }

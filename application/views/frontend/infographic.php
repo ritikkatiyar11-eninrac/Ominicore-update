@@ -34,6 +34,8 @@
             .then(response => response.json())
             .then(data => {
                 let itemData = data.data.items;
+                
+                console.log(itemData)
                 let infographicParent = document.getElementById("infographicParent")
                 itemData.forEach(item => {
                     let a = document.createElement("a")
@@ -42,7 +44,6 @@
                     a.innerHTML = `
                 <div class="bn-item-inner">
                     <div class="bn-item-img" style="background-image:${item.gradient}">
-                    
                         <img class="lazy" loading="lazy" src="https://s3.amazonaws.com/infobeautiful-bnews/images/${item.id}/${item.filename}.svg" alt="" />
                     </div>
                 </div>`

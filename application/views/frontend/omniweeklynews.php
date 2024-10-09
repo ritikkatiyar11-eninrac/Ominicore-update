@@ -24,22 +24,20 @@
             </nav>
         </div>
     </section>
-    
+
     <div class="px-sm-3 px-3" style="max-width: 650px; margin:0 auto;">
         <section class="w-100">
             <div class="row">
-                <!-- <div class="col-md-2"></div> -->
                 <div class="col-md-12">
                     <div class="">
                         <h1 class="fs-30 fw-bold my-1" style="line-height: 1.25em;">
-                            The Digital Omnicore Regulatory & Policy
-                            Watch weekly
+                            Omnicore Weekly #175 – 27 September 2024
                         </h1>
                     </div>
                     <div class="">
                         <div class="d-flex justify-content-start py-3 align-items-center gap-2">
                             <div class="" style="width: 30px; height:30px;transition:0.3s">
-                                <a href="" class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.linkedin.com/company/eninrac-consulting/?originalSubdomain=in" class="d-flex justify-content-center align-items-center">
                                     <svg id="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 963.66 963.66">
                                         <defs>
                                             <style>
@@ -72,7 +70,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-2"></div> -->
             </div>
         </section>
 
@@ -82,32 +79,73 @@
         <!-- blog start -->
         <div class="w-100">
             <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
-                <p>Dear readers,&nbsp;</p>
+                <p>Dear Patrons &amp; Readers,&nbsp;</p>
             </div>
         </div>
 
         <div class="w-100">
             <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
-                <p>This week, Margrethe Vestager’s final months as the EU antitrust chief were crowned with two significant victories, cementing her legacy as a fearless challenger of Big Tech’s monopolistic grip. Europe’s top court sided with her in two high-profile cases, one involving Apple’s controversial Irish tax deal and another targeting Google’s anti-competitive behaviour. Both rulings sent ripples through the tech world, signalling a tightening grip on regulatory oversight and reaffirming Europe’s commitment to holding global giants accountable.</p>
+                <p>The petition of NTPC Limited before the Honb’le CERC has been approved by the
+                    Central Regulator on 24 th September 2024. NTPC had made following prayers:</p>
             </div>
         </div>
 
-        <div class="w-100">
-            <div class="w-100" style="line-height:1.6">
-                <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/09/020-3-1024x576.png" width="600" height="337" style="border-style:none;border-color:transparent;box-sizing:border-box" alt="">
-            </div>
-        </div>
+
 
         <div class="w-100">
             <div class=" py-2 px-3 text-dark" style="line-height:1.6">
-                <p class="fs-18">This week, Margrethe Vestager’s final months as the EU antitrust chief were crowned with two significant victories, cementing her legacy as a fearless challenger of Big Tech’s monopolistic grip. Europe’s top court sided with her in two high-profile cases, one involving Apple’s controversial Irish tax deal and another targeting Google’s anti-competitive behaviour. Both rulings sent ripples through the tech world, signalling a tightening grip on regulatory oversight and reaffirming Europe’s commitment to holding global giants accountable.</p>
-            </div>
-        </div>
+                <ul class="ps-3" style="list-style-type: square;">
+                    <li>
+                        Adopt the tariff discovered in the tariff based competitive bid process for the
+                        power projects as stated above on the terms and conditions contained in the
+                        LoAs dated 24.01.2024 issued to M/s Anboto Solar Private Limited, M/s
+                        Apraava Energy Private Limited, M/s Avaada Energy Private Limited and
+                        ReNew Solar Power Private Limited; and
+                    </li>
+                    <li>
 
-        <div style="height:12px;" aria-hidden="true" class="wp-block-spacer"></div>
-        <div class="w-100">
+                        Approve the trading margin of INR 0.07/kWh;
+
+                    </li>
+                    <li>
+                        Pass any such order as this Commission deems just and proper in the nature
+                        and circumstances of the present case.
+                    </li>
+                </ul>
+            </div>
             <div class="fs-18 py-2 px-3 text-dark" style="line-height:1.6">
-                <p class="wow bounce">Eninrac and the Omnicore Research team,&nbsp;</p>
+                <p class="fw-600">CERC’s Analysis &amp; Decision:</p>
+                <p>
+                    It emerges that the selection of the successful bidders has been done, and the tariff
+                    of the Solar Power Projects has been discovered by the Petitioner, NTPC, through a
+                    transparent process of competitive bidding and in accordance with the Guidelines
+                    issued by the Ministry of Power, Government of India. Therefore, in terms of Section
+                    63 of the Act, the Commission adopts the individual tariff in terms of the LoAs dated
+                    24.1.2024 for the Solar Power Projects, as agreed to by the successful bidders as
+                    under, subject to the Petitioner tying up the balance awarded capacity under the
+                    PPAs and PSAs:
+                </p>
+                <ul class="mt-2" style="padding-left:30px;list-style-type: lower-alpha;">
+                    <li class="fw-600">Anboto Solar Private Limited: 300 MW @ INR 2.60/kWh.</li>
+                    <li class="fw-600">Apraava Energy Private Limited: 300 MW @ INR 2.65/kWh.</li>
+                    <li class="fw-600">Avaada Energy Private Limited: 500 MW @ INR 2.65/kWh.</li>
+                    <li class="fw-600">ReNew Solar Power Private Limited: 600 MW @ INR 2.65/kWh.</li>
+                </ul>
+                <br>
+                <p>
+                    In the present case, the distribution licensee, MSEDCL, has agreed to a trading
+                    margin of Rs.0.07/kWh as agreed in the PSA, which is in consonance with
+                    Regulation 8(1)(d) of the Trading License Regulations. For the balance capacity also,
+                    the trading margin shall be as per the provisions of the PSAs to be entered into
+                    between NTPC and the distribution licensees. However, in case of failure by the
+
+                    <br>
+                    <br>
+                    NTPC to provide an escrow arrangement or irrevocable, unconditional, and revolving
+                    letter of credit to the solar generators, the trading margin shall be limited to
+                    Rs.0.02/kWh specified in Regulation 8(1)(d) and Regulation 8(1)(f) of the Trading
+                    License Regulations.
+                </p>
             </div>
         </div>
 
@@ -129,14 +167,14 @@
                 <div class="omni-ngw-item py-2 position-relative">
                     <div class="row ">
                         <div class="omni-ngw-item-img col-md-3 ">
-                            <a href="https://omnicoreplus.com/omni/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/">
-                                <img width="100%" height="100%" src="https://omnicoreplus.com/omni/assets/om-upload/power-tariff.jpg" alt="">
+                            <a href="https://omnicoreplus.com/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/">
+                                <img width="100%" height="100%" src="https://omnicoreplus.com/assets/om-upload/power-tariff.jpg" alt="">
                             </a>
                         </div>
                         <div class="col-md-9">
                             <div class="omni-ngw-item-title">
                                 <h3 class="fs-18">
-                                    <a href="https://omnicoreplus.com/omni/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/" class="fs-18 text-dark fw-600">
+                                    <a href="https://omnicoreplus.com/post/tgerc-public-notice-verification-of-captive-status-of-cpps-through-the-open-access-regulation/" class="fs-18 text-dark fw-600">
                                         Verification of captive status of CPPs through the open access regulation
                                     </a>
                                 </h3>
@@ -150,14 +188,14 @@
                 <div class="omni-ngw-item py-2 position-relative">
                     <div class="row ">
                         <div class="omni-ngw-item-img col-md-3 ">
-                            <a href="https://omnicoreplus.com/omni/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024">
-                                <img width="100%" height="100%" src="https://omnicoreplus.com/omni/assets/om-upload/Renewable-energy-Cover-Image.jpg" alt="">
+                            <a href="https://omnicoreplus.com/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024">
+                                <img width="100%" height="100%" src="https://omnicoreplus.com/assets/om-upload/Renewable-energy-Cover-Image.jpg" alt="">
                             </a>
                         </div>
                         <div class="col-md-9">
                             <div class="omni-ngw-item-title">
                                 <h3 class="fs-18">
-                                    <a href="https://omnicoreplus.com/omni/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024" class="fs-18 text-dark fw-600">
+                                    <a href="https://omnicoreplus.com/post/oerc-public-notice-procurement-of-energy-from-renewable-sources-and-its-compliance-regulations-2024" class="fs-18 text-dark fw-600">
                                         Procurement of Energy from Renewable Sources and its Compliance Regulations, 2024
                                     </a>
                                 </h3>

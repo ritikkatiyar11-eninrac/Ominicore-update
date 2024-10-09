@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="sidemenu">
+        <ul class="position-sticky ps-2 d-flex flex-column gap-2">
+          <li>
+            <a href="#key-orders" class="text-decoration-underline"
+              >Key Orders</a
+            >
+          </li>
+          <li>
+            <a href="#bid-updates-result" class="text-decoration-underline">
+              Bid Updates &amp; Results
+            </a>
+          </li>
+          <li>
+            <a href="#key-petitions" class="text-decoration-underline"
+              >Key Petitions</a
+            >
+          </li>
+          <li>
+            <a
+              href="#regulations-policy-highlights"
+              class="text-decoration-underline"
+              >Regulations &amp; Policy Highlight
+            </a>
+          </li>
+          <li>
+            <a href="#open-access-updates" class="text-decoration-underline"
+              >Open Access Updates
+            </a>
+          </li>
+          <li>
+            <a href="#key-insights" class="text-decoration-underline"
+              >Key Insights
+            </a>
+          </li>
+          <li>
+            <a href="#most-read-updates" class="text-decoration-underline">
+              Most Read Update</a
+            >
+          </li>
+          <li>
+            <a href="#key-infographics" class="text-decoration-underline"
+              >Key Infographic</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content-parent">
+        <section id="key-orders"></section>
+        <section id="bid-updates-result"></section>
+        <section id="key-petitions"></section>
+        <section id="regulations-policy-highlights"></section>
+        <section id="open-access-updates"></section>
+        <section id="key-infographics"></section>
+      </div>
+
+      <div class="text-div">
+        <div class="text-child-div">
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll("section").forEach((item) => {
+        let itemId = item.getAttribute("id");
+        let span = document.createElement("span");
+        span.innerHTML = itemId;
+        item.appendChild(span);
+        document.querySelectorAll("ul li a").forEach((anchor) => {
+          if (anchor.getAttribute("href") === "#" + itemId) {
+            anchor.classList.add("active");
+          } else {
+            anchor.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

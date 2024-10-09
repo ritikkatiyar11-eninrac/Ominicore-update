@@ -23,6 +23,7 @@ class Omnicore extends Default_Controler
         if ($id == 'postdetail') $this->postdetail();
         if ($id == 'postbycategory') $this->getdateaccordingtocategory();
         if ($id == 'omniweeklynews') $this->omniweeklynews();
+        if ($id == 'omnimonthlynews') $this->omnimonthlynews();
         if ($id == 'download-image') $this->downloadImage();
         if ($id == 'omninews') $this->omninews();
         if ($id == 'ourteam') $this->ourteam();
@@ -83,6 +84,11 @@ class Omnicore extends Default_Controler
     private function omniweeklynews()
     {
         $this->load->view('frontend/omniweeklynews');
+    }
+
+    private function omnimonthlynews()
+    {
+        $this->load->view('frontend/omnimonthlynews');
     }
     private function check_pricing()
     {
